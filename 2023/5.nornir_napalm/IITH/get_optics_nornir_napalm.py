@@ -6,7 +6,7 @@ from nornir_utils.plugins.functions import print_result
 
 nr = InitNornir(config_file="config.yaml")
 
-g = "get_interfaces"
+g = "get_optics"
 def nornir_napalm_get_example(task):
     #task.run(task=napalm_get, getters=["get_facts", "get_interfaces", "get_interfaces_ip", "get_config"])
     task.run(task=napalm_get, getters=[g])

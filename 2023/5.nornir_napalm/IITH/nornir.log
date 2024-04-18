@@ -1,1 +1,2 @@
 2024-04-18 03:12:49,789 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 4 hosts
+2024-04-18 06:26:33,253 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_get_example' with args {} on 4 hosts

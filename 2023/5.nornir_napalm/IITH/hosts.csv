@@ -1,0 +1,7 @@
+Host,Hostname,username,password,Groups
+BHQ-B-3F-SW,10.5.48.87,iith,HSTLQ@IITH2022,cisco
+BHQ-B-6F-SW,10.5.48.88,iith,HSTLQ@IITH2022,cisco
+BHQ-B-9F-SW,10.5.48.89,iith,HSTLQ@IITH2022,cisco
+BHQ-A-GF-SW,10.5.48.81,iith,HSTLQ@IITH2022,cisco
+BHQ-A-3F-SW,10.5.48.82,iith,HSTLQ@IITH2022,cisco
+BHQ-A-6F-SW,10.5.48.83,iith,HSTLQ@IITH2022,cisco
