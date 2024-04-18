@@ -20,3 +20,10 @@ R3:
 #  password: "rayka-co.com"
   groups:
     - cisco
+
+R4:
+  hostname: "10.5.48.36"
+#  username: "rayka"
+#  password: "rayka-co.com"
+  groups:
+    - cisco
