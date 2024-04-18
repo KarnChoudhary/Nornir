@@ -1,0 +1,22 @@
+---
+
+R1:
+  hostname: "10.5.48.38"
+#  username: "rayka"
+#  password: "rayka-co.com"
+  groups:
+    - cisco
+
+R2:
+  hostname: "10.5.48.39"
+#  username: "rayka"
+#  password: "rayka-co.com"
+  groups:
+    - cisco
+
+R3:
+  hostname: "10.5.48.37"
+#  username: "rayka"
+#  password: "rayka-co.com"
+  groups:
+    - cisco

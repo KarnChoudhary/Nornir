@@ -1,0 +1,269 @@
+2023-04-23 22:45:21,500 -  nornir.core -     INFO -        run() - Running task 'restconf_nornir_example' with args {} on 1 hosts
+2023-04-23 22:45:21,556 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'restconf_nornir_example' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 96, in create_connection
+    raise err
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 86, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 1012, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 353, in connect
+    conn = self._new_conn()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f844efb0760>: Failed to establish a new connection: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='192.168.1.11', port=443): Max retries exceeded with url: /restconf/data/Cisco-IOS-XE-native:native/router/router-ospf (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f844efb0760>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/majid/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/majid/devnet/pyhton_nornir/2023/13.restconf/13.4.restconf_nornir_example.py", line 16, in restconf_nornir_example
+    response = requests.get(url=url, headers=header1, auth=(f"{task.host.username}", f"{task.host.password}"), verify=False)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='192.168.1.11', port=443): Max retries exceeded with url: /restconf/data/Cisco-IOS-XE-native:native/router/router-ospf (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f844efb0760>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+
+2023-04-23 22:46:09,876 -  nornir.core -     INFO -        run() - Running task 'restconf_nornir_example' with args {} on 1 hosts
+2023-04-23 22:46:09,889 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'restconf_nornir_example' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 96, in create_connection
+    raise err
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 86, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 1012, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 353, in connect
+    conn = self._new_conn()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fa7c13ec7c0>: Failed to establish a new connection: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='192.168.1.11', port=443): Max retries exceeded with url: /restconf/data/Cisco-IOS-XE-native:native/router/router-ospf (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa7c13ec7c0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/majid/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/majid/devnet/pyhton_nornir/2023/13.restconf/13.4.restconf_nornir_example.py", line 16, in restconf_nornir_example
+    response = requests.get(url=url, headers=header1, auth=(f"{task.host.username}", f"{task.host.password}"), verify=False)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='192.168.1.11', port=443): Max retries exceeded with url: /restconf/data/Cisco-IOS-XE-native:native/router/router-ospf (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa7c13ec7c0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+
+2023-04-23 22:48:57,176 -  nornir.core -     INFO -        run() - Running task 'restconf_nornir_example' with args {} on 1 hosts
+2023-04-23 22:49:38,875 -  nornir.core -     INFO -        run() - Running task 'restconf_nornir_example' with args {} on 1 hosts
+2023-04-23 22:49:38,984 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'restconf_nornir_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/majid/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/majid/devnet/pyhton_nornir/2023/13.restconf/13.4.restconf_nornir_example.py", line 23, in restconf_nornir_example
+    rprint(result.json())
+AttributeError: 'dict' object has no attribute 'json'
+
+2023-04-23 22:50:13,932 -  nornir.core -     INFO -        run() - Running task 'restconf_nornir_example' with args {} on 1 hosts
+2023-04-23 22:51:43,459 -  nornir.core -     INFO -        run() - Running task 'restconf_nornir_example' with args {} on 1 hosts
+2023-04-23 22:52:13,542 -  nornir.core -     INFO -        run() - Running task 'restconf_nornir_example' with args {} on 1 hosts
+2023-04-23 22:52:57,964 -  nornir.core -     INFO -        run() - Running task 'restconf_nornir_example' with args {} on 1 hosts
+2023-04-23 22:55:06,206 -  nornir.core -     INFO -        run() - Running task 'restconf_nornir_example' with args {} on 1 hosts
+2023-04-23 22:55:41,285 -  nornir.core -     INFO -        run() - Running task 'restconf_nornir_example' with args {} on 1 hosts
+2023-04-23 22:58:30,908 -  nornir.core -     INFO -        run() - Running task 'restconf_nornir_example' with args {} on 1 hosts
+2023-04-23 23:14:19,940 -  nornir.core -     INFO -        run() - Running task 'restconf_nornir_example' with args {} on 1 hosts
+2023-04-23 23:15:31,623 -  nornir.core -     INFO -        run() - Running task 'restconf_nornir_example' with args {} on 1 hosts
+2023-04-23 23:21:03,818 -  nornir.core -     INFO -        run() - Running task 'restconf_nornir_example' with args {} on 1 hosts
+2023-04-23 23:21:04,000 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'restconf_nornir_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/majid/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/majid/devnet/pyhton_nornir/2023/13.restconf/13.4.restconf_nornir_example.py", line 29, in restconf_nornir_example
+    for ospf_process_id in task.host["data"]["Cisco-IOS-XE-ospf:router-ospf"]["ospf"]["process-id"]:
+  File "/home/majid/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+KeyError: 'data'
+
+2023-04-23 23:21:30,236 -  nornir.core -     INFO -        run() - Running task 'restconf_nornir_example' with args {} on 1 hosts
+2023-04-24 13:04:52,093 -  nornir.core -     INFO -        run() - Running task 'restconf_nornir_example' with args {} on 1 hosts
+2023-04-24 23:17:02,269 -  nornir.core -     INFO -        run() - Running task 'restconf_nornir_example' with args {} on 1 hosts
+2023-04-24 23:23:21,533 -  nornir.core -     INFO -        run() - Running task 'restconf_nornir_example' with args {} on 1 hosts
+2023-04-27 10:22:34,957 -  nornir.core -     INFO -        run() - Running task 'restconf_configuration_nornir_example' with args {} on 1 hosts
+2023-04-27 10:23:05,367 -  nornir.core -     INFO -        run() - Running task 'restconf_configuration_nornir_example' with args {} on 1 hosts
+2023-04-27 10:24:38,261 -  nornir.core -     INFO -        run() - Running task 'restconf_configuration_nornir_example' with args {} on 1 hosts
+2023-04-27 10:25:08,854 -  nornir.core -     INFO -        run() - Running task 'restconf_configuration_nornir_example' with args {} on 1 hosts
+2023-04-27 10:26:41,175 -  nornir.core -     INFO -        run() - Running task 'restconf_configuration_nornir_example' with args {} on 1 hosts
+2023-04-27 10:27:21,004 -  nornir.core -     INFO -        run() - Running task 'restconf_configuration_nornir_example' with args {} on 1 hosts
+2023-04-27 12:37:23,576 -  nornir.core -     INFO -        run() - Running task 'restconf_configuration_nornir_example' with args {} on 1 hosts
+2023-04-27 12:37:48,990 -  nornir.core -     INFO -        run() - Running task 'restconf_configuration_nornir_example' with args {} on 1 hosts
+2023-04-27 12:39:52,299 -  nornir.core -     INFO -        run() - Running task 'restconf_configuration_nornir_example' with args {} on 1 hosts
+2023-04-27 12:47:48,644 -  nornir.core -     INFO -        run() - Running task 'restconf_configuration_nornir_example' with args {} on 1 hosts
+2023-04-27 12:48:06,078 -  nornir.core -     INFO -        run() - Running task 'restconf_configuration_nornir_example' with args {} on 1 hosts
+2023-04-27 12:59:56,865 -  nornir.core -     INFO -        run() - Running task 'restconf_configuration_nornir_example' with args {} on 1 hosts
+2023-04-27 13:00:40,539 -  nornir.core -     INFO -        run() - Running task 'restconf_configuration_nornir_example' with args {} on 1 hosts
+2023-04-27 15:12:28,407 -  nornir.core -     INFO -        run() - Running task 'restconf_configuration_nornir_example' with args {} on 1 hosts
+2023-04-27 15:13:12,336 -  nornir.core -     INFO -        run() - Running task 'restconf_configuration_nornir_example' with args {} on 1 hosts
+2023-04-27 17:16:29,841 -  nornir.core -     INFO -        run() - Running task 'restconf_configuration_nornir_example' with args {} on 1 hosts
+2023-04-27 17:16:29,853 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'restconf_configuration_nornir_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/majid/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/majid/devnet/pyhton_nornir/2023/13.restconf/13.5.restconf_configuration_with_nornir.py", line 57, in restconf_configuration_nornir_example
+    rprint(response)
+UnboundLocalError: local variable 'response' referenced before assignment
+
+2023-04-27 17:16:44,419 -  nornir.core -     INFO -        run() - Running task 'restconf_configuration_nornir_example' with args {} on 1 hosts
+2023-04-27 17:16:44,420 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'restconf_configuration_nornir_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/majid/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/majid/devnet/pyhton_nornir/2023/13.restconf/13.5.restconf_configuration_with_nornir.py", line 57, in restconf_configuration_nornir_example
+    rprint(response)
+UnboundLocalError: local variable 'response' referenced before assignment
+
+2023-04-27 20:04:32,039 -  nornir.core -     INFO -        run() - Running task 'restconf_configuration_nornir_example' with args {} on 1 hosts
+2023-04-27 20:06:01,342 -  nornir.core -     INFO -        run() - Running task 'restconf_configuration_nornir_example' with args {} on 1 hosts
+2023-04-27 20:06:49,452 -  nornir.core -     INFO -        run() - Running task 'restconf_configuration_nornir_example' with args {} on 1 hosts
+2023-04-27 22:42:42,143 -  nornir.core -     INFO -        run() - Running task 'restconf_configuration_nornir_example' with args {} on 1 hosts
+2023-04-27 22:45:04,934 -  nornir.core -     INFO -        run() - Running task 'restconf_configuration_nornir_example' with args {} on 1 hosts
+2023-04-27 22:46:34,892 -  nornir.core -     INFO -        run() - Running task 'restconf_configuration_nornir_example' with args {} on 1 hosts
+2023-04-27 22:48:02,517 -  nornir.core -     INFO -        run() - Running task 'restconf_configuration_nornir_example' with args {} on 1 hosts
+2023-04-27 22:48:20,716 -  nornir.core -     INFO -        run() - Running task 'restconf_configuration_nornir_example' with args {} on 1 hosts
+2023-04-27 22:49:14,658 -  nornir.core -     INFO -        run() - Running task 'restconf_configuration_nornir_example' with args {} on 1 hosts
+2023-05-04 12:39:10,074 -  nornir.core -     INFO -        run() - Running task 'load_data' with args {} on 1 hosts
+2023-05-04 12:39:10,084 -  nornir.core -     INFO -        run() - Running task 'restconf_edit_config_with_yaml' with args {} on 1 hosts
+2023-05-04 12:40:03,268 -  nornir.core -     INFO -        run() - Running task 'load_data' with args {} on 1 hosts
+2023-05-04 12:40:03,275 -  nornir.core -     INFO -        run() - Running task 'restconf_edit_config_with_yaml' with args {} on 1 hosts
+2023-05-04 14:20:41,439 -  nornir.core -     INFO -        run() - Running task 'load_data' with args {} on 1 hosts
+2023-05-04 14:20:41,446 -  nornir.core -     INFO -        run() - Running task 'restconf_edit_config_with_yaml' with args {} on 1 hosts
+2023-05-05 00:00:09,733 -  nornir.core -     INFO -        run() - Running task 'load_data' with args {} on 1 hosts
+2023-05-05 00:00:09,739 -  nornir.core -     INFO -        run() - Running task 'restconf_edit_config_with_yaml' with args {} on 1 hosts
+2023-05-06 11:15:03,063 -  nornir.core -     INFO -        run() - Running task 'restconf_edit_config_with_jinja2_template' with args {} on 1 hosts
+2023-05-08 17:05:19,722 -  nornir.core -     INFO -        run() - Running task 'load_data' with args {} on 1 hosts
+2023-05-08 17:05:19,737 -  nornir.core -     INFO -        run() - Running task 'restconf_edit_config_with_template' with args {} on 1 hosts
+2023-05-08 17:17:30,942 -  nornir.core -     INFO -        run() - Running task 'load_data' with args {} on 1 hosts
+2023-05-08 17:17:30,945 -  nornir.core -     INFO -        run() - Running task 'restconf_edit_config_with_template' with args {} on 1 hosts
+2023-05-08 17:19:09,422 -  nornir.core -     INFO -        run() - Running task 'load_data' with args {} on 1 hosts
+2023-05-08 17:19:09,425 -  nornir.core -     INFO -        run() - Running task 'restconf_edit_config_with_template' with args {} on 1 hosts
+2023-05-08 17:23:04,791 -  nornir.core -     INFO -        run() - Running task 'load_data' with args {} on 1 hosts
+2023-05-08 17:23:04,794 -  nornir.core -     INFO -        run() - Running task 'restconf_edit_config_with_template' with args {} on 1 hosts
+2023-05-08 17:23:52,055 -  nornir.core -     INFO -        run() - Running task 'load_data' with args {} on 1 hosts
+2023-05-08 17:23:52,058 -  nornir.core -     INFO -        run() - Running task 'restconf_edit_config_with_template' with args {} on 1 hosts
+2023-05-08 17:24:40,794 -  nornir.core -     INFO -        run() - Running task 'load_data' with args {} on 1 hosts
+2023-05-08 17:24:40,797 -  nornir.core -     INFO -        run() - Running task 'restconf_edit_config_with_template' with args {} on 1 hosts
+2023-05-08 17:24:40,846 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'template_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/majid/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/majid/.local/lib/python3.10/site-packages/nornir_jinja2/plugins/tasks/template_file.py", line 43, in template_file
+    text = t.render(host=task.host, **kwargs)
+  File "/home/majid/.local/lib/python3.10/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/majid/.local/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "templates/ospf_.j2", line 5, in top-level template code
+    "id": "{{ host.hdata.ospf.process_id }}",
+jinja2.exceptions.UndefinedError: 'list object' has no attribute 'process_id'
+
+2023-05-08 17:24:40,846 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'restconf_edit_config_with_template' failed with traceback:
+Traceback (most recent call last):
+  File "/home/majid/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/majid/devnet/pyhton_nornir/2023/13.restconf/13.8.restconf_edit_config_with_template.py", line 26, in restconf_edit_config_with_template
+    template_to_load = task.run(task=template_file, template="ospf_.j2", path="templates")
+  File "/home/majid/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: template_file (failed)
+
+
+2023-05-08 17:25:55,154 -  nornir.core -     INFO -        run() - Running task 'load_data' with args {} on 1 hosts
+2023-05-08 17:25:55,157 -  nornir.core -     INFO -        run() - Running task 'restconf_edit_config_with_template' with args {} on 1 hosts
+2023-05-08 17:28:07,921 -  nornir.core -     INFO -        run() - Running task 'load_data' with args {} on 1 hosts
+2023-05-08 17:28:07,924 -  nornir.core -     INFO -        run() - Running task 'restconf_edit_config_with_template' with args {} on 1 hosts
+2023-05-08 17:28:26,964 -  nornir.core -     INFO -        run() - Running task 'load_data' with args {} on 1 hosts
+2023-05-08 17:28:26,967 -  nornir.core -     INFO -        run() - Running task 'restconf_edit_config_with_template' with args {} on 1 hosts
+2023-05-08 17:30:19,261 -  nornir.core -     INFO -        run() - Running task 'load_data' with args {} on 1 hosts
+2023-05-08 17:30:19,264 -  nornir.core -     INFO -        run() - Running task 'restconf_edit_config_with_template' with args {} on 1 hosts
+2023-05-08 17:35:16,751 -  nornir.core -     INFO -        run() - Running task 'load_data' with args {} on 1 hosts
+2023-05-08 17:35:16,754 -  nornir.core -     INFO -        run() - Running task 'restconf_edit_config_with_template' with args {} on 1 hosts
+2023-05-08 17:38:36,513 -  nornir.core -     INFO -        run() - Running task 'load_data' with args {} on 1 hosts
+2023-05-08 17:38:36,516 -  nornir.core -     INFO -        run() - Running task 'restconf_edit_config_with_template' with args {} on 1 hosts
+2023-05-08 17:38:46,438 -  nornir.core -     INFO -        run() - Running task 'load_data' with args {} on 1 hosts
+2023-05-08 17:38:46,441 -  nornir.core -     INFO -        run() - Running task 'restconf_edit_config_with_template' with args {} on 1 hosts
+2023-05-08 17:42:42,429 -  nornir.core -     INFO -        run() - Running task 'load_data' with args {} on 1 hosts
+2023-05-08 17:42:42,432 -  nornir.core -     INFO -        run() - Running task 'restconf_edit_config_with_template' with args {} on 1 hosts
+2023-05-08 17:43:39,806 -  nornir.core -     INFO -        run() - Running task 'load_data' with args {} on 1 hosts
+2023-05-08 17:43:39,809 -  nornir.core -     INFO -        run() - Running task 'restconf_edit_config_with_template' with args {} on 1 hosts
+2023-05-08 17:44:12,111 -  nornir.core -     INFO -        run() - Running task 'load_data' with args {} on 1 hosts
+2023-05-08 17:44:12,115 -  nornir.core -     INFO -        run() - Running task 'restconf_edit_config_with_template' with args {} on 1 hosts
+2023-05-08 22:57:39,835 -  nornir.core -     INFO -        run() - Running task 'load_data' with args {} on 1 hosts
+2023-05-08 22:57:39,839 -  nornir.core -     INFO -        run() - Running task 'restconf_edit_config_with_template' with args {} on 1 hosts
+2023-05-08 22:58:05,045 -  nornir.core -     INFO -        run() - Running task 'load_data' with args {} on 1 hosts
+2023-05-08 22:58:05,048 -  nornir.core -     INFO -        run() - Running task 'restconf_edit_config_with_template' with args {} on 1 hosts
+2023-05-08 23:09:07,010 -  nornir.core -     INFO -        run() - Running task 'load_data' with args {} on 1 hosts
+2023-05-08 23:09:07,014 -  nornir.core -     INFO -        run() - Running task 'restconf_edit_config_with_template' with args {} on 1 hosts
+2023-05-09 23:33:23,731 -  nornir.core -     INFO -        run() - Running task 'restconf_edit_config_with_jinja2_template' with args {} on 1 hosts
+2023-05-10 23:07:55,269 -  nornir.core -     INFO -        run() - Running task 'load_data' with args {} on 1 hosts
+2023-05-10 23:07:55,272 -  nornir.core -     INFO -        run() - Running task 'restconf_edit_config_with_template' with args {} on 1 hosts
+2023-05-10 23:09:37,834 -  nornir.core -     INFO -        run() - Running task 'load_data' with args {} on 1 hosts
+2023-05-10 23:09:37,837 -  nornir.core -     INFO -        run() - Running task 'restconf_edit_config_with_template' with args {} on 1 hosts
+2023-05-10 23:09:51,876 -  nornir.core -     INFO -        run() - Running task 'load_data' with args {} on 1 hosts
+2023-05-10 23:09:51,879 -  nornir.core -     INFO -        run() - Running task 'restconf_edit_config_with_template' with args {} on 1 hosts
+2023-05-10 23:11:41,924 -  nornir.core -     INFO -        run() - Running task 'load_data' with args {} on 1 hosts
+2023-05-10 23:11:41,927 -  nornir.core -     INFO -        run() - Running task 'restconf_edit_config_with_template' with args {} on 1 hosts

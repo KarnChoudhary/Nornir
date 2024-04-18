@@ -1,0 +1,107 @@
+2022-12-03 02:26:21,680 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_commands_example' with args {} on 1 hosts
+2022-12-03 02:28:27,489 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_commands_example' with args {} on 1 hosts
+2022-12-03 02:29:57,361 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config_exmaple' with args {} on 1 hosts
+2022-12-04 02:28:25,626 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_commands_example' with args {} on 1 hosts
+2022-12-04 02:39:51,547 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_commands_example' with args {} on 1 hosts
+2022-12-06 00:36:43,744 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_commands_example' with args {} on 1 hosts
+2022-12-06 00:37:35,291 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_commands_example' with args {} on 1 hosts
+2022-12-06 00:39:22,084 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_commands_example' with args {} on 1 hosts
+2022-12-07 01:47:26,511 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config_exmaple' with args {} on 1 hosts
+2022-12-07 01:51:10,786 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config_from_file_exmaple' with args {} on 1 hosts
+2022-12-07 01:51:11,551 -  nornir.core -     INFO -        run() - Running task 'netmiko_save_config_exmaple' with args {} on 1 hosts
+2022-12-08 23:56:44,705 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config_exmaple' with args {} on 1 hosts
+2022-12-08 23:59:54,994 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config_from_file_exmaple' with args {} on 1 hosts
+2022-12-08 23:59:55,982 -  nornir.core -     INFO -        run() - Running task 'netmiko_save_config_exmaple' with args {} on 1 hosts
+2024-04-10 07:27:32,499 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_commands_example' with args {} on 1 hosts
+2024-04-10 07:36:36,870 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_commands_example' with args {} on 1 hosts
+2024-04-15 04:38:38,532 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_commands_example' with args {} on 1 hosts
+2024-04-15 04:39:03,358 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_commands_example' with args {} on 2 hosts
+2024-04-15 04:47:27,865 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_commands_example' with args {} on 2 hosts
+2024-04-15 04:47:53,849 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_commands_example' with args {} on 2 hosts
+2024-04-15 04:53:45,954 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_commands_example' with args {} on 2 hosts
+2024-04-15 06:38:00,057 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_commands_example' with args {} on 2 hosts
+2024-04-15 06:40:53,578 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_commands_example' with args {} on 2 hosts
+2024-04-15 07:01:18,092 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config_exmaple' with args {} on 2 hosts
+2024-04-15 07:02:19,225 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config_from_file_exmaple' with args {} on 2 hosts
+2024-04-15 07:02:19,900 -  nornir.core -     INFO -        run() - Running task 'netmiko_save_config_exmaple' with args {} on 2 hosts
+2024-04-15 07:03:07,930 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config_from_file_exmaple' with args {} on 2 hosts
+2024-04-15 07:03:08,677 -  nornir.core -     INFO -        run() - Running task 'netmiko_save_config_exmaple' with args {} on 2 hosts
+2024-04-17 02:08:03,821 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_commands_example' with args {} on 2 hosts
+2024-04-17 02:55:47,394 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_commands_example' with args {} on 2 hosts
+2024-04-17 02:55:47,966 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 110, in wrapper_decorator
+    return_val = func(self, *args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/utilities.py", line 595, in wrapper_decorator
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1765, in send_command
+    command_string = self.normalize_cmd(command_string)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1982, in normalize_cmd
+    command = command.rstrip()
+              ^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'rstrip'
+
+2024-04-17 02:55:47,967 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'netmiko_send_commands_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/testdir/devnet/pyhton_nornir/2023/2.nornir_netmiko/2.1.nornir_netmiko_send_commands.py", line 10, in netmiko_send_commands_example
+    task.run(task=netmiko_send_command, command_string=command)
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-04-17 02:55:47,969 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 110, in wrapper_decorator
+    return_val = func(self, *args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/utilities.py", line 595, in wrapper_decorator
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1765, in send_command
+    command_string = self.normalize_cmd(command_string)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1982, in normalize_cmd
+    command = command.rstrip()
+              ^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'rstrip'
+
+2024-04-17 02:55:47,970 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'netmiko_send_commands_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/testdir/devnet/pyhton_nornir/2023/2.nornir_netmiko/2.1.nornir_netmiko_send_commands.py", line 10, in netmiko_send_commands_example
+    task.run(task=netmiko_send_command, command_string=command)
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-04-17 02:57:24,178 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_commands_example' with args {} on 2 hosts
+2024-04-17 02:58:14,012 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_commands_example' with args {} on 2 hosts
+2024-04-17 02:59:48,410 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_commands_example' with args {} on 2 hosts
+2024-04-17 03:02:01,219 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_commands_example' with args {} on 2 hosts
+2024-04-17 03:02:19,020 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_commands_example' with args {} on 2 hosts
+2024-04-17 03:02:38,914 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_commands_example' with args {} on 2 hosts
+2024-04-17 03:03:02,102 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_commands_example' with args {} on 2 hosts
+2024-04-17 03:04:03,288 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_commands_example' with args {} on 2 hosts
+2024-04-17 03:05:07,109 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_commands_example' with args {} on 2 hosts

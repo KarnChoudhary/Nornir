@@ -1,0 +1,21 @@
+Hostname,Name,Description,Serial Number
+R1,c93xxL Stack,c93xxL Stack,FOC2650YN8E
+R1,Switch 1,C9300L-48T-4X,FOC2650YN8E
+R1,StackAdapter1/1,StackAdapter1/1,FOC2634668F
+R1,StackAdapter1/2,StackAdapter1/2,FOC263461ZF
+R1,Switch 1 - Power Supply B,Switch 1 - Power Supply B,DCC2651B0J3
+R1,Te1/1/1,SFP-10GBase-LR,ACW26140A6B
+R1,Te1/1/2,SFP-10GBase-LR,ACW26140BS6
+R2,c93xxL Stack,c93xxL Stack,FOC2650YJR8
+R2,Switch 1,C9300L-48T-4X,FOC2650YJR8
+R2,StackAdapter1/1,StackAdapter1/1,FOC26346GUR
+R2,StackAdapter1/2,StackAdapter1/2,FOC26346DGL
+R2,Switch 1 - Power Supply B,Switch 1 - Power Supply B,DCC2651B3UG
+R2,Te1/1/1,SFP-10GBase-LR,ACW26140BRW
+R3,c93xxL Stack,c93xxL Stack,FOC2650YJTC
+R3,Switch 1,C9300L-48T-4X,FOC2650YJTC
+R3,StackAdapter1/1,StackAdapter1/1,FOC26346CTK
+R3,StackAdapter1/2,StackAdapter1/2,FOC26346DH4
+R3,Switch 1 - Power Supply B,Switch 1 - Power Supply B,DCC2651B2AY
+R3,Te1/1/1,SFP-10GBase-LR,ACW26140BPF
+R3,Te1/1/2,SFP-10GBase-LR,ACW26140BWT

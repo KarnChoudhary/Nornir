@@ -1,0 +1,258 @@
+2023-01-24 10:29:40,123 -  nornir.core -     INFO -        run() - Running task 'textfsm_nornir_scrapli_example' with args {} on 1 hosts
+2023-01-24 10:32:37,903 -  nornir.core -     INFO -        run() - Running task 'textfsm_nornir_scrapli_example' with args {} on 1 hosts
+2023-01-24 10:33:40,382 -  nornir.core -     INFO -        run() - Running task 'textfsm_nornir_scrapli_example' with args {} on 1 hosts
+2023-01-24 10:34:40,493 -  nornir.core -     INFO -        run() - Running task 'textfsm_nornir_scrapli_example' with args {} on 1 hosts
+2023-01-24 10:35:29,568 -  nornir.core -     INFO -        run() - Running task 'textfsm_nornir_scrapli_example' with args {} on 1 hosts
+2023-01-24 10:36:55,825 -  nornir.core -     INFO -        run() - Running task 'textfsm_nornir_scrapli_example' with args {} on 1 hosts
+2023-01-24 10:38:57,202 -  nornir.core -     INFO -        run() - Running task 'textfsm_nornir_scrapli_example' with args {} on 1 hosts
+2023-01-24 10:39:47,981 -  nornir.core -     INFO -        run() - Running task 'textfsm_nornir_scrapli_example' with args {} on 1 hosts
+2023-01-24 10:40:23,888 -  nornir.core -     INFO -        run() - Running task 'textfsm_nornir_scrapli_example' with args {} on 1 hosts
+2023-01-24 10:46:41,112 -  nornir.core -     INFO -        run() - Running task 'textfsm_nornir_netmiko_example' with args {} on 1 hosts
+2023-01-24 10:48:09,536 -  nornir.core -     INFO -        run() - Running task 'textfsm_nornir_netmiko_example' with args {} on 1 hosts
+2023-01-25 10:16:08,267 -  nornir.core -     INFO -        run() - Running task 'nornir_scrapli_genie_example' with args {} on 1 hosts
+2023-01-25 10:17:48,354 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_genie_example' with args {} on 1 hosts
+2023-01-25 13:05:19,578 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_genie_example' with args {} on 1 hosts
+2023-01-25 22:50:08,444 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_genie_example' with args {} on 1 hosts
+2023-01-25 22:50:28,660 -  nornir.core -     INFO -        run() - Running task 'nornir_scrapli_genie_example' with args {} on 1 hosts
+2023-01-25 22:52:05,198 -  nornir.core -     INFO -        run() - Running task 'nornir_scrapli_genie_example' with args {} on 1 hosts
+2023-01-25 22:53:01,457 -  nornir.core -     INFO -        run() - Running task 'nornir_scrapli_genie_example' with args {} on 1 hosts
+2023-01-25 22:54:14,099 -  nornir.core -     INFO -        run() - Running task 'nornir_scrapli_genie_example' with args {} on 1 hosts
+2023-01-25 22:55:09,487 -  nornir.core -     INFO -        run() - Running task 'nornir_scrapli_genie_example' with args {} on 1 hosts
+2023-01-25 22:56:54,176 -  nornir.core -     INFO -        run() - Running task 'nornir_scrapli_genie_example' with args {} on 1 hosts
+2023-01-25 22:58:06,263 -  nornir.core -     INFO -        run() - Running task 'nornir_scrapli_genie_example' with args {} on 1 hosts
+2023-01-25 23:00:35,851 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_genie_example' with args {} on 1 hosts
+2023-01-25 23:02:20,905 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_genie_example' with args {} on 1 hosts
+2023-02-04 00:29:00,784 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 00:29:32,597 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 00:31:26,205 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 00:31:27,833 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'genie_Dq_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/majid/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/majid/devnet/pyhton_nornir/2023/9.genie_parser/9.3.genie_Dq_example.py", line 11, in genie_Dq_example
+    rprint(interfaces["GigabitEthernet1"][counters])
+NameError: name 'counters' is not defined
+
+2023-02-04 00:31:43,867 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 00:32:20,005 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 00:35:31,862 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 00:36:01,029 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 00:36:28,527 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 00:38:00,144 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 00:38:22,402 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 00:39:06,623 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 00:39:23,958 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 00:39:36,219 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 00:39:37,806 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'genie_Dq_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/majid/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/majid/devnet/pyhton_nornir/2023/9.genie_parser/9.3.genie_Dq_example.py", line 14, in genie_Dq_example
+    rprint(Dq(interfaces).notcontains("0"))
+AttributeError: 'Dq' object has no attribute 'notcontains'
+
+2023-02-04 00:40:30,192 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 00:40:47,725 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 00:41:05,369 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 00:41:06,646 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'genie_Dq_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/majid/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/majid/devnet/pyhton_nornir/2023/9.genie_parser/9.3.genie_Dq_example.py", line 14, in genie_Dq_example
+    rprint(Dq(interfaces).not_contains(0)).reconstruct()
+AttributeError: 'NoneType' object has no attribute 'reconstruct'
+
+2023-02-04 00:41:39,294 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 00:41:41,117 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'genie_Dq_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/majid/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/majid/devnet/pyhton_nornir/2023/9.genie_parser/9.3.genie_Dq_example.py", line 14, in genie_Dq_example
+    rprint(Dq(interfaces).contains(0)).reconstruct()
+AttributeError: 'NoneType' object has no attribute 'reconstruct'
+
+2023-02-04 00:42:13,816 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 00:42:15,004 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'genie_Dq_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/majid/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/majid/devnet/pyhton_nornir/2023/9.genie_parser/9.3.genie_Dq_example.py", line 14, in genie_Dq_example
+    rprint(Dq(interfaces).contains("error")).reconstruct()
+AttributeError: 'NoneType' object has no attribute 'reconstruct'
+
+2023-02-04 00:43:39,542 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 00:43:41,381 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'genie_Dq_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/majid/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/majid/devnet/pyhton_nornir/2023/9.genie_parser/9.3.genie_Dq_example.py", line 14, in genie_Dq_example
+    rprint(Dq(interfaces).not_contains(0)).reconstruct()
+AttributeError: 'NoneType' object has no attribute 'reconstruct'
+
+2023-02-04 00:46:26,524 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 00:46:40,600 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 00:46:41,823 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'genie_Dq_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/majid/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/majid/devnet/pyhton_nornir/2023/9.genie_parser/9.3.genie_Dq_example.py", line 14, in genie_Dq_example
+    rprint(Dq(interfaces).not_contains(0)).contains_key_value("out_pkts", 1700).reconstruct()
+AttributeError: 'NoneType' object has no attribute 'contains_key_value'
+
+2023-02-04 00:47:27,815 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 00:47:29,731 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'genie_Dq_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/majid/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/majid/devnet/pyhton_nornir/2023/9.genie_parser/9.3.genie_Dq_example.py", line 14, in genie_Dq_example
+    rprint(Dq(interfaces).not_contains(0)).contains_key_value("out_pkts", "1700").reconstruct()
+AttributeError: 'NoneType' object has no attribute 'contains_key_value'
+
+2023-02-04 00:48:52,445 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 00:48:54,583 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'genie_Dq_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/majid/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/majid/devnet/pyhton_nornir/2023/9.genie_parser/9.3.genie_Dq_example.py", line 14, in genie_Dq_example
+    rprint(Dq(interfaces).not_contains(0)).get_values("out_pkts")
+AttributeError: 'NoneType' object has no attribute 'get_values'
+
+2023-02-04 00:49:11,223 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 00:49:12,626 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'genie_Dq_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/majid/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/majid/devnet/pyhton_nornir/2023/9.genie_parser/9.3.genie_Dq_example.py", line 14, in genie_Dq_example
+    rprint(Dq(interfaces).not_contains(0)).get_values("out_pkts").reconstruct()
+AttributeError: 'NoneType' object has no attribute 'get_values'
+
+2023-02-04 00:49:16,399 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 00:49:17,802 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'genie_Dq_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/majid/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/majid/devnet/pyhton_nornir/2023/9.genie_parser/9.3.genie_Dq_example.py", line 14, in genie_Dq_example
+    rprint(Dq(interfaces).not_contains(0)).get_values("out_pkts").reconstruct()
+AttributeError: 'NoneType' object has no attribute 'get_values'
+
+2023-02-04 00:50:00,973 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 00:50:44,607 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 00:51:25,000 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 00:51:35,211 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 00:52:14,060 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 00:52:27,754 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 00:52:41,507 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 00:56:28,772 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 00:57:04,808 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 00:59:11,141 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 00:59:33,464 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 01:17:49,605 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 01:18:42,581 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 01:20:28,427 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 01:20:44,551 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 01:21:24,562 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 01:21:47,214 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 01:23:04,576 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 01:23:17,086 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 01:24:28,407 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 01:28:34,337 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 01:30:09,266 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 01:32:26,914 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 01:33:32,766 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 01:34:03,268 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 01:34:28,445 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 01:38:16,775 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 01:39:34,674 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 01:40:02,138 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 01:43:20,348 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 01:46:47,290 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 01:54:23,421 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 01:58:47,901 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 02:02:24,848 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 02:17:00,185 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 21:47:08,484 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-04 21:47:30,102 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-05 01:58:26,486 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-05 02:10:26,603 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-05 02:13:59,249 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-05 02:16:57,655 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-05 02:20:12,160 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-05 02:20:45,444 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-05 02:22:10,229 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-05 02:31:48,768 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-05 02:32:22,007 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-05 02:35:03,202 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-05 02:35:29,488 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-05 02:41:11,314 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-05 02:43:07,611 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-05 02:44:40,448 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-05 02:51:43,942 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-05 02:53:58,589 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-05 03:00:17,814 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-05 03:01:30,190 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-05 03:02:07,973 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-05 12:11:55,269 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-05 12:13:28,247 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-05 22:08:39,436 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-05 22:08:42,505 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/majid/.local/lib/python3.10/site-packages/netmiko/base_connection.py", line 935, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/majid/.local/lib/python3.10/site-packages/paramiko/client.py", line 368, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.2.91
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/majid/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/majid/.local/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/majid/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/majid/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/majid/.local/lib/python3.10/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/majid/.local/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 326, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/majid/.local/lib/python3.10/site-packages/netmiko/cisco/cisco_ios.py", line 17, in __init__
+    return super().__init__(*args, **kwargs)
+  File "/home/majid/.local/lib/python3.10/site-packages/netmiko/base_connection.py", line 350, in __init__
+    self._open()
+  File "/home/majid/.local/lib/python3.10/site-packages/netmiko/base_connection.py", line 355, in _open
+    self.establish_connection()
+  File "/home/majid/.local/lib/python3.10/site-packages/netmiko/base_connection.py", line 957, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.ssh_exception.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.2.91:22
+
+
+
+2023-02-05 22:08:42,505 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'genie_Dq_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/majid/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/majid/devnet/pyhton_nornir/2023/9.genie_parser/9.3.genie_Dq_example.py", line 9, in genie_Dq_example
+    result=task.run(task=netmiko_send_command, command_string="show interfaces", use_genie=True)
+  File "/home/majid/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2023-02-05 22:10:05,856 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-05 22:11:33,719 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-05 22:12:26,215 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-05 22:13:45,915 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-05 22:15:09,949 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-05 22:16:09,692 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-05 22:17:02,689 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-05 22:18:20,232 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
+2023-02-05 22:19:45,775 -  nornir.core -     INFO -        run() - Running task 'genie_Dq_example' with args {} on 1 hosts
