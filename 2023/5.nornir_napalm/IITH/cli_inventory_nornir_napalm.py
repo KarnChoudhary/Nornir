@@ -1,0 +1,52 @@
+import os, json, re
+os.system("clear")
+
+from nornir import InitNornir
+from nornir_napalm.plugins.tasks import napalm_cli
+from nornir_utils.plugins.functions import print_result
+
+nr = InitNornir(config_file="config.yaml")
+
+command = "show inventory"
+
+def nornir_napalm_cli_commands_example(task):
+    task.run(task=napalm_cli, commands=[command])
+
+results=nr.run(task=nornir_napalm_cli_commands_example)
+
+if command == "show inventory":        
+    import csv
+    filename = "abc.csv"
+
+    lines = []
+    lines.append(["Hostname", "Name", "Description", "Serial Number"])
+
+    # we got results for all the devices here. which is called as "results"
+    for a,x in results.items():
+        # now we are choosing a particular device / hostname to dive deep
+        for b in results[a]:
+            # now we are checking all the sub-tasks / results (cell unit of single host -> single device -> single tasks dictionary)
+            if b.result:               
+                for key,t in b.result.items():                
+                    if t:
+                        # now we got the result from terminal but it has a simple string like output.
+                        # hence we need to split all the names of parts of machine
+                        newstr = t.split("NAME")                    
+                        
+                        for n in newstr:
+                            text1 = "NAME" + n
+                            # going to check name and desc using regex patterns
+                            matches1 = re.search(r'NAME: "(.*?)",\sDESCR: "(.*?)"', text1)                        
+                            
+                            if matches1:
+                                name = matches1.group(1)
+                                descr = matches1.group(2)
+                                sn = text1.split("SN:")[1]    # since we know that SN is in last of text1
+
+                                lines.append([a, name,descr,sn.strip()])
+
+    with open(filename, mode='w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerows(lines)
+
+    print("Done. Check abc.csv")
