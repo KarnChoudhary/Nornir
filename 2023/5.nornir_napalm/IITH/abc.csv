@@ -344,33 +344,33 @@ BHQ-B-GF-SW,StackAdapter1/2,StackAdapter1/2,FOC2645003Q
 BHQ-B-GF-SW,Switch 1 - Power Supply B,Switch 1 - Power Supply B,DCC2650B1GE
 BHQ-B-GF-SW,Te1/1/1,SFP-10GBase-LR,ACW26140BPJ
 BHQ-B-GF-SW,Te1/1/2,SFP-10GBase-LR,ACW26140A78
-Sarabhai-Distribution SW,c95xx Stack,c95xx Stack,FOC2631YCUT
-Sarabhai-Distribution SW,Switch 1,C9500-16X,FOC2631YCUT
-Sarabhai-Distribution SW,Switch 1 - Power Supply A,Switch 1 - Power Supply A,DCI2603M4BM
-Sarabhai-Distribution SW,Switch 1 - Power Supply B,Switch 1 - Power Supply B,DCI2603M4C1
-Sarabhai-Distribution SW,Te1/0/1,SFP-10GBase-LR,OPM26160L07
-Sarabhai-Distribution SW,Te1/0/2,SFP-10GBase-LR,OPM26160L2B
-Sarabhai-Distribution SW,Te1/0/11,SFP-10GBase-LR,ACW26140BR9
-Sarabhai-Distribution SW,Te1/0/12,SFP-10GBase-LR,ACW26140A6F
-Sarabhai-Distribution SW,Te1/0/13,SFP-10GBase-LR,OPM26021UFR
-Sarabhai-Distribution SW,Te1/0/14,SFP-10GBase-LR,OPM26021UA8
-Sarabhai-Distribution SW,Te1/0/15,SFP-10GBase-LR,OPM26021T9Q
-Sarabhai-Distribution SW,Switch 2,C9500-16X,FOC2631YD89
-Sarabhai-Distribution SW,Switch 2 - Power Supply A,Switch 2 - Power Supply A,DCI2603M4CF
-Sarabhai-Distribution SW,Switch 2 - Power Supply B,Switch 2 - Power Supply B,DCI2603M4C5
-Sarabhai-Distribution SW,Te2/0/1,SFP-10GBase-LR,OPM26021UGR
-Sarabhai-Distribution SW,Te2/0/2,SFP-10GBase-LR,OPM26021UBF
-Sarabhai-Distribution SW,Te2/0/3,SFP-10GBase-LR,OPM26021T9L
-Sarabhai-Distribution SW,Te2/0/4,SFP-10GBase-LR,FNS26030EMZ
-Sarabhai-Distribution SW,Te2/0/5,SFP-10GBase-LR,OPM26021T9K
-Sarabhai-Distribution SW,Te2/0/6,SFP-10GBase-LR,OPM26021UE0
-Sarabhai-Distribution SW,Te2/0/7,SFP-10GBase-LR,OPM26021UA5
-Sarabhai-Distribution SW,Te2/0/8,SFP-10GBase-LR,OPM26021UF5
-Sarabhai-Distribution SW,Te2/0/9,SFP-10GBase-LR,ACW26140BS3
-Sarabhai-Distribution SW,Te2/0/10,SFP-10GBase-LR,ACW26140BS4
-Sarabhai-Distribution SW,Te2/0/11,SFP-10GBase-LR,ACW26140BRN
-Sarabhai-Distribution SW,Te2/0/12,SFP-10GBase-LR,ACW26140BQ0
-Sarabhai-Distribution SW,Te2/0/13,SFP-10GBase-LR,OPM26021UF8
-Sarabhai-Distribution SW,Te2/0/14,SFP-10GBase-LR,FNS26030CET
-Sarabhai-Distribution SW,Te2/0/15,SFP-10GBase-LR,OPM26021TAS
-Sarabhai-Distribution SW,Te2/0/16,SFP-10GBase-LR,FNS26030ENS
+Sarabhai-Distribution-SW,c95xx Stack,c95xx Stack,FOC2631YCUT
+Sarabhai-Distribution-SW,Switch 1,C9500-16X,FOC2631YCUT
+Sarabhai-Distribution-SW,Switch 1 - Power Supply A,Switch 1 - Power Supply A,DCI2603M4BM
+Sarabhai-Distribution-SW,Switch 1 - Power Supply B,Switch 1 - Power Supply B,DCI2603M4C1
+Sarabhai-Distribution-SW,Te1/0/1,SFP-10GBase-LR,OPM26160L07
+Sarabhai-Distribution-SW,Te1/0/2,SFP-10GBase-LR,OPM26160L2B
+Sarabhai-Distribution-SW,Te1/0/11,SFP-10GBase-LR,ACW26140BR9
+Sarabhai-Distribution-SW,Te1/0/12,SFP-10GBase-LR,ACW26140A6F
+Sarabhai-Distribution-SW,Te1/0/13,SFP-10GBase-LR,OPM26021UFR
+Sarabhai-Distribution-SW,Te1/0/14,SFP-10GBase-LR,OPM26021UA8
+Sarabhai-Distribution-SW,Te1/0/15,SFP-10GBase-LR,OPM26021T9Q
+Sarabhai-Distribution-SW,Switch 2,C9500-16X,FOC2631YD89
+Sarabhai-Distribution-SW,Switch 2 - Power Supply A,Switch 2 - Power Supply A,DCI2603M4CF
+Sarabhai-Distribution-SW,Switch 2 - Power Supply B,Switch 2 - Power Supply B,DCI2603M4C5
+Sarabhai-Distribution-SW,Te2/0/1,SFP-10GBase-LR,OPM26021UGR
+Sarabhai-Distribution-SW,Te2/0/2,SFP-10GBase-LR,OPM26021UBF
+Sarabhai-Distribution-SW,Te2/0/3,SFP-10GBase-LR,OPM26021T9L
+Sarabhai-Distribution-SW,Te2/0/4,SFP-10GBase-LR,FNS26030EMZ
+Sarabhai-Distribution-SW,Te2/0/5,SFP-10GBase-LR,OPM26021T9K
+Sarabhai-Distribution-SW,Te2/0/6,SFP-10GBase-LR,OPM26021UE0
+Sarabhai-Distribution-SW,Te2/0/7,SFP-10GBase-LR,OPM26021UA5
+Sarabhai-Distribution-SW,Te2/0/8,SFP-10GBase-LR,OPM26021UF5
+Sarabhai-Distribution-SW,Te2/0/9,SFP-10GBase-LR,ACW26140BS3
+Sarabhai-Distribution-SW,Te2/0/10,SFP-10GBase-LR,ACW26140BS4
+Sarabhai-Distribution-SW,Te2/0/11,SFP-10GBase-LR,ACW26140BRN
+Sarabhai-Distribution-SW,Te2/0/12,SFP-10GBase-LR,ACW26140BQ0
+Sarabhai-Distribution-SW,Te2/0/13,SFP-10GBase-LR,OPM26021UF8
+Sarabhai-Distribution-SW,Te2/0/14,SFP-10GBase-LR,FNS26030CET
+Sarabhai-Distribution-SW,Te2/0/15,SFP-10GBase-LR,OPM26021TAS
+Sarabhai-Distribution-SW,Te2/0/16,SFP-10GBase-LR,FNS26030ENS
