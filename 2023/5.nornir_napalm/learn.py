@@ -14,7 +14,7 @@ def nornir_napalm_cli_commands_example(task):
 
 results=nr.run(task=nornir_napalm_cli_commands_example)
 print_result(results)
-                      
+# we got results for all the devices here. which is called as "results"                     
 if command == "show inventory":        
     import csv
     filename = "abc.csv"
@@ -22,18 +22,29 @@ if command == "show inventory":
     lines = []
     lines.append(["Hostname", "Name", "Description", "Serial Number", "Start Date", "End Date"])
 
-    # we got results for all the devices here. which is called as "results"
-    for a,x in results.items():
+    
+    for node,multiresult in results.items():
         # now we are choosing a particular device / hostname to dive deep
-        for b in results[a]:
+        print(node)
+        print(results.items())
+        
+        for b in results[node]:
             # now we are checking all the sub-tasks / results (cell unit of single host -> single device -> single tasks dictionary)
+            print(b)
+            print("---b--" *20)
+            print(results[node])
+            print("---RN--" *20)
+            
             if b.result:               
-                for key,t in b.result.items():                
-                    if t:                        
+                for key,t in b.result.items():   
+                    print(t)
+                    print("---t--" *20)             
+                    if t:
                         # now we got the result from terminal but it has a simple string like output.
                         # hence we need to split all the names of parts of machine
                         newstr = t.split("NAME")                    
-                        
+                        print(newstr)
+                        print("----new str-----")
                         for n in newstr:
                             text1 = "NAME" + n
                             # going to check name and desc using regex patterns
@@ -45,22 +56,14 @@ if command == "show inventory":
                                 sn = text1.split("SN:")[1]    # since we know that SN is in last of text1
 
                                 if descr.startswith("C93") or descr.startswith("C95"):
-                                    lines.append([a, name,descr,sn.strip(), "-", "-"])
+                                    lines.append([node, name,descr,sn.strip()])
 
-                        print("t ---------->", key, t)
-                        # if "Start Date" in str(t).strip():
-                        #     for l in lines[1:]:
-                        #         bbb = t.strip().split(":")[1].split("UTC")[0]
-                        #         # print(l, bbb.strip())
-                        #         l[4] = bbb.strip()
-                        #         print("----", l)
-                        
-                        # if "End Date" in str(t).strip():
-                        #     for l in lines[1:]:
-                        #         bbb = t.strip().split(":")[1].split("UTC")[0]
-                        #         # print(l, bbb.strip())
-                        #         l[5] = bbb.strip()
-                        #         print("----", l)
+
+                    if "Date" in str(t).strip():
+                        for l in lines[1:]:
+                            bbb = t.strip().split(":")[1]
+                            print(l, bbb)
+                            l.append(bbb)
 
     with open(filename, mode='w', newline='') as file:
         writer = csv.writer(file)

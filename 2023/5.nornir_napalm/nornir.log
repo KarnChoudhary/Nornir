@@ -2244,3 +2244,115 @@ nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_cli (failed)
 2024-04-22 02:43:06,054 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 1 hosts
 2024-04-22 02:43:54,737 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 1 hosts
 2024-04-22 02:50:52,053 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 1 hosts
+2024-04-22 03:34:28,177 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 1 hosts
+2024-04-22 03:35:43,144 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 1 hosts
+2024-04-22 03:35:53,384 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 1 hosts
+2024-04-22 03:36:53,926 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 1 hosts
+2024-04-22 03:40:34,796 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 1 hosts
+2024-04-22 03:42:07,404 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 1 hosts
+2024-04-22 03:43:57,184 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 1 hosts
+2024-04-22 03:48:37,918 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 1 hosts
+2024-04-22 03:53:11,473 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 1 hosts
+2024-04-22 03:53:55,473 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 2 hosts
+2024-04-22 03:54:16,659 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 2 hosts
+2024-04-22 03:55:45,717 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 3 hosts
+2024-04-22 03:55:47,991 - nornir.core.task -    ERROR -      start() - Host 'R3': task 'napalm_cli' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 450, in connect
+    self._auth(
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 781, in _auth
+    raise saved_exception
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 768, in _auth
+    self._transport.auth_password(username, password)
+  File "/usr/lib/python3/dist-packages/paramiko/transport.py", line 1564, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/auth_handler.py", line 259, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_cli.py", line 19, in napalm_cli
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1174, in establish_connection
+    raise NetmikoAuthenticationException(msg)
+netmiko.exceptions.NetmikoAuthenticationException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_ios 10.5.48.1:22
+
+
+Authentication failed.
+
+2024-04-22 03:55:47,994 - nornir.core.task -    ERROR -      start() - Host 'R3': task 'nornir_napalm_cli_commands_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/5.2.nornir_napalm_cli_commands.py", line 13, in nornir_napalm_cli_commands_example
+    task.run(task=napalm_cli, commands=[command,command1,command2])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_cli (failed)
+
+
+2024-04-22 03:56:16,806 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 3 hosts
+2024-04-22 03:57:45,646 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 3 hosts
+2024-04-22 04:34:57,613 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 3 hosts
+2024-04-22 04:35:29,182 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 1 hosts
+2024-04-22 04:38:09,776 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 1 hosts
+2024-04-22 04:38:24,104 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 1 hosts
+2024-04-22 04:40:23,142 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 1 hosts
+2024-04-22 04:46:23,730 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 1 hosts
+2024-04-22 04:49:29,633 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 1 hosts
+2024-04-22 04:49:55,615 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 1 hosts
+2024-04-22 04:51:11,012 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 1 hosts
+2024-04-22 04:51:38,844 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 3 hosts
+2024-04-22 04:52:33,991 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 3 hosts
+2024-04-22 04:53:15,267 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 3 hosts
+2024-04-22 04:53:42,575 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 3 hosts
+2024-04-22 04:54:14,821 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 3 hosts
+2024-04-22 04:56:21,854 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 3 hosts
+2024-04-22 04:56:42,528 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 3 hosts
+2024-04-22 04:57:42,552 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 3 hosts
+2024-04-22 04:59:17,769 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 3 hosts
+2024-04-22 04:59:58,775 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 3 hosts
+2024-04-22 05:01:59,253 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 3 hosts
+2024-04-22 05:03:26,331 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 3 hosts
+2024-04-22 05:03:43,295 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 3 hosts
+2024-04-22 05:06:07,798 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 3 hosts
+2024-04-22 05:07:35,265 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 3 hosts
+2024-04-22 05:07:50,943 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 3 hosts
+2024-04-22 05:08:10,686 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 3 hosts
+2024-04-22 05:48:00,364 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 3 hosts
