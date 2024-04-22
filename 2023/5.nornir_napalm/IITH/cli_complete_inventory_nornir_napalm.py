@@ -16,7 +16,7 @@ results=nr.run(task=nornir_napalm_cli_commands_example)
 
 if command == "show inventory":        
     import csv
-    filename = "abc.csv"
+    filename = "CompleteInventory.csv"
 
     lines = []
     lines.append(["Hostname", "Name", "Description", "Serial Number"])
@@ -49,4 +49,4 @@ if command == "show inventory":
         writer = csv.writer(file)
         writer.writerows(lines)
 
-    print("Done. Check abc.csv")
+    print("Done. Check CompleteInventory.csv")

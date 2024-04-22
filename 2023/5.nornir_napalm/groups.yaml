@@ -3,7 +3,5 @@
 cisco:
   platform: ios
 
-'''HPE:
-  platform: HPE Comware  '''
 
 # testing git push changes/commit for vs code

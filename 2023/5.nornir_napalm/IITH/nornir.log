@@ -3280,3 +3280,7 @@ Traceback (most recent call last):
 nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
 
 
+2024-04-22 02:47:37,368 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 1 hosts
+2024-04-22 02:48:11,578 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 1 hosts
+2024-04-22 02:49:30,787 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 2 hosts
+2024-04-22 02:49:57,741 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 2 hosts

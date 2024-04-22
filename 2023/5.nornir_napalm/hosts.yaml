@@ -1,15 +1,9 @@
 ---
-'''
-BHA-02-R2-Sw1:
-  groups:
-    - HPE
-  hostname: "192.168.100.15"
-  password: NwTest@2023
-  username: karn
-'''
+
 R1:
-  hostname: "10.5.48.38"
+  hostname: "10.5.48.89"
 #  username: "rayka"
 #  password: "rayka-co.com"
   groups:
     - cisco
+

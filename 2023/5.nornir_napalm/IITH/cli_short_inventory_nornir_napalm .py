@@ -6,45 +6,20 @@ from nornir_napalm.plugins.tasks import napalm_cli
 from nornir_utils.plugins.functions import print_result
 
 nr = InitNornir(config_file="config.yaml")
-#command = "show inventory"
-command1 = "show license all | include Start Date"
-command2 = "show license all | include End Date"
+
+command = "show inventory"
+
 def nornir_napalm_cli_commands_example(task):
-    task.run(task=napalm_cli, commands=[command1,command2])
+    task.run(task=napalm_cli, commands=[command])
 
-results1=nr.run(task=nornir_napalm_cli_commands_example)
-print_result(results1)
+results=nr.run(task=nornir_napalm_cli_commands_example)
 
-       
-import csv
-filename = "licensedetails.csv"
-
-lines = []
-lines.append(["Hostname", "Name", "Description", "Serial Number", "Start Date", "End Date"])
-
-for a,x in results1.items():
-        # now we are choosing a particular device / hostname to dive deep
-        for b in results1[a]:
-            # now we are checking all the sub-tasks / results (cell unit of single host -> single device -> single tasks dictionary)
-            if b.result:               
-                for key,t in b.result.items():                
-                    if t:
-                        # now we got the result from terminal but it has a simple string like output.
-                        # hence we need to split all the names of parts of machine
-
-                        newstr1 = t.split("Date: ") 
-                        print(newstr1[1])
-                        print(type(newstr1[1]))
-                        
-
-
-'''
 if command == "show inventory":        
     import csv
-    filename = "abc.csv"
+    filename = "ShortInventory.csv"
 
     lines = []
-    lines.append(["Hostname", "Name", "Description", "Serial Number", "Start Date", "End Date"])
+    lines.append(["Hostname", "Name", "Description", "Serial Number"])
 
     # we got results for all the devices here. which is called as "results"
     for a,x in results.items():
@@ -71,10 +46,9 @@ if command == "show inventory":
                                 if descr.startswith("C93") or descr.startswith("C95"):
                                     lines.append([a, name,descr,sn.strip()])
                                 
+
     with open(filename, mode='w', newline='') as file:
         writer = csv.writer(file)
         writer.writerows(lines)
 
-    print("Done. Check abc.csv")
-
-'''
+    print("Done. Check ShortInventory.csv")
