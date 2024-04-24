@@ -1,21 +1,23 @@
-import os, json
+import os, json, re
 os.system("clear")
+
 from nornir import InitNornir
-from nornir_napalm.plugins.tasks import napalm_get
+from nornir_napalm.plugins.tasks import napalm_cli
 from nornir_utils.plugins.functions import print_result
 
 nr = InitNornir(config_file="config.yaml")
 
-g = "get_optics"
-def nornir_napalm_get_example(task):
-    #task.run(task=napalm_get, getters=["get_facts", "get_interfaces", "get_interfaces_ip", "get_config"])
-    task.run(task=napalm_get, getters=[g])
-    #task.run(task=napalm_get, getters=["get_snmp_information"])
-    #task.run(task=napalm_get, getters=["get_ntp_servers"])
+command = "display lldp neighbor-info list"
 
-results=nr.run(task=nornir_napalm_get_example)
+def nornir_napalm_cli_commands_example(task):
+    task.run(task=napalm_cli, commands=[command])
+
+results=nr.run(task=nornir_napalm_cli_commands_example)
+
+#results=nr.run(task=nornir_napalm_get_example)
+print_result(results)
 # a = (str(print_result(results)))
-for a in results.keys():
+'''for a in results.keys():
     for b in results[a]:
         if b.result:               
             for key,value in b.result.items():                
@@ -37,7 +39,7 @@ for a in results.keys():
                     
 
                 print("---"*12)
-
+'''
 # for a in results['R1']:
 #     print(a)
 

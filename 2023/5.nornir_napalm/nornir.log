@@ -2356,3 +2356,4 @@ nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_cli (failed)
 2024-04-22 05:07:50,943 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 3 hosts
 2024-04-22 05:08:10,686 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 3 hosts
 2024-04-22 05:48:00,364 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 3 hosts
+2024-04-23 07:02:42,475 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 3 hosts

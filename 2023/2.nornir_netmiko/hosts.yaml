@@ -1,15 +1,7 @@
 ---
 
 R1:
-  hostname: "10.5.48.89"
-#  username: "rayka"
-#  password: "rayka-co.com"
-  groups:
-    - cisco
-
-R2:
-  hostname: "10.5.48.88"
-#  username: "rayka"
-#  password: "rayka-co.com"
-  groups:
-    - cisco
+  hostname: "192.168.100.11"
+  username: "karn"
+  password: "NwTest@2023"
+  

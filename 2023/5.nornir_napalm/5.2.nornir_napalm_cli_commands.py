@@ -17,7 +17,7 @@ print_result(results)
                       
 if command == "show inventory":        
     import csv
-    filename = "abc.csv"
+    filename = "abc1.csv"
 
     lines = []
     lines.append(["Hostname", "Name", "Description", "Serial Number", "Start Date", "End Date"])
@@ -66,6 +66,6 @@ if command == "show inventory":
         writer = csv.writer(file)
         writer.writerows(lines)
 
-    print("Done. Check abc.csv")
+    print("Done. Check abc1.csv")
 
                         
