@@ -27,7 +27,8 @@ if command == "show inventory":
         # now we are choosing a particular device / hostname to dive deep
         for b in results[a]:
             # now we are checking all the sub-tasks / results (cell unit of single host -> single device -> single tasks dictionary)
-            if b.result:               
+            if b.result:
+                print(b.result)        
                 for key,t in b.result.items():                
                     if t:                        
                         # now we got the result from terminal but it has a simple string like output.
@@ -47,25 +48,21 @@ if command == "show inventory":
                                 if descr.startswith("C93") or descr.startswith("C95"):
                                     lines.append([a, name,descr,sn.strip(), "-", "-"])
 
-                        print("t ---------->", key, t)
-                        # if "Start Date" in str(t).strip():
-                        #     for l in lines[1:]:
-                        #         bbb = t.strip().split(":")[1].split("UTC")[0]
-                        #         # print(l, bbb.strip())
-                        #         l[4] = bbb.strip()
-                        #         print("----", l)
+                        #print("t ---------->", key, "---a-", a,"---", t)
+                        if "Start Date" in str(t).strip():
+                            for l in lines[1:]:
+                                bbb = t.strip().split(":")[1].split("UTC")[0].strip()
+                                if a.strip() in l:
+                                    l[4] = bbb.strip()
                         
-                        # if "End Date" in str(t).strip():
-                        #     for l in lines[1:]:
-                        #         bbb = t.strip().split(":")[1].split("UTC")[0]
-                        #         # print(l, bbb.strip())
-                        #         l[5] = bbb.strip()
-                        #         print("----", l)
+                        if "End Date" in str(t).strip():
+                            for l in lines[1:]:
+                                bbb = t.strip().split(":")[1].split("UTC")[0].strip()
+                                if a.strip() in l:
+                                    l[5] = bbb.strip()
 
     with open(filename, mode='w', newline='') as file:
         writer = csv.writer(file)
         writer.writerows(lines)
 
     print("Done. Check abc1.csv")
-
-                        

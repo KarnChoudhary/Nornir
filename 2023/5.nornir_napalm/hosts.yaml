@@ -6,17 +6,3 @@ R1:
 #  password: "rayka-co.com"
   groups:
     - cisco
-
-R2:
-  hostname: "10.5.48.88"
-#  username: "rayka"
-#  password: "rayka-co.com"
-  groups:
-    - cisco
-
-R3:
-  hostname: "10.5.48.1"
-  username: "iith"
-  password: "HSTLM@IITH2022"
-  groups:
-    - cisco
