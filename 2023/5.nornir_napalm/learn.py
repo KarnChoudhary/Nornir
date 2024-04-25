@@ -29,6 +29,9 @@ if command == "show inventory":
         for result in multiresult:
             print("result", type(result))
             print(result)
+
+            # https://nornir.readthedocs.io/en/latest/api/nornir/core/task.html
+            
         
     #     for b in results[node]:
     #         # now we are checking all the sub-tasks / results (cell unit of single host -> single device -> single tasks dictionary)
