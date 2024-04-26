@@ -25,7 +25,7 @@ import json
 
 nr = InitNornir(config_file="config.yaml")
 #command = "display lldp neighbor-info list"
-command = "display transceiver diagnos interface  Ten-GigabitEthernet 1/0/28"
+command = "display lldp neighbor-info list"
 
 def netmiko_send_commands_example(task):
     result = task.run(task=netmiko_send_command, command_string=command)
