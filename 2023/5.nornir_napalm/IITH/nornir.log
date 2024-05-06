@@ -3332,3 +3332,2586 @@ Traceback (most recent call last):
 nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
 
 
+2024-05-01 05:10:10,182 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_get_example' with args {} on 9 hosts
+2024-05-01 05:10:20,215 - nornir.core.task -    ERROR -      start() - Host 'Zone 5-1F': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/lib/python3/dist-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+                            ^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.5.124.104:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.5.124.104
+
+2024-05-01 05:10:20,216 - nornir.core.task -    ERROR -      start() - Host 'Zone 8-2F': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/lib/python3/dist-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+                            ^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.5.124.107:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.5.124.107
+
+2024-05-01 05:10:20,219 - nornir.core.task -    ERROR -      start() - Host 'Zone 9-3F': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/lib/python3/dist-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+                            ^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.5.124.108:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.5.124.108
+
+2024-05-01 05:10:20,219 - nornir.core.task -    ERROR -      start() - Host 'Zone 7-1F': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/lib/python3/dist-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+                            ^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.5.124.106:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.5.124.106
+
+2024-05-01 05:10:20,221 - nornir.core.task -    ERROR -      start() - Host 'Zone 7-1F': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/get_optics_nornir_napalm.py", line 12, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-05-01 05:10:20,220 - nornir.core.task -    ERROR -      start() - Host 'Zone 2-GF': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/lib/python3/dist-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+                            ^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.5.124.102:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.5.124.102
+
+2024-05-01 05:10:20,221 - nornir.core.task -    ERROR -      start() - Host 'Zone 2-GF': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/get_optics_nornir_napalm.py", line 12, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-05-01 05:10:20,220 - nornir.core.task -    ERROR -      start() - Host 'Zone 6-2F': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/lib/python3/dist-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+                            ^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.5.124.105:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.5.124.105
+
+2024-05-01 05:10:20,220 - nornir.core.task -    ERROR -      start() - Host 'Zone 5-1F': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/get_optics_nornir_napalm.py", line 12, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-05-01 05:10:20,221 - nornir.core.task -    ERROR -      start() - Host 'Zone 8-2F': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/get_optics_nornir_napalm.py", line 12, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-05-01 05:10:20,221 - nornir.core.task -    ERROR -      start() - Host 'Zone 9-3F': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/get_optics_nornir_napalm.py", line 12, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-05-01 05:10:20,219 - nornir.core.task -    ERROR -      start() - Host 'Zone 1-GF': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/lib/python3/dist-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+                            ^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.5.124.101:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.5.124.101
+
+2024-05-01 05:10:20,220 - nornir.core.task -    ERROR -      start() - Host 'Zone 3-GF': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/lib/python3/dist-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+                            ^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.5.124.103:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.5.124.103
+
+2024-05-01 05:10:20,222 - nornir.core.task -    ERROR -      start() - Host 'Zone 6-2F': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/get_optics_nornir_napalm.py", line 12, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-05-01 05:10:20,222 - nornir.core.task -    ERROR -      start() - Host 'Zone 1-GF': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/get_optics_nornir_napalm.py", line 12, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-05-01 05:10:20,222 - nornir.core.task -    ERROR -      start() - Host 'Zone 3-GF': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/get_optics_nornir_napalm.py", line 12, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-05-01 05:10:20,685 - nornir.core.task -    ERROR -      start() - Host 'DoDDist': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 44, in napalm_get
+    result[g] = method(**options)
+                ^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 883, in get_optics
+    output = self._send_command(command)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 209, in _send_command
+    output = self.device.send_command(command)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 110, in wrapper_decorator
+    return_val = func(self, *args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/utilities.py", line 595, in wrapper_decorator
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1824, in send_command
+    raise ReadTimeout(msg)
+netmiko.exceptions.ReadTimeout: 
+Pattern not detected: 'DOD\\-00\\-DIS\\#' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+
+2024-05-01 05:10:20,685 - nornir.core.task -    ERROR -      start() - Host 'DoDDist': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/get_optics_nornir_napalm.py", line 12, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-05-01 05:11:08,474 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_get_example' with args {} on 9 hosts
+2024-05-01 05:11:18,499 - nornir.core.task -    ERROR -      start() - Host 'Zone 6-2F': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/lib/python3/dist-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+                            ^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.5.124.105:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.5.124.105
+
+2024-05-01 05:11:18,501 - nornir.core.task -    ERROR -      start() - Host 'Zone 9-3F': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/lib/python3/dist-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+                            ^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.5.124.108:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.5.124.108
+
+2024-05-01 05:11:18,504 - nornir.core.task -    ERROR -      start() - Host 'Zone 3-GF': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/lib/python3/dist-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+                            ^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.5.124.103:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.5.124.103
+
+2024-05-01 05:11:18,504 - nornir.core.task -    ERROR -      start() - Host 'Zone 8-2F': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/lib/python3/dist-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+                            ^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.5.124.107:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.5.124.107
+
+2024-05-01 05:11:18,505 - nornir.core.task -    ERROR -      start() - Host 'Zone 2-GF': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/lib/python3/dist-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+                            ^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.5.124.102:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.5.124.102
+
+2024-05-01 05:11:18,505 - nornir.core.task -    ERROR -      start() - Host 'Zone 5-1F': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/lib/python3/dist-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+                            ^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.5.124.104:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.5.124.104
+
+2024-05-01 05:11:18,507 - nornir.core.task -    ERROR -      start() - Host 'Zone 5-1F': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/get_optics_nornir_napalm.py", line 12, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-05-01 05:11:18,506 - nornir.core.task -    ERROR -      start() - Host 'Zone 1-GF': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/lib/python3/dist-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+                            ^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.5.124.101:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.5.124.101
+
+2024-05-01 05:11:18,506 - nornir.core.task -    ERROR -      start() - Host 'Zone 3-GF': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/get_optics_nornir_napalm.py", line 12, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-05-01 05:11:18,506 - nornir.core.task -    ERROR -      start() - Host 'Zone 7-1F': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/lib/python3/dist-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+                            ^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.5.124.106:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.5.124.106
+
+2024-05-01 05:11:18,506 - nornir.core.task -    ERROR -      start() - Host 'Zone 8-2F': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/get_optics_nornir_napalm.py", line 12, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-05-01 05:11:18,507 - nornir.core.task -    ERROR -      start() - Host 'Zone 6-2F': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/get_optics_nornir_napalm.py", line 12, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-05-01 05:11:18,507 - nornir.core.task -    ERROR -      start() - Host 'Zone 2-GF': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/get_optics_nornir_napalm.py", line 12, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-05-01 05:11:18,505 - nornir.core.task -    ERROR -      start() - Host 'Zone 9-3F': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/get_optics_nornir_napalm.py", line 12, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-05-01 05:11:18,507 - nornir.core.task -    ERROR -      start() - Host 'Zone 1-GF': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/get_optics_nornir_napalm.py", line 12, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-05-01 05:11:18,508 - nornir.core.task -    ERROR -      start() - Host 'Zone 7-1F': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/get_optics_nornir_napalm.py", line 12, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-05-01 05:11:18,992 - nornir.core.task -    ERROR -      start() - Host 'DoDDist': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 44, in napalm_get
+    result[g] = method(**options)
+                ^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 883, in get_optics
+    output = self._send_command(command)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 209, in _send_command
+    output = self.device.send_command(command)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 110, in wrapper_decorator
+    return_val = func(self, *args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/utilities.py", line 595, in wrapper_decorator
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1824, in send_command
+    raise ReadTimeout(msg)
+netmiko.exceptions.ReadTimeout: 
+Pattern not detected: 'DOD\\-00\\-DIS\\#' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+
+2024-05-01 05:11:18,992 - nornir.core.task -    ERROR -      start() - Host 'DoDDist': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/get_optics_nornir_napalm.py", line 12, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-05-01 05:12:22,992 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_get_example' with args {} on 9 hosts
+2024-05-01 05:12:33,008 - nornir.core.task -    ERROR -      start() - Host 'Zone-1-GF': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/lib/python3/dist-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+                            ^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.5.124.101:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.5.124.101
+
+2024-05-01 05:12:33,009 - nornir.core.task -    ERROR -      start() - Host 'Zone-1-GF': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/get_optics_nornir_napalm.py", line 12, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-05-01 05:12:33,010 - nornir.core.task -    ERROR -      start() - Host 'Zone-8-2F': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/lib/python3/dist-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+                            ^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.5.124.107:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.5.124.107
+
+2024-05-01 05:12:33,015 - nornir.core.task -    ERROR -      start() - Host 'Zone-8-2F': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/get_optics_nornir_napalm.py", line 12, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-05-01 05:12:33,011 - nornir.core.task -    ERROR -      start() - Host 'Zone-6-2F': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/lib/python3/dist-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+                            ^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.5.124.105:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.5.124.105
+
+2024-05-01 05:12:33,016 - nornir.core.task -    ERROR -      start() - Host 'Zone-6-2F': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/get_optics_nornir_napalm.py", line 12, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-05-01 05:12:33,012 - nornir.core.task -    ERROR -      start() - Host 'Zone-3-GF': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/lib/python3/dist-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+                            ^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.5.124.103:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.5.124.103
+
+2024-05-01 05:12:33,016 - nornir.core.task -    ERROR -      start() - Host 'Zone-3-GF': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/get_optics_nornir_napalm.py", line 12, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-05-01 05:12:33,014 - nornir.core.task -    ERROR -      start() - Host 'Zone-5-1F': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/lib/python3/dist-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+                            ^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.5.124.104:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.5.124.104
+
+2024-05-01 05:12:33,011 - nornir.core.task -    ERROR -      start() - Host 'Zone-2-GF': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/lib/python3/dist-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+                            ^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.5.124.102:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.5.124.102
+
+2024-05-01 05:12:33,013 - nornir.core.task -    ERROR -      start() - Host 'Zone-9-3F': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/lib/python3/dist-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+                            ^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.5.124.108:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.5.124.108
+
+2024-05-01 05:12:33,017 - nornir.core.task -    ERROR -      start() - Host 'Zone-9-3F': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/get_optics_nornir_napalm.py", line 12, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-05-01 05:12:33,012 - nornir.core.task -    ERROR -      start() - Host 'Zone-7-1F': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/lib/python3/dist-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+                            ^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.5.124.106:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.5.124.106
+
+2024-05-01 05:12:33,017 - nornir.core.task -    ERROR -      start() - Host 'Zone-5-1F': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/get_optics_nornir_napalm.py", line 12, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-05-01 05:12:33,017 - nornir.core.task -    ERROR -      start() - Host 'Zone-7-1F': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/get_optics_nornir_napalm.py", line 12, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-05-01 05:12:33,017 - nornir.core.task -    ERROR -      start() - Host 'Zone-2-GF': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/get_optics_nornir_napalm.py", line 12, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-05-01 05:12:33,533 - nornir.core.task -    ERROR -      start() - Host 'DoDDist': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 44, in napalm_get
+    result[g] = method(**options)
+                ^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 883, in get_optics
+    output = self._send_command(command)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 209, in _send_command
+    output = self.device.send_command(command)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 110, in wrapper_decorator
+    return_val = func(self, *args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/utilities.py", line 595, in wrapper_decorator
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1824, in send_command
+    raise ReadTimeout(msg)
+netmiko.exceptions.ReadTimeout: 
+Pattern not detected: 'DOD\\-00\\-DIS\\#' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+
+2024-05-01 05:12:33,533 - nornir.core.task -    ERROR -      start() - Host 'DoDDist': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/get_optics_nornir_napalm.py", line 12, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-05-01 05:12:43,349 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_get_example' with args {} on 8 hosts
+2024-05-01 05:12:53,368 - nornir.core.task -    ERROR -      start() - Host 'Zone-8-2F': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/lib/python3/dist-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+                            ^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.5.124.107:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.5.124.107
+
+2024-05-01 05:12:53,369 - nornir.core.task -    ERROR -      start() - Host 'Zone-8-2F': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/get_optics_nornir_napalm.py", line 12, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-05-01 05:12:53,377 - nornir.core.task -    ERROR -      start() - Host 'Zone-7-1F': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/lib/python3/dist-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+                            ^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.5.124.106:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.5.124.106
+
+2024-05-01 05:12:53,381 - nornir.core.task -    ERROR -      start() - Host 'Zone-7-1F': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/get_optics_nornir_napalm.py", line 12, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-05-01 05:12:53,378 - nornir.core.task -    ERROR -      start() - Host 'Zone-1-GF': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/lib/python3/dist-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+                            ^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.5.124.101:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.5.124.101
+
+2024-05-01 05:12:53,379 - nornir.core.task -    ERROR -      start() - Host 'Zone-6-2F': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/lib/python3/dist-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+                            ^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.5.124.105:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.5.124.105
+
+2024-05-01 05:12:53,380 - nornir.core.task -    ERROR -      start() - Host 'Zone-3-GF': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/lib/python3/dist-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+                            ^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.5.124.103:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.5.124.103
+
+2024-05-01 05:12:53,382 - nornir.core.task -    ERROR -      start() - Host 'Zone-3-GF': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/get_optics_nornir_napalm.py", line 12, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-05-01 05:12:53,381 - nornir.core.task -    ERROR -      start() - Host 'Zone-9-3F': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/lib/python3/dist-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+                            ^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.5.124.108:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.5.124.108
+
+2024-05-01 05:12:53,379 - nornir.core.task -    ERROR -      start() - Host 'Zone-2-GF': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/lib/python3/dist-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+                            ^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.5.124.102:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.5.124.102
+
+2024-05-01 05:12:53,381 - nornir.core.task -    ERROR -      start() - Host 'Zone-1-GF': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/get_optics_nornir_napalm.py", line 12, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-05-01 05:12:53,382 - nornir.core.task -    ERROR -      start() - Host 'Zone-6-2F': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/get_optics_nornir_napalm.py", line 12, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-05-01 05:12:53,381 - nornir.core.task -    ERROR -      start() - Host 'Zone-5-1F': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/lib/python3/dist-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+                            ^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.5.124.104:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.5.124.104
+
+2024-05-01 05:12:53,383 - nornir.core.task -    ERROR -      start() - Host 'Zone-9-3F': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/get_optics_nornir_napalm.py", line 12, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-05-01 05:12:53,383 - nornir.core.task -    ERROR -      start() - Host 'Zone-2-GF': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/get_optics_nornir_napalm.py", line 12, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-05-01 05:12:53,384 - nornir.core.task -    ERROR -      start() - Host 'Zone-5-1F': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/get_optics_nornir_napalm.py", line 12, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-05-01 05:58:57,646 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_get_example' with args {} on 1 hosts
+2024-05-01 05:59:07,660 - nornir.core.task -    ERROR -      start() - Host 'Zone-1-GF': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/lib/python3/dist-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+                            ^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.5.124.101:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 123, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.5.124.101
+
+2024-05-01 05:59:07,661 - nornir.core.task -    ERROR -      start() - Host 'Zone-1-GF': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/get_optics_nornir_napalm.py", line 12, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-05-01 06:05:03,063 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_get_example' with args {} on 1 hosts
