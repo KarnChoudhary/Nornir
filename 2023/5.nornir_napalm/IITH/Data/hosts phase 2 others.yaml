@@ -3,7 +3,7 @@
 Admin-LGF-Dist-SW:
   groups:
   - cisco
-  hostname: 10.5.120.1
+  hostname: 192.168.41.142
   password: ADMIN@IITH2022
   username: iith
 Admin-Shaft_A-1F:
@@ -106,7 +106,7 @@ BT-1F:
   groups:
   - cisco
   hostname: 10.4.104.100
-  password: BTBM@IITH2022
+  password: MSME@IITH2022
   username: iith
 BT-2F:
   groups:
@@ -124,13 +124,13 @@ BT-GF:
   groups:
   - cisco
   hostname: 10.4.104.101
-  password: BTBM@IITH2022
+  password: MSME@IITH2022
   username: iith
 BTBM-1F-Dist-SW:
   groups:
   - cisco
   hostname: 192.168.41.86
-  password: BTBM@IITH2022
+  password: MSME@IITH2022
   username: iith
 BTBM-4F:
   groups:
@@ -288,6 +288,54 @@ DoD-Dist-SW:
   hostname: 192.168.41.146
   password: DOD@IITH2022
   username: iith
+DoD-Z1-GF:
+  groups:
+  - cisco
+  hostname: 10.5.124.101
+  password: DOD@IITH2022
+  username: iith
+DoD-Z2-GF:
+  groups:
+  - cisco
+  hostname: 10.5.124.102
+  password: DOD@IITH2022
+  username: iith
+DoD-Z3-GF:
+  groups:
+  - cisco
+  hostname: 10.5.124.103
+  password: DOD@IITH2022
+  username: iith
+DoD-Z5-1F:
+  groups:
+  - cisco
+  hostname: 10.5.124.104
+  password: DOD@IITH2022
+  username: iith
+DoD-Z6-2F:
+  groups:
+  - cisco
+  hostname: 10.5.124.105
+  password: DOD@IITH2022
+  username: iith
+DoD-Z7-1F:
+  groups:
+  - cisco
+  hostname: 10.5.124.106
+  password: DOD@IITH2022
+  username: iith
+DoD-Z8-2F:
+  groups:
+  - cisco
+  hostname: 10.5.124.107
+  password: DOD@IITH2022
+  username: iith
+DoD-Z9-3F:
+  groups:
+  - cisco
+  hostname: 10.5.124.108
+  password: DOD@IITH2022
+  username: iith
 Hospital-1F:
   groups:
   - cisco
@@ -399,7 +447,7 @@ IGH- R3-GF:
 IGH-Dist-SW:
   groups:
   - cisco
-  hostname: 10.4.128.2
+  hostname: 192.168.41.114
   password: IGH@IITH2022
   username: iith
 KNC-Dist-SW:
@@ -537,7 +585,7 @@ NewDH-SW:
 RCC-Dist-SW:
   groups:
   - cisco
-  hostname: 10.4.112.2
+  hostname: 192.168.41.93
   password: RCC@IITH2022
   username: iith
 RCC-R1-1F:
@@ -618,6 +666,18 @@ SNCC-Dist-SW:
   hostname: 192.168.41.118
   password: SNCC@IITH2022
   username: iith
+SNCC-GF-R1:
+  groups:
+  - cisco
+  hostname: 10.4.132.101
+  password: SNCC@IITH2022
+  username: iith
+SNCC-GF-R2:
+  groups:
+  - cisco
+  hostname: 10.4.132.102
+  password: SNCC@IITH2022
+  username: iith
 SNCC-GF-R3:
   groups:
   - cisco
@@ -634,6 +694,12 @@ SNCC-GF-R5:
   groups:
   - cisco
   hostname: 10.4.132.106
+  password: SNCC@IITH2022
+  username: iith
+SNCC-GF-R6:
+  groups:
+  - cisco
+  hostname: 10.4.132.103
   password: SNCC@IITH2022
   username: iith
 TIP-1F:
@@ -669,7 +735,7 @@ TIP-5F:
 TIP-Dist-SW:
   groups:
   - cisco
-  hostname: 192.168.41.98
+  hostname: 192.168.41.102
   password: TIP@IITH2022
   username: iith
 TIP-GF:

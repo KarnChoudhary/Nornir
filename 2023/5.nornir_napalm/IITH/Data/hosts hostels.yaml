@@ -1,3 +1,5 @@
+---
+
 BHJ-A-3F-SW:
   groups:
   - cisco
@@ -194,19 +196,19 @@ BHN-A-3F-SW:
   groups:
   - cisco
   hostname: 10.5.48.52
-  password: HSTLN@IITH2022
+  password: N@IITH2022
   username: iith
 BHN-A-6F-SW:
   groups:
   - cisco
   hostname: 10.5.48.53
-  password: HSTLN@IITH2022
+  password: N@IITH2022
   username: iith
 BHN-A-9F-SW:
   groups:
   - cisco
   hostname: 10.5.48.54
-  password: HSTLN@IITH2022
+  password: N@IITH2022
   username: iith
 BHN-A-GF-SW:
   groups:
@@ -218,19 +220,19 @@ BHN-B-3F-SW:
   groups:
   - cisco
   hostname: 10.5.48.57
-  password: HSTLN@IITH2022
+  password: N@IITH2022
   username: iith
 BHN-B-6F-SW:
   groups:
   - cisco
   hostname: 10.5.48.58
-  password: HSTLN@IITH2022
+  password: N@IITH2022
   username: iith
 BHN-B-9F-SW:
   groups:
   - cisco
   hostname: 10.5.48.59
-  password: HSTLN@IITH2022
+  password: N@IITH2022
   username: iith
 BHN-B-GF-SW:
   groups:
@@ -238,6 +240,7 @@ BHN-B-GF-SW:
   hostname: 10.5.48.56
   password: HSTLN@IITH2022
   username: iith
+
 BHP-A-3F-SW:
   groups:
   - cisco
@@ -334,9 +337,10 @@ BHQ-B-GF-SW:
   hostname: 10.5.48.86
   password: HSTLQ@IITH2022
   username: iith
-Sarabhai-Distribution SW:
+Sarabhai-Distribution-SW:
   groups:
   - cisco
   hostname: 10.5.48.1
   password: HSTLM@IITH2022
   username: iith
+

@@ -52,7 +52,7 @@ if command1 == "show license all | include Start Date":
 
                         if descr.startswith("C93") or descr.startswith("C95"):
                             lines.append([hostname, name,descr,sn.strip(), start_date.split("UTC")[0].strip(),end_date.split("UTC")[0].strip()])
-
+                            print("hostname ->", hostname)
         #lines.append([hostname, start_date,end_date])  # Unpack license info for CSV
 
     with open(filename, "w") as csvfile:
