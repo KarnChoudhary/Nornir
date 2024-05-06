@@ -10814,3 +10814,4 @@ napalm.base.exceptions.ConnectionException: Cannot connect to 192.168.41.102
 
 2024-05-06 05:40:35,317 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show inventory', 'show license all | include Start Date', 'show license all | include End Date']} on 8 hosts
 2024-05-06 05:47:36,294 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show inventory', 'show license all | include Start Date', 'show license all | include End Date']} on 8 hosts
+2024-05-06 06:01:56,930 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show inventory', 'show license all | include Start Date', 'show license all | include End Date']} on 13 hosts
