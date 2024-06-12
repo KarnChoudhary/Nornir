@@ -1,9 +1,0 @@
----
-
-cisco:
-  platform: ios
-
-juniper:
-  platform: junos
-
-router: {}

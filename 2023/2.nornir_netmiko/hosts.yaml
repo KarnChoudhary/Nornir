@@ -1,11 +1,11 @@
 ---
 
 R1:
-  hostname: "192.168.100.11"
-  username: "karn"
-  password: "NwTest@2023"
+  hostname: "10.5.48.88"
+  username: "iith"
+  password: "HSTLQ@IITH2022"
   
 R2:
-  hostname: "192.168.100.15"
-  username: "karn"
-  password: "NwTest@2023"  
+  hostname: "10.5.48.87"
+  username: "iith"
+  password: "HSTLQ@IITH2022"

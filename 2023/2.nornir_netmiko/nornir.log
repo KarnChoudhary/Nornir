@@ -114,3 +114,166 @@ nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed
 2024-04-26 06:11:42,790 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_commands_example' with args {} on 2 hosts
 2024-04-26 06:16:14,064 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_commands_example' with args {} on 2 hosts
 2024-04-26 06:16:46,616 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_commands_example' with args {} on 2 hosts
+2024-06-10 04:27:53,035 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_commands_example' with args {} on 2 hosts
+2024-06-10 04:28:03,592 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 110, in wrapper_decorator
+    return_val = func(self, *args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/utilities.py", line 595, in wrapper_decorator
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1824, in send_command
+    raise ReadTimeout(msg)
+netmiko.exceptions.ReadTimeout: 
+Pattern not detected: 'Q\\-H0STEL\\-6th\\-B\\-WING\\#' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+
+2024-06-10 04:28:03,593 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'netmiko_send_commands_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/2.nornir_netmiko/2.1.nornir_netmiko_send_commands.py", line 31, in netmiko_send_commands_example
+    result = task.run(task=netmiko_send_command, command_string=command)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-06-10 04:28:03,610 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 110, in wrapper_decorator
+    return_val = func(self, *args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/utilities.py", line 595, in wrapper_decorator
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1824, in send_command
+    raise ReadTimeout(msg)
+netmiko.exceptions.ReadTimeout: 
+Pattern not detected: 'Q\\-H0STEL\\-3RD\\-B\\-WING\\#' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+
+2024-06-10 04:28:03,611 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'netmiko_send_commands_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/2.nornir_netmiko/2.1.nornir_netmiko_send_commands.py", line 31, in netmiko_send_commands_example
+    result = task.run(task=netmiko_send_command, command_string=command)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-06-12 07:12:50,782 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_commands_example' with args {} on 2 hosts
+2024-06-12 07:13:01,326 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 110, in wrapper_decorator
+    return_val = func(self, *args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/utilities.py", line 595, in wrapper_decorator
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1824, in send_command
+    raise ReadTimeout(msg)
+netmiko.exceptions.ReadTimeout: 
+Pattern not detected: 'Q\\-H0STEL\\-6th\\-B\\-WING\\#' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+
+2024-06-12 07:13:01,327 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'netmiko_send_commands_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/2.nornir_netmiko/2.1.nornir_netmiko_send_commands.py", line 31, in netmiko_send_commands_example
+    result = task.run(task=netmiko_send_command, command_string=command)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-06-12 07:13:01,347 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 110, in wrapper_decorator
+    return_val = func(self, *args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/utilities.py", line 595, in wrapper_decorator
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1824, in send_command
+    raise ReadTimeout(msg)
+netmiko.exceptions.ReadTimeout: 
+Pattern not detected: 'Q\\-H0STEL\\-3RD\\-B\\-WING\\#' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+
+2024-06-12 07:13:01,348 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'netmiko_send_commands_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/2.nornir_netmiko/2.1.nornir_netmiko_send_commands.py", line 31, in netmiko_send_commands_example
+    result = task.run(task=netmiko_send_command, command_string=command)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-06-12 07:13:31,164 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_commands_example' with args {} on 2 hosts

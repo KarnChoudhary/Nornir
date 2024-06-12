@@ -24,9 +24,9 @@ import logging
 import json
 
 nr = InitNornir(config_file="config.yaml")
-#command = "display lldp neighbor-info list"
-command = "display lldp neighbor-info list"
-
+command = "show ip int br"
+#command = "copy running-config tftp://192.168.74.109/"
+print(command)
 def netmiko_send_commands_example(task):
     result = task.run(task=netmiko_send_command, command_string=command)
     # Extracting relevant information from the result
