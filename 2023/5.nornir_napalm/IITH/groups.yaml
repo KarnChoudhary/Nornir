@@ -2,5 +2,10 @@
 
 cisco:
   platform: ios
+  # connection_options:
+  #   napalm:
+  #     extras:
+  #       optional_args:
+  #         conn_timeout: 1000000
 
 # testing git push changes/commit for vs code

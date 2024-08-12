@@ -28,18 +28,6 @@ AD3-SHAFT-B-2F:
   hostname: 10.5.116.102
   password: AD3@IITH2022
   username: iith
-AD3-SHAFT-C-1F:
-  groups:
-  - cisco
-  hostname: 10.5.116.104
-  password: AD3@IITH2022
-  username: iith
-AD3-SHAFT-C-4F:
-  groups:
-  - cisco
-  hostname: 10.5.116.105
-  password: AD3@IITH2022
-  username: iith
 Admin-Shaft_A-1F:
   groups:
   - cisco
@@ -73,13 +61,19 @@ Admin-Shaft_A-5F:
 Admin-Shaft_A-GF:
   groups:
   - cisco
-  hostname: 10.5.120.108
+  hostname: 10.5.120.102
   password: ADMIN@IITH2022
   username: iith
 Admin-Shaft_A-LGF:
   groups:
   - cisco
   hostname: 10.5.120.101
+  password: ADMIN@IITH2022
+  username: iith
+Admin-Shaft_B-GF:
+  groups:
+  - cisco
+  hostname: 10.5.120.108
   password: ADMIN@IITH2022
   username: iith
 Admin-Shaft_B-1F:

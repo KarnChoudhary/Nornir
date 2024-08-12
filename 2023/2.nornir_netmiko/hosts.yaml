@@ -1,11 +1,13 @@
 ---
 
-R1:
-  hostname: "10.5.48.88"
-  username: "iith"
-  password: "HSTLQ@IITH2022"
-  
-R2:
-  hostname: "10.5.48.87"
-  username: "iith"
-  password: "HSTLQ@IITH2022"
+CC-00-DIS:
+  groups:
+  - cisco
+  hostname: 10.4.124.1
+  password: CC@IITH2022
+  username: iith
+
+  # connection_options:
+  #   netmiko:
+  #     read_timeout_override: 1000000     
+  #     #expect_string: "CC-00-DIS#"    
