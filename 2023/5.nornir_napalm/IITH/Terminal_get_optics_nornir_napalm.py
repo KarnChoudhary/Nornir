@@ -1,4 +1,5 @@
 import os, json
+import csv
 os.system("clear")
 from nornir import InitNornir
 from nornir_napalm.plugins.tasks import napalm_get
@@ -15,28 +16,30 @@ def nornir_napalm_get_example(task):
 
 results=nr.run(task=nornir_napalm_get_example)
 # a = (str(print_result(results)))
+filename = "optics.csv"
+lines = []
+lines.append(["Interface", "Switch", "Instant Input Power"])
+#print_result(results)
+print("-----"*8)
 for a in results.keys():
     for b in results[a]:
         if b.result:               
             for key,value in b.result.items():                
                 for d,e in value.items():
                     if g == "get_optics":
+
                         print({
                             "Host" : a,
                             "Interface" : d,
                             "Instant Input Power" : e['physical_channels']['channel'][0]['state']['input_power']['instant']
                         })
                     
-                    # if g == "get_interfaces":
-                    #     print({
-                    #         "Host" : a,
-                    #         "Interface" : d,
-                    #         "Instant Input Power" : e
-                    #     })
-
-                    
 
                 print("---"*12)
+
+
+
+print("Done. Check list in terminal only")           
 
 # for a in results['R1']:
 #     print(a)
