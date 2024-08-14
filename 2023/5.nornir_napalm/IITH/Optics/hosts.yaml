@@ -1,0 +1,102 @@
+AD2-Dist-SW:
+  groups:
+  - cisco
+  hostname: 192.168.41.134
+  password: AD2@IITH2022
+  username: iith
+AD3-Dist-SW:
+  groups:
+  - cisco
+  hostname: 192.168.41.138
+  password: AD3@IITH2022
+  username: iith
+Admin-LGF-Dist-SW:
+  groups:
+  - cisco
+  hostname: 192.168.41.142
+  password: ADMIN@IITH2022
+  username: iith
+BHM-B-GF-Dist-SW:
+  groups:
+  - cisco
+  hostname: 192.168.41.150
+  password: HSTLM@IITH2022
+  username: iith
+BT-Dist-SW:
+  groups:
+  - cisco
+  hostname: 192.168.41.86
+  password: BTBM@IITH2022
+  username: iith
+CC-Dist-SW:
+  groups:
+  - cisco
+  hostname: 192.168.41.110
+  password: CC@IITH2022
+  username: iith
+CHY-Dist-SW:
+  groups:
+  - cisco
+  hostname: 192.168.41.90
+  password: CHY@IITH2022
+  username: iith
+Corelab-Dist-SW:
+  groups:
+  - cisco
+  hostname: 192.168.41.126
+  password: CORELAB@IITH2022
+  username: iith
+DH-Dist-SW:
+  groups:
+  - cisco
+  hostname: 192.168.41.122
+  password: DH@IITH2022
+  username: iith
+DoD-Dist-SW:
+  groups:
+  - cisco
+  hostname: 192.168.41.146
+  password: DOD@IITH2022
+  username: iith
+IGH-Dist-SW:
+  groups:
+  - cisco
+  hostname: 192.168.41.114
+  password: IGH@IITH2022
+  username: iith
+KNC-Dist-SW:
+  groups:
+  - cisco
+  hostname: 192.168.41.106
+  password: KNC@IITH2022
+  username: iith
+LH-Dist-SW:
+  groups:
+  - cisco
+  hostname: 192.168.41.130
+  password: LH@IITH2022
+  username: iith
+MSME-Dist-SW:
+  groups:
+  - cisco
+  hostname: 192.168.41.182
+  password: MSME@IITH2022
+  username: iith
+RCC-Dist-SW:
+  groups:
+  - cisco
+  hostname: 192.168.41.94
+  password: RCC@IITH2022
+  username: iith
+SNCC-Dist-SW:
+  groups:
+  - cisco
+  hostname: 192.168.41.118
+  password: SNCC@IITH2022
+  username: iith
+TIP-Dist-SW:
+  groups:
+  - cisco
+  hostname: 192.168.41.98
+  password: TIP@IITH2022
+  username: iith

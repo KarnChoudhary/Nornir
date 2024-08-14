@@ -1,0 +1,12 @@
+Host,Hostname,username,password,Groups
+CC-Dist-SW,192.168.41.110,iith,CC@IITH2022,cisco
+CC-R7-00 ,10.4.124.101,iith,CC@IITH2022,cisco
+CC-R5-00 ,10.4.124.102,iith,CC@IITH2022,cisco
+CC-R3-00,10.4.124.103,iith,CC@IITH2022,cisco
+CC-R4-00 ,10.4.124.104,iith,CC@IITH2022,cisco
+CC-R2-00 ,10.4.124.105,iith,CC@IITH2022,cisco
+CC-R6-00 ,10.4.124.106,iith,CC@IITH2022,cisco
+CC-R1-00 ,10.4.124.107,iith,CC@IITH2022,cisco
+CC-R1-02,10.4.124.109,iith,CC@IITH2022,cisco
+CC-R2-02 ,10.4.124.110,iith,CC@IITH2022,cisco
+CC-R3-02 ,10.4.124.111,iith,CC@IITH2022,cisco

@@ -1,0 +1,211 @@
+2024-08-14 04:57:29,362 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_get_example' with args {} on 1 hosts
+2024-08-14 04:57:29,838 - nornir.core.task -    ERROR -      start() - Host 'CC-00-DIS': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 44, in napalm_get
+    result[g] = method(**options)
+                ^^^^^^^^^^^^^^^^^
+TypeError: IOSDriver.get_optics() got an unexpected keyword argument 'read_timeout'
+
+2024-08-14 04:57:29,838 - nornir.core.task -    ERROR -      start() - Host 'CC-00-DIS': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/Optics/Excel_get_optics_nornir_napalm.py", line 16, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g],read_timeout= 1000000)
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-08-14 05:14:29,698 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_get_example' with args {} on 1 hosts
+2024-08-14 05:14:30,198 - nornir.core.task -    ERROR -      start() - Host 'CC-00-DIS': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 44, in napalm_get
+    result[g] = method(**options)
+                ^^^^^^^^^^^^^^^^^
+TypeError: IOSDriver.get_optics() got an unexpected keyword argument 'read_timeout'
+
+2024-08-14 05:14:30,199 - nornir.core.task -    ERROR -      start() - Host 'CC-00-DIS': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/Optics/Excel_get_optics_nornir_napalm.py", line 16, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g],read_timeout= 1000000)
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-08-14 05:14:40,894 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_get_example' with args {} on 1 hosts
+2024-08-14 05:14:41,413 - nornir.core.task -    ERROR -      start() - Host 'CC-00-DIS': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 44, in napalm_get
+    result[g] = method(**options)
+                ^^^^^^^^^^^^^^^^^
+TypeError: IOSDriver.get_optics() got an unexpected keyword argument 'read_timeout'
+
+2024-08-14 05:14:41,414 - nornir.core.task -    ERROR -      start() - Host 'CC-00-DIS': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/Optics/Excel_get_optics_nornir_napalm.py", line 16, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g],read_timeout= 1000000)
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-08-14 05:15:38,145 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_get_example' with args {} on 1 hosts
+2024-08-14 05:15:38,657 - nornir.core.task -    ERROR -      start() - Host 'CC-00-DIS': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 44, in napalm_get
+    result[g] = method(**options)
+                ^^^^^^^^^^^^^^^^^
+TypeError: IOSDriver.get_optics() got an unexpected keyword argument 'read_timeout'
+
+2024-08-14 05:15:38,658 - nornir.core.task -    ERROR -      start() - Host 'CC-00-DIS': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/Optics/Excel_get_optics_nornir_napalm.py", line 16, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g],read_timeout= 1000000)
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-08-14 05:16:49,889 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_get_example' with args {} on 1 hosts
+2024-08-14 05:16:50,403 - nornir.core.task -    ERROR -      start() - Host 'LH-00-DIS': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 44, in napalm_get
+    result[g] = method(**options)
+                ^^^^^^^^^^^^^^^^^
+TypeError: IOSDriver.get_optics() got an unexpected keyword argument 'read_timeout'
+
+2024-08-14 05:16:50,404 - nornir.core.task -    ERROR -      start() - Host 'LH-00-DIS': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/Optics/Excel_get_optics_nornir_napalm.py", line 16, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g],read_timeout= 1000000)
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-08-14 05:18:39,219 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_get_example' with args {} on 1 hosts
+2024-08-14 05:18:39,745 - nornir.core.task -    ERROR -      start() - Host 'LH-Part 1-LGF': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 44, in napalm_get
+    result[g] = method(**options)
+                ^^^^^^^^^^^^^^^^^
+TypeError: IOSDriver.get_optics() got an unexpected keyword argument 'read_timeout'
+
+2024-08-14 05:18:39,746 - nornir.core.task -    ERROR -      start() - Host 'LH-Part 1-LGF': task 'nornir_napalm_get_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/Optics/Excel_get_optics_nornir_napalm.py", line 16, in nornir_napalm_get_example
+    task.run(task=napalm_get, getters=[g],read_timeout= 1000000)
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-08-14 05:19:12,527 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_get_example' with args {} on 1 hosts
+2024-08-14 05:21:14,967 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_get_example' with args {} on 1 hosts
+2024-08-14 05:21:58,643 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_get_example' with args {} on 1 hosts
+2024-08-14 07:54:10,178 -  nornir.core -     INFO -        run() - Running task 'netmiko_show_int_trans' with args {} on 1 hosts
+2024-08-14 07:55:32,598 -  nornir.core -     INFO -        run() - Running task 'netmiko_show_int_trans' with args {} on 17 hosts
+2024-08-14 07:55:35,067 - nornir.core.task -    ERROR -      start() - Host 'AD2-Dist-SW': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 450, in connect
+    self._auth(
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 781, in _auth
+    raise saved_exception
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 768, in _auth
+    self._transport.auth_password(username, password)
+  File "/usr/lib/python3/dist-packages/paramiko/transport.py", line 1564, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/auth_handler.py", line 259, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1174, in establish_connection
+    raise NetmikoAuthenticationException(msg)
+netmiko.exceptions.NetmikoAuthenticationException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_ios 192.168.41.133:22
+
+
+Authentication failed.
+
+2024-08-14 07:55:35,068 - nornir.core.task -    ERROR -      start() - Host 'AD2-Dist-SW': task 'netmiko_show_int_trans' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/5.nornir_napalm/IITH/Optics/GetOpticsDist.py", line 21, in netmiko_show_int_trans
+    result = task.run(task=netmiko_send_command, command_string=command1, read_timeout= 1000000)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-08-14 07:57:39,347 -  nornir.core -     INFO -        run() - Running task 'netmiko_show_int_trans' with args {} on 17 hosts
