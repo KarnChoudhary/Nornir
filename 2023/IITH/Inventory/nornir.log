@@ -6,3 +6,5 @@
 2024-08-14 06:15:01,846 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 1 hosts
 2024-08-14 06:25:39,807 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 1 hosts
 2024-08-14 06:26:05,940 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 1 hosts
+2024-08-22 02:47:29,159 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 1 hosts
+2024-08-22 05:46:47,144 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 1 hosts

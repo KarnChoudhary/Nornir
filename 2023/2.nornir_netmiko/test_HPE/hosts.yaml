@@ -1,11 +1,8 @@
 ---
-
+ 
 R1:
-  hostname: "192.168.100.11"
-  username: "karn"
-  password: "NwTest@2023"
-  
-R2:
-  hostname: "192.168.100.15"
-  username: "karn"
-  password: "NwTest@2023" 
+  groups:
+  - HPE
+  hostname: 192.168.100.11
+  password: NwTest@2023
+  username: karn
