@@ -3,8 +3,15 @@ from nornir_netmiko.tasks import netmiko_send_command
 from nornir_utils.plugins.functions import print_result
 import logging
 import json
+import logging
+logging.basicConfig(filename='demo_netmiko.log', level=logging.DEBUG)
+logger = logging.getLogger("netmiko")
 
 nr = InitNornir(config_file="config.yaml")
+
+from nornir import InitNornir
+
+#nr = InitNornir(logging={"enabled": True, "level": logging.DEBUG})
 command = "display version"
 #command = "copy running-config tftp://192.168.74.109/"
 print(command)
@@ -17,6 +24,11 @@ def netmiko_send_commands_example(task):
 results = nr.run(task=netmiko_send_commands_example)
 
 print_result(results)
+print(type(results))
+
+with open('sh_output.txt', 'w') as file:
+    logger.info("Writing content to file")
+    file.write(results)
 #print("type(results)- >",type(results))
 
 
