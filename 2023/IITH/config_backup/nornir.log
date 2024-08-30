@@ -1,0 +1,88 @@
+2024-08-29 02:48:52,704 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_get_example' with args {} on 2 hosts
+2024-08-29 02:49:25,308 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_get_example' with args {} on 2 hosts
+2024-08-29 02:50:08,475 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_get_example' with args {} on 2 hosts
+2024-08-29 02:51:52,937 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_get_example' with args {} on 2 hosts
+2024-08-29 02:56:35,851 -  nornir.core -     INFO -        run() - Running task 'Creating Backup Archive' with args {} on 2 hosts
+2024-08-29 02:56:36,820 - nornir.core.task -    ERROR -      start() - Host 'BHP-A-9F-SW': task 'Creating Backup Archive' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/IITH/config_backup/backup.py", line 23, in backup_configurations
+    task=write_file,
+         ^^^^^^^^^^
+NameError: name 'write_file' is not defined
+
+2024-08-29 02:56:36,821 - nornir.core.task -    ERROR -      start() - Host 'BHP-A-6F-SW': task 'Creating Backup Archive' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/IITH/config_backup/backup.py", line 23, in backup_configurations
+    task=write_file,
+         ^^^^^^^^^^
+NameError: name 'write_file' is not defined
+
+2024-08-29 03:02:43,451 -  nornir.core -     INFO -        run() - Running task 'Creating Backup Archive' with args {} on 2 hosts
+2024-08-29 03:02:44,463 - nornir.core.task -    ERROR -      start() - Host 'BHP-A-9F-SW': task 'Creating Backup Archive' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/IITH/config_backup/backup.py", line 24, in backup_configurations
+    content=r.result["config"]["running"],
+            ~~~~~~~~^^^^^^^^^^
+KeyError: 'config'
+
+2024-08-29 03:02:44,464 - nornir.core.task -    ERROR -      start() - Host 'BHP-A-6F-SW': task 'Creating Backup Archive' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/IITH/config_backup/backup.py", line 24, in backup_configurations
+    content=r.result["config"]["running"],
+            ~~~~~~~~^^^^^^^^^^
+KeyError: 'config'
+
+2024-08-29 03:05:13,606 -  nornir.core -     INFO -        run() - Running task 'Creating Backup Archive' with args {} on 2 hosts
+2024-08-29 03:05:14,530 - nornir.core.task -    ERROR -      start() - Host 'BHP-A-9F-SW': task 'Creating Backup Archive' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/IITH/config_backup/backup.py", line 24, in backup_configurations
+    content=r.result["config"]["running"],
+            ~~~~~~~~^^^^^^^^^^
+KeyError: 'config'
+
+2024-08-29 03:05:14,577 - nornir.core.task -    ERROR -      start() - Host 'BHP-A-6F-SW': task 'Creating Backup Archive' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/IITH/config_backup/backup.py", line 24, in backup_configurations
+    content=r.result["config"]["running"],
+            ~~~~~~~~^^^^^^^^^^
+KeyError: 'config'
+
+2024-08-29 03:10:30,654 -  nornir.core -     INFO -        run() - Running task 'Creating Backup Archive' with args {} on 2 hosts
+2024-08-29 03:10:31,602 - nornir.core.task -    ERROR -      start() - Host 'BHP-A-6F-SW': task 'Creating Backup Archive' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/IITH/config_backup/backup.py", line 24, in backup_configurations
+    content=r.result["config"]["running"],
+            ~~~~~~~~^^^^^^^^^^
+KeyError: 'config'
+
+2024-08-29 03:10:31,612 - nornir.core.task -    ERROR -      start() - Host 'BHP-A-9F-SW': task 'Creating Backup Archive' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/IITH/config_backup/backup.py", line 24, in backup_configurations
+    content=r.result["config"]["running"],
+            ~~~~~~~~^^^^^^^^^^
+KeyError: 'config'
+

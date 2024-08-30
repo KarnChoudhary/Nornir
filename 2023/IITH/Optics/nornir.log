@@ -1934,3 +1934,4 @@ nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
 
 
 2024-08-27 06:30:35,137 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_get_example' with args {} on 194 hosts
+2024-08-29 01:12:02,580 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_get_example' with args {} on 1 hosts

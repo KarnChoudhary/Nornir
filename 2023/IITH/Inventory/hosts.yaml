@@ -1036,12 +1036,12 @@ MSH-South-SW:
   hostname: 10.5.100.107
   password: MSH@IITH2022
   username: iith
-# MSME-1F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.4.100.101
-#   password: MSME@IITH2022
-#   username: iith
+MSME-1F-SW:
+  groups:
+  - cisco
+  hostname: 10.4.100.101
+  password: MSME@IITH2022
+  username: iith
 MSME-2F-SW:
   groups:
   - cisco
