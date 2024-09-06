@@ -1,0 +1,19 @@
+Device ID: e455a81a5d38
+  IP address: 10.5.121.118
+Interface: GigabitEthernet1/0/1,  Port ID (outgoing port): Port 0
+Device ID: e455a81a832e
+  IP address: 10.5.121.114
+Interface: GigabitEthernet1/0/6,  Port ID (outgoing port): Port 0
+Device ID: e455a81a84e5
+  IP address: 10.5.121.113
+Interface: GigabitEthernet1/0/4,  Port ID (outgoing port): Port 0
+Device ID: e455a81a5d78
+  IP address: 10.5.121.122
+Interface: GigabitEthernet1/0/2,  Port ID (outgoing port): Port 0
+Device ID: e455a81a5caa
+  IP address: 10.5.121.110
+Interface: GigabitEthernet1/0/5,  Port ID (outgoing port): Port 0
+Device ID: ADMIN-LGF-DIS.iith.ac.in
+  IP address: 10.5.120.1
+Interface: TenGigabitEthernet1/1/1,  Port ID (outgoing port): TenGigabitEthernet1/0/8
+  IP address: 10.5.120.1

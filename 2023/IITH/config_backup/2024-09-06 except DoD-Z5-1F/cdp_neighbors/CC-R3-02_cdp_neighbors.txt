@@ -1,0 +1,20 @@
+Device ID: SEP4825671a2429
+  IP address: 10.4.125.107
+Interface: GigabitEthernet1/0/13,  Port ID (outgoing port): Port 1
+Device ID: SEP4825671a24b0
+  IP address: 10.4.125.9
+Interface: GigabitEthernet1/0/13,  Port ID (outgoing port): Port 1
+Device ID: e455a81a6224
+  IP address: 10.4.125.21
+Interface: GigabitEthernet1/0/2,  Port ID (outgoing port): Port 0
+Device ID: e455a81a60fb
+  IP address: 10.4.125.17
+Interface: GigabitEthernet1/0/1,  Port ID (outgoing port): Port 0
+Device ID: CC-00-DIS.iith.ac.in
+  IP address: 10.4.124.1
+Interface: TenGigabitEthernet1/1/2,  Port ID (outgoing port): TenGigabitEthernet2/0/11
+  IP address: 10.4.124.1
+Device ID: CC-00-DIS.iith.ac.in
+  IP address: 10.4.124.1
+Interface: TenGigabitEthernet1/1/1,  Port ID (outgoing port): TenGigabitEthernet1/0/11
+  IP address: 10.4.124.1

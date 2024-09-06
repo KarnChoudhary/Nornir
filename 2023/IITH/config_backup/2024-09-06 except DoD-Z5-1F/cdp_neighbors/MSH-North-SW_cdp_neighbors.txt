@@ -1,0 +1,16 @@
+Device ID: MSH-SOUTH-WING.iith.ac.in
+  IP address: 10.5.100.107
+Interface: TenGigabitEthernet2/1/1,  Port ID (outgoing port): TenGigabitEthernet1/1/1
+  IP address: 10.5.100.107
+Device ID: DH-DISTRIBUTION-SW.iith.ac.in
+  IP address: 10.5.100.1
+Interface: TenGigabitEthernet1/1/1,  Port ID (outgoing port): TenGigabitEthernet1/0/1
+  IP address: 10.5.100.1
+Device ID: MSH-NORTH-WING.iith.ac.in
+  IP address: 10.5.100.106
+Interface: GigabitEthernet1/0/36,  Port ID (outgoing port): GigabitEthernet1/0/38
+  IP address: 10.5.100.106
+Device ID: MSH-NORTH-WING.iith.ac.in
+  IP address: 10.5.100.106
+Interface: GigabitEthernet1/0/38,  Port ID (outgoing port): GigabitEthernet1/0/36
+  IP address: 10.5.100.106

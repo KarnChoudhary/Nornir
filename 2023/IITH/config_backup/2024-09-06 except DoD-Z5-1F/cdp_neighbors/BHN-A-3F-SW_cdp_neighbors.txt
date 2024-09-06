@@ -1,0 +1,8 @@
+Device ID: N-HOSTEL-GF-A-WING.iith.ac.in
+  IP address: 10.5.48.51
+Interface: GigabitEthernet1/0/47,  Port ID (outgoing port): GigabitEthernet1/0/24
+  IP address: 10.5.48.51
+Device ID: N-6TH-SWITCH-A.iith.ac.in
+  IP address: 10.5.48.53
+Interface: GigabitEthernet1/0/48,  Port ID (outgoing port): GigabitEthernet1/0/47
+  IP address: 10.5.48.53

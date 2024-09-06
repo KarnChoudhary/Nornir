@@ -1,0 +1,8 @@
+Device ID: J-H0STEL-9TH-A-WING.iith.ac.in
+  IP address: 10.5.48.14
+Interface: GigabitEthernet1/0/47,  Port ID (outgoing port): GigabitEthernet1/0/48
+  IP address: 10.5.48.14
+Device ID: J-H0STEL-3RD-A-WING.iith.ac.in
+  IP address: 10.5.48.12
+Interface: GigabitEthernet1/0/48,  Port ID (outgoing port): GigabitEthernet1/0/48
+  IP address: 10.5.48.12

@@ -1,0 +1,56 @@
+Device ID: ADMIN-Shaft-A-LGF.IITH.AC.IN
+  IP address: 10.5.120.101
+Interface: TenGigabitEthernet1/0/1,  Port ID (outgoing port): TenGigabitEthernet1/1/1
+  IP address: 10.5.120.101
+Device ID: CORE-SW-1.iith.ac.in
+  IP address: 192.168.41.141
+Interface: TenGigabitEthernet1/0/16,  Port ID (outgoing port): FiftyGigE1/2/0/19
+  IP address: 192.168.41.141
+Device ID: ADMIN-2F-SHAFT-A.iith.ac.in
+  IP address: 10.5.120.104
+Interface: TenGigabitEthernet1/0/4,  Port ID (outgoing port): TenGigabitEthernet1/1/1
+  IP address: 10.5.120.104
+Device ID: ADMIN-Shaft-B-1F.iith.ac.in
+  IP address: 10.5.120.109
+Interface: TenGigabitEthernet1/0/9,  Port ID (outgoing port): TenGigabitEthernet2/1/1
+  IP address: 10.5.120.109
+Device ID: ADMIN-Shaft-A-3F.iith.ac.in
+  IP address: 10.5.120.105
+Interface: TenGigabitEthernet1/0/5,  Port ID (outgoing port): TenGigabitEthernet1/1/1
+  IP address: 10.5.120.105
+Device ID: ADMIN-3F-SHAFT-B.iith.ac.in
+  IP address: 10.5.120.111
+Interface: TenGigabitEthernet1/0/11,  Port ID (outgoing port): TenGigabitEthernet1/1/1
+  IP address: 10.5.120.111
+Device ID: ADMIN-Shaft-B-2F.iith.ac.in
+  IP address: 10.5.120.110
+Interface: TenGigabitEthernet1/0/10,  Port ID (outgoing port): TenGigabitEthernet2/1/1
+  IP address: 10.5.120.110
+Device ID: ADMIN-1F-SHAFT-A.iith.ac.in
+  IP address: 10.5.120.103
+Interface: TenGigabitEthernet1/0/3,  Port ID (outgoing port): TenGigabitEthernet1/1/1
+  IP address: 10.5.120.103
+Device ID: ADMIN-5F-SHAFT-B.iith.ac.in
+  IP address: 10.5.120.113
+Interface: TenGigabitEthernet2/0/12,  Port ID (outgoing port): TenGigabitEthernet1/1/1
+  IP address: 10.5.120.113
+Device ID: ADMIN-Shaft-B-4F.iith.ac.in
+  IP address: 10.5.120.112
+Interface: TenGigabitEthernet1/0/12,  Port ID (outgoing port): TenGigabitEthernet1/1/1
+  IP address: 10.5.120.112
+Device ID: ADMIN-Shaft-A-4F.iith.ac.in
+  IP address: 10.5.120.106
+Interface: TenGigabitEthernet1/0/6,  Port ID (outgoing port): TenGigabitEthernet1/1/1
+  IP address: 10.5.120.106
+Device ID: ADMIN-5F-Shaft-A.iith.ac.in
+  IP address: 10.5.120.107
+Interface: TenGigabitEthernet1/0/7,  Port ID (outgoing port): TenGigabitEthernet1/1/1
+  IP address: 10.5.120.107
+Device ID: ADMIN-SHAFT-A-GF.iith.ac.in
+  IP address: 10.5.120.102
+Interface: TenGigabitEthernet1/0/2,  Port ID (outgoing port): TenGigabitEthernet2/1/1
+  IP address: 10.5.120.102
+Device ID: ADMIN-Shaft-B-GF.iith.ac.in
+  IP address: 10.5.120.108
+Interface: TenGigabitEthernet1/0/8,  Port ID (outgoing port): TenGigabitEthernet1/1/1
+  IP address: 10.5.120.108

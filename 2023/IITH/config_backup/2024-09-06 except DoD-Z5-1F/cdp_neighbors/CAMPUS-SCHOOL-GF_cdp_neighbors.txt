@@ -1,0 +1,8 @@
+Device ID: DH-DISTRIBUTION-SW.iith.ac.in
+  IP address: 10.5.100.1
+Interface: TenGigabitEthernet1/1/1,  Port ID (outgoing port): TenGigabitEthernet2/0/1
+  IP address: 10.5.100.1
+Device ID: CS-2F.iith.ac.in
+  IP address: 10.5.100.96
+Interface: TenGigabitEthernet2/1/1,  Port ID (outgoing port): TenGigabitEthernet1/1/1
+  IP address: 10.5.100.96

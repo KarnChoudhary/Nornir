@@ -1,0 +1,18 @@
+IGH- R1-5F:
+  groups:
+  - cisco
+  hostname: 10.4.128.111
+  password: IGH@IITH2022
+  username: iith
+IGH- R1-GF:
+  groups:
+  - cisco
+  hostname: 10.4.128.106
+  password: IGH@IITH2022
+  username: iith
+IGH- R2-1F:
+  groups:
+  - cisco
+  hostname: 10.4.128.113
+  password: IGH@IITH2022
+  username: iith

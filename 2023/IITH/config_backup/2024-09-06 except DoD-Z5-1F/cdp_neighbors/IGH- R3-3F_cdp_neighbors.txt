@@ -1,0 +1,38 @@
+Device ID: e455a82e43a9
+  IP address: 10.4.129.68
+Interface: GigabitEthernet1/0/4,  Port ID (outgoing port): Port 0
+Device ID: e455a82e43a8
+  IP address: 10.4.129.63
+Interface: GigabitEthernet1/0/3,  Port ID (outgoing port): Port 0
+Device ID: e455a82e43e8
+  IP address: 10.4.129.69
+Interface: GigabitEthernet1/0/2,  Port ID (outgoing port): Port 0
+Device ID: e455a82e3fac
+  IP address: 10.4.129.66
+Interface: GigabitEthernet1/0/9,  Port ID (outgoing port): Port 0
+Device ID: e455a82e437d
+  IP address: 10.4.129.64
+Interface: GigabitEthernet1/0/5,  Port ID (outgoing port): Port 0
+Device ID: IGH-00-DIS.iith.ac.in
+  IP address: 10.4.128.1
+Interface: TenGigabitEthernet1/1/2,  Port ID (outgoing port): TenGigabitEthernet2/0/16
+  IP address: 10.4.128.1
+Device ID: IGH-00-DIS.iith.ac.in
+  IP address: 10.4.128.1
+Interface: TenGigabitEthernet1/1/1,  Port ID (outgoing port): TenGigabitEthernet1/0/16
+  IP address: 10.4.128.1
+Device ID: e455a82e4380
+  IP address: 10.4.129.92
+Interface: GigabitEthernet1/0/7,  Port ID (outgoing port): Port 0
+Device ID: e455a82e4319
+  IP address: 10.4.129.74
+Interface: GigabitEthernet1/0/11,  Port ID (outgoing port): Port 0
+Device ID: e455a82e42cb
+  IP address: 10.4.129.71
+Interface: GigabitEthernet1/0/8,  Port ID (outgoing port): Port 0
+Device ID: e455a82e43de
+  IP address: 10.4.129.238
+Interface: GigabitEthernet1/0/6,  Port ID (outgoing port): Port 0
+Device ID: e455a82e4133
+  IP address: 10.4.129.65
+Interface: GigabitEthernet1/0/1,  Port ID (outgoing port): Port 0

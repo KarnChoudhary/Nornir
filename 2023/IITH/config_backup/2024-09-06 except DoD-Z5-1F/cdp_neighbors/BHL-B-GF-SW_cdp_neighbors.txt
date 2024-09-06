@@ -1,0 +1,8 @@
+Device ID: M-HOSTEL-00-DIS.iith.ac.in
+  IP address: 10.5.48.1
+Interface: TenGigabitEthernet1/1/1,  Port ID (outgoing port): TenGigabitEthernet1/0/11
+  IP address: 10.5.48.1
+Device ID: L-H0STEL-3RD-B-WING.iith.ac.in
+  IP address: 10.5.48.37
+Interface: TenGigabitEthernet1/1/3,  Port ID (outgoing port): TenGigabitEthernet1/1/1
+  IP address: 10.5.48.37

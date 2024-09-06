@@ -1,0 +1,8 @@
+Device ID: P-H0STEL-GND-B-WING.iith.ac.in
+  IP address: 10.5.48.66
+Interface: TenGigabitEthernet1/1/1,  Port ID (outgoing port): TenGigabitEthernet1/1/3
+  IP address: 10.5.48.66
+Device ID: P-H0STEL-6TH-B-WING.iith.ac.in
+  IP address: 10.5.48.68
+Interface: TenGigabitEthernet1/1/2,  Port ID (outgoing port): TenGigabitEthernet1/1/1
+  IP address: 10.5.48.68

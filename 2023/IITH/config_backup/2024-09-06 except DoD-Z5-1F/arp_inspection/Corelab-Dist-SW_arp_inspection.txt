@@ -1,0 +1,109 @@
+
+Source Mac Validation      : Disabled
+Destination Mac Validation : Disabled
+IP Address Validation      : Disabled
+
+ Vlan     Configuration    Operation   ACL Match          Static ACL
+ ----     -------------    ---------   ---------          ----------
+  782     Enabled          Active                         
+  783     Enabled          Active                         
+  784     Enabled          Active                         
+  785     Enabled          Active                         
+  786     Enabled          Active                         
+  787     Enabled          Active                         
+  788     Enabled          Active                         
+  789     Enabled          Active                         
+  790     Enabled          Inactive                       
+  791     Enabled          Inactive                       
+  792     Enabled          Inactive                       
+  793     Enabled          Inactive                       
+  794     Enabled          Active                         
+  795     Enabled          Active                         
+  796     Enabled          Inactive                       
+  797     Enabled          Inactive                       
+  798     Enabled          Inactive                       
+  799     Enabled          Inactive                       
+
+ Vlan     ACL Logging      DHCP Logging      Probe Logging
+ ----     -----------      ------------      -------------
+  782     Deny             Deny              Off          
+  783     Deny             Deny              Off          
+  784     Deny             Deny              Off          
+  785     Deny             Deny              Off          
+  786     Deny             Deny              Off          
+  787     Deny             Deny              Off          
+  788     Deny             Deny              Off          
+  789     Deny             Deny              Off          
+  790     Deny             Deny              Off          
+  791     Deny             Deny              Off          
+  792     Deny             Deny              Off          
+  793     Deny             Deny              Off          
+  794     Deny             Deny              Off          
+  795     Deny             Deny              Off          
+  796     Deny             Deny              Off          
+  797     Deny             Deny              Off          
+  798     Deny             Deny              Off          
+  799     Deny             Deny              Off          
+
+ Vlan      Forwarded        Dropped     DHCP Drops      ACL Drops
+ ----      ---------        -------     ----------      ---------
+  782              0              0              0              0
+  783              0              0              0              0
+  784              0              0              0              0
+  785              0              0              0              0
+  786              0              0              0              0
+  787              0              0              0              0
+  788              0              0              0              0
+  789              0              0              0              0
+  790              0              0              0              0
+  791              0              0              0              0
+  792              0              0              0              0
+  793              0              0              0              0
+  794              0              0              0              0
+  795              0              0              0              0
+  796              0              0              0              0
+  797              0              0              0              0
+  798              0              0              0              0
+  799              0              0              0              0
+
+ Vlan   DHCP Permits    ACL Permits  Probe Permits   Source MAC Failures
+ ----   ------------    -----------  -------------   -------------------
+  782              0              0              0                     0
+  783              0              0              0                     0
+  784              0              0              0                     0
+  785              0              0              0                     0
+  786              0              0              0                     0
+  787              0              0              0                     0
+  788              0              0              0                     0
+  789              0              0              0                     0
+  790              0              0              0                     0
+  791              0              0              0                     0
+  792              0              0              0                     0
+  793              0              0              0                     0
+  794              0              0              0                     0
+  795              0              0              0                     0
+  796              0              0              0                     0
+  797              0              0              0                     0
+  798              0              0              0                     0
+  799              0              0              0                     0
+
+ Vlan   Dest MAC Failures   IP Validation Failures   Invalid Protocol Data
+ ----   -----------------   ----------------------   ---------------------
+  782                   0                        0                       0
+  783                   0                        0                       0
+  784                   0                        0                       0
+  785                   0                        0                       0
+  786                   0                        0                       0
+  787                   0                        0                       0
+  788                   0                        0                       0
+  789                   0                        0                       0
+  790                   0                        0                       0
+  791                   0                        0                       0
+  792                   0                        0                       0
+  793                   0                        0                       0
+  794                   0                        0                       0
+  795                   0                        0                       0
+  796                   0                        0                       0
+  797                   0                        0                       0
+  798                   0                        0                       0
+  799                   0                        0                       0

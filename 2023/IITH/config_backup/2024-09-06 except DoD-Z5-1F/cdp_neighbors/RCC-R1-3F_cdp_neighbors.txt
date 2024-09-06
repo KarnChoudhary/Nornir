@@ -1,0 +1,22 @@
+Device ID: e455a8068154
+  IP address: 10.4.113.132
+Interface: GigabitEthernet1/0/6,  Port ID (outgoing port): Port 0
+Device ID: e455a8067ee1
+  IP address: 10.4.113.134
+Interface: GigabitEthernet1/0/4,  Port ID (outgoing port): Port 0
+Device ID: e455a80641fb
+  IP address: 10.4.113.135
+Interface: GigabitEthernet1/0/3,  Port ID (outgoing port): Port 0
+Device ID: e455a806865d
+  IP address: 10.4.113.133
+Interface: GigabitEthernet1/0/5,  Port ID (outgoing port): Port 0
+Device ID: e455a806792f
+  IP address: 10.4.113.137
+Interface: GigabitEthernet1/0/1,  Port ID (outgoing port): Port 0
+Device ID: e455a8067c35
+  IP address: 10.4.113.136
+Interface: GigabitEthernet1/0/2,  Port ID (outgoing port): Port 0
+Device ID: RCC-1-Distribution.iith.ac.in
+  IP address: 10.4.112.1
+Interface: TenGigabitEthernet1/1/1,  Port ID (outgoing port): TenGigabitEthernet1/0/2
+  IP address: 10.4.112.1

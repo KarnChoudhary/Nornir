@@ -1,0 +1,8 @@
+Device ID: PoE-sw-HCF.iith.ac.in
+  IP address: 192.168.9.141
+Interface: GigabitEthernet1/0/24,  Port ID (outgoing port): GigabitEthernet1/0/24
+  IP address: 192.168.9.141
+Device ID: HCF-SW2.iith.ac.in
+  IP address: 192.168.9.142
+Interface: GigabitEthernet1/0/23,  Port ID (outgoing port): GigabitEthernet1/0/24
+  IP address: 192.168.9.142

@@ -1,0 +1,8 @@
+Device ID: N-9TH-SWITCH-B.iith.ac.in
+  IP address: 10.5.48.59
+Interface: GigabitEthernet1/0/47,  Port ID (outgoing port): GigabitEthernet1/0/48
+  IP address: 10.5.48.59
+Device ID: N-3RD-SWITCH-B.iith.ac.in
+  IP address: 10.5.48.57
+Interface: GigabitEthernet1/0/48,  Port ID (outgoing port): GigabitEthernet1/0/48
+  IP address: 10.5.48.57

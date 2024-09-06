@@ -1,0 +1,84 @@
+Device ID: CORE-SW-1.iith.ac.in
+  IP address: 192.168.41.109
+Interface: TenGigabitEthernet2/0/16,  Port ID (outgoing port): FiftyGigE2/2/0/7
+  IP address: 192.168.41.109
+Device ID: CC-R5-00.iith.ac.in
+  IP address: 10.4.124.102
+Interface: TenGigabitEthernet1/0/4,  Port ID (outgoing port): TenGigabitEthernet1/1/1
+  IP address: 10.4.124.102
+Device ID: CC-R4-00.iith.ac.in
+  IP address: 10.4.124.104
+Interface: TenGigabitEthernet2/0/5,  Port ID (outgoing port): TenGigabitEthernet2/1/1
+  IP address: 10.4.124.104
+Device ID: CC-R4-00.iith.ac.in
+  IP address: 10.4.124.104
+Interface: TenGigabitEthernet1/0/5,  Port ID (outgoing port): TenGigabitEthernet1/1/1
+  IP address: 10.4.124.104
+Device ID: CC-R7-00.iith.ac.in
+  IP address: 10.4.124.101
+Interface: TenGigabitEthernet2/0/1,  Port ID (outgoing port): TenGigabitEthernet1/1/2
+  IP address: 10.4.124.101
+Device ID: CC-R7-00.iith.ac.in
+  IP address: 10.4.124.101
+Interface: TenGigabitEthernet1/0/1,  Port ID (outgoing port): TenGigabitEthernet1/1/1
+  IP address: 10.4.124.101
+Device ID: CC-R6-00.iith.ac.in
+  IP address: 10.4.124.106
+Interface: TenGigabitEthernet2/0/6,  Port ID (outgoing port): TenGigabitEthernet1/1/2
+  IP address: 10.4.124.106
+Device ID: CC-R6-00.iith.ac.in
+  IP address: 10.4.124.106
+Interface: TenGigabitEthernet1/0/6,  Port ID (outgoing port): TenGigabitEthernet1/1/1
+  IP address: 10.4.124.106
+Device ID: CC-R3-02.iith.ac.in
+  IP address: 10.4.124.111
+Interface: TenGigabitEthernet2/0/11,  Port ID (outgoing port): TenGigabitEthernet1/1/2
+  IP address: 10.4.124.111
+Device ID: CC-R3-02.iith.ac.in
+  IP address: 10.4.124.111
+Interface: TenGigabitEthernet1/0/11,  Port ID (outgoing port): TenGigabitEthernet1/1/1
+  IP address: 10.4.124.111
+Device ID: CC-R1-01.iith.ac.in
+Interface: TenGigabitEthernet2/0/8,  Port ID (outgoing port): TenGigabitEthernet1/1/2
+Device ID: CC-R1-01.iith.ac.in
+Interface: TenGigabitEthernet1/0/8,  Port ID (outgoing port): TenGigabitEthernet1/1/1
+Device ID: CC-R2-02.iith.ac.in
+  IP address: 10.4.124.110
+Interface: TenGigabitEthernet2/0/10,  Port ID (outgoing port): TenGigabitEthernet1/1/2
+  IP address: 10.4.124.110
+Device ID: CC-R2-02.iith.ac.in
+  IP address: 10.4.124.110
+Interface: TenGigabitEthernet1/0/10,  Port ID (outgoing port): TenGigabitEthernet1/1/1
+  IP address: 10.4.124.110
+Device ID: CC-R1-02.iith.ac.in
+  IP address: 10.4.124.109
+Interface: TenGigabitEthernet2/0/9,  Port ID (outgoing port): TenGigabitEthernet1/1/2
+  IP address: 10.4.124.109
+Device ID: CC-R3-00.iith.ac.in
+  IP address: 10.4.124.103
+Interface: TenGigabitEthernet2/0/3,  Port ID (outgoing port): TenGigabitEthernet1/1/1
+  IP address: 10.4.124.103
+Device ID: CC-R1-02.iith.ac.in
+  IP address: 10.4.124.109
+Interface: TenGigabitEthernet1/0/9,  Port ID (outgoing port): TenGigabitEthernet1/1/1
+  IP address: 10.4.124.109
+Device ID: CC-R3-00.iith.ac.in
+  IP address: 10.4.124.103
+Interface: TenGigabitEthernet1/0/3,  Port ID (outgoing port): TenGigabitEthernet2/1/1
+  IP address: 10.4.124.103
+Device ID: CC-R2-00.iith.ac.in
+  IP address: 10.4.124.105
+Interface: TenGigabitEthernet2/0/2,  Port ID (outgoing port): TenGigabitEthernet1/1/2
+  IP address: 10.4.124.105
+Device ID: CC-R2-00.iith.ac.in
+  IP address: 10.4.124.105
+Interface: TenGigabitEthernet1/0/2,  Port ID (outgoing port): TenGigabitEthernet1/1/1
+  IP address: 10.4.124.105
+Device ID: CC-R1-00-SW.iith.ac.in
+  IP address: 10.4.124.107
+Interface: TenGigabitEthernet2/0/7,  Port ID (outgoing port): TenGigabitEthernet1/1/1
+  IP address: 10.4.124.107
+Device ID: CC-R1-00-SW.iith.ac.in
+  IP address: 10.4.124.107
+Interface: TenGigabitEthernet1/0/7,  Port ID (outgoing port): TenGigabitEthernet1/1/2
+  IP address: 10.4.124.107

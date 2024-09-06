@@ -1,0 +1,14 @@
+Device ID: e455a81a5c0e
+  IP address: 10.4.133.44
+Interface: GigabitEthernet1/0/1,  Port ID (outgoing port): Port 0
+Device ID: e455a81a89ae
+  IP address: 10.4.133.43
+Interface: GigabitEthernet1/0/2,  Port ID (outgoing port): Port 0
+Device ID: SNCC-00-DIS.iith.ac.in
+  IP address: 10.4.132.1
+Interface: TenGigabitEthernet1/1/2,  Port ID (outgoing port): TenGigabitEthernet2/0/5
+  IP address: 10.4.132.1
+Device ID: SNCC-00-DIS.iith.ac.in
+  IP address: 10.4.132.1
+Interface: TenGigabitEthernet1/1/1,  Port ID (outgoing port): TenGigabitEthernet1/0/5
+  IP address: 10.4.132.1

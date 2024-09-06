@@ -1,0 +1,34 @@
+Device ID: e455a81a76d4
+  IP address: 10.5.105.51
+Interface: GigabitEthernet1/0/10,  Port ID (outgoing port): Port 0
+Device ID: e455a81a766c
+  IP address: 10.5.105.20
+Interface: GigabitEthernet1/0/4,  Port ID (outgoing port): Port 0
+Device ID: e455a81a765a
+  IP address: 10.5.105.21
+Interface: GigabitEthernet1/0/2,  Port ID (outgoing port): Port 0
+Device ID: e455a81a61c1
+  IP address: 10.5.105.14
+Interface: GigabitEthernet1/0/5,  Port ID (outgoing port): Port 0
+Device ID: e455a81a75c6
+  IP address: 10.5.105.46
+Interface: GigabitEthernet1/0/6,  Port ID (outgoing port): Port 0
+Device ID: e455a81a77e2
+  IP address: 10.5.105.17
+Interface: GigabitEthernet1/0/7,  Port ID (outgoing port): Port 0
+Device ID: CORELAB-00-DIS.iith.ac.in
+  IP address: 10.5.104.1
+Interface: TenGigabitEthernet1/1/1,  Port ID (outgoing port): TenGigabitEthernet2/0/2
+  IP address: 10.5.104.1
+Device ID: e455a81a7803
+  IP address: 10.5.105.19
+Interface: GigabitEthernet1/0/1,  Port ID (outgoing port): Port 0
+Device ID: e455a81a6118
+  IP address: 10.5.105.18
+Interface: GigabitEthernet1/0/8,  Port ID (outgoing port): Port 0
+Device ID: e455a81a7767
+  IP address: 10.5.105.16
+Interface: GigabitEthernet1/0/3,  Port ID (outgoing port): Port 0
+Device ID: e455a81a6111
+  IP address: 10.5.105.49
+Interface: GigabitEthernet1/0/9,  Port ID (outgoing port): Port 0

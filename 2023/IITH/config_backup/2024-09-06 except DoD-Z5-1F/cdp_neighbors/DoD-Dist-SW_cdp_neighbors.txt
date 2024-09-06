@@ -1,0 +1,60 @@
+Device ID: DOD-ZONE-9-3F.iith.ac.in
+  IP address: 10.5.124.108
+Interface: TenGigabitEthernet2/0/8,  Port ID (outgoing port): TenGigabitEthernet2/1/1
+  IP address: 10.5.124.108
+Device ID: DOD-ZONE-8-2F.iith.ac.in
+  IP address: 10.5.124.107
+Interface: TenGigabitEthernet2/0/7,  Port ID (outgoing port): TenGigabitEthernet1/1/1
+  IP address: 10.5.124.107
+Device ID: DOD-ZONE-8-2F.iith.ac.in
+  IP address: 10.5.124.107
+Interface: TenGigabitEthernet1/0/7,  Port ID (outgoing port): TenGigabitEthernet3/1/1
+  IP address: 10.5.124.107
+Device ID: DOD-ZONE-9-3F.iith.ac.in
+  IP address: 10.5.124.108
+Interface: TenGigabitEthernet1/0/8,  Port ID (outgoing port): TenGigabitEthernet1/1/1
+  IP address: 10.5.124.108
+Device ID: DOD-ZONE-6-2F.iith.ac.in
+  IP address: 10.5.124.105
+Interface: TenGigabitEthernet2/0/5,  Port ID (outgoing port): TenGigabitEthernet3/1/1
+  IP address: 10.5.124.105
+Device ID: DOD-ZONE-6-2F.iith.ac.in
+  IP address: 10.5.124.105
+Interface: TenGigabitEthernet1/0/5,  Port ID (outgoing port): TenGigabitEthernet1/1/1
+  IP address: 10.5.124.105
+Device ID: DOD-ZONE-7-1F.iith.ac.in
+  IP address: 10.5.124.106
+Interface: TenGigabitEthernet2/0/6,  Port ID (outgoing port): TenGigabitEthernet1/1/2
+  IP address: 10.5.124.106
+Device ID: DOD-ZONE-7-1F.iith.ac.in
+  IP address: 10.5.124.106
+Interface: TenGigabitEthernet1/0/6,  Port ID (outgoing port): TenGigabitEthernet1/1/1
+  IP address: 10.5.124.106
+Device ID: CORE-SW-1.iith.ac.in
+  IP address: 192.168.41.145
+Interface: TenGigabitEthernet1/0/16,  Port ID (outgoing port): FiftyGigE1/2/0/20
+  IP address: 192.168.41.145
+Device ID: DOD-ZONE-2-GF.iith.ac.in
+  IP address: 10.5.124.102
+Interface: TenGigabitEthernet2/0/2,  Port ID (outgoing port): TenGigabitEthernet1/1/2
+  IP address: 10.5.124.102
+Device ID: DOD-ZONE-2-GF.iith.ac.in
+  IP address: 10.5.124.102
+Interface: TenGigabitEthernet1/0/2,  Port ID (outgoing port): TenGigabitEthernet1/1/1
+  IP address: 10.5.124.102
+Device ID: DOD-ZONE-3-GF.iith.ac.in
+  IP address: 10.5.124.103
+Interface: TenGigabitEthernet2/0/3,  Port ID (outgoing port): TenGigabitEthernet3/1/1
+  IP address: 10.5.124.103
+Device ID: DOD-ZONE-3-GF.iith.ac.in
+  IP address: 10.5.124.103
+Interface: TenGigabitEthernet1/0/3,  Port ID (outgoing port): TenGigabitEthernet1/1/1
+  IP address: 10.5.124.103
+Device ID: DOD-ZONE-1-GF.iith.ac.in
+  IP address: 10.5.124.101
+Interface: TenGigabitEthernet2/0/1,  Port ID (outgoing port): TenGigabitEthernet5/1/1
+  IP address: 10.5.124.101
+Device ID: DOD-ZONE-1-GF.iith.ac.in
+  IP address: 10.5.124.101
+Interface: TenGigabitEthernet1/0/1,  Port ID (outgoing port): TenGigabitEthernet1/1/1
+  IP address: 10.5.124.101

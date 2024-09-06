@@ -1,0 +1,20 @@
+Device ID: CORE-SW-1.iith.ac.in
+  IP address: 192.168.41.125
+Interface: TenGigabitEthernet2/0/16,  Port ID (outgoing port): FiftyGigE1/2/0/15
+  IP address: 192.168.41.125
+Device ID: CORELAB-1F.iith.ac.in
+  IP address: 10.5.104.102
+Interface: TenGigabitEthernet2/0/2,  Port ID (outgoing port): TenGigabitEthernet1/1/1
+  IP address: 10.5.104.102
+Device ID: CORELAB-2F.iith.ac.in
+  IP address: 10.5.104.103
+Interface: TenGigabitEthernet2/0/3,  Port ID (outgoing port): TenGigabitEthernet1/1/1
+  IP address: 10.5.104.103
+Device ID: CORELAB-GF.iith.ac.in
+  IP address: 10.5.104.101
+Interface: TenGigabitEthernet1/0/1,  Port ID (outgoing port): TenGigabitEthernet3/1/1
+  IP address: 10.5.104.101
+Device ID: CORELAB-GF.iith.ac.in
+  IP address: 10.5.104.101
+Interface: TenGigabitEthernet2/0/1,  Port ID (outgoing port): TenGigabitEthernet1/1/1
+  IP address: 10.5.104.101

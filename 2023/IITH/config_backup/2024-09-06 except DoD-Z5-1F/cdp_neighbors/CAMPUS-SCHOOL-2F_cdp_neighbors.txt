@@ -1,0 +1,4 @@
+Device ID: CS-GF.iith.ac.in
+  IP address: 10.5.100.95
+Interface: TenGigabitEthernet1/1/1,  Port ID (outgoing port): TenGigabitEthernet2/1/1
+  IP address: 10.5.100.95

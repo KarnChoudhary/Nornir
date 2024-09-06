@@ -1,0 +1,8 @@
+Device ID: K-HSTL-B-WING-3F.iith.ac.in
+  IP address: 10.5.48.27
+Interface: GigabitEthernet1/0/48,  Port ID (outgoing port): GigabitEthernet1/0/48
+  IP address: 10.5.48.27
+Device ID: K-HSTL-B-WING-9F
+  IP address: 10.5.48.29
+Interface: GigabitEthernet1/0/47,  Port ID (outgoing port): GigabitEthernet1/0/48
+  IP address: 10.5.48.29
