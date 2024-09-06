@@ -10,3 +10,9 @@ BHP-A-9F-SW:
   hostname: 10.5.48.64
   password: HSTLP@IITH2022
   username: iith
+BHP-A-3F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.62
+  password: HSTLP@IITH2022
+  username: iith
