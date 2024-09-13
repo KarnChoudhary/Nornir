@@ -1,0 +1,26 @@
+HP Comware Software, Version 7.1.045, Release 3106
+Copyright (c) 2010-2014 Hewlett-Packard Development Company, L.P.
+HP 5130-48G-4SFP+ EI Switch uptime is 0 weeks, 1 day, 22 hours, 18 minutes
+Last reboot reason : Cold reboot
+
+Boot image: flash:/5130ei-cmw710-boot-r3106.bin
+Boot image version: 7.1.045, Release 3106
+  Compiled Jul 31 2014 08:36:45
+System image: flash:/5130ei-cmw710-system-r3106.bin
+System image version: 7.1.045, Release 3106
+  Compiled Jul 31 2014 08:36:45
+
+
+Slot 1:
+Uptime is 0 weeks,1 day,22 hours,18 minutes
+HP 5130-48G-4SFP+ EI JG934A with 1 Processor
+BOARD TYPE:         HP-5130-48G-4SFP+ EI JG934A
+DRAM:               992M bytes
+FLASH:              512M bytes
+PCB 1 Version:      VER.B
+Bootrom Version:    109
+CPLD 1 Version:     002
+Release Version:    HP 5130-48G-4SFP+ EI JG934A-3106
+Patch Version  :    None
+Reboot Cause  :     ColdReboot
+[SubSlot 0] 48GE+4SFP Plus

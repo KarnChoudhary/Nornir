@@ -1,0 +1,26 @@
+HP Comware Software, Version 7.1.045, Release 3109P05
+Copyright (c) 2010-2015 Hewlett-Packard Development Company, L.P.
+HP 5130-24G-4SFP+ EI Switch uptime is 27 weeks, 3 days, 20 hours, 30 minutes
+Last reboot reason : Cold reboot
+
+Boot image: flash:/5130ei-cmw710-boot-r3109p05.bin
+Boot image version: 7.1.045, Release 3109P05
+  Compiled Jun 16 2015 17:47:17
+System image: flash:/5130ei-cmw710-system-r3109p05.bin
+System image version: 7.1.045, Release 3109P05
+  Compiled Jun 16 2015 17:47:17
+
+
+Slot 1:
+Uptime is 27 weeks,3 days,20 hours,30 minutes
+HP 5130-24G-4SFP+ EI JG932A with 1 Processor
+BOARD TYPE:         5130-24G-4SFP+ EI
+DRAM:               1024M bytes
+FLASH:              512M bytes
+PCB 1 Version:      VER.B
+Bootrom Version:    124
+CPLD 1 Version:     002
+Release Version:    HP 5130-24G-4SFP+ EI JG932A-3109P05
+Patch Version  :    None
+Reboot Cause  :     ColdReboot
+[SubSlot 0] 24GE+4SFP Plus

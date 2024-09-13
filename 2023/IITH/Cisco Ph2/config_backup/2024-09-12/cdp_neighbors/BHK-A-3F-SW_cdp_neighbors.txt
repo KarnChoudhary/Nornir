@@ -1,0 +1,6 @@
+Device ID: K-HOSTEL-GF-A-WING.iith.ac.in
+  IP address: 10.5.48.21
+  IP address: 10.5.48.21
+Device ID: K-HSTL-A-WING-6F
+  IP address: 10.5.48.23
+  IP address: 10.5.48.23

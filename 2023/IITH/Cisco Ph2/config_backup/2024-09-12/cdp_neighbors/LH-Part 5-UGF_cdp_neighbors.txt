@@ -1,0 +1,17 @@
+Device ID: e455a8068e2c
+  IP address: 10.5.109.54
+Device ID: e455a8067e7e
+  IP address: 10.5.109.50
+Device ID: e455a8067b1e
+  IP address: 10.5.109.63
+Device ID: e455a8067e29
+  IP address: 10.5.109.48
+Device ID: e455a806755a
+  IP address: 10.5.109.49
+Device ID: e455a8067b20
+  IP address: 10.5.109.60
+Device ID: e455a8067bde
+  IP address: 10.5.109.52
+Device ID: LH-UGF-PART-3.iith.ac.in
+  IP address: 10.5.108.103
+  IP address: 10.5.108.103

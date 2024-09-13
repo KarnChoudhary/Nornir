@@ -1,0 +1,32 @@
+Device ID: e455a81a875d
+  IP address: 10.5.125.60
+Device ID: e455a81a60f0
+  IP address: 10.5.125.29
+Device ID: e455a81a406c
+  IP address: 10.5.125.182
+Device ID: e455a81a75a2
+  IP address: 10.5.125.37
+Device ID: e455a81a85f8
+  IP address: 10.5.125.126
+Device ID: e455a81a60e7
+  IP address: 10.5.125.241
+Device ID: e455a81a75c7
+  IP address: 10.5.125.150
+Device ID: DOD-00-DIS.iith.ac.in
+  IP address: 10.5.124.1
+  IP address: 10.5.124.1
+Device ID: DOD-00-DIS.iith.ac.in
+  IP address: 10.5.124.1
+  IP address: 10.5.124.1
+Device ID: e455a81a7587
+  IP address: 10.5.125.220
+Device ID: e455a81a75ac
+  IP address: 10.5.125.43
+Device ID: e455a81a2aa2
+  IP address: 10.5.125.244
+Device ID: e455a81a7672
+  IP address: 10.5.125.219
+Device ID: e455a81a8728
+  IP address: 10.5.125.10
+Device ID: e455a81a6313
+  IP address: 10.5.125.176

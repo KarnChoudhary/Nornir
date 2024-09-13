@@ -1,0 +1,26 @@
+HPE Comware Software, Version 7.1.045, Release 3113P05
+Copyright (c) 2010-2016 Hewlett Packard Enterprise Development LP
+HPE 5130-48G-4SFP+ EI Switch uptime is 0 weeks, 1 day, 22 hours, 17 minutes
+Last reboot reason : Cold reboot
+
+Boot image: flash:/5130ei-cmw710-boot-r3113p05.bin
+Boot image version: 7.1.045, Release 3113P05
+  Compiled May 25 2016 16:00:00
+System image: flash:/5130ei-cmw710-system-r3113p05.bin
+System image version: 7.1.045, Release 3113P05
+  Compiled May 25 2016 16:00:00
+
+
+Slot 1:
+Uptime is 0 weeks,1 day,22 hours,17 minutes
+HPE 5130-48G-4SFP+ EI JG934A with 1 Processor
+BOARD TYPE:         5130-48G-4SFP+ EI
+DRAM:               1024M bytes
+FLASH:              512M bytes
+PCB 1 Version:      VER.B
+Bootrom Version:    145
+CPLD 1 Version:     002
+Release Version:    HPE 5130-48G-4SFP+ EI JG934A-3113P05
+Patch Version  :    None
+Reboot Cause  :     ColdReboot
+[SubSlot 0] 48GE+4SFP Plus

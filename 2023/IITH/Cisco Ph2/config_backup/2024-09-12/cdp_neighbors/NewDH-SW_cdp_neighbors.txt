@@ -1,0 +1,13 @@
+Device ID: e455a8063a3f
+  IP address: 10.5.101.9
+Device ID: e455a8063cd0
+  IP address: 10.5.101.10
+Device ID: e455a8063d7b
+  IP address: 10.5.101.103
+Device ID: e455a8063d2d
+  IP address: 10.5.101.101
+Device ID: DH-DISTRIBUTION-SW.iith.ac.in
+  IP address: 10.5.100.1
+  IP address: 10.5.100.1
+Device ID: e455a8063a75
+  IP address: 10.5.101.11

@@ -1,0 +1,51 @@
+Device ID: P1-H0STEL-3F-B-WING.iith.ac.in
+  IP address: 10.5.48.77
+  IP address: 10.5.48.77
+Device ID: Q-H0STEL-GND-B-WING.iith.ac.in
+  IP address: 10.5.48.86
+  IP address: 10.5.48.86
+Device ID: P-H0STEL-GND-B-WING.iith.ac.in
+  IP address: 10.5.48.66
+  IP address: 10.5.48.66
+Device ID: P-H0STEL-GND-A-WING.iith.ac.in
+  IP address: 10.5.48.61
+  IP address: 10.5.48.61
+Device ID: Q-H0STEL-GND-A-WING.iith.ac.in
+  IP address: 10.5.48.81
+  IP address: 10.5.48.81
+Device ID: J-H0STEL-GND-A-WING.iith.ac.in
+  IP address: 10.5.48.11
+  IP address: 10.5.48.11
+Device ID: J-H0STEL-GND-B-WING.iith.ac.in
+  IP address: 10.5.48.16
+  IP address: 10.5.48.16
+Device ID: L-H0STEL-GND-A-WING.iith.ac.in
+  IP address: 10.5.48.31
+  IP address: 10.5.48.31
+Device ID: CORE-SW-1.iith.ac.in
+  IP address: 192.168.41.149
+  IP address: 192.168.41.149
+Device ID: K-HOSTEL-GF-A-WING.iith.ac.in
+  IP address: 10.5.48.21
+  IP address: 10.5.48.21
+Device ID: N-HOSTEL-GF-B-WING.iith.ac.in
+  IP address: 10.5.48.56
+  IP address: 10.5.48.56
+Device ID: N-HOSTEL-GF-A-WING.iith.ac.in
+  IP address: 10.5.48.51
+  IP address: 10.5.48.51
+Device ID: K-HSTL-B-WING-GF.iith.ac.in
+  IP address: 10.5.48.26
+  IP address: 10.5.48.26
+Device ID: P1-H0STEL-GND-A-WING.iith.ac.in
+  IP address: 10.5.48.71
+  IP address: 10.5.48.71
+Device ID: M-H0STEL-GF-B-1-WING.iith.ac.in
+  IP address: 10.5.48.46
+  IP address: 10.5.48.46
+Device ID: M-H0STEL-GF-A-1-WING.iith.ac.in
+  IP address: 10.5.48.41
+  IP address: 10.5.48.41
+Device ID: L-HOSTEL-GND-B-WING.iith.ac.in
+  IP address: 10.5.48.36
+  IP address: 10.5.48.36

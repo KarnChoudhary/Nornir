@@ -1,0 +1,6 @@
+Device ID: K-HSTL-A-WING-9F
+  IP address: 10.5.48.24
+  IP address: 10.5.48.24
+Device ID: K-HSTL-A-WING-3F
+  IP address: 10.5.48.22
+  IP address: 10.5.48.22

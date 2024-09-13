@@ -1,0 +1,26 @@
+HPE Comware Software, Version 7.1.070, Release 3507
+Copyright (c) 2010-2021 Hewlett Packard Enterprise Development LP
+HPE 5130 24G 4SFP+ EI Switch uptime is 64 weeks, 1 day, 17 hours, 54 minutes
+Last reboot reason : Cold reboot
+
+Boot image: flash:/5130ei-cmw710-boot-r3507.bin
+Boot image version: 7.1.070, Release 3507
+  Compiled Jun 08 2021 11:00:00
+System image: flash:/5130ei-cmw710-system-r3507.bin
+System image version: 7.1.070, Release 3507
+  Compiled Jun 08 2021 11:00:00
+
+
+Slot 1:
+Uptime is 64 weeks,1 day,17 hours,54 minutes
+5130-24G-4SFP+ EI with 1 Processor
+BOARD TYPE:         5130-24G-4SFP+ EI
+DRAM:               1024M bytes
+FLASH:              512M bytes
+PCB 1 Version:      VER.B
+Bootrom Version:    147
+CPLD 1 Version:     002
+Release Version:    HPE 5130 24G 4SFP+ EI JG932A-3507
+Patch Version  :    None
+Reboot Cause  :     ColdReboot
+[SubSlot 0] 24GE+4SFP Plus

@@ -1,0 +1,45 @@
+Device ID: DOD-ZONE-8-2F.iith.ac.in
+  IP address: 10.5.124.107
+  IP address: 10.5.124.107
+Device ID: DOD-ZONE-8-2F.iith.ac.in
+  IP address: 10.5.124.107
+  IP address: 10.5.124.107
+Device ID: DOD-ZONE-9-3F.iith.ac.in
+  IP address: 10.5.124.108
+  IP address: 10.5.124.108
+Device ID: DOD-ZONE-9-3F.iith.ac.in
+  IP address: 10.5.124.108
+  IP address: 10.5.124.108
+Device ID: DOD-ZONE-6-2F.iith.ac.in
+  IP address: 10.5.124.105
+  IP address: 10.5.124.105
+Device ID: DOD-ZONE-6-2F.iith.ac.in
+  IP address: 10.5.124.105
+  IP address: 10.5.124.105
+Device ID: DOD-ZONE-7-1F.iith.ac.in
+  IP address: 10.5.124.106
+  IP address: 10.5.124.106
+Device ID: DOD-ZONE-7-1F.iith.ac.in
+  IP address: 10.5.124.106
+  IP address: 10.5.124.106
+Device ID: CORE-SW-1.iith.ac.in
+  IP address: 192.168.41.145
+  IP address: 192.168.41.145
+Device ID: DOD-ZONE-2-GF.iith.ac.in
+  IP address: 10.5.124.102
+  IP address: 10.5.124.102
+Device ID: DOD-ZONE-2-GF.iith.ac.in
+  IP address: 10.5.124.102
+  IP address: 10.5.124.102
+Device ID: DOD-ZONE-3-GF.iith.ac.in
+  IP address: 10.5.124.103
+  IP address: 10.5.124.103
+Device ID: DOD-ZONE-3-GF.iith.ac.in
+  IP address: 10.5.124.103
+  IP address: 10.5.124.103
+Device ID: DOD-ZONE-1-GF.iith.ac.in
+  IP address: 10.5.124.101
+  IP address: 10.5.124.101
+Device ID: DOD-ZONE-1-GF.iith.ac.in
+  IP address: 10.5.124.101
+  IP address: 10.5.124.101
