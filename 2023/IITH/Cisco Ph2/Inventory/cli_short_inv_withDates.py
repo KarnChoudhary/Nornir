@@ -9,58 +9,64 @@ nr = InitNornir(config_file="config.yaml")
 command = "show inventory"
 command1 = "show license all | include Start Date"
 command2 = "show license all | include End Date"
-def nornir_napalm_cli_commands_example(task):
-    task.run(task=napalm_cli, commands=[command,command1,command2])
 
-results=nr.run(task=nornir_napalm_cli_commands_example)
+def nornir_napalm_cli_commands_example(task):
+    task.run(task=napalm_cli, commands=[command, command1, command2])
+
+results = nr.run(task=nornir_napalm_cli_commands_example)
 print_result(results)
-                      
-if command == "show inventory":        
+
+if command == "show inventory":
     import csv
     filename = "abc1.csv"
 
     lines = []
-    lines.append(["Hostname", "Name", "Description", "Serial Number", "Start Date", "End Date"])
+    lines.append(["Hostname", "Name", "Description", "Serial Number", "Start Date", "End Date", "PoE Status"])
 
     # we got results for all the devices here. which is called as "results"
-    for a,x in results.items():
+    for a, x in results.items():
         # now we are choosing a particular device / hostname to dive deep
         for b in results[a]:
             # now we are checking all the sub-tasks / results (cell unit of single host -> single device -> single tasks dictionary)
             if b.result:
-                print(b.result)        
-                for key,t in b.result.items():  
-                    print("Type of b.result",type(b.result)) 
-                    print("printing key:",key)
-                    print("printing t:",t)
-                    print("Type of key",type(key))  
-                    print("Type of t",type(t))
-                                
-                    if t:                        
+                print(b.result)
+                for key, t in b.result.items():
+                    print("Type of b.result", type(b.result))
+                    print("printing key:", key)
+                    print("printing t:", t)
+                    print("Type of key", type(key))
+                    print("Type of t", type(t))
+
+                    if t:
                         # now we got the result from terminal but it has a simple string like output.
                         # hence we need to split all the names of parts of machine
-                        newstr = t.split("NAME")                    
-                                                
+                        newstr = t.split("NAME")
+
                         for n in newstr:
                             text1 = "NAME" + n
                             # going to check name and desc using regex patterns
-                            matches1 = re.search(r'NAME: "(.*?)",\sDESCR: "(.*?)"', text1)                        
-                            
+                            matches1 = re.search(r'NAME: "(.*?)",\sDESCR: "(.*?)"', text1)
+
                             if matches1:
                                 name = matches1.group(1)
                                 descr = matches1.group(2)
-                                sn = text1.split("SN:")[1]    # since we know that SN is in last of text1
+                                sn = text1.split("SN:")[1]  # since we know that SN is in last of text1
+
+                                # Determine PoE status based on description
+                                poe_status = "Non PoE"
+                                if "24P" in descr or "48P" in descr:
+                                    poe_status = "PoE"
 
                                 if descr.startswith("C93") or descr.startswith("C95"):
-                                    lines.append([a, name,descr,sn.strip(), "-", "-"])
+                                    lines.append([a, name, descr, sn.strip(), "-", "-", poe_status])
 
-                        #print("t ---------->", key, "---a-", a,"---", t)
+                        # print("t ---------->", key, "---a-", a, "---", t)
                         if "Start Date" in str(t).strip():
                             for l in lines[1:]:
                                 bbb = t.strip().split(":")[1].split("UTC")[0].strip()
                                 if a.strip() in l:
                                     l[4] = bbb.strip()
-                        
+
                         if "End Date" in str(t).strip():
                             for l in lines[1:]:
                                 bbb = t.strip().split(":")[1].split("UTC")[0].strip()
