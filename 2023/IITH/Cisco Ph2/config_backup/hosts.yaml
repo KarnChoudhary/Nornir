@@ -772,12 +772,12 @@ DoD-Z3-GF:
   hostname: 10.5.124.103
   password: DOD@IITH2022
   username: iith
-# DoD-Z5-1F:
-#   groups:
-#   - cisco
-#   hostname: 10.5.124.104
-#   password: DOD@IITH2022
-#   username: iith
+DoD-Z5-1F:
+  groups:
+  - cisco
+  hostname: 10.5.124.104
+  password: DOD@IITH2022
+  username: iith
 DoD-Z6-2F:
   groups:
   - cisco

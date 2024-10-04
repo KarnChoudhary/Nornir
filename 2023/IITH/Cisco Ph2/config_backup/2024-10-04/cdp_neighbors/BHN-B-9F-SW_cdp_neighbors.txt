@@ -1,0 +1,3 @@
+Device ID: N-6TH-SWITCH-B.iith.ac.in
+  IP address: 10.5.48.58
+  IP address: 10.5.48.58

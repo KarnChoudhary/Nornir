@@ -1,0 +1,34 @@
+
+Source Mac Validation      : Disabled
+Destination Mac Validation : Disabled
+IP Address Validation      : Disabled
+
+ Vlan     Configuration    Operation   ACL Match          Static ACL
+ ----     -------------    ---------   ---------          ----------
+  160     Enabled          Inactive                       
+  185     Enabled          Active                         
+  186     Enabled          Active                         
+
+ Vlan     ACL Logging      DHCP Logging      Probe Logging
+ ----     -----------      ------------      -------------
+  160     Deny             Deny              Off          
+  185     Deny             Deny              Off          
+  186     Deny             Deny              Off          
+
+ Vlan      Forwarded        Dropped     DHCP Drops      ACL Drops
+ ----      ---------        -------     ----------      ---------
+  160              0              0              0              0
+  185            184           7976           7976              0
+  186         336461           3258           3258              0
+
+ Vlan   DHCP Permits    ACL Permits  Probe Permits   Source MAC Failures
+ ----   ------------    -----------  -------------   -------------------
+  160              0              0              0                     0
+  185              0              0            184                     0
+  186         334147              0           2314                     0
+
+ Vlan   Dest MAC Failures   IP Validation Failures   Invalid Protocol Data
+ ----   -----------------   ----------------------   ---------------------
+  160                   0                        0                       0
+  185                   0                        0                       0
+  186                   0                        0                       0

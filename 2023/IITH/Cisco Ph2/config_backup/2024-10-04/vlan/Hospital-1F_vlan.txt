@@ -1,0 +1,71 @@
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Te1/1/2, Te1/1/3, Te1/1/4
+9    VLAN0009                         active    
+32   switchmgmt                       active    
+170  VLAN0170                         active    
+171  VLAN0171                         active    
+172  VLAN0172                         active    
+173  VLAN0173                         active    
+174  VLAN0174                         active    
+175  VLAN0175                         active    
+176  VLAN0176                         active    
+177  VLAN0177                         active    
+178  VLAN0178                         active    
+179  VLAN0179                         active    
+266  VLAN0266                         active    
+267  VLAN0267                         active    
+268  VLAN0268                         active    
+440  VLAN0440                         active    
+660  lan                              active    
+759  VLAN0759                         active    Gi1/0/1
+760  VLAN0760                         active    Gi1/0/21
+881  VLAN0881                         active    
+882  VLAN0882                         active    Gi1/0/2, Gi1/0/3, Gi1/0/4, Gi1/0/5, Gi1/0/6, Gi1/0/7, Gi1/0/8, Gi1/0/9, Gi1/0/10, Gi1/0/11, Gi1/0/12, Gi1/0/13, Gi1/0/14, Gi1/0/15, Gi1/0/16, Gi1/0/17, Gi1/0/18, Gi1/0/19, Gi1/0/20, Gi1/0/22
+883  VLAN0883                         active    
+884  VLAN0884                         active    
+885  VLAN0885                         active    
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+1    enet  100001     1500  -      -      -        -    -        0      0   
+9    enet  100009     1500  -      -      -        -    -        0      0   
+32   enet  100032     1500  -      -      -        -    -        0      0   
+170  enet  100170     1500  -      -      -        -    -        0      0   
+171  enet  100171     1500  -      -      -        -    -        0      0   
+172  enet  100172     1500  -      -      -        -    -        0      0   
+173  enet  100173     1500  -      -      -        -    -        0      0   
+174  enet  100174     1500  -      -      -        -    -        0      0   
+175  enet  100175     1500  -      -      -        -    -        0      0   
+176  enet  100176     1500  -      -      -        -    -        0      0   
+177  enet  100177     1500  -      -      -        -    -        0      0   
+178  enet  100178     1500  -      -      -        -    -        0      0   
+179  enet  100179     1500  -      -      -        -    -        0      0   
+266  enet  100266     1500  -      -      -        -    -        0      0   
+267  enet  100267     1500  -      -      -        -    -        0      0   
+268  enet  100268     1500  -      -      -        -    -        0      0   
+440  enet  100440     1500  -      -      -        -    -        0      0   
+660  enet  100660     1500  -      -      -        -    -        0      0   
+759  enet  100759     1500  -      -      -        -    -        0      0   
+760  enet  100760     1500  -      -      -        -    -        0      0   
+881  enet  100881     1500  -      -      -        -    -        0      0   
+882  enet  100882     1500  -      -      -        -    -        0      0   
+883  enet  100883     1500  -      -      -        -    -        0      0   
+884  enet  100884     1500  -      -      -        -    -        0      0   
+885  enet  100885     1500  -      -      -        -    -        0      0   
+1002 fddi  101002     1500  -      -      -        -    -        0      0   
+1003 tr    101003     1500  -      -      -        -    -        0      0   
+1004 fdnet 101004     1500  -      -      -        ieee -        0      0   
+1005 trnet 101005     1500  -      -      -        ibm  -        0      0   
+
+Remote SPAN VLANs
+------------------------------------------------------------------------------
+
+
+Primary Secondary Type              Ports
+------- --------- ----------------- ------------------------------------------

@@ -1,0 +1,27 @@
+Device ID: e455a81a769e
+  IP address: 10.4.133.105
+Device ID: e455a81a51a4
+  IP address: 10.4.133.107
+Device ID: e455a8067bd3
+  IP address: 10.4.133.50
+Device ID: e455a81a7748
+  IP address: 10.4.133.106
+Device ID: e455a81a4cb5
+  IP address: 10.4.133.65
+Device ID: e455a81a7574
+  IP address: 10.4.133.104
+Device ID: e455a81a5896
+  IP address: 10.4.133.110
+Device ID: e455a81a7561
+  IP address: 10.4.133.101
+Device ID: e455a81a4046
+  IP address: 10.4.133.53
+Device ID: e455a81a7616
+  IP address: 10.4.133.102
+Device ID: e455a81a6374
+  IP address: 10.4.133.109
+Device ID: f89e2877b5cb
+  IP address: 10.4.133.47
+Device ID: SNCC-00-DIS.iith.ac.in
+  IP address: 10.4.132.1
+  IP address: 10.4.132.1

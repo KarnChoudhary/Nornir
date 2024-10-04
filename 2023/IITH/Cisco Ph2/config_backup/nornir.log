@@ -620,3 +620,140 @@ nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed
 2024-09-12 13:00:35,528 -  nornir.core -     INFO -        run() - Running task 'save_cdp_neighbors' with args {} on 210 hosts
 2024-09-12 13:00:35,541 -  nornir.core -     INFO -        run() - Running task 'save_vlan' with args {} on 210 hosts
 2024-09-12 13:00:35,551 -  nornir.core -     INFO -        run() - Running task 'save_lldp_neighbors' with args {} on 210 hosts
+2024-10-04 12:32:31,442 -  nornir.core -     INFO -        run() - Running task 'get_running_config' with args {} on 211 hosts
+2024-10-04 12:32:55,935 - nornir.core.task -    ERROR -      start() - Host 'KNC-R1-02': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/lib/python3/dist-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+                            ^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.4.120.103:22
+
+
+
+2024-10-04 12:32:55,937 - nornir.core.task -    ERROR -      start() - Host 'KNC-R1-02': task 'get_running_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/IITH/Cisco Ph2/config_backup/backup running config,neighbors,vlan,arp inspection,lldp ngbr.py", line 24, in get_running_config
+    result = task.run(
+             ^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-10-04 12:34:29,546 -  nornir.core -     INFO -        run() - Running task 'get_running_config' with args {} on 212 hosts
+2024-10-04 12:34:53,960 - nornir.core.task -    ERROR -      start() - Host 'KNC-R1-02': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/lib/python3/dist-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+           ^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 358, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+                            ^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.4.120.103:22
+
+
+
+2024-10-04 12:34:53,962 - nornir.core.task -    ERROR -      start() - Host 'KNC-R1-02': task 'get_running_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/IITH/Cisco Ph2/config_backup/backup running config,neighbors,vlan,arp inspection,lldp ngbr.py", line 24, in get_running_config
+    result = task.run(
+             ^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-10-04 12:34:53,965 -  nornir.core -     INFO -        run() - Running task 'get_arp_inspection' with args {} on 211 hosts
+2024-10-04 12:34:59,896 -  nornir.core -     INFO -        run() - Running task 'get_cdp_neighbors' with args {} on 211 hosts
+2024-10-04 12:35:03,729 -  nornir.core -     INFO -        run() - Running task 'get_vlan' with args {} on 211 hosts
+2024-10-04 12:35:05,760 -  nornir.core -     INFO -        run() - Running task 'get_lldp_neighbors' with args {} on 211 hosts
+2024-10-04 12:35:08,611 -  nornir.core -     INFO -        run() - Running task 'save_running_config' with args {} on 211 hosts
+2024-10-04 12:35:08,644 -  nornir.core -     INFO -        run() - Running task 'save_arp_inspection' with args {} on 211 hosts
+2024-10-04 12:35:08,668 -  nornir.core -     INFO -        run() - Running task 'save_cdp_neighbors' with args {} on 211 hosts
+2024-10-04 12:35:08,680 -  nornir.core -     INFO -        run() - Running task 'save_vlan' with args {} on 211 hosts
+2024-10-04 12:35:08,691 -  nornir.core -     INFO -        run() - Running task 'save_lldp_neighbors' with args {} on 211 hosts

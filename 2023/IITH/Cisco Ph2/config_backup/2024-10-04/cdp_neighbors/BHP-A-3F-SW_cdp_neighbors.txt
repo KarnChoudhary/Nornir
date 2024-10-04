@@ -1,0 +1,6 @@
+Device ID: P-H0STEL-GND-A-WING.iith.ac.in
+  IP address: 10.5.48.61
+  IP address: 10.5.48.61
+Device ID: P-H0STEL-6TH-A-WING.iith.ac.in
+  IP address: 10.5.48.63
+  IP address: 10.5.48.63
