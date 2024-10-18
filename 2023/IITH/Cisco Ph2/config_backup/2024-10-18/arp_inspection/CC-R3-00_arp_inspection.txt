@@ -1,0 +1,39 @@
+
+Source Mac Validation      : Disabled
+Destination Mac Validation : Disabled
+IP Address Validation      : Disabled
+
+ Vlan     Configuration    Operation   ACL Match          Static ACL
+ ----     -------------    ---------   ---------          ----------
+  635     Enabled          Active                         
+  636     Enabled          Active                         
+  637     Enabled          Active                         
+  638     Enabled          Active                         
+
+ Vlan     ACL Logging      DHCP Logging      Probe Logging
+ ----     -----------      ------------      -------------
+  635     Deny             Deny              Off          
+  636     Deny             Deny              Off          
+  637     Deny             Deny              Off          
+  638     Deny             Deny              Off          
+
+ Vlan      Forwarded        Dropped     DHCP Drops      ACL Drops
+ ----      ---------        -------     ----------      ---------
+  635         116062              4              4              0
+  636              0              0              0              0
+  637              0              0              0              0
+  638              0              0              0              0
+
+ Vlan   DHCP Permits    ACL Permits  Probe Permits   Source MAC Failures
+ ----   ------------    -----------  -------------   -------------------
+  635          11177              0         104885                     0
+  636              0              0              0                     0
+  637              0              0              0                     0
+  638              0              0              0                     0
+
+ Vlan   Dest MAC Failures   IP Validation Failures   Invalid Protocol Data
+ ----   -----------------   ----------------------   ---------------------
+  635                   0                        0                       0
+  636                   0                        0                       0
+  637                   0                        0                       0
+  638                   0                        0                       0

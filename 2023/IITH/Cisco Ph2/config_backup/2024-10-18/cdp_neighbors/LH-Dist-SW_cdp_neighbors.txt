@@ -1,0 +1,24 @@
+Device ID: CORE-SW-1.iith.ac.in
+  IP address: 192.168.41.129
+  IP address: 192.168.41.129
+Device ID: LH-UGF-PART-5.iith.ac.in
+  IP address: 10.5.108.105
+  IP address: 10.5.108.105
+Device ID: LH-UGF-PART-1.iith.ac.in
+  IP address: 10.5.108.102
+  IP address: 10.5.108.102
+Device ID: LH-UGF-PART-1.iith.ac.in
+  IP address: 10.5.108.102
+  IP address: 10.5.108.102
+Device ID: LH-UGF-PART-3.iith.ac.in
+  IP address: 10.5.108.103
+  IP address: 10.5.108.103
+Device ID: LH-UGF-PART-3.iith.ac.in
+  IP address: 10.5.108.103
+  IP address: 10.5.108.103
+Device ID: LH-LGF-PART-1.iith.ac.in
+  IP address: 10.5.108.101
+  IP address: 10.5.108.101
+Device ID: LH-LGF-PART-1.iith.ac.in
+  IP address: 10.5.108.101
+  IP address: 10.5.108.101

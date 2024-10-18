@@ -1,0 +1,42 @@
+Device ID: TIP-H-block-1F.iith.ac.in
+  IP address: 10.4.136.106
+  IP address: 10.4.136.106
+Device ID: TIP-H-block-2F.iith.ac.in
+  IP address: 10.4.136.107
+  IP address: 10.4.136.107
+Device ID: TIP-H-block-3F.iith.ac.in
+  IP address: 10.4.136.108
+  IP address: 10.4.136.108
+Device ID: TIP-H-block-4F.iith.ac.in
+  IP address: 10.4.136.109
+  IP address: 10.4.136.109
+Device ID: TIP-H-block-5F.iith.ac.in
+  IP address: 10.4.136.110
+  IP address: 10.4.136.110
+Device ID: CORE-SW-1.iith.ac.in
+  IP address: 192.168.41.97
+  IP address: 192.168.41.97
+Device ID: TIP-STARECASE-2-GF.iith.ac.in
+  IP address: 10.4.136.100
+  IP address: 10.4.136.100
+Device ID: TIP-STARECASE-2-GF.iith.ac.in
+  IP address: 10.4.136.100
+  IP address: 10.4.136.100
+Device ID: Starecase-2-4F.iith.ac.in
+  IP address: 10.4.136.104
+  IP address: 10.4.136.104
+Device ID: Starecase-2-2F.iith.ac.in
+  IP address: 10.4.136.102
+  IP address: 10.4.136.102
+Device ID: Starecase-2-3F.iith.ac.in
+  IP address: 10.4.136.103
+  IP address: 10.4.136.103
+Device ID: TIP-H-block-GF.iith.ac.in
+  IP address: 10.4.136.101
+  IP address: 10.4.136.101
+Device ID: TIP-H-block-GF.iith.ac.in
+  IP address: 10.4.136.105
+  IP address: 10.4.136.105
+Device ID: TIP-H-block-GF.iith.ac.in
+  IP address: 10.4.136.105
+  IP address: 10.4.136.105

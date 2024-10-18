@@ -1,0 +1,6 @@
+Device ID: PoE-sw-HCF.iith.ac.in
+  IP address: 192.168.9.141
+  IP address: 192.168.9.141
+Device ID: HCF-SW2.iith.ac.in
+  IP address: 192.168.9.142
+  IP address: 192.168.9.142

@@ -1,0 +1,6 @@
+Device ID: P-H0STEL-9TH-B-WING.iith.ac.in
+  IP address: 10.5.48.69
+  IP address: 10.5.48.69
+Device ID: P-H0STEL-3RD-B-WING.iith.ac.in
+  IP address: 10.5.48.67
+  IP address: 10.5.48.67
