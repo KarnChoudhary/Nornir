@@ -1,0 +1,9 @@
+Device ID: N-HOSTEL-GF-B-WING.iith.ac.in
+  IP address: 10.5.48.56
+  IP address: 10.5.48.56
+Device ID: N-6TH-SWITCH-B.iith.ac.in
+  IP address: 10.5.48.58
+  IP address: 10.5.48.58
+Device ID: N-6TH-SWITCH-B.iith.ac.in
+  IP address: 10.5.48.58
+  IP address: 10.5.48.58

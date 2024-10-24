@@ -24,7 +24,7 @@ def netmiko_show_int_trans(task):
     return {task.host.name: output}
 
 results = nr.run(task=netmiko_show_int_trans)
-filename = "opticsm.csv"
+filename = "Dist_sw_optics.csv"
 lines = []
 lines.append(["Interface", "Switch", "Instant Input Power"])
 print_result(results)
@@ -58,4 +58,4 @@ with open(filename, mode='w+', newline='') as file:
     writer = csv.writer(file)
     writer.writerows(lines)
 
-print("end of code")
+print("end of code,check excel file Dist_sw_optics.csv")

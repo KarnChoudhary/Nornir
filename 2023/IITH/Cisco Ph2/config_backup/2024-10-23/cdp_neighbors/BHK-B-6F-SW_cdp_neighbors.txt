@@ -1,0 +1,12 @@
+Device ID: K-HSTL-B-WING-9F.iith.ac.in
+  IP address: 10.5.48.29
+  IP address: 10.5.48.29
+Device ID: K-HSTL-B-WING-9F.iith.ac.in
+  IP address: 10.5.48.29
+  IP address: 10.5.48.29
+Device ID: K-HSTL-B-WING-3F.iith.ac.in
+  IP address: 10.5.48.27
+  IP address: 10.5.48.27
+Device ID: K-HSTL-B-WING-3F.iith.ac.in
+  IP address: 10.5.48.27
+  IP address: 10.5.48.27
