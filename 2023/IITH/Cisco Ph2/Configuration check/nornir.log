@@ -1,0 +1,10 @@
+2024-11-05 10:59:09,524 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 1 hosts
+2024-11-05 11:01:08,383 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 1 hosts
+2024-11-05 11:01:31,560 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 1 hosts
+2024-11-05 11:04:33,259 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 1 hosts
+2024-11-05 11:08:48,087 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 1 hosts
+2024-11-05 11:11:01,547 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 1 hosts
+2024-11-05 11:11:15,534 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 1 hosts
+2024-11-05 11:13:10,248 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 1 hosts
+2024-11-05 11:13:55,367 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 2 hosts
+2024-11-05 11:14:38,518 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 3 hosts
