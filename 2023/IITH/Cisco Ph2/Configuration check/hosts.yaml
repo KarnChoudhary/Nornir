@@ -10,12 +10,12 @@ BHJ-A-6F-SW:
   hostname: 10.5.48.13
   password: HSTLJ@IITH2022
   username: iith
-# AD2-SHAFT-A-2F:
-#   groups:
-#   - cisco
-#   hostname: 10.5.112.101
-#   password: AD2@IITH2022
-#   username: iith
+AD2-SHAFT-A-2F:
+  groups:
+  - cisco
+  hostname: 10.5.112.101
+  password: AD2@IITH2022
+  username: iith
 # BHJ-A-9F-SW:
 #   groups:
 #   - cisco
