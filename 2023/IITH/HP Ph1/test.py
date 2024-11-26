@@ -13,7 +13,7 @@ logger = logging.getLogger("nornir")
 # Initialize Nornir
 nr = InitNornir(config_file="config.yaml")
 
-# Define the task to handle the password change prompt and run the display version command
+# Define the task to handle the password change prompt and run the display transceiver diagnos interface command
 def handle_password_change_and_run_command(task):
     password_change_commands = [
         "undo password-control change-password first-login enable",
@@ -48,32 +48,31 @@ def handle_password_change_and_run_command(task):
         else:
             logger.info(f"No password change prompt detected on {task.host.name}")
 
-        # Run the display version command
-        command = "display version"
+        # Run the display transceiver diagnos interface command
+        command = "display transceiver diagnos interface"
         result = net_connect.send_command(command)
         logger.info(f"Command '{command}' executed successfully on {task.host.name}")
         command_executed = True
 
         # Extract required information using regular expressions
-        boot_image = re.search(r'Boot image:\s*(.+)', result)
-        boot_image_version = re.search(r'Boot image version:\s*(.+)', result)
-        compiled = re.search(r'Compiled\s*(.+)', result)
-        board_type = re.search(r'BOARD TYPE:\s*(.+)', result)
+        interface_pattern = re.compile(r'(\S+) transceiver diagnostic information:')
+        rx_power_pattern = re.compile(r'RX power\(dBm\)\s+(-?\d+\.\d+)')
 
-        boot_image = boot_image.group(1) if boot_image else "N/A"
-        boot_image_version = boot_image_version.group(1) if boot_image_version else "N/A"
-        compiled = compiled.group(1) if compiled else "N/A"
-        board_type = board_type.group(1) if board_type else "N/A"
+        interfaces = interface_pattern.findall(result)
+        rx_powers = rx_power_pattern.findall(result)
 
-        print(f"Result for {task.host.name}:")
-        print(f"Boot Image: {boot_image}")
-        print(f"Boot Image Version: {boot_image_version}")
-        print(f"Compiled: {compiled}")
-        print(f"BOARD TYPE: {board_type}")
+        if len(interfaces) == len(rx_powers):
+            for interface, rx_power in zip(interfaces, rx_powers):
+                print(f"Result for {task.host.name}:")
+                print(f"Interface: {interface}")
+                print(f"RX Power (dBm): {rx_power}")
 
-        # Write the output to CSV
-        write_to_csv(task.host.name, task.host.hostname, "Command Output", "", boot_image, boot_image_version, compiled, board_type)
-        logger.info(f"Writing content to CSV for {task.host.name}")
+                # Write the output to CSV
+                write_to_csv(task.host.name, task.host.hostname, "Command Output", "", interface, rx_power)
+                logger.info(f"Writing content to CSV for {task.host.name}")
+        else:
+            logger.error(f"Mismatch in the number of interfaces and RX power levels for {task.host.name}")
+            write_to_csv(task.host.name, task.host.hostname, "Error", "Mismatch in the number of interfaces and RX power levels")
 
     except Exception as e:
         error_message = str(e)
@@ -93,15 +92,15 @@ def handle_password_change_and_run_command(task):
 
     return None
 
-def write_to_csv(hostname, ip_address, status, message="", boot_image="", boot_image_version="", compiled="", board_type=""):
-    csv_file = 'task_status.csv'
+def write_to_csv(hostname, ip_address, status, message="", interface="", rx_power=""):
+    csv_file = 'optical_power.csv'
     file_exists = os.path.isfile(csv_file)
 
     with open(csv_file, mode='a', newline='') as file:
         writer = csv.writer(file)
         if not file_exists or os.path.getsize(csv_file) == 0:
-            writer.writerow(["Hostname", "IP Address", "Status", "Message", "Boot Image", "Boot Image Version", "Compiled", "Board Type"])
-        writer.writerow([hostname, ip_address, status, message, boot_image, boot_image_version, compiled, board_type])
+            writer.writerow(["Hostname", "IP Address", "Status", "Message", "Interface", "RX Power (dBm)"])
+        writer.writerow([hostname, ip_address, status, message, interface, rx_power])
 
 def extract_error_message(error_message):
     # Extract the relevant part of the error message
@@ -145,4 +144,4 @@ def remove_redundant_entries(csv_file):
         writer.writerows(filtered_rows)
 
 # Remove redundant entries from the CSV file
-remove_redundant_entries('task_status.csv')
+remove_redundant_entries('optical_power.csv')
