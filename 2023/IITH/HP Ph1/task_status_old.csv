@@ -1,0 +1,61 @@
+Hostname,IP Address,Status,Message,Boot Image,Boot Image Version,Compiled,Board Type
+BHA-00-R1-ELV-SW1,192.168.100.11,Command Output,,flash:/5130ei-cmw710-boot-r3507.bin,"7.1.070, Release 3507",Jun 08 2021 11:00:00,5130-24G-4SFP+ EI
+BHA-02-R1-ELV-SW1,192.168.100.12,Command Output,,flash:/5130ei-cmw710-boot-r3507.bin,"7.1.070, Release 3507",Jun 08 2021 11:00:00,5130-48G-4SFP+ EI JG934A
+BHA-02-R2-SW1,192.168.100.15,Command Output,,flash:/5130ei-cmw710-boot-r3507.bin,"7.1.070, Release 3507",Jun 08 2021 11:00:00,5130-48G-4SFP+ EI JG934A
+BHA-05-R1-ELV-SW1,192.168.100.13,Command Output,,flash:/5130ei-cmw710-boot-r3507.bin,"7.1.070, Release 3507",Jun 08 2021 11:00:00,5130-48G-4SFP+ EI JG934A
+BHA-05-R2-SW1,192.168.100.14,Command Output,,flash:/5130ei-cmw710-boot-r3507.bin,"7.1.070, Release 3507",Jun 08 2021 11:00:00,5130-48G-4SFP+ EI JG934A
+BHB-00-R1-ELV-SW1,192.168.100.21,Command Output,,flash:/5130ei-cmw710-boot-r3507.bin,"7.1.070, Release 3507",Jun 08 2021 11:00:00,5130-24G-4SFP+ EI
+BHB-02-R1-ELV-SW1,192.168.100.22,Command Output,,flash:/5130ei-cmw710-boot-r3507.bin,"7.1.070, Release 3507",Jun 08 2021 11:00:00,5130-48G-4SFP+ EI JG934A
+BHB-05-R1-ELV-SW1,192.168.100.23,Command Output,,flash:/5130ei-cmw710-boot-r3507.bin,"7.1.070, Release 3507",Jun 08 2021 11:00:00,5130-48G-4SFP+ EI JG934A
+BHB-05-R2-SW1,192.168.100.24,Command Output,,flash:/5130ei-cmw710-boot-r3507.bin,"7.1.070, Release 3507",Jun 08 2021 11:00:00,5130-48G-4SFP+ EI JG934A
+BHC-00-R1-ELV-SW1,192.168.100.31,Error,Authentication to device failed.,,,,
+BHC-00-R1-ELV-SW1,192.168.100.31,No password change prompt detected,,,,,
+BHC-02-R1-ELV-SW1,192.168.100.32,Error,Authentication to device failed.,,,,
+BHC-02-R1-ELV-SW1,192.168.100.32,No password change prompt detected,,,,,
+BHC-02-R2-SW1,192.168.100.35,Error,Authentication to device failed.,,,,
+BHC-02-R2-SW1,192.168.100.35,No password change prompt detected,,,,,
+BHC-05-R1-ELV-SW1,192.168.100.33,Error,Authentication to device failed.,,,,
+BHC-05-R1-ELV-SW1,192.168.100.33,No password change prompt detected,,,,,
+BHC-05-R2-SW1,192.168.100.34,Error,Authentication to device failed.,,,,
+BHC-05-R2-SW1,192.168.100.34,No password change prompt detected,,,,,
+BHD-00-R1-ELV-SW1,192.168.100.41,Error,Authentication to device failed.,,,,
+BHD-00-R1-ELV-SW1,192.168.100.41,No password change prompt detected,,,,,
+BHD-02-R1-ELV-SW1,192.168.100.42,Error,Authentication to device failed.,,,,
+BHD-02-R1-ELV-SW1,192.168.100.42,No password change prompt detected,,,,,
+BHD-02-R2-SW1,192.168.100.45,Error,Authentication to device failed.,,,,
+BHD-02-R2-SW1,192.168.100.45,No password change prompt detected,,,,,
+BHD-05-R1-ELV-SW1,192.168.100.43,Error,Authentication to device failed.,,,,
+BHD-05-R1-ELV-SW1,192.168.100.43,No password change prompt detected,,,,,
+BHD-05-R2-SW1,192.168.100.44,Command Output,,flash:/5130ei-cmw710-boot-r3113p05.bin,"7.1.045, Release 3113P05",May 25 2016 16:00:00,5130-48G-4SFP+ EI
+BHF-00-R1-ELV-SW1,192.168.100.61,Error,Authentication to device failed.,,,,
+BHF-00-R1-ELV-SW1,192.168.100.61,No password change prompt detected,,,,,
+BHF-02-R1-ELV-SW1,192.168.100.62,Error,Authentication to device failed.,,,,
+BHF-02-R1-ELV-SW1,192.168.100.62,No password change prompt detected,,,,,
+BHF-02-R2-SW1,192.168.100.65,Error,Authentication to device failed.,,,,
+BHF-02-R2-SW1,192.168.100.65,No password change prompt detected,,,,,
+BHF-05-R1-ELV-SW1,192.168.100.63,Error,Authentication to device failed.,,,,
+BHF-05-R1-ELV-SW1,192.168.100.63,No password change prompt detected,,,,,
+BHF-05-R2-SW1,192.168.100.64,Error,Authentication to device failed.,,,,
+BHF-05-R2-SW1,192.168.100.64,No password change prompt detected,,,,,
+BHG-00-R1-ELV-SW1,192.168.100.71,Command Output,,flash:/5130ei-cmw710-boot-r3109p05.bin,"7.1.045, Release 3109P05",Jun 16 2015 17:47:17,5130-24G-4SFP+ EI
+BHG-02-R1-ELV-SW1,192.168.100.72,Command Output,,flash:/5130ei-cmw710-boot-r3109p05.bin,"7.1.045, Release 3109P05",Jun 16 2015 17:47:17,5130-48G-4SFP+ EI
+BHG-02-R2-SW1,192.168.100.75,Command Output,,flash:/5130ei-cmw710-boot-r3109p05.bin,"7.1.045, Release 3109P05",Jun 16 2015 17:47:17,5130-48G-4SFP+ EI
+BHG-05-R1-ELV-SW1,192.168.100.73,Command Output,,flash:/5130ei-cmw710-boot-r3109p05.bin,"7.1.045, Release 3109P05",Jun 16 2015 17:47:17,5130-48G-4SFP+ EI
+BHG-05-R2-SW1,192.168.100.74,Command Output,,flash:/5130ei-cmw710-boot-r3109p05.bin,"7.1.045, Release 3109P05",Jun 16 2015 17:47:17,5130-48G-4SFP+ EI
+BHH-00-R1-ELV-SW1,192.168.100.81,Command Output,,flash:/5130ei-cmw710-boot-r3111p02.bin,"7.1.045, Release 3111P02",Dec 21 2015 16:00:00,5130-24G-4SFP+ EI
+BHH-02-R2-SW1,192.168.100.85,Command Output,,flash:/5130ei-cmw710-boot-r3109p05.bin,"7.1.045, Release 3109P05",Jun 16 2015 17:47:17,5130-48G-4SFP+ EI
+BHH-05-R1-ELV-SW1,192.168.100.83,Command Output,,flash:/5130ei-cmw710-boot-r3507.bin,"7.1.070, Release 3507",Jun 08 2021 11:00:00,5130-48G-4SFP+ EI JG934A
+BHH-05-R2-SW1,192.168.100.84,Command Output,,flash:/5130ei-cmw710-boot-r3109p05.bin,"7.1.045, Release 3109P05",Jun 16 2015 17:47:17,5130-48G-4SFP+ EI
+GHA-00-R1-ELV-SW1,192.168.100.201,Error,Authentication to device failed.,,,,
+GHA-00-R1-ELV-SW1,192.168.100.201,No password change prompt detected,,,,,
+GHA-02-R1-ELV-SW1,192.168.100.202,Error,Authentication to device failed.,,,,
+GHA-02-R1-ELV-SW1,192.168.100.202,No password change prompt detected,,,,,
+GHA-02-R2-SW1,192.168.100.205,Command Output,,flash:/5130ei-cmw710-boot-r3507.bin,"7.1.070, Release 3507",Jun 08 2021 11:00:00,5130-48G-4SFP+ EI JG934A
+GHA-05-R1-ELV-SW1,192.168.100.203,Error,Authentication to device failed.,,,,
+GHA-05-R1-ELV-SW1,192.168.100.203,No password change prompt detected,,,,,
+GHA-05-R2-SW1,192.168.100.204,Command Output,,flash:/5130ei-cmw710-boot-r3507.bin,"7.1.070, Release 3507",Jun 08 2021 11:00:00,5130-48G-4SFP+ EI JG934A
+GHB-00-R1-ELV-SW1,192.168.100.211,Command Output,,flash:/5130ei-cmw710-boot-r3109p05.bin,"7.1.045, Release 3109P05",Jun 16 2015 17:47:17,5130-24G-4SFP+ EI
+GHB-02-R1-ELV-SW1,192.168.100.212,Command Output,,flash:/5130ei-cmw710-boot-r3109p05.bin,"7.1.045, Release 3109P05",Jun 16 2015 17:47:17,5130-48G-4SFP+ EI
+GHB-02-R2-SW1,192.168.100.215,Command Output,,flash:/5130ei-cmw710-boot-r3113p05.bin,"7.1.045, Release 3113P05",May 25 2016 16:00:00,5130-48G-4SFP+ EI
+GHB-05-R1-ELV-SW1,192.168.100.213,Command Output,,flash:/5130ei-cmw710-boot-r3113p05.bin,"7.1.045, Release 3113P05",May 25 2016 16:00:00,5130-48G-4SFP+ EI
+GHB-05-R2-SW1,192.168.100.214,Command Output,,flash:/5130ei-cmw710-boot-r3106.bin,"7.1.045, Release 3106",Jul 31 2014 08:36:45,HP-5130-48G-4SFP+ EI JG934A

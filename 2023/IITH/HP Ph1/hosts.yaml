@@ -1,265 +1,258 @@
----
-# BH-C-R1-00-DSW:
-#   groups:
-#   - hp_comware
-#   hostname: 192.168.100.2
-#   password: NwTest@2023
-#   username: karn
 BHA-00-R1-ELV-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.11
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 BHA-02-R1-ELV-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.12
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 BHA-02-R2-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.15
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 BHA-05-R1-ELV-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.13
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 BHA-05-R2-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.14
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 BHB-00-R1-ELV-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.21
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 BHB-02-R1-ELV-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.22
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 BHB-05-R1-ELV-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.23
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 BHB-05-R2-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.24
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 BHC-00-R1-ELV-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.31
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 BHC-02-R1-ELV-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.32
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 BHC-02-R2-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.35
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 BHC-05-R1-ELV-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.33
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 BHC-05-R2-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.34
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 BHD-00-R1-ELV-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.41
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 BHD-02-R1-ELV-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.42
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 BHD-02-R2-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.45
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 BHD-05-R1-ELV-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.43
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 BHD-05-R2-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.44
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 BHF-00-R1-ELV-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.61
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 BHF-02-R1-ELV-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.62
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 BHF-02-R2-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.65
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 BHF-05-R1-ELV-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.63
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 BHF-05-R2-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.64
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 BHG-00-R1-ELV-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.71
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 BHG-02-R1-ELV-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.72
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 BHG-02-R2-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.75
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 BHG-05-R1-ELV-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.73
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 BHG-05-R2-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.74
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 BHH-00-R1-ELV-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.81
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 BHH-02-R2-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.85
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 BHH-05-R1-ELV-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.83
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 BHH-05-R2-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.84
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 GHA-00-R1-ELV-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.201
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 GHA-02-R1-ELV-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.202
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 GHA-02-R2-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.205
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 GHA-05-R1-ELV-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.203
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 GHA-05-R2-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.204
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 GHB-00-R1-ELV-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.211
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 GHB-02-R1-ELV-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.212
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 GHB-02-R2-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.215
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 GHB-05-R1-ELV-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.213
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith
 GHB-05-R2-SW1:
   groups:
   - hp_comware
   hostname: 192.168.100.214
-  password: NwTest@2023
-  username: karn
+  password: N@m@ste!
+  username: iith

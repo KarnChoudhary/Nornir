@@ -1,4 +1,5 @@
 Host,Hostname,username,password,Groups
+BH-C-R1-00-DSW,192.168.100.2,iith,N@m@ste!,hp_comware
 BHA-00-R1-ELV-SW1,192.168.100.11,iith,N@m@ste!,hp_comware
 BHA-02-R1-ELV-SW1,192.168.100.12,iith,N@m@ste!,hp_comware
 BHA-02-R2-SW1,192.168.100.15,iith,N@m@ste!,hp_comware
@@ -6,6 +7,7 @@ BHA-05-R1-ELV-SW1,192.168.100.13,iith,N@m@ste!,hp_comware
 BHA-05-R2-SW1,192.168.100.14,iith,N@m@ste!,hp_comware
 BHB-00-R1-ELV-SW1,192.168.100.21,iith,N@m@ste!,hp_comware
 BHB-02-R1-ELV-SW1,192.168.100.22,iith,N@m@ste!,hp_comware
+BHB-02-R2-SW1,192.168.100.25,iith,HostelB@IITH,Aruba
 BHB-05-R1-ELV-SW1,192.168.100.23,iith,N@m@ste!,hp_comware
 BHB-05-R2-SW1,192.168.100.24,iith,N@m@ste!,hp_comware
 BHC-00-R1-ELV-SW1,192.168.100.31,iith,N@m@ste!,hp_comware
@@ -18,6 +20,11 @@ BHD-02-R1-ELV-SW1,192.168.100.42,iith,N@m@ste!,hp_comware
 BHD-02-R2-SW1,192.168.100.45,iith,N@m@ste!,hp_comware
 BHD-05-R1-ELV-SW1,192.168.100.43,iith,N@m@ste!,hp_comware
 BHD-05-R2-SW1,192.168.100.44,iith,N@m@ste!,hp_comware
+BHE-00-R1-ELV-SW1,192.168.100.51,,,Aruba
+BHE-02-R1-ELV-SW1,192.168.100.52,,,Aruba
+BHE-02-R2-SW1,192.168.100.54,,,Aruba
+BHE-02-R2-SW1,192.168.100.55,,,Aruba
+BHE-05-R1-ELV-SW1,192.168.100.53,,,Aruba
 BHF-00-R1-ELV-SW1,192.168.100.61,iith,N@m@ste!,hp_comware
 BHF-02-R1-ELV-SW1,192.168.100.62,iith,N@m@ste!,hp_comware
 BHF-02-R2-SW1,192.168.100.65,iith,N@m@ste!,hp_comware
@@ -29,6 +36,7 @@ BHG-02-R2-SW1,192.168.100.75,iith,N@m@ste!,hp_comware
 BHG-05-R1-ELV-SW1,192.168.100.73,iith,N@m@ste!,hp_comware
 BHG-05-R2-SW1,192.168.100.74,iith,N@m@ste!,hp_comware
 BHH-00-R1-ELV-SW1,192.168.100.81,iith,N@m@ste!,hp_comware
+BHH-02-R1-ELV-SW1,192.168.100.82,iith,HostelH@IITH,Aruba
 BHH-02-R2-SW1,192.168.100.85,iith,N@m@ste!,hp_comware
 BHH-05-R1-ELV-SW1,192.168.100.83,iith,N@m@ste!,hp_comware
 BHH-05-R2-SW1,192.168.100.84,iith,N@m@ste!,hp_comware
