@@ -1,4 +1,0 @@
-Hostname,Host IP Address,Boot Image,Boot Image Version,Compiled,BOARD TYPE
-BHA-00-R1-ELV-SW1,192.168.100.11,flash:/5130ei-cmw710-boot-r3507.bin,"7.1.070, Release 3507",Jun 08 2021 11:00:00,5130-24G-4SFP+ EI
-BHA-02-R1-ELV-SW1,192.168.100.12,flash:/5130ei-cmw710-boot-r3507.bin,"7.1.070, Release 3507",Jun 08 2021 11:00:00,5130-48G-4SFP+ EI JG934A
-BHC-00-R1-ELV-SW1,192.168.100.31,N/A,N/A,N/A,N/A

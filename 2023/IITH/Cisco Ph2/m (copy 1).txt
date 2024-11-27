@@ -1,4 +1,0 @@
-[H[2J[3JHost: CC-00-DIS[0m
-[0mFacts: Error: Subtask: napalm_get (failed)
-[0m
-[0m

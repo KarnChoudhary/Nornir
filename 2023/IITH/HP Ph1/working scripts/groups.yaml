@@ -1,0 +1,5 @@
+---
+hp_comware:
+  platform: hp_comware
+  username: karn
+  password: NwTest@2023

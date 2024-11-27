@@ -72,9 +72,9 @@ input("Press Enter after finishing manual scrolling...")
 logging.info("Manual scrolling complete")
 
 # Open the CSV file for writing
-with open('questions_and_replies.csv', 'w', newline='', encoding='utf-8') as file:
+with open('questions.csv', 'w', newline='', encoding='utf-8') as file:
     writer = csv.writer(file)
-    writer.writerow(['Question', 'Reply'])
+    writer.writerow(['Question'])
 
     # Refresh the list of questions to handle stale elements
     question_elements = driver.find_elements(By.ID, 'react-mathjax-preview-result')
@@ -86,22 +86,11 @@ with open('questions_and_replies.csv', 'w', newline='', encoding='utf-8') as fil
             if question_text and question_text not in questions_set:
                 questions_set.add(question_text)
                 logging.info(f"Added question: {question_text}")
-
-                # Find the reply button within the context of the question element's parent
-                reply_button = question_element.find_element(By.XPATH, './/ancestor::div[contains(@class, "css-1cv5bs3")]//p[contains(@class, "css-1cv5bs3")]')
-                reply_button.click()
-                time.sleep(2)  # Wait for the replies to load
-
-                # Extract the replies
-                reply_elements = driver.find_elements(By.XPATH, '//div[2]/div/article[1]/div/div/div[2]/div/div[1]/div/div/div/div[2]/div/article[1]/div/div/div/div/div[2]/div/div/p/p/div/div/div/p')
-                for reply_element in reply_elements:
-                    reply_text = reply_element.text.strip()
-                    logging.info(f"Added reply: {reply_text}")
-                    writer.writerow([question_text, reply_text])
+                writer.writerow([question_text])
         except Exception as e:
-            logging.warning(f"Failed to add question or reply to the CSV: {e}")
+            logging.warning(f"Failed to add question to the CSV: {e}")
 
-logging.info("Questions and replies saved to questions_and_replies.csv")
+logging.info("Questions saved to questions.csv")
 
 # Close the WebDriver
 driver.quit()
