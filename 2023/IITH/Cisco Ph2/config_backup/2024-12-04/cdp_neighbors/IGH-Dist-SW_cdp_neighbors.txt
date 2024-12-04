@@ -1,0 +1,123 @@
+Device ID: IGH-02-3F.iith.ac.in
+  IP address: 10.4.128.115
+  IP address: 10.4.128.115
+Device ID: IGH-02-3F.iith.ac.in
+  IP address: 10.4.128.115
+  IP address: 10.4.128.115
+Device ID: IGH-04-R4.iith.ac.in
+  IP address: 10.4.128.122
+  IP address: 10.4.128.122
+Device ID: IGH-04-R4.iith.ac.in
+  IP address: 10.4.128.122
+  IP address: 10.4.128.122
+Device ID: IGH-R1-GF.iith.ac.in
+  IP address: 10.4.128.106
+  IP address: 10.4.128.106
+Device ID: IGH-R1-GF.iith.ac.in
+  IP address: 10.4.128.106
+  IP address: 10.4.128.106
+Device ID: IGH-R2-05.iith.ac.in
+  IP address: 10.4.128.117
+  IP address: 10.4.128.117
+Device ID: IGH-R2-05.iith.ac.in
+  IP address: 10.4.128.117
+  IP address: 10.4.128.117
+Device ID: IGH-R4-GF.iith.ac.in
+  IP address: 10.4.128.118
+  IP address: 10.4.128.118
+Device ID: CORE-SW-1.iith.ac.in
+  IP address: 192.168.41.113
+  IP address: 192.168.41.113
+Device ID: IGH-RACK2-GF.iith.ac.in
+  IP address: 10.4.128.112
+  IP address: 10.4.128.112
+Device ID: IGH-RACK2-GF.iith.ac.in
+  IP address: 10.4.128.112
+  IP address: 10.4.128.112
+Device ID: IGH-R4-1F.iith.ac.in
+  IP address: 10.4.128.119
+  IP address: 10.4.128.119
+Device ID: IGH-R4-1F.iith.ac.in
+  IP address: 10.4.128.119
+  IP address: 10.4.128.119
+Device ID: IGH-R1-4F.iith.ac.in
+  IP address: 10.4.128.110
+  IP address: 10.4.128.110
+Device ID: IGH-R1-5F.iith.ac.in
+  IP address: 10.4.128.111
+  IP address: 10.4.128.111
+Device ID: IGH-R1-5F.iith.ac.in
+  IP address: 10.4.128.111
+  IP address: 10.4.128.111
+Device ID: IGH-R4-3F.iith.ac.in
+  IP address: 10.4.128.121
+  IP address: 10.4.128.121
+Device ID: IGH-R3-4F.iith.ac.in
+  IP address: 10.4.128.104
+  IP address: 10.4.128.104
+Device ID: IGH-R4-3F.iith.ac.in
+  IP address: 10.4.128.121
+  IP address: 10.4.128.121
+Device ID: IGH-R3-4F.iith.ac.in
+  IP address: 10.4.128.104
+  IP address: 10.4.128.104
+Device ID: IGH-R4-2F.iith.ac.in
+  IP address: 10.4.128.120
+  IP address: 10.4.128.120
+Device ID: IGH-R2-4F.iith.ac.in
+  IP address: 10.4.128.116
+  IP address: 10.4.128.116
+Device ID: IGH-R4-2F.iith.ac.in
+  IP address: 10.4.128.120
+  IP address: 10.4.128.120
+Device ID: IGH-R2-4F.iith.ac.in
+  IP address: 10.4.128.116
+  IP address: 10.4.128.116
+Device ID: IGH-R3-2F.iith.ac.in
+  IP address: 10.4.128.102
+  IP address: 10.4.128.102
+Device ID: IGH-R3-2F.iith.ac.in
+  IP address: 10.4.128.102
+  IP address: 10.4.128.102
+Device ID: IGH-R1-1F.iith.ac.in
+  IP address: 10.4.128.107
+  IP address: 10.4.128.107
+Device ID: IGH-R1-1F.iith.ac.in
+  IP address: 10.4.128.107
+  IP address: 10.4.128.107
+Device ID: IGH-R3-3F.iith.ac.in
+  IP address: 10.4.128.103
+  IP address: 10.4.128.103
+Device ID: IGH-R2-2F.iith.ac.in
+  IP address: 10.4.128.114
+  IP address: 10.4.128.114
+Device ID: IGH-R3-3F.iith.ac.in
+  IP address: 10.4.128.103
+  IP address: 10.4.128.103
+Device ID: IGH-R2-2F.iith.ac.in
+  IP address: 10.4.128.114
+  IP address: 10.4.128.114
+Device ID: IGH-R2-1F.iith.ac.in
+  IP address: 10.4.128.113
+  IP address: 10.4.128.113
+Device ID: IGH-R2-1F.iith.ac.in
+  IP address: 10.4.128.113
+  IP address: 10.4.128.113
+Device ID: IGH-R1-2F.iith.ac.in
+  IP address: 10.4.128.108
+  IP address: 10.4.128.108
+Device ID: IGH-R1-3F.iith.ac.in
+  IP address: 10.4.128.109
+  IP address: 10.4.128.109
+Device ID: IGH-R3-1F.iith.ac.in
+  IP address: 10.4.128.100
+  IP address: 10.4.128.100
+Device ID: IGH-R3-1F.iith.ac.in
+  IP address: 10.4.128.100
+  IP address: 10.4.128.100
+Device ID: IGH-GF-SW.iith.ac.in
+  IP address: 10.4.128.101
+  IP address: 10.4.128.101
+Device ID: IGH-GF-SW.iith.ac.in
+  IP address: 10.4.128.101
+  IP address: 10.4.128.101

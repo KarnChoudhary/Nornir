@@ -6580,3 +6580,4 @@ nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_cli (failed)
 2024-11-14 16:06:58,998 -  nornir.core -     INFO -        run() - Running task 'get_fiber_power_level' with args {} on 212 hosts
 2024-11-14 16:13:23,014 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 212 hosts
 2024-11-14 16:14:30,105 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 65 hosts
+2024-12-02 09:56:03,947 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 65 hosts

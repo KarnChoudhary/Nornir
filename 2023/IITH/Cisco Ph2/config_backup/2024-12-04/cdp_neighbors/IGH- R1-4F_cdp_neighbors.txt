@@ -1,0 +1,25 @@
+Device ID: e455a82e431a
+  IP address: 10.4.129.121
+Device ID: e455a82e43d5
+  IP address: 10.4.129.50
+Device ID: e455a82e43e0
+  IP address: 10.4.129.119
+Device ID: e455a82e43a7
+  IP address: 10.4.129.125
+Device ID: IGH-00-DIS.iith.ac.in
+  IP address: 10.4.128.1
+  IP address: 10.4.128.1
+Device ID: e455a82e43aa
+  IP address: 10.4.129.235
+Device ID: e455a82e4366
+  IP address: 10.4.129.127
+Device ID: e455a82e4310
+  IP address: 10.4.129.124
+Device ID: e455a82e4367
+  IP address: 10.4.129.126
+Device ID: e455a82e4373
+  IP address: 10.4.129.49
+Device ID: e455a82e4326
+  IP address: 10.4.129.123
+Device ID: e455a82e4324
+  IP address: 10.4.129.120

@@ -35,3 +35,430 @@
 2024-11-06 16:31:38,445 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 3 hosts
 2024-11-06 16:37:09,831 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 3 hosts
 2024-11-06 16:39:07,909 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 3 hosts
+2024-12-02 09:54:51,752 -  nornir.core -     INFO -        run() - Running task 'nornir_napalm_cli_commands_example' with args {} on 65 hosts
+2024-12-02 09:54:55,881 - nornir.core.task -    ERROR -      start() - Host 'BHN-A-9F-SW': task 'napalm_cli' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 450, in connect
+    self._auth(
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 781, in _auth
+    raise saved_exception
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 768, in _auth
+    self._transport.auth_password(username, password)
+  File "/usr/lib/python3/dist-packages/paramiko/transport.py", line 1564, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/auth_handler.py", line 259, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_cli.py", line 19, in napalm_cli
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1174, in establish_connection
+    raise NetmikoAuthenticationException(msg)
+netmiko.exceptions.NetmikoAuthenticationException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_ios 10.5.48.54:22
+
+
+Authentication failed.
+
+2024-12-02 09:54:55,882 - nornir.core.task -    ERROR -      start() - Host 'BHN-A-6F-SW': task 'napalm_cli' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 450, in connect
+    self._auth(
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 781, in _auth
+    raise saved_exception
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 768, in _auth
+    self._transport.auth_password(username, password)
+  File "/usr/lib/python3/dist-packages/paramiko/transport.py", line 1564, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/auth_handler.py", line 259, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_cli.py", line 19, in napalm_cli
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1174, in establish_connection
+    raise NetmikoAuthenticationException(msg)
+netmiko.exceptions.NetmikoAuthenticationException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_ios 10.5.48.53:22
+
+
+Authentication failed.
+
+2024-12-02 09:54:55,882 - nornir.core.task -    ERROR -      start() - Host 'BHN-A-3F-SW': task 'napalm_cli' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 450, in connect
+    self._auth(
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 781, in _auth
+    raise saved_exception
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 768, in _auth
+    self._transport.auth_password(username, password)
+  File "/usr/lib/python3/dist-packages/paramiko/transport.py", line 1564, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/auth_handler.py", line 259, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_cli.py", line 19, in napalm_cli
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1174, in establish_connection
+    raise NetmikoAuthenticationException(msg)
+netmiko.exceptions.NetmikoAuthenticationException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_ios 10.5.48.52:22
+
+
+Authentication failed.
+
+2024-12-02 09:54:55,883 - nornir.core.task -    ERROR -      start() - Host 'BHN-A-9F-SW': task 'nornir_napalm_cli_commands_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/IITH/Cisco Ph2/Configuration check/mstp.py", line 13, in nornir_napalm_cli_commands_example
+    task.run(task=napalm_cli, commands=[command])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_cli (failed)
+
+
+2024-12-02 09:54:55,883 - nornir.core.task -    ERROR -      start() - Host 'BHN-A-6F-SW': task 'nornir_napalm_cli_commands_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/IITH/Cisco Ph2/Configuration check/mstp.py", line 13, in nornir_napalm_cli_commands_example
+    task.run(task=napalm_cli, commands=[command])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_cli (failed)
+
+
+2024-12-02 09:54:55,883 - nornir.core.task -    ERROR -      start() - Host 'BHN-A-3F-SW': task 'nornir_napalm_cli_commands_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/IITH/Cisco Ph2/Configuration check/mstp.py", line 13, in nornir_napalm_cli_commands_example
+    task.run(task=napalm_cli, commands=[command])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_cli (failed)
+
+
+2024-12-02 09:54:56,057 - nornir.core.task -    ERROR -      start() - Host 'BHN-B-3F-SW': task 'napalm_cli' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 450, in connect
+    self._auth(
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 781, in _auth
+    raise saved_exception
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 768, in _auth
+    self._transport.auth_password(username, password)
+  File "/usr/lib/python3/dist-packages/paramiko/transport.py", line 1564, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/auth_handler.py", line 259, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_cli.py", line 19, in napalm_cli
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1174, in establish_connection
+    raise NetmikoAuthenticationException(msg)
+netmiko.exceptions.NetmikoAuthenticationException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_ios 10.5.48.57:22
+
+
+Authentication failed.
+
+2024-12-02 09:54:56,058 - nornir.core.task -    ERROR -      start() - Host 'BHN-B-3F-SW': task 'nornir_napalm_cli_commands_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/IITH/Cisco Ph2/Configuration check/mstp.py", line 13, in nornir_napalm_cli_commands_example
+    task.run(task=napalm_cli, commands=[command])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_cli (failed)
+
+
+2024-12-02 09:54:56,257 - nornir.core.task -    ERROR -      start() - Host 'BHN-B-6F-SW': task 'napalm_cli' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 450, in connect
+    self._auth(
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 781, in _auth
+    raise saved_exception
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 768, in _auth
+    self._transport.auth_password(username, password)
+  File "/usr/lib/python3/dist-packages/paramiko/transport.py", line 1564, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/auth_handler.py", line 259, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_cli.py", line 19, in napalm_cli
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1174, in establish_connection
+    raise NetmikoAuthenticationException(msg)
+netmiko.exceptions.NetmikoAuthenticationException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_ios 10.5.48.58:22
+
+
+Authentication failed.
+
+2024-12-02 09:54:56,258 - nornir.core.task -    ERROR -      start() - Host 'BHN-B-6F-SW': task 'nornir_napalm_cli_commands_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/IITH/Cisco Ph2/Configuration check/mstp.py", line 13, in nornir_napalm_cli_commands_example
+    task.run(task=napalm_cli, commands=[command])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_cli (failed)
+
+
+2024-12-02 09:54:56,263 - nornir.core.task -    ERROR -      start() - Host 'BHN-B-9F-SW': task 'napalm_cli' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 450, in connect
+    self._auth(
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 781, in _auth
+    raise saved_exception
+  File "/usr/lib/python3/dist-packages/paramiko/client.py", line 768, in _auth
+    self._transport.auth_password(username, password)
+  File "/usr/lib/python3/dist-packages/paramiko/transport.py", line 1564, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/paramiko/auth_handler.py", line 259, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_cli.py", line 19, in napalm_cli
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/ios/ios.py", line 173, in open
+    self.device = self._netmiko_open(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/napalm/base/base.py", line 114, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+                           ^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/home/kali/.local/lib/python3.11/site-packages/netmiko/base_connection.py", line 1174, in establish_connection
+    raise NetmikoAuthenticationException(msg)
+netmiko.exceptions.NetmikoAuthenticationException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_ios 10.5.48.59:22
+
+
+Authentication failed.
+
+2024-12-02 09:54:56,264 - nornir.core.task -    ERROR -      start() - Host 'BHN-B-9F-SW': task 'nornir_napalm_cli_commands_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/Nornir/2023/IITH/Cisco Ph2/Configuration check/mstp.py", line 13, in nornir_napalm_cli_commands_example
+    task.run(task=napalm_cli, commands=[command])
+  File "/home/kali/.local/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_cli (failed)
+
+

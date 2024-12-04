@@ -1,0 +1,6 @@
+Device ID: M-HOSTEL-00-DIS.iith.ac.in
+  IP address: 10.5.48.1
+  IP address: 10.5.48.1
+Device ID: P-H0STEL-6TH-B-WING.iith.ac.in
+  IP address: 10.5.48.68
+  IP address: 10.5.48.68

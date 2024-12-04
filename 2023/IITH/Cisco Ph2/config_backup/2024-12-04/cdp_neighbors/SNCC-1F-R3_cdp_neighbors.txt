@@ -1,0 +1,12 @@
+Device ID: e455a81a7f11
+  IP address: 10.4.133.50
+Device ID: e455a81a3e11
+  IP address: 10.4.133.49
+Device ID: 045fb968eed3
+  IP address: 10.3.22.54
+Device ID: SNCC-00-DIS.iith.ac.in
+  IP address: 10.4.132.1
+  IP address: 10.4.132.1
+Device ID: SNCC-00-DIS.iith.ac.in
+  IP address: 10.4.132.1
+  IP address: 10.4.132.1

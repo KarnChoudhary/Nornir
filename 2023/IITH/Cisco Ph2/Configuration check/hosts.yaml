@@ -16,192 +16,192 @@ BHJ-A-6F-SW:
 #   hostname: 10.5.112.101
 #   password: AD2@IITH2022
 #   username: iith
-# BHJ-A-9F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.14
-#   password: HSTLJ@IITH2022
-#   username: iith
-# BHJ-A-GF-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.11
-#   password: HSTLJ@IITH2022
-#   username: iith
-# BHJ-B-3F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.17
-#   password: HSTLJ@IITH2022
-#   username: iith
-# BHJ-B-6F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.18
-#   password: HSTLJ@IITH2022
-#   username: iith
-# BHJ-B-9F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.19
-#   password: HSTLJ@IITH2022
-#   username: iith
-# BHJ-B-GF-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.16
-#   password: HSTLJ@IITH2022
-#   username: iith
-# BHK-A-3F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.22
-#   password: HSTLK@IITH2022
-#   username: iith
-# BHK-A-6F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.23
-#   password: HSTLK@IITH2022
-#   username: iith
-# BHK-A-9F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.24
-#   password: HSTLK@IITH2022
-#   username: iith
-# BHK-A-GF-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.21
-#   password: HSTLK@IITH2022
-#   username: iith
-# BHK-B-3F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.27
-#   password: HSTLK@IITH2022
-#   username: iith
-# BHK-B-6F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.28
-#   password: HSTLK@IITH2022
-#   username: iith
-# BHK-B-9F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.29
-#   password: HSTLK@IITH2022
-#   username: iith
-# BHK-B-GF-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.26
-#   password: HSTLK@IITH2022
-#   username: iith
-# BHL-A-3F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.32
-#   password: HSTLL@IITH2022
-#   username: iith
-# BHL-A-6F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.33
-#   password: HSTLL@IITH2022
-#   username: iith
-# BHL-A-9F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.34
-#   password: HSTLL@IITH2022
-#   username: iith
-# BHL-A-GF-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.31
-#   password: HSTLL@IITH2022
-#   username: iith
-# BHL-B-3F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.37
-#   password: HSTLL@IITH2022
-#   username: iith
-# BHL-B-6F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.38
-#   password: HSTLL@IITH2022
-#   username: iith
-# BHL-B-9F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.39
-#   password: HSTLL@IITH2022
-#   username: iith
-# BHL-B-GF-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.36
-#   password: HSTLL@IITH2022
-#   username: iith
-# BHM-A-3F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.42
-#   password: HSTLM@IITH2022
-#   username: iith
-# BHM-A-6F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.43
-#   password: HSTLM@IITH2022
-#   username: iith
-# BHM-A-9F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.44
-#   password: HSTLM@IITH2022
-#   username: iith
-# BHM-A-GF-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.41
-#   password: HSTLM@IITH2022
-#   username: iith
-# BHM-B-3F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.47
-#   password: HSTLM@IITH2022
-#   username: iith
-# BHM-B-6F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.48
-#   password: HSTLM@IITH2022
-#   username: iith
-# BHM-B-9F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.49
-#   password: HSTLM@IITH2022
-#   username: iith
-# BHM-B-GF-Dist-SW:
-#   groups:
-#   - cisco
-#   hostname: 192.168.41.150
-#   password: HSTLM@IITH2022
-#   username: iith
-# BHM-B-GF-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.46
-#   password: HSTLM@IITH2022
-#   username: iith
+BHJ-A-9F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.14
+  password: HSTLJ@IITH2022
+  username: iith
+BHJ-A-GF-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.11
+  password: HSTLJ@IITH2022
+  username: iith
+BHJ-B-3F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.17
+  password: HSTLJ@IITH2022
+  username: iith
+BHJ-B-6F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.18
+  password: HSTLJ@IITH2022
+  username: iith
+BHJ-B-9F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.19
+  password: HSTLJ@IITH2022
+  username: iith
+BHJ-B-GF-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.16
+  password: HSTLJ@IITH2022
+  username: iith
+BHK-A-3F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.22
+  password: HSTLK@IITH2022
+  username: iith
+BHK-A-6F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.23
+  password: HSTLK@IITH2022
+  username: iith
+BHK-A-9F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.24
+  password: HSTLK@IITH2022
+  username: iith
+BHK-A-GF-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.21
+  password: HSTLK@IITH2022
+  username: iith
+BHK-B-3F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.27
+  password: HSTLK@IITH2022
+  username: iith
+BHK-B-6F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.28
+  password: HSTLK@IITH2022
+  username: iith
+BHK-B-9F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.29
+  password: HSTLK@IITH2022
+  username: iith
+BHK-B-GF-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.26
+  password: HSTLK@IITH2022
+  username: iith
+BHL-A-3F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.32
+  password: HSTLL@IITH2022
+  username: iith
+BHL-A-6F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.33
+  password: HSTLL@IITH2022
+  username: iith
+BHL-A-9F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.34
+  password: HSTLL@IITH2022
+  username: iith
+BHL-A-GF-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.31
+  password: HSTLL@IITH2022
+  username: iith
+BHL-B-3F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.37
+  password: HSTLL@IITH2022
+  username: iith
+BHL-B-6F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.38
+  password: HSTLL@IITH2022
+  username: iith
+BHL-B-9F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.39
+  password: HSTLL@IITH2022
+  username: iith
+BHL-B-GF-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.36
+  password: HSTLL@IITH2022
+  username: iith
+BHM-A-3F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.42
+  password: HSTLM@IITH2022
+  username: iith
+BHM-A-6F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.43
+  password: HSTLM@IITH2022
+  username: iith
+BHM-A-9F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.44
+  password: HSTLM@IITH2022
+  username: iith
+BHM-A-GF-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.41
+  password: HSTLM@IITH2022
+  username: iith
+BHM-B-3F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.47
+  password: HSTLM@IITH2022
+  username: iith
+BHM-B-6F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.48
+  password: HSTLM@IITH2022
+  username: iith
+BHM-B-9F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.49
+  password: HSTLM@IITH2022
+  username: iith
+BHM-B-GF-Dist-SW:
+  groups:
+  - cisco
+  hostname: 192.168.41.150
+  password: HSTLM@IITH2022
+  username: iith
+BHM-B-GF-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.46
+  password: HSTLM@IITH2022
+  username: iith
 BHN-A-3F-SW:
   groups:
   - cisco
@@ -250,147 +250,147 @@ BHN-B-GF-SW:
   hostname: 10.5.48.56
   password: HSTLN@IITH2022
   username: iith
-# BHP-A-3F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.62
-#   password: HSTLP@IITH2022
-#   username: iith
-# BHP-A-6F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.63
-#   password: HSTLP@IITH2022
-#   username: iith
-# BHP-A-9F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.64
-#   password: HSTLP@IITH2022
-#   username: iith
-# BHP-A-GF-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.61
-#   password: HSTLP@IITH2022
-#   username: iith
-# BHP-B-3F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.67
-#   password: HSTLP@IITH2022
-#   username: iith
-# BHP-B-6F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.68
-#   password: HSTLP@IITH2022
-#   username: iith
-# BHP-B-9F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.69
-#   password: HSTLP@IITH2022
-#   username: iith
-# BHP-B-GF-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.66
-#   password: HSTLP@IITH2022
-#   username: iith
-# BHP1-A-3F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.72
-#   password: HSTLP1@IITH2022
-#   username: iith
-# BHP1-A-6F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.73
-#   password: HSTLP1@IITH2022
-#   username: iith
-# BHP1-A-9F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.74
-#   password: HSTLP1@IITH2022
-#   username: iith
-# BHP1-A-GF-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.71
-#   password: HSTLP1@IITH2022
-#   username: iith
-# BHP1-B-3F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.77
-#   password: HSTLP1@IITH2022
-#   username: iith
-# BHP1-B-6F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.78
-#   password: HSTLP1@IITH2022
-#   username: iith
-# BHP1-B-9F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.79
-#   password: HSTLP1@IITH2022
-#   username: iith
-# BHP1-B-GF-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.76
-#   password: HSTLP1@IITH2022
-#   username: iith
-# BHQ-A-3F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.82
-#   password: HSTLQ@IITH2022
-#   username: iith
-# BHQ-A-6F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.83
-#   password: HSTLQ@IITH2022
-#   username: iith
-# BHQ-A-9F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.84
-#   password: HSTLQ@IITH2022
-#   username: iith
-# BHQ-A-GF-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.81
-#   password: HSTLQ@IITH2022
-#   username: iith
-# BHQ-B-3F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.87
-#   password: HSTLQ@IITH2022
-#   username: iith
-# BHQ-B-6F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.88
-#   password: HSTLQ@IITH2022
-#   username: iith
-# BHQ-B-9F-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.89
-#   password: HSTLQ@IITH2022
-#   username: iith
-# BHQ-B-GF-SW:
-#   groups:
-#   - cisco
-#   hostname: 10.5.48.86
-#   password: HSTLQ@IITH2022
-#   username: iith
+BHP-A-3F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.62
+  password: HSTLP@IITH2022
+  username: iith
+BHP-A-6F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.63
+  password: HSTLP@IITH2022
+  username: iith
+BHP-A-9F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.64
+  password: HSTLP@IITH2022
+  username: iith
+BHP-A-GF-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.61
+  password: HSTLP@IITH2022
+  username: iith
+BHP-B-3F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.67
+  password: HSTLP@IITH2022
+  username: iith
+BHP-B-6F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.68
+  password: HSTLP@IITH2022
+  username: iith
+BHP-B-9F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.69
+  password: HSTLP@IITH2022
+  username: iith
+BHP-B-GF-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.66
+  password: HSTLP@IITH2022
+  username: iith
+BHP1-A-3F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.72
+  password: HSTLP1@IITH2022
+  username: iith
+BHP1-A-6F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.73
+  password: HSTLP1@IITH2022
+  username: iith
+BHP1-A-9F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.74
+  password: HSTLP1@IITH2022
+  username: iith
+BHP1-A-GF-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.71
+  password: HSTLP1@IITH2022
+  username: iith
+BHP1-B-3F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.77
+  password: HSTLP1@IITH2022
+  username: iith
+BHP1-B-6F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.78
+  password: HSTLP1@IITH2022
+  username: iith
+BHP1-B-9F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.79
+  password: HSTLP1@IITH2022
+  username: iith
+BHP1-B-GF-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.76
+  password: HSTLP1@IITH2022
+  username: iith
+BHQ-A-3F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.82
+  password: HSTLQ@IITH2022
+  username: iith
+BHQ-A-6F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.83
+  password: HSTLQ@IITH2022
+  username: iith
+BHQ-A-9F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.84
+  password: HSTLQ@IITH2022
+  username: iith
+BHQ-A-GF-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.81
+  password: HSTLQ@IITH2022
+  username: iith
+BHQ-B-3F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.87
+  password: HSTLQ@IITH2022
+  username: iith
+BHQ-B-6F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.88
+  password: HSTLQ@IITH2022
+  username: iith
+BHQ-B-9F-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.89
+  password: HSTLQ@IITH2022
+  username: iith
+BHQ-B-GF-SW:
+  groups:
+  - cisco
+  hostname: 10.5.48.86
+  password: HSTLQ@IITH2022
+  username: iith

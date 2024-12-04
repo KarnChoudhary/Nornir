@@ -1,0 +1,79 @@
+Device ID: e455a8060618
+  IP address: 10.5.113.133
+Device ID: e455a805ff84
+  IP address: 10.5.113.253
+Device ID: e455a81a758c
+  IP address: 10.5.113.111
+Device ID: e455a81a3c48
+  IP address: 10.5.113.106
+Device ID: e455a81a76d8
+  IP address: 10.5.113.146
+Device ID: e455a8067268
+  IP address: 10.5.113.178
+Device ID: e455a81a27a9
+  IP address: 10.5.113.172
+Device ID: e455a81a616a
+  IP address: 10.5.113.233
+Device ID: e455a81a75c0
+  IP address: 10.5.113.121
+Device ID: e455a81a7afb
+  IP address: 10.5.113.170
+Device ID: e455a81a3f34
+  IP address: 10.5.113.150
+Device ID: e455a81a760b
+  IP address: 10.5.113.137
+Device ID: e455a81a60e6
+  IP address: 10.5.113.247
+Device ID: e455a81a773e
+  IP address: 10.5.113.107
+Device ID: e455a8060761
+  IP address: 10.5.113.177
+Device ID: e455a8067a08
+  IP address: 10.5.113.217
+Device ID: e455a806900f
+  IP address: 10.5.113.210
+Device ID: e455a8067a09
+  IP address: 10.5.113.215
+Device ID: e455a806739b
+  IP address: 10.5.113.199
+Device ID: e455a8068f31
+  IP address: 10.5.113.229
+Device ID: e455a80686a2
+  IP address: 10.5.113.161
+Device ID: e455a81a6184
+  IP address: 10.5.113.200
+Device ID: e455a81a7559
+  IP address: 10.5.113.132
+Device ID: e455a81a75df
+  IP address: 10.5.113.230
+Device ID: e455a80608f8
+  IP address: 10.5.113.219
+Device ID: e455a81a7f1a
+  IP address: 10.5.113.157
+Device ID: e455a806115b
+  IP address: 10.5.113.224
+Device ID: e455a81a6214
+  IP address: 10.5.113.191
+Device ID: e455a81a7622
+  IP address: 10.5.113.223
+Device ID: e455a81a7f2a
+  IP address: 10.5.113.231
+Device ID: e455a81a7613
+  IP address: 10.5.113.142
+Device ID: e455a81a6353
+  IP address: 10.5.113.175
+Device ID: e455a81a60fd
+  IP address: 10.5.113.176
+Device ID: e455a80616f3
+  IP address: 10.5.113.189
+Device ID: e455a81a60ef
+  IP address: 10.5.113.195
+Device ID: e455a81a75dc
+  IP address: 10.5.113.166
+Device ID: AD2-00-DIS.iith.ac.in
+  IP address: 10.5.112.1
+  IP address: 10.5.112.1
+Device ID: e455a81a5bf6
+  IP address: 10.5.113.190
+Device ID: e455a80606b5
+  IP address: 10.5.113.181

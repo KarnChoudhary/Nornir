@@ -1,0 +1,18 @@
+Device ID: e455a80673ba
+  IP address: 10.50.101.26
+Device ID: e455a81a75a1
+  IP address: 10.50.101.29
+Device ID: e455a8063a4e
+  IP address: 10.50.101.24
+Device ID: e455a8067d4f
+  IP address: 10.50.101.101
+Device ID: e455a8063a59
+  IP address: 10.50.101.22
+Device ID: e455a81a3c9d
+  IP address: 10.50.101.30
+Device ID: e455a80686d2
+  IP address: 10.50.101.25
+Device ID: e455a8067c20
+  IP address: 10.50.101.23
+Device ID: e455a8063a52
+  IP address: 10.50.101.21
