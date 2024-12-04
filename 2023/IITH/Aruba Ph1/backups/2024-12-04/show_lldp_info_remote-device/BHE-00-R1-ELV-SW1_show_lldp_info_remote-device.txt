@@ -1,0 +1,10 @@
+
+ LLDP Remote Devices Information
+
+  LocalPort | ChassisId          PortId             PortDescr SysName           
+  --------- + ------------------ ------------------ --------- ------------------
+  3         | AA-DIR-Board-Room  GigabitEthernet0             cisco AIR-CAP37...
+  3         | 80e01d-8579b0      Gi0                Gigabi... AA-DIR-Board-Ro...
+  24        | 3821c7-b09580      47                 47        Hostel-E-2R1      
+  28        | 5c8a38-a98bd7      Ten-GigabitEthe... Reserv... BH-C-R1-00-DSW    
+ 

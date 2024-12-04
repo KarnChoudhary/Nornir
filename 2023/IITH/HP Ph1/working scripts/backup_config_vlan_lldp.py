@@ -3,7 +3,6 @@ from nornir_netmiko.tasks import netmiko_send_command
 from nornir.core.filter import F
 import logging
 import os
-import csv
 from datetime import datetime
 from netmiko.exceptions import (
     NetMikoTimeoutException,
@@ -16,15 +15,12 @@ from nornir.core.exceptions import NornirSubTaskError
 logging.basicConfig(filename='backup_nornir.log', level=logging.DEBUG)
 logger = logging.getLogger("nornir")
 
-def handle_backup_command(task, backup_dir, results_csv):
+def handle_backup_command(task, backup_dir):
     commands = [
         "display current-configuration",
         "display lldp neighbor-information list",
         "display vlan brief"
     ]
-
-    success = True
-    error_message = ""
 
     for command in commands:
         try:
@@ -57,38 +53,15 @@ def handle_backup_command(task, backup_dir, results_csv):
             logger.info(f"Output for command '{command}' on {task.host.name} saved to {backup_filename}")
 
         except NetMikoAuthenticationException:
-            success = False
-            error_message = "Authentication failed"
             logger.error(f"{task.host.name}: Authentication failed")
-            break
         except NetMikoTimeoutException:
-            success = False
-            error_message = "Connection timed out"
             logger.error(f"{task.host.name}: Connection timed out")
-            break
         except SSHException:
-            success = False
-            error_message = "SSH connection failed"
             logger.error(f"{task.host.name}: SSH connection failed")
-            break
         except NornirSubTaskError:
-            success = False
-            error_message = "Failed to execute command"
             logger.error(f"{task.host.name}: Failed to execute command")
-            break
         except Exception as e:
-            success = False
-            error_message = f"Unexpected error: {str(e)}"
             logger.error(f"{task.host.name}: Unexpected error: {str(e)}")
-            break
-
-    # Write the result to the CSV file
-    with open(results_csv, mode='a', newline='') as file:
-        writer = csv.writer(file)
-        if success:
-            writer.writerow([task.host.name, task.host.hostname, "Success"])
-        else:
-            writer.writerow([task.host.name, task.host.hostname, "Error", error_message])
 
 def main():
     try:
@@ -100,15 +73,9 @@ def main():
         backup_dir = f"backups_{current_date}"
         os.makedirs(backup_dir, exist_ok=True)
 
-        # Create a CSV file to log the results
-        results_csv = os.path.join(backup_dir, "backup_results.csv")
-        with open(results_csv, mode='w', newline='') as file:
-            writer = csv.writer(file)
-            writer.writerow(["Hostname", "IP Address", "Status", "Error Message"])
-
         # Filter for HP Comware devices and run the task
         result = nr.filter(F(groups__contains="hp_comware")).run(
-            task=handle_backup_command, backup_dir=backup_dir, results_csv=results_csv
+            task=handle_backup_command, backup_dir=backup_dir
         )
 
         print(f"Backup task completed. Check the {backup_dir} folder for results.")

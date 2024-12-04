@@ -1,0 +1,583 @@
+>display current-configuration
+#
+ version 7.1.070, Release 3507
+#
+ sysname GHA-02-R2-Sw1
+#
+ clock timezone IND add 05:30:00
+#
+ telnet server enable
+#
+ irf mac-address persistent timer
+ irf auto-update enable
+ undo irf link-delay
+ irf member 1 priority 1
+#
+igmp-snooping
+ global-enable
+#
+ dhcp snooping enable
+ dhcp snooping log enable
+#
+ lldp global enable
+#
+ ipv6 dhcp snooping enable
+#
+ loopback-detection global enable vlan 1 to 4094 
+ loopback-detection global action shutdown
+#
+mld-snooping
+ global-enable
+#
+ password-recovery enable
+#
+vlan 1
+#
+vlan 400
+#
+vlan 409
+ igmp-snooping enable
+ igmp-snooping drop-unknown
+ igmp-snooping querier
+ igmp-snooping general-query source-ip 192.168.254.100
+ igmp-snooping special-query source-ip 192.168.254.100
+ mld-snooping enable
+ mld-snooping drop-unknown
+#
+vlan 860
+#
+ stp bpdu-protection
+ stp global enable
+#
+interface NULL0
+#
+interface Vlan-interface400
+ ip address 192.168.100.205 255.255.255.0
+#
+interface GigabitEthernet1/0/1
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/2
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/3
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/4
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/5
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/6
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/7
+ description I-107
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/8
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/9
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/10
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/11
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/12
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/13
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/14
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/15
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/16
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/17
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/18
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/19
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/20
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/21
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/22
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/23
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/24
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/25
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/26
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/27
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/28
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/29
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/30
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/31
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/32
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/33
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/34
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/35
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/36
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/37
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/38
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/39
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/40
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/41
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/42
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/43
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/44
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/45
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/46
+ description Room-116
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/47
+ description Room-105
+ port access vlan 409
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ dhcp snooping binding record
+#
+interface GigabitEthernet1/0/48
+ port link-type trunk
+ undo port trunk permit vlan 1
+ port trunk permit vlan 400 409 860
+ stp root-protection
+#
+interface Ten-GigabitEthernet1/0/49
+ port link-type trunk
+ port trunk permit vlan 1 400 409 860
+ dhcp snooping trust
+#
+interface Ten-GigabitEthernet1/0/50
+#
+interface Ten-GigabitEthernet1/0/51
+#
+interface Ten-GigabitEthernet1/0/52
+#
+ scheduler logfile size 16
+#
+line class aux
+ user-role network-admin
+#
+line class vty
+ user-role network-operator
+#
+line aux 0
+ user-role network-admin
+#
+line vty 0 63
+ authentication-mode scheme
+ user-role network-operator
+#
+ ip route-static 0.0.0.0 0 192.168.100.1
+#
+ snmp-agent
+ snmp-agent local-engineid 800063A2805C8A384D84FA00000001
+ snmp-agent community i1Th*2k21 user-role network-admin
+ snmp-agent sys-info version v3 
+ snmp-agent target-host trap address udp-domain 192.168.161.10 params securityname i1Th*2k21 v2c
+ snmp-agent trap enable arp 
+ snmp-agent trap enable radius 
+#
+ ssh server enable
+#
+ ntp-service enable
+ ntp-service unicast-server 192.168.162.40
+ ntp-service unicast-server server0.asia.pool.ntp.org
+#
+ undo password-control length enable 
+ undo password-control complexity user-name check
+ undo password-control change-password first-login enable
+#
+radius scheme system
+ user-name-format without-domain
+#
+domain system
+#
+ domain default enable system
+#
+role name level-0
+ description Predefined level-0 role
+#
+role name level-1
+ description Predefined level-1 role
+#
+role name level-2
+ description Predefined level-2 role
+#
+role name level-3
+ description Predefined level-3 role
+#
+role name level-4
+ description Predefined level-4 role
+#
+role name level-5
+ description Predefined level-5 role
+#
+role name level-6
+ description Predefined level-6 role
+#
+role name level-7
+ description Predefined level-7 role
+#
+role name level-8
+ description Predefined level-8 role
+#
+role name level-9
+ description Predefined level-9 role
+#
+role name level-10
+ description Predefined level-10 role
+#
+role name level-11
+ description Predefined level-11 role
+#
+role name level-12
+ description Predefined level-12 role
+#
+role name level-13
+ description Predefined level-13 role
+#
+role name level-14
+ description Predefined level-14 role
+#
+user-group system
+#
+local-user iith class manage
+ password hash $h$6$dP546PhADrqzma+p$2S5eRbDzBKsCt9uwn/RQEL8PEP5bkYWXgo6/chJd1dLvNjY8cQMmCO7RCEEEoCXbI1YVVMS6D+p3XR+pOjhQMA==
+ service-type telnet ssh terminal
+ authorization-attribute user-role network-admin
+ authorization-attribute user-role network-operator
+#
+local-user jessy class manage
+ authorization-attribute user-role network-operator
+#
+local-user karn class manage
+ password hash $h$6$zE4To9IVhP2lVEBB$znQKY9wqBKRc2ge04kpwtG8iOFDjEoQgqguAtFeZ8i40tFkO5m2BQjbWJgj7kTjMMD1AbXT5iXydQUGzIlxayg==
+ service-type ssh
+ authorization-attribute user-role network-admin
+ authorization-attribute user-role network-operator
+#
+public-key peer 192.168.100.204
+ public-key-code begin
+   30819F300D06092A864886F70D010101050003818D0030818902818100D59245DED0DC97D3
+   200745E5D1D517EFFBF680F0624DF0E208843B7355D447D3F7D034E82AF60F188FDC7CCC7B
+   AFC4FE740A1F4C1B661AE86D03540BA1B2A0AA9206B8026529DA230EC4B32A294D26F10D95
+   FE304580FA3B69905DE1C3C23483381B8478D3F44B51BF0349F6690FFAD63D09E5176607BB
+   0BE9AA6B5015B2F1E50203010001
+ public-key-code end
+ peer-public-key end
+#
+public-key peer 192.168.100.205
+ public-key-code begin
+   308201B83082012C06072A8648CE3804013082011F02818100D757262C4584C44C211F18BD
+   96E5F061C4F0A423F7FE6B6B85B34CEF72CE14A0D3A5222FE08CECE65BE6C265854889DC1E
+   DBD13EC8B274DA9F75BA26CCB987723602787E922BA84421F22C3C89CB9B06FD60FE01941D
+   DD77FE6B12893DA76EEBC1D128D97F0678D7722B5341C8506F358214B16A2FAC4B36895038
+   7811C7DA33021500C773218C737EC8EE993B4F2DED30F48EDACE915F0281810082269009E1
+   4EC474BAF2932E69D3B1F18517AD9594184CCDFCEAE96EC4D5EF93133E84B47093C52B20CD
+   35D02492B3959EC6499625BC4FA5082E22C5B374E16DD00132CE71B020217091AC717B6123
+   91C76C1FB2E88317C1BD8171D41ECB83E210C03CC9B32E810561C21621C73D6DAAC028F4B1
+   585DA7F42519718CC9B09EEF0381850002818100CD389D6E76BA77F4F003124E8B14857016
+   6686A2595694767558913D0DAC970E6940CB7C09984E3E218EB390CA92B492782DE89DAC42
+   2A7F926E00A9089F95C6B25403775C00F21F18F6FB1BAB0B81CE40DE580B00C16999D1DB6F
+   027EB79C76B3271E9F974A438DAAA614F3AFD79261DBACCB9A1A1D67C21A803EE921732229
+ public-key-code end
+ peer-public-key end
+#
+return

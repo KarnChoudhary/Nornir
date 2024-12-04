@@ -1,0 +1,28 @@
+Brief information about all VLANs:
+Supported Minimum VLAN ID: 1
+Supported Maximum VLAN ID: 4094
+Default VLAN ID: 1
+VLAN ID   Name                             Port
+1         VLAN 0001                        GE1/0/21  GE1/0/48  XGE1/0/49  
+                                           XGE1/0/50  XGE1/0/51  XGE1/0/52  
+37        VLAN 0037                        GE1/0/48  XGE1/0/49  XGE1/0/50  
+                                           XGE1/0/51  XGE1/0/52  
+400       VLAN 0400                        GE1/0/48  XGE1/0/49  XGE1/0/50  
+                                           XGE1/0/51  XGE1/0/52  
+408       VLAN 0408                        GE1/0/1  GE1/0/2  GE1/0/3  GE1/0/4  
+                                           GE1/0/5  GE1/0/6  GE1/0/7  GE1/0/8  
+                                           GE1/0/9  GE1/0/10  GE1/0/11  
+                                           GE1/0/12  GE1/0/13  GE1/0/14  
+                                           GE1/0/15  GE1/0/16  GE1/0/17  
+                                           GE1/0/18  GE1/0/19  GE1/0/20  
+                                           GE1/0/22  GE1/0/23  GE1/0/24  
+                                           GE1/0/25  GE1/0/26  GE1/0/27  
+                                           GE1/0/28  GE1/0/29  GE1/0/30  
+                                           GE1/0/31  GE1/0/32  GE1/0/33  
+                                           GE1/0/34  GE1/0/35  GE1/0/36  
+                                           GE1/0/37  GE1/0/38  GE1/0/39  
+                                           GE1/0/40  GE1/0/41  GE1/0/42  
+                                           GE1/0/43  GE1/0/44  GE1/0/45  
+                                           GE1/0/46  GE1/0/47  GE1/0/48  
+                                           XGE1/0/49  XGE1/0/50  XGE1/0/51  
+                                           XGE1/0/52  

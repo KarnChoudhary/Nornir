@@ -1,0 +1,737 @@
+>display current-configuration
+#
+ version 7.1.070, Release 3507
+#
+ sysname BHA-05-R1-Sw1
+#
+ clock timezone IN add 05:30:00
+ clock protocol ntp
+#
+ irf mac-address persistent timer
+ irf auto-update enable
+ undo irf link-delay
+ irf member 1 priority 1
+#
+ ip unreachables enable
+ ip ttl-expires enable
+#
+igmp-snooping
+ global-enable
+#
+ dhcp snooping enable
+ dhcp snooping log enable
+#
+ mirroring-group 1 remote-destination
+#
+ lldp global enable
+#
+ ipv6 dhcp snooping enable
+ ipv6 dhcp snooping enable vlan 401 
+#
+ loopback-detection global enable vlan 1 to 4094 
+ loopback-detection global action shutdown
+#
+mld-snooping
+ global-enable
+#
+ password-recovery enable
+#
+vlan 1
+#
+vlan 37
+#
+vlan 400
+#
+vlan 401
+ igmp-snooping enable
+ igmp-snooping drop-unknown
+ igmp-snooping querier
+ igmp-snooping general-query source-ip 192.168.254.100
+ igmp-snooping special-query source-ip 192.168.254.100
+ mld-snooping enable
+ mld-snooping drop-unknown
+#
+stp region-configuration
+ region-name IITH-MSTP
+ instance 1 vlan 9 15 to 16 20 103 to 106 400 to 403 
+ instance 2 vlan 30 to 33 107 to 110 404 to 407 
+ instance 3 vlan 34 36 to 38 111 228 244 260 408 to 411 
+ instance 4 vlan 39 100 to 102 412 to 416 500 511 611 
+ active region-configuration
+#
+ stp bpdu-protection
+ stp global enable
+#
+interface NULL0
+#
+interface Vlan-interface400
+ ip address 192.168.100.13 255.255.255.0
+#
+interface GigabitEthernet1/0/1
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.1 source-ip 10.254.253.1 vlan 401
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/2
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.2 source-ip 10.254.253.2 vlan 401
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/3
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.3 source-ip 10.254.253.3 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/4
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.4 source-ip 10.254.253.4 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/5
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.5 source-ip 10.254.253.5 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/6
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.6 source-ip 10.254.253.6 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/7
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.7 source-ip 10.254.253.7 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/8
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.8 source-ip 10.254.253.8 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/9
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.9 source-ip 10.254.253.9 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/10
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.10 source-ip 10.254.253.10 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/11
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.11 source-ip 10.254.253.11 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/12
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.12 source-ip 10.254.253.12 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/13
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.13 source-ip 10.254.253.13 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/14
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.14 source-ip 10.254.253.14 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/15
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.15 source-ip 10.254.253.15 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/16
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.16 source-ip 10.254.253.16 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/17
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.17 source-ip 10.254.253.17 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/18
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.18 source-ip 10.254.253.18 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/19
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.19 source-ip 10.254.253.19 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/20
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.20 source-ip 10.254.253.20 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/21
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.21 source-ip 10.254.253.21 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/22
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.22 source-ip 10.254.253.22 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/23
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.23 source-ip 10.254.253.23 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/24
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.24 source-ip 10.254.253.24 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/25
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.25 source-ip 10.254.253.25 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/26
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.26 source-ip 10.254.253.26 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/27
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.27 source-ip 10.254.253.27 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/28
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.28 source-ip 10.254.253.28 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/29
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.29 source-ip 10.254.253.29 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/30
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.30 source-ip 10.254.253.30 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/31
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.31 source-ip 10.254.253.31 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/32
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.32 source-ip 10.254.253.32 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/33
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.33 source-ip 10.254.253.33 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/34
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.34 source-ip 10.254.253.34 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/35
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.35 source-ip 10.254.253.35 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/36
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.36 source-ip 10.254.253.36 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/37
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.37 source-ip 10.254.253.37 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/38
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.38 source-ip 10.254.253.38 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/39
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.39 source-ip 10.254.253.39 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/40
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.40 source-ip 10.254.253.40 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/41
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.41 source-ip 10.254.253.41 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/42
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.42 source-ip 10.254.253.42 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/43
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.43 source-ip 10.254.253.43 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/44
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.44 source-ip 10.254.253.44 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/45
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.45 source-ip 10.254.253.45 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/46
+ description Room-423
+ port access vlan 401
+ storm-constrain broadcast ratio 1 1
+ igmp-snooping static-group 239.10.13.46 source-ip 10.254.253.46 vlan 401
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 50
+#
+interface GigabitEthernet1/0/47
+ description Connected-to-BHA-02-R1-Sw
+ port link-type trunk
+ port trunk permit vlan 1 37 400 to 402
+ igmp-snooping static-group 239.10.13.47 source-ip 10.254.253.47 vlan 401
+ undo arp rate-limit
+ arp detection trust
+ mvrp enable
+ dhcp snooping trust
+#
+interface GigabitEthernet1/0/48
+ description Connected-to-BHA-05-R2-Sw
+ port link-type trunk
+ port trunk permit vlan 1 37 400 to 402
+ igmp-snooping static-group 239.10.13.48 source-ip 10.254.253.48 vlan 401
+ arp detection trust
+ mvrp enable
+ dhcp snooping trust
+#
+interface Ten-GigabitEthernet1/0/49
+ port link-type trunk
+ port trunk permit vlan 1 37 400 to 401
+ arp detection trust
+ mvrp enable
+ dhcp snooping trust
+#
+interface Ten-GigabitEthernet1/0/50
+ description Trunk
+ port link-type trunk
+ port trunk permit vlan 1 37 400 to 401
+ arp detection trust
+ mvrp enable
+ dhcp snooping trust
+#
+interface Ten-GigabitEthernet1/0/51
+ description Trunk
+ port link-type trunk
+ port trunk permit vlan 1 37 400 to 401
+ arp detection trust
+ mvrp enable
+ dhcp snooping trust
+#
+interface Ten-GigabitEthernet1/0/52
+ description Connected-to-BHC-00-DSw
+ port link-type trunk
+ port trunk permit vlan 1 37 400 to 401
+ arp detection trust
+ mvrp enable
+ dhcp snooping trust
+#
+ scheduler logfile size 16
+#
+line class aux
+ user-role network-admin
+#
+line class vty
+ user-role network-operator
+#
+line aux 0
+ authentication-mode password
+ user-role network-admin
+ set authentication password hash $h$6$4ZIp1KCioJR9rfh9$nh0H7Pm9TzteVFbOj2fxJNs/vmBOOnyRfMEuZI7xnJu1B5vFKhrzMIYCSwjIsIFdzegeaGv+Z1QDjz/5exJZYw==
+#
+line vty 0 63
+ authentication-mode scheme
+ user-role network-admin
+ user-role network-operator
+ set authentication password hash $h$6$GgJSpZsRpiN3K8bj$acJM1AuK0Ihyng8a+UVKQWYtClLg1R2W/3XMuBcCpne/qkFIoUGqQHqTKovnvf+PAeuBpR2d/tITrY6WCdO0ZQ==
+ protocol inbound ssh
+ idle-timeout 0 0
+#
+ ip route-static 0.0.0.0 0 192.168.100.1
+#
+ snmp-agent
+ snmp-agent local-engineid 800063A2802C233AE9A92900000001
+ snmp-agent community i1Th*2k21 user-role network-admin
+ snmp-agent sys-info version v3 
+ snmp-agent group v3 iith authentication write-view iith
+ snmp-agent target-host trap address udp-domain 192.168.161.10 params securityname i1Th*2k21 v2c
+ snmp-agent usm-user v3 iith iith cipher authentication-mode md5 $c$3$QdvyoQlI6j+qii1T5wP8UZihzoJ+gM67XU1UJBYSs2wsZQ==
+ snmp-agent trap enable arp 
+ snmp-agent trap enable radius 
+#
+ ssh server enable
+#
+ ntp-service enable
+ ntp-service source Vlan-interface400
+ ntp-service unicast-server 192.168.161.41
+#
+ undo password-control length enable 
+ undo password-control complexity user-name check
+ undo password-control change-password first-login enable
+#
+radius scheme system
+ user-name-format without-domain
+#
+domain system
+#
+ domain default enable system
+#
+role name level-0
+ description Predefined level-0 role
+#
+role name level-1
+ description Predefined level-1 role
+#
+role name level-2
+ description Predefined level-2 role
+#
+role name level-3
+ description Predefined level-3 role
+#
+role name level-4
+ description Predefined level-4 role
+#
+role name level-5
+ description Predefined level-5 role
+#
+role name level-6
+ description Predefined level-6 role
+#
+role name level-7
+ description Predefined level-7 role
+#
+role name level-8
+ description Predefined level-8 role
+#
+role name level-9
+ description Predefined level-9 role
+#
+role name level-10
+ description Predefined level-10 role
+#
+role name level-11
+ description Predefined level-11 role
+#
+role name level-12
+ description Predefined level-12 role
+#
+role name level-13
+ description Predefined level-13 role
+#
+role name level-14
+ description Predefined level-14 role
+#
+user-group system
+#
+local-user iith class manage
+ password hash $h$6$tPQOGjNPFOtzAUo2$aYw5p0aXF8svTLUh051rXHiOCi6QuJyFSn7wnGmwkWTXMVJ41BKxR8HpYUJD2gWyTwSryhAOqa3qWqIuKyJjgw==
+ service-type telnet ssh
+ authorization-attribute user-role network-admin
+ authorization-attribute user-role network-operator
+#
+local-user karn class manage
+ password hash $h$6$fTltyRaecSPu4OLD$0offygly5IMIfU4RwQMlvjJCfwY/F6zA2eyOlapbCqtNNg0wA/pMSkkTmrRlBwkTZ5wgh4Tr6Fm0JcWRazGo9w==
+ service-type ssh
+ authorization-attribute user-role network-operator
+#
+return

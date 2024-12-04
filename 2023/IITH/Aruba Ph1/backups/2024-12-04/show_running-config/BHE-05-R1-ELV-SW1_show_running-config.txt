@@ -1,0 +1,468 @@
+
+Running configuration:
+
+; JL254A Configuration Editor; Created on release #WC.16.11.0005
+; Ver #14:e7.6f.f8.1d.9b.3f.bf.bb.ef.7c.59.fc.6b.fb.9f.fc.ff.ff.37.ef:c4
+hostname "Hostel-E-5R1"
+control-plane-protection enable
+module 1 type jl254a
+console idle-timeout 300
+console idle-timeout serial-usb 300
+dhcp-snooping
+no dhcp-snooping option 82
+dhcp-snooping vlan 405 
+dhcpv6-snooping
+dhcpv6-snooping vlan 1-4094 
+banner motd "******************************************************************************\n*         You are logging into the IIT HYDERABAD Private Network.            *\n*       If you are not an authorized user please logoff immediately.         *\n*               Only Authorized User can use this System.                    *\n*              Unauthorized or improper use of this system                   *\n*                  may result in civil or criminal penalties.                *\n*        
+ Activities of any user using this System without authority,        *\n*        or in excess of their authority, may be monitored and recorded      *\n*  at the discretion of the Management. Any user using this system expressly *\n*              consents to such monitoring and is advised if such            *\n*               monitoring reveals malicious or improper activity.           *\n*        IIT Hyderabad shall provide evidence of such activity               *\n*                  to IT/HR for further
+ disciplinary action.                 *\n******************************************************************************\n\n"
+banner exec "******************************************************************************\n*         You are logging into the IIT HYDERABAD Private Network.            *\n*       If you are not an authorized user please logoff immediately.         *\n*               Only Authorized User can use this System.                    *\n*              Unauthorized or improper use of this system                   *\n*                  may result in civil or criminal penalties.                *\n*        
+ Activities of any user using this System without authority,        *\n*        or in excess of their authority, may be monitored and recorded      *\n*  at the discretion of the Management. Any user using this system expressly *\n*              consents to such monitoring and is advised if such            *\n*               monitoring reveals malicious or improper activity.           *\n*        IIT Hyderabad shall provide evidence of such activity               *\n*                  to IT/HR for further
+ disciplinary action.                 *\n******************************************************************************\n\n"
+port-security 1 learn-mode limited-continuous
+port-security 1 address-limit 20
+port-security 2 learn-mode limited-continuous
+port-security 2 address-limit 20
+port-security 3 learn-mode limited-continuous
+port-security 3 address-limit 20
+port-security 4 learn-mode limited-continuous
+port-security 4 address-limit 20
+port-security 5 learn-mode limited-continuous
+port-security 5 address-limit 20
+port-security 6 learn-mode limited-continuous
+port-security 6 address-limit 20
+port-security 7 learn-mode limited-continuous
+port-security 7 address-limit 20
+port-security 8 learn-mode limited-continuous
+port-security 8 address-limit 20
+port-security 9 learn-mode limited-continuous
+port-security 9 address-limit 20
+port-security 10 learn-mode limited-continuous
+port-security 10 address-limit 20
+port-security 11 learn-mode limited-continuous
+port-security 11 address-limit 20
+port-security 12 learn-mode limited-continuous
+port-security 12 address-limit 20
+port-security 13 learn-mode limited-continuous
+port-security 13 address-limit 20
+port-security 14 learn-mode limited-continuous
+port-security 14 address-limit 20
+port-security 15 learn-mode limited-continuous
+port-security 15 address-limit 20
+port-security 16 learn-mode limited-continuous
+port-security 16 address-limit 20
+port-security 17 learn-mode limited-continuous
+port-security 17 address-limit 20
+port-security 18 learn-mode limited-continuous
+port-security 18 address-limit 20
+port-security 19 learn-mode limited-continuous
+port-security 19 address-limit 20
+port-security 20 learn-mode limited-continuous
+port-security 20 address-limit 20
+port-security 21 learn-mode limited-continuous
+port-security 21 address-limit 20
+port-security 22 learn-mode limited-continuous
+port-security 22 address-limit 20
+port-security 23 learn-mode limited-continuous
+port-security 23 address-limit 20
+port-security 24 learn-mode limited-continuous
+port-security 24 address-limit 20
+port-security 25 learn-mode limited-continuous
+port-security 25 address-limit 20
+port-security 26 learn-mode limited-continuous
+port-security 26 address-limit 20
+port-security 27 learn-mode limited-continuous
+port-security 27 address-limit 20
+port-security 28 learn-mode limited-continuous
+port-security 28 address-limit 20
+port-security 29 learn-mode limited-continuous
+port-security 29 address-limit 20
+port-security 30 learn-mode limited-continuous
+port-security 30 address-limit 20
+port-security 31 learn-mode limited-continuous
+port-security 31 address-limit 20
+port-security 32 learn-mode limited-continuous
+port-security 32 address-limit 20
+port-security 33 learn-mode limited-continuous
+port-security 33 address-limit 20
+port-security 34 learn-mode limited-continuous
+port-security 34 address-limit 20
+port-security 35 learn-mode limited-continuous
+port-security 35 address-limit 20
+port-security 36 learn-mode limited-continuous
+port-security 36 address-limit 20
+port-security 37 learn-mode limited-continuous
+port-security 37 address-limit 20
+port-security 38 learn-mode limited-continuous
+port-security 38 address-limit 20
+port-security 39 learn-mode limited-continuous
+port-security 39 address-limit 20
+port-security 40 learn-mode limited-continuous
+port-security 40 address-limit 20
+port-security 41 learn-mode limited-continuous
+port-security 41 address-limit 20
+port-security 42 learn-mode limited-continuous
+port-security 42 address-limit 20
+port-security 43 learn-mode limited-continuous
+port-security 43 address-limit 20
+port-security 44 learn-mode limited-continuous
+port-security 44 address-limit 20
+port-security 45 learn-mode limited-continuous
+port-security 45 address-limit 20
+port-security 46 learn-mode limited-continuous
+port-security 46 address-limit 20
+timesync ntp
+ntp unicast
+ntp server 192.168.161.41
+ntp enable
+no telnet-server
+time timezone 330
+no web-management
+ip access-list standard "mgmt-permit"
+     10 permit 192.168.9.0 0.0.0.255
+     20 permit 192.168.100.0 0.0.0.255
+     30 permit 192.168.200.0 0.0.0.255
+     40 permit 192.168.126.2 0.0.0.0
+     50 permit 192.168.95.0 0.0.0.255
+     60 permit 192.168.161.0 0.0.0.255
+     70 permit 192.168.74.0 0.0.1.255
+     80 permit 172.18.132.0 0.0.1.255
+   exit
+ip default-gateway 192.168.100.1
+ip dns domain-name "iith.ac.in"
+ip dns server-address priority 1 192.168.36.53
+ip source-lockdown
+interface 1
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 2
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 3
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 4
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 5
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 6
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 7
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 8
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 9
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 10
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 11
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 12
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 13
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 14
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 15
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 16
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 17
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 18
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 19
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 20
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 21
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 22
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 23
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 24
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 25
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 26
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 27
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 28
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 29
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 30
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 31
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 32
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 33
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 34
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 35
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 36
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 37
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 38
+   ip source-lockdown
+   broadcast-limit 2
+   dhcp-snooping max-bindings 50
+   exit
+interface 39
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 40
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 41
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 42
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 43
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 44
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 45
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 46
+   ip source-lockdown
+   broadcast-limit 1
+   dhcp-snooping max-bindings 50
+   exit
+interface 47
+   dhcp-snooping trust
+   arp-protect trust
+   exit
+interface 48
+   dhcp-snooping trust
+   arp-protect trust
+   exit
+interface 49
+   dhcp-snooping trust
+   arp-protect trust
+   exit
+interface 50
+   dhcp-snooping trust
+   arp-protect trust
+   exit
+interface 51
+   dhcp-snooping trust
+   arp-protect trust
+   exit
+interface 52
+   dhcp-snooping trust
+   arp-protect trust
+   exit
+no snmp-server enable
+vlan 1
+   name "DEFAULT_VLAN"
+   no untagged 1-46
+   untagged 47-52
+   no ip address
+   ipv6 address dhcp full
+   exit
+vlan 400
+   name "MANAGEMENT"
+   tagged 47-52
+   ip access-group "mgmt-permit" vlan-in
+   ip address 192.168.100.53 255.255.255.0
+   exit
+vlan 405
+   name "VLAN405"
+   untagged 1-46
+   tagged 47-52
+   no ip address
+   ip igmp
+   ip igmp blocked 1-46
+   exit
+spanning-tree
+spanning-tree 1 root-guard loop-guard bpdu-protection
+spanning-tree 2 root-guard loop-guard bpdu-protection
+spanning-tree 3 root-guard loop-guard bpdu-protection
+spanning-tree 4 root-guard loop-guard bpdu-protection
+spanning-tree 5 root-guard loop-guard bpdu-protection
+spanning-tree 6 root-guard loop-guard bpdu-protection
+spanning-tree 7 root-guard loop-guard bpdu-protection
+spanning-tree 8 root-guard loop-guard bpdu-protection
+spanning-tree 9 root-guard loop-guard bpdu-protection
+spanning-tree 10 root-guard loop-guard bpdu-protection
+spanning-tree 11 root-guard loop-guard bpdu-protection
+spanning-tree 12 root-guard loop-guard bpdu-protection
+spanning-tree 13 root-guard loop-guard bpdu-protection
+spanning-tree 14 root-guard loop-guard bpdu-protection
+spanning-tree 15 root-guard loop-guard bpdu-protection
+spanning-tree 16 root-guard loop-guard bpdu-protection
+spanning-tree 17 root-guard loop-guard bpdu-protection
+spanning-tree 18 root-guard loop-guard bpdu-protection
+spanning-tree 19 root-guard loop-guard bpdu-protection
+spanning-tree 20 root-guard loop-guard bpdu-protection
+spanning-tree 21 root-guard loop-guard bpdu-protection
+spanning-tree 22 root-guard loop-guard bpdu-protection
+spanning-tree 23 root-guard loop-guard bpdu-protection
+spanning-tree 24 root-guard loop-guard bpdu-protection
+spanning-tree 25 root-guard loop-guard bpdu-protection
+spanning-tree 26 root-guard loop-guard bpdu-protection
+spanning-tree 27 root-guard loop-guard bpdu-protection
+spanning-tree 28 root-guard loop-guard bpdu-protection
+spanning-tree 29 root-guard loop-guard bpdu-protection
+spanning-tree 30 root-guard loop-guard bpdu-protection
+spanning-tree 31 root-guard loop-guard bpdu-protection
+spanning-tree 32 root-guard loop-guard bpdu-protection
+spanning-tree 33 root-guard loop-guard bpdu-protection
+spanning-tree 34 root-guard loop-guard bpdu-protection
+spanning-tree 35 root-guard loop-guard bpdu-protection
+spanning-tree 36 root-guard loop-guard bpdu-protection
+spanning-tree 37 root-guard loop-guard bpdu-protection
+spanning-tree 38 root-guard loop-guard bpdu-protection
+spanning-tree 39 root-guard loop-guard bpdu-protection
+spanning-tree 40 root-guard loop-guard bpdu-protection
+spanning-tree 41 root-guard loop-guard bpdu-protection
+spanning-tree 42 root-guard loop-guard bpdu-protection
+spanning-tree 43 root-guard loop-guard bpdu-protection
+spanning-tree 44 root-guard loop-guard bpdu-protection
+spanning-tree 45 root-guard loop-guard bpdu-protection
+spanning-tree 46 root-guard loop-guard bpdu-protection
+spanning-tree priority 10
+no tftp client
+no tftp server
+arp-protect
+arp-protect validate src-mac dest-mac ip
+arp-protect vlan 405 
+no autorun
+no dhcp config-file-update
+no dhcp image-file-update
+no dhcp tr69-acs-url
+password manager

@@ -1,0 +1,6 @@
+Chassis ID : * -- -- Nearest nontpmr bridge neighbor
+             # -- -- Nearest customer bridge neighbor
+             Default -- -- Nearest bridge neighbor
+Local Interface Chassis ID      Port ID                    System Name          
+GE1/0/47        2c23-3ae9-99b0  GigabitEthernet1/0/48      BHB-05-R1-Asw
+GE1/0/48        8030-e09a-8580  48                         BH-B-02-R2-ASW1

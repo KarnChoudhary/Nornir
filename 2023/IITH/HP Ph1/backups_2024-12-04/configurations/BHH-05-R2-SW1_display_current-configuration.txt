@@ -1,0 +1,721 @@
+>display current-configuration
+#
+ version 7.1.045, Release 3109P05
+#
+ sysname BHH-05-R2-Sw1
+#
+ clock timezone IN add 05:30:00
+ clock protocol ntp
+#
+ irf mac-address persistent timer
+ irf auto-update enable
+ undo irf link-delay
+ irf member 1 priority 1
+#
+ ip unreachables enable
+ ip ttl-expires enable
+#
+igmp-snooping
+#
+ dhcp snooping enable
+#
+ lldp global enable
+#
+ ipv6 dhcp snooping enable
+#
+ loopback-detection global enable vlan 1 to 4094 
+ loopback-detection global action shutdown
+#
+mld-snooping
+#
+ password-recovery enable
+#
+vlan 1
+#
+vlan 37
+#
+vlan 400
+#
+vlan 408
+ igmp-snooping enable
+ igmp-snooping drop-unknown
+ igmp-snooping querier
+ igmp-snooping general-query source-ip 192.168.254.100
+ igmp-snooping special-query source-ip 192.168.254.100
+ mld-snooping enable
+ mld-snooping drop-unknown
+#
+ stp bpdu-protection
+ stp global enable
+#
+interface NULL0
+#
+interface Vlan-interface400
+ ip address 192.168.100.84 255.255.255.0
+#
+interface Vlan-interface408
+ ip address dhcp-alloc
+#
+interface GigabitEthernet1/0/1
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/2
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/3
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/4
+ description Trgt
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/5
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/6
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/7
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/8
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/9
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/10
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/11
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/12
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/13
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/14
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/15
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/16
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/17
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/18
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/19
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/20
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/21
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/22
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/23
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/24
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/25
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/26
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/27
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/28
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/29
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/30
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/31
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/32
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/33
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/34
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/35
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/36
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/37
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/38
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/39
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/40
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/41
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/42
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/43
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/44
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/45
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/46
+ description RFoom-413
+ port access vlan 408
+ storm-constrain broadcast ratio 1 1
+ stp root-protection
+ stp edged-port
+ mvrp enable
+ ip verify source ip-address mac-address
+ port-security max-mac-count 10
+ port-security port-mode autolearn
+ dhcp snooping trust
+ dhcp snooping binding record
+ dhcp snooping max-learning-num 30
+#
+interface GigabitEthernet1/0/47
+ description Connected-to-BHH-05-R1-Sw
+ port link-type trunk
+ port trunk permit vlan 1 32 37 400 to 402 408 
+ arp detection trust
+ mvrp enable
+ dhcp snooping trust
+#
+interface GigabitEthernet1/0/48
+ description Connected-to-BHH-02-R2-Sw
+ port link-type trunk
+ port trunk permit vlan 1 32 37 400 to 402 408 
+ arp detection trust
+ mvrp enable
+ dhcp snooping trust
+#
+interface Ten-GigabitEthernet1/0/49
+ description Trunk
+ port link-type trunk
+ port trunk permit vlan all
+ arp detection trust
+ mvrp enable
+ dhcp snooping trust
+#
+interface Ten-GigabitEthernet1/0/50
+ description Trunk
+ port link-type trunk
+ port trunk permit vlan all
+ arp detection trust
+ mvrp enable
+ dhcp snooping trust
+#
+interface Ten-GigabitEthernet1/0/51
+ description Trunk
+ port link-type trunk
+ port trunk permit vlan all
+ arp detection trust
+ mvrp enable
+ dhcp snooping trust
+#
+interface Ten-GigabitEthernet1/0/52
+ description Trunk
+ port link-type trunk
+ port trunk permit vlan all
+ arp detection trust
+ mvrp enable
+ dhcp snooping trust
+#
+ scheduler logfile size 16
+#
+line class aux
+ user-role network-admin
+#
+line class vty
+ user-role network-operator
+#
+line aux 0
+ authentication-mode password
+ user-role network-admin
+ set authentication password hash $h$6$lYU8LZVrXkBU7Nwy$hUMjBae/Ql9VrSL4TCBrHx5vlUHNa6U57Cl+yw/VTGoCi7lJImMSP400KRzquW1N1UIYaJy0RpEFcaxNrSE1Uw==
+#
+line vty 0 63
+ authentication-mode scheme
+ user-role network-admin
+ user-role network-operator
+ set authentication password hash $h$6$K39rxYKernU94mR7$w60R2WepFt56ZG4QCcg5BFWuqB1hHnMlEcGE6Wrn9EzeZ00zkum1KPXC3fK8c4poiNQyu3nQbcHLxCkSKj31Gw==
+ protocol inbound ssh
+ idle-timeout 5 0
+#
+ ip route-static 0.0.0.0 0 192.168.100.1
+#
+ snmp-agent
+ snmp-agent local-engineid 192168100084
+ snmp-agent community i1Th*2k21 user-role network-admin
+ snmp-agent sys-info version v3 
+ snmp-agent group v3 iith authentication write-view iith
+ snmp-agent target-host trap address udp-domain 192.168.161.10 params securityname i1Th*2k21 v2c
+ snmp-agent usm-user v3 iith iith cipher authentication-mode md5 $c$3$RaYHB62eAOVOoaQHM/lxWkwVNSBjuI+Jj9Rk/zo9JuYLrA==
+ snmp-agent trap enable arp 
+ snmp-agent trap enable radius 
+#
+ ssh server enable
+#
+ ntp-service enable
+ ntp-service source Vlan-interface400
+ ntp-service unicast-server 192.168.161.41
+#
+radius scheme system
+ user-name-format without-domain
+#
+domain system
+#
+ domain default enable system
+#
+role name level-0
+ description Predefined level-0 role
+#
+role name level-1
+ description Predefined level-1 role
+#
+role name level-2
+ description Predefined level-2 role
+#
+role name level-3
+ description Predefined level-3 role
+#
+role name level-4
+ description Predefined level-4 role
+#
+role name level-5
+ description Predefined level-5 role
+#
+role name level-6
+ description Predefined level-6 role
+#
+role name level-7
+ description Predefined level-7 role
+#
+role name level-8
+ description Predefined level-8 role
+#
+role name level-9
+ description Predefined level-9 role
+#
+role name level-10
+ description Predefined level-10 role
+#
+role name level-11
+ description Predefined level-11 role
+#
+role name level-12
+ description Predefined level-12 role
+#
+role name level-13
+ description Predefined level-13 role
+#
+role name level-14
+ description Predefined level-14 role
+#
+user-group system
+#
+local-user iith class manage
+ password hash $h$6$9lAOHYhusUGuCkth$bdrUiO8rZYEnxy24G3Q6aObvfMSnIPUWPJLhLRcEITN4KJOHcuNCBIxkHVuuAWCgkfokylQO9+YOfAhCHY+Enw==
+ service-type ssh telnet
+ authorization-attribute user-role network-admin
+ authorization-attribute user-role network-operator
+#
+local-user karn class manage
+ password hash $h$6$cCPoR916a/Nx5Em2$cCpzG2RQCNIyypncZ3FqS7diiTU2jmiwEb69cgbZ9lYLzSHSfcC8c9XWKqkoz60kNTrPccmWzqy7LbQFP1RONA==
+ service-type ssh
+ authorization-attribute user-role network-operator
+#
+return

@@ -1,0 +1,7 @@
+
+ LLDP Remote Devices Information
+
+  LocalPort | ChassisId          PortId             PortDescr SysName           
+  --------- + ------------------ ------------------ --------- ------------------
+  48        | 3821c7-afee80      48                 48        Hostel-E-5R2      
+ 
