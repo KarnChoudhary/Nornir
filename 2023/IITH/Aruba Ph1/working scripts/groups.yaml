@@ -1,0 +1,7 @@
+---
+aruba_os:
+  platform: aruba_os
+  connection_options:
+    netmiko:
+      extras:
+        device_type: hp_procurve

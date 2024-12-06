@@ -1,0 +1,147 @@
+Host,Hostname,username,password,Groups
+BH-C-R1-00-DSW,192.168.100.2,iith,N@m@ste!,hp_comware
+BHA-00-R1-ELV-SW1,192.168.100.11,iith,N@m@ste!,hp_comware
+BHA-02-R1-ELV-SW1,192.168.100.12,iith,N@m@ste!,hp_comware
+BHA-02-R2-SW1,192.168.100.15,iith,N@m@ste!,hp_comware
+BHA-05-R1-ELV-SW1,192.168.100.13,iith,N@m@ste!,hp_comware
+BHA-05-R2-SW1,192.168.100.14,iith,N@m@ste!,hp_comware
+BHB-00-R1-ELV-SW1,192.168.100.21,iith,N@m@ste!,hp_comware
+BHB-02-R1-ELV-SW1,192.168.100.22,iith,N@m@ste!,hp_comware
+BHB-02-R2-SW1,192.168.100.25,iith,HostelB@IITH,Aruba
+BHB-05-R1-ELV-SW1,192.168.100.23,iith,N@m@ste!,hp_comware
+BHB-05-R2-SW1,192.168.100.24,iith,N@m@ste!,hp_comware
+BHC-00-R1-ELV-SW1,192.168.100.31,iith,N@m@ste!,hp_comware
+BHC-02-R1-ELV-SW1,192.168.100.32,iith,N@m@ste!,hp_comware
+BHC-02-R2-SW1,192.168.100.35,iith,N@m@ste!,hp_comware
+BHC-05-R1-ELV-SW1,192.168.100.33,iith,N@m@ste!,hp_comware
+BHC-05-R2-SW1,192.168.100.34,iith,N@m@ste!,hp_comware
+BHD-00-R1-ELV-SW1,192.168.100.41,iith,N@m@ste!,hp_comware
+BHD-02-R1-ELV-SW1,192.168.100.42,iith,N@m@ste!,hp_comware
+BHD-02-R2-SW1,192.168.100.45,iith,N@m@ste!,hp_comware
+BHD-05-R1-ELV-SW1,192.168.100.43,iith,N@m@ste!,hp_comware
+BHD-05-R2-SW1,192.168.100.44,iith,N@m@ste!,hp_comware
+BHE-00-R1-ELV-SW1,192.168.100.51,iith,N@m@ste!,Aruba
+BHE-02-R1-ELV-SW1,192.168.100.52,iith,N@m@ste!,Aruba
+BHE-02-R2-SW1,192.168.100.54,iith,N@m@ste!,Aruba
+BHE-02-R2-SW1,192.168.100.55,iith,N@m@ste!,Aruba
+BHE-05-R1-ELV-SW1,192.168.100.53,iith,N@m@ste!,Aruba
+BHF-00-R1-ELV-SW1,192.168.100.61,iith,N@m@ste!,hp_comware
+BHF-02-R1-ELV-SW1,192.168.100.62,iith,N@m@ste!,hp_comware
+BHF-02-R2-SW1,192.168.100.65,iith,N@m@ste!,hp_comware
+BHF-05-R1-ELV-SW1,192.168.100.63,iith,N@m@ste!,hp_comware
+BHF-05-R2-SW1,192.168.100.64,iith,N@m@ste!,hp_comware
+BHG-00-R1-ELV-SW1,192.168.100.71,iith,N@m@ste!,hp_comware
+BHG-02-R1-ELV-SW1,192.168.100.72,iith,N@m@ste!,hp_comware
+BHG-02-R2-SW1,192.168.100.75,iith,N@m@ste!,hp_comware
+BHG-05-R1-ELV-SW1,192.168.100.73,iith,N@m@ste!,hp_comware
+BHG-05-R2-SW1,192.168.100.74,iith,N@m@ste!,hp_comware
+BHH-00-R1-ELV-SW1,192.168.100.81,iith,N@m@ste!,hp_comware
+BHH-02-R1-ELV-SW1,192.168.100.82,iith,HostelH@IITH,Aruba
+BHH-02-R2-SW1,192.168.100.85,iith,N@m@ste!,hp_comware
+BHH-05-R1-ELV-SW1,192.168.100.83,iith,N@m@ste!,hp_comware
+BHH-05-R2-SW1,192.168.100.84,iith,N@m@ste!,hp_comware
+GHA-00-R1-ELV-SW1,192.168.100.201,iith,N@m@ste!,hp_comware
+GHA-02-R1-ELV-SW1,192.168.100.202,iith,N@m@ste!,hp_comware
+GHA-02-R2-SW1,192.168.100.205,iith,N@m@ste!,hp_comware
+GHA-05-R1-ELV-SW1,192.168.100.203,iith,N@m@ste!,hp_comware
+GHA-05-R2-SW1,192.168.100.204,iith,N@m@ste!,hp_comware
+GHB-00-R1-ELV-SW1,192.168.100.211,iith,N@m@ste!,hp_comware
+GHB-02-R1-ELV-SW1,192.168.100.212,iith,N@m@ste!,hp_comware
+GHB-02-R2-SW1,192.168.100.215,iith,N@m@ste!,hp_comware
+GHB-05-R1-ELV-SW1,192.168.100.213,iith,N@m@ste!,hp_comware
+GHB-05-R2-SW1,192.168.100.214,iith,N@m@ste!,hp_comware
+PCH-A-02-SW1,192.168.9.21,iith,N@m@ste!,Aruba
+PCH-A-02-SW2,192.168.9.22,iith,N@m@ste!,Aruba
+PCH-A-05-SW1,192.168.9.23,iith,N@m@ste!,Aruba
+PCH-A-05-SW2,192.168.9.24,iith,N@m@ste!,Aruba
+PCH-B-02-SW1,192.168.9.25,iith,N@m@ste!,Aruba
+PCH-B-02-SW2,192.168.9.26,iith,N@m@ste!,Aruba
+PCH-B-05-SW1,192.168.9.27,iith,N@m@ste!,Aruba
+PCH-B-05-SW2,192.168.9.28,iith,N@m@ste!,Aruba
+Kapila PSH 200,192.168.100.95,iith,N@m@ste!,Aruba
+Kapila PSH 300,192.168.100.94,iith,N@m@ste!,Aruba
+Kapila PSH 600,192.168.100.96,iith,N@m@ste!,Aruba
+Kapila PSH 700,192.168.100.97,iith,N@m@ste!,Aruba
+Kapila PSH 900,192.168.100.98,iith,N@m@ste!,Aruba
+Kapila PSH 1100,192.168.100.99,iith,N@m@ste!,Aruba
+AA-dist sw,192.168.41.42,iith,N@m@ste!,
+AA-02-R1-ASW,192.168.100.4,iith,N@m@ste!,
+AA-02-R1-SW1,192.168.9.57,iith,N@m@ste!,
+AA-02-R1-Cisco-ASW,192.168.9.58,iith,N@m@ste!,
+AA-03-R1-Cisco-Fsw,192.168.9.61,iith,N@m@ste!,
+AA-05-R1-HP-POE,192.168.9.85,iith,N@m@ste!,
+AA-05-R1-ASW,192.168.100.6,iith,N@m@ste!,
+AA-02-R2-ASW,192.168.100.5,iith,N@m@ste!,
+AA-06-R2-HP-POE,192.168.9.86,iith,N@m@ste!,
+AA-06-R2-ASW,192.168.100.7,iith,N@m@ste!,
+AA-01-R3-Cisco-Fsw,192.168.9.59,iith,N@m@ste!,
+AA-02-R3-DIRsw,192.168.9.56,iith,N@m@ste!,
+AA-04-R3-Cisco-Fsw,192.168.9.62,iith,N@m@ste!,
+AA-05-R3-Cisco-Fsw,192.168.9.76,iith,N@m@ste!,
+AA-06-R3-Cisco-Fsw,192.168.9.77,iith,N@m@ste!,
+AA-07-R3-Cisco-Fsw,192.168.9.78,iith,N@m@ste!,
+Acad-B-Distribution,192.168.95.1,iith,N@m@ste!,
+Acad-B-RCC-Stack-1,192.168.95.6,iith,N@m@ste!,
+Acad-B-RCC-Stack-3,192.168.95.8,iith,N@m@ste!,
+Acad-B-RCC-00to03-PoE-Sw,192.168.95.21,iith,N@m@ste!,
+Acad-B-RCC-04to06-PoE-Sw,192.168.95.22,iith,N@m@ste!,
+AA-01-Steel-Sw1,192.168.95.9,iith,N@m@ste!,
+AA-01-Steel-PoESw,192.168.95.23,iith,N@m@ste!,
+AA-02-Steel-Sw1,192.168.95.10,iith,N@m@ste!,
+AA-02-Steel-Sw2,192.168.95.15,iith,N@m@ste!,
+AA-02-Steel-PoESw,192.168.95.24,iith,N@m@ste!,
+AA-03-Steel-Sw1,192.168.95.11,iith,N@m@ste!,
+AA-03-Steel-PoESw,192.168.95.25,iith,N@m@ste!,
+AA-04-Steel-Sw1,192.168.95.12,iith,N@m@ste!,
+AA-04-Steel-Sw2,192.168.95.17,iith,N@m@ste!,
+AA-04-Steel-PoESw,192.168.95.26,iith,N@m@ste!,
+AA-05-Steel-Sw1,192.168.95.13,iith,N@m@ste!,
+AA-05-Steel-PoESw,192.168.95.27,iith,N@m@ste!,
+AC-Dist SW,192.168.200.1,iith,N@m@ste!,
+AC-R1-01-ASW,192.168.200.11,iith,N@m@ste!,
+AC-R1-01-PoE1,192.168.201.11,iith,N@m@ste!,
+AC-R1-01-PoE2,192.168.201.12,iith,N@m@ste!,
+AC-R1-01-PoE3,192.168.201.19,iith,N@m@ste!,
+AC-R1-04-PoE,192.168.201.41,iith,N@m@ste!,
+AC-R1-04-PoE,192.168.201.51,iith,N@m@ste!,
+AC-R1-06-PoE,192.168.201.61,iith,N@m@ste!,
+AC-R1-07-PoE,192.168.201.71,iith,N@m@ste!,
+AC-R1-04-ASw1,192.168.200.41,iith,N@m@ste!,
+AC-R1-05-ASw1,192.168.200.51,iith,N@m@ste!,
+AC-R1-06-ASw1,192.168.200.61,iith,N@m@ste!,
+AC-R1-07-ASw1,192.168.200.71,iith,N@m@ste!,
+AC-R2-04-PoE,192.168.201.42,iith,N@m@ste!,
+AC-R2-04-ASw1,192.168.200.45,iith,N@m@ste!,
+AC-R2-05-PoE,192.168.201.52,iith,N@m@ste!,
+AC-R2-05-ASw1,192.168.200.55,iith,N@m@ste!,
+AC-R2-06-PoE,192.168.201.62,iith,N@m@ste!,
+AC-R2-06-ASw1,192.168.200.65,iith,N@m@ste!,
+AC-R2-07-PoE,192.168.201.72,iith,N@m@ste!,
+AC-R2-07-ASw1,192.168.200.75,iith,N@m@ste!,
+CMD-SW1,192.168.100.241,iith,N@m@ste!,
+CMD-SW2,192.168.100.242,iith,N@m@ste!,
+Shed_lab_1,192.168.200.24,iith,N@m@ste!,
+Shed_lab_2,192.168.200.25,iith,N@m@ste!,
+Workshop_2A_AP,192.168.201.28,iith,N@m@ste!,
+Estate office,192.168.9.52,iith,N@m@ste!,
+Pranet Lab cisco,192.168.9.97,iith,N@m@ste!,
+Pranet Lab SDN,192.168.9.53,iith,N@m@ste!,
+FT1-3F,192.168.100.231,iith,N@m@ste!,
+FT1-8F,192.168.100.232,iith,N@m@ste!,
+FT1-14F,192.168.100.233,iith,N@m@ste!,
+FT2-3F,192.168.100.234,iith,N@m@ste!,
+FT2-8F,192.168.100.235,iith,N@m@ste!,
+FT2-14F,192.168.100.236,iith,N@m@ste!,
+FT3-3F,192.168.100.237,iith,N@m@ste!,
+FT3-8F,192.168.100.238,iith,N@m@ste!,
+FT3-14F,192.168.100.239,iith,N@m@ste!,
+FT4/Clinic ?,192.168.100.249,iith,N@m@ste!,
+ST1-3F,192.168.100.225,iith,N@m@ste!,
+ST1-8F,192.168.100.226,iith,N@m@ste!,
+ST1-14F,192.168.100.227,iith,N@m@ste!,
+ST2-3F,192.168.100.223,iith,N@m@ste!,
+ST2-8F,192.168.100.222,iith,N@m@ste!,
+Dining hall-GF,192.168.100.38,iith,N@m@ste!,
+KNC Aruba PoE near Stairs,10.4.120.111,iith,KRC@IITH2024,aruba
+KNC-Lab1,10.4.120.112,iith,KRC@IITH2024,aruba
+KNC-Lab2,10.4.120.115,iith,KRC@IITH2024,aruba

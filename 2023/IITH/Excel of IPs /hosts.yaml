@@ -1,0 +1,288 @@
+AA-01-R3-Cisco-Fsw:
+  hostname: 192.168.9.59
+# AA-01-Steel-PoESw:
+#   hostname: 192.168.95.23
+# AA-01-Steel-Sw1:
+#   hostname: 192.168.95.9
+AA-02-R1-ASW:
+  hostname: 192.168.100.4
+# AA-02-R1-Cisco-ASW:
+#   hostname: 192.168.9.58
+# AA-02-R1-SW1:
+#   hostname: 192.168.9.57
+# AA-02-R2-ASW:
+#   hostname: 192.168.100.5
+# AA-02-R3-DIRsw:
+#   hostname: 192.168.9.56
+# AA-02-Steel-PoESw:
+#   hostname: 192.168.95.24
+# AA-02-Steel-Sw1:
+#   hostname: 192.168.95.10
+# AA-02-Steel-Sw2:
+#   hostname: 192.168.95.15
+# AA-03-R1-Cisco-Fsw:
+#   hostname: 192.168.9.61
+# AA-03-Steel-PoESw:
+#   hostname: 192.168.95.25
+# AA-03-Steel-Sw1:
+#   hostname: 192.168.95.11
+# AA-04-R3-Cisco-Fsw:
+#   hostname: 192.168.9.62
+# AA-04-Steel-PoESw:
+#   hostname: 192.168.95.26
+# AA-04-Steel-Sw1:
+#   hostname: 192.168.95.12
+# AA-04-Steel-Sw2:
+#   hostname: 192.168.95.17
+# AA-05-R1-ASW:
+#   hostname: 192.168.100.6
+# AA-05-R1-HP-POE:
+#   hostname: 192.168.9.85
+# AA-05-R3-Cisco-Fsw:
+#   hostname: 192.168.9.76
+# AA-05-Steel-PoESw:
+#   hostname: 192.168.95.27
+# AA-05-Steel-Sw1:
+#   hostname: 192.168.95.13
+# AA-06-R2-ASW:
+#   hostname: 192.168.100.7
+# AA-06-R2-HP-POE:
+#   hostname: 192.168.9.86
+# AA-06-R3-Cisco-Fsw:
+#   hostname: 192.168.9.77
+# AA-07-R3-Cisco-Fsw:
+#   hostname: 192.168.9.78
+# AA-dist sw:
+#   hostname: 192.168.41.42
+# AC-Dist SW:
+#   hostname: 192.168.200.1
+# AC-R1-01-ASW:
+#   hostname: 192.168.200.11
+# AC-R1-01-PoE1:
+#   hostname: 192.168.201.11
+# AC-R1-01-PoE2:
+#   hostname: 192.168.201.12
+# AC-R1-01-PoE3:
+#   hostname: 192.168.201.19
+# AC-R1-04-ASw1:
+#   hostname: 192.168.200.41
+# AC-R1-04-PoE:
+#   hostname: 192.168.201.51
+# AC-R1-05-ASw1:
+#   hostname: 192.168.200.51
+# AC-R1-06-ASw1:
+#   hostname: 192.168.200.61
+# AC-R1-06-PoE:
+#   hostname: 192.168.201.61
+# AC-R1-07-ASw1:
+#   hostname: 192.168.200.71
+# AC-R1-07-PoE:
+#   hostname: 192.168.201.71
+# AC-R2-04-ASw1:
+#   hostname: 192.168.200.45
+# AC-R2-04-PoE:
+#   hostname: 192.168.201.42
+# AC-R2-05-ASw1:
+#   hostname: 192.168.200.55
+# AC-R2-05-PoE:
+#   hostname: 192.168.201.52
+# AC-R2-06-ASw1:
+#   hostname: 192.168.200.65
+# AC-R2-06-PoE:
+#   hostname: 192.168.201.62
+# AC-R2-07-ASw1:
+#   hostname: 192.168.200.75
+# AC-R2-07-PoE:
+#   hostname: 192.168.201.72
+# Acad-B-Distribution:
+#   hostname: 192.168.95.1
+# Acad-B-RCC-00to03-PoE-Sw:
+#   hostname: 192.168.95.21
+# Acad-B-RCC-04to06-PoE-Sw:
+#   hostname: 192.168.95.22
+# Acad-B-RCC-Stack-1:
+#   hostname: 192.168.95.6
+# Acad-B-RCC-Stack-3:
+#   hostname: 192.168.95.8
+# BH-C-R1-00-DSW:
+#   hostname: 192.168.100.2
+# BHA-00-R1-ELV-SW1:
+#   hostname: 192.168.100.11
+# BHA-02-R1-ELV-SW1:
+#   hostname: 192.168.100.12
+# BHA-02-R2-SW1:
+#   hostname: 192.168.100.15
+# BHA-05-R1-ELV-SW1:
+#   hostname: 192.168.100.13
+# BHA-05-R2-SW1:
+#   hostname: 192.168.100.14
+# BHB-00-R1-ELV-SW1:
+#   hostname: 192.168.100.21
+# BHB-02-R1-ELV-SW1:
+#   hostname: 192.168.100.22
+# BHB-02-R2-SW1:
+#   hostname: 192.168.100.25
+# BHB-05-R1-ELV-SW1:
+#   hostname: 192.168.100.23
+# BHB-05-R2-SW1:
+#   hostname: 192.168.100.24
+# BHC-00-R1-ELV-SW1:
+#   hostname: 192.168.100.31
+# BHC-02-R1-ELV-SW1:
+#   hostname: 192.168.100.32
+# BHC-02-R2-SW1:
+#   hostname: 192.168.100.35
+# BHC-05-R1-ELV-SW1:
+#   hostname: 192.168.100.33
+# BHC-05-R2-SW1:
+#   hostname: 192.168.100.34
+# BHD-00-R1-ELV-SW1:
+#   hostname: 192.168.100.41
+# BHD-02-R1-ELV-SW1:
+#   hostname: 192.168.100.42
+# BHD-02-R2-SW1:
+#   hostname: 192.168.100.45
+# BHD-05-R1-ELV-SW1:
+#   hostname: 192.168.100.43
+# BHD-05-R2-SW1:
+#   hostname: 192.168.100.44
+# BHE-00-R1-ELV-SW1:
+#   hostname: 192.168.100.51
+# BHE-02-R1-ELV-SW1:
+#   hostname: 192.168.100.52
+# BHE-02-R2-SW1:
+#   hostname: 192.168.100.55
+# BHE-05-R1-ELV-SW1:
+#   hostname: 192.168.100.53
+# BHF-00-R1-ELV-SW1:
+#   hostname: 192.168.100.61
+# BHF-02-R1-ELV-SW1:
+#   hostname: 192.168.100.62
+# BHF-02-R2-SW1:
+#   hostname: 192.168.100.65
+# BHF-05-R1-ELV-SW1:
+#   hostname: 192.168.100.63
+# BHF-05-R2-SW1:
+#   hostname: 192.168.100.64
+# BHG-00-R1-ELV-SW1:
+#   hostname: 192.168.100.71
+# BHG-02-R1-ELV-SW1:
+#   hostname: 192.168.100.72
+# BHG-02-R2-SW1:
+#   hostname: 192.168.100.75
+# BHG-05-R1-ELV-SW1:
+#   hostname: 192.168.100.73
+# BHG-05-R2-SW1:
+#   hostname: 192.168.100.74
+# BHH-00-R1-ELV-SW1:
+#   hostname: 192.168.100.81
+# BHH-02-R1-ELV-SW1:
+#   hostname: 192.168.100.82
+# BHH-02-R2-SW1:
+#   hostname: 192.168.100.85
+# BHH-05-R1-ELV-SW1:
+#   hostname: 192.168.100.83
+# BHH-05-R2-SW1:
+#   hostname: 192.168.100.84
+# CMD-SW1:
+#   hostname: 192.168.100.241
+# CMD-SW2:
+#   hostname: 192.168.100.242
+# Dining hall-GF:
+#   hostname: 192.168.100.38
+# Estate office:
+#   hostname: 192.168.9.52
+# FT1-14F:
+#   hostname: 192.168.100.233
+# FT1-3F:
+#   hostname: 192.168.100.231
+# FT1-8F:
+#   hostname: 192.168.100.232
+# FT2-14F:
+#   hostname: 192.168.100.236
+# FT2-3F:
+#   hostname: 192.168.100.234
+# FT2-8F:
+#   hostname: 192.168.100.235
+# FT3-14F:
+#   hostname: 192.168.100.239
+# FT3-3F:
+#   hostname: 192.168.100.237
+# FT3-8F:
+#   hostname: 192.168.100.238
+# 'FT4/Clinic ':
+#   hostname: 192.168.100.249
+# GHA-00-R1-ELV-SW1:
+#   hostname: 192.168.100.201
+# GHA-02-R1-ELV-SW1:
+#   hostname: 192.168.100.202
+# GHA-02-R2-SW1:
+#   hostname: 192.168.100.205
+# GHA-05-R1-ELV-SW1:
+#   hostname: 192.168.100.203
+# GHA-05-R2-SW1:
+#   hostname: 192.168.100.204
+# GHB-00-R1-ELV-SW1:
+#   hostname: 192.168.100.211
+# GHB-02-R1-ELV-SW1:
+#   hostname: 192.168.100.212
+# GHB-02-R2-SW1:
+#   hostname: 192.168.100.215
+# GHB-05-R1-ELV-SW1:
+#   hostname: 192.168.100.213
+# GHB-05-R2-SW1:
+#   hostname: 192.168.100.214
+# KNC Aruba PoE near Stairs:
+#   hostname: 10.4.120.111
+# KNC-Lab1:
+#   hostname: 10.4.120.112
+# KNC-Lab2:
+#   hostname: 10.4.120.115
+# Kapila PSH 1100:
+#   hostname: 192.168.100.99
+# Kapila PSH 200:
+#   hostname: 192.168.100.95
+# Kapila PSH 300:
+#   hostname: 192.168.100.94
+# Kapila PSH 600:
+#   hostname: 192.168.100.96
+# Kapila PSH 700:
+#   hostname: 192.168.100.97
+# Kapila PSH 900:
+#   hostname: 192.168.100.98
+# PCH-A-02-SW1:
+#   hostname: 192.168.9.21
+# PCH-A-02-SW2:
+#   hostname: 192.168.9.22
+# PCH-A-05-SW1:
+#   hostname: 192.168.9.23
+# PCH-A-05-SW2:
+#   hostname: 192.168.9.24
+# PCH-B-02-SW1:
+#   hostname: 192.168.9.25
+# PCH-B-02-SW2:
+#   hostname: 192.168.9.26
+# PCH-B-05-SW1:
+#   hostname: 192.168.9.27
+# PCH-B-05-SW2:
+#   hostname: 192.168.9.28
+# Pranet Lab SDN:
+#   hostname: 192.168.9.53
+# Pranet Lab cisco:
+#   hostname: 192.168.9.97
+# ST1-14F:
+#   hostname: 192.168.100.227
+# ST1-3F:
+#   hostname: 192.168.100.225
+# ST1-8F:
+#   hostname: 192.168.100.226
+# ST2-3F:
+#   hostname: 192.168.100.223
+# ST2-8F:
+#   hostname: 192.168.100.222
+# Shed_lab_1:
+#   hostname: 192.168.200.24
+# Shed_lab_2:
+#   hostname: 192.168.200.25
+# Workshop_2A_AP:
+#   hostname: 192.168.201.28

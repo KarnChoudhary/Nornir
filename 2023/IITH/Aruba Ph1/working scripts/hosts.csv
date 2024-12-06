@@ -1,0 +1,6 @@
+Host,Hostname,username,password,Groups
+BHE-00-R1-ELV-SW1,192.168.100.51,iith,N@m@ste!,aruba_os
+BHE-02-R1-ELV-SW1,192.168.100.52,iith,N@m@ste!,aruba_os
+BHE-05-R1-ELV-SW1,192.168.100.53,iith,N@m@ste!,aruba_os
+BHE-05-R2-SW1,192.168.100.54,iith,N@m@ste!,aruba_os
+BHE-02-R2-SW1,192.168.100.55,iith,N@m@ste!,aruba_os

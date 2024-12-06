@@ -1,0 +1,30 @@
+BHE-00-R1-ELV-SW1:
+  groups:
+  - aruba_os
+  hostname: 192.168.100.51
+  password: N@m@ste!
+  username: iith
+BHE-02-R1-ELV-SW1:
+  groups:
+  - aruba_os
+  hostname: 192.168.100.52
+  password: N@m@ste!
+  username: iith
+BHE-02-R2-SW1:
+  groups:
+  - aruba_os
+  hostname: 192.168.100.55
+  password: N@m@ste!
+  username: iith
+BHE-05-R1-ELV-SW1:
+  groups:
+  - aruba_os
+  hostname: 192.168.100.53
+  password: N@m@ste!
+  username: iith
+BHE-05-R2-SW1:
+  groups:
+  - aruba_os
+  hostname: 192.168.100.54
+  password: N@m@ste!
+  username: iith
