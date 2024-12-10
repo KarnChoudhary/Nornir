@@ -7,67 +7,58 @@ import re
 import os
 
 # Configure logging
-logging.basicConfig(
-    filename='nornir.log',
-    level=logging.DEBUG,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    datefmt='%Y-%m-%d %H:%M:%S'
-)
+logging.basicConfig(filename='switch_identification.log', level=logging.DEBUG)
 logger = logging.getLogger("nornir")
 
 # Initialize Nornir
 nr = InitNornir(config_file="config.yaml")
 
-# Define the task to identify the device type
-def identify_device_type(task):
+# Define the task to identify the switch type
+def identify_switch_type(task):
     try:
         # Connect to the device
         net_connect = task.host.get_connection("netmiko", task.nornir.config)
 
-        # Run a command to identify the device type
+        # Increase read timeout
+        net_connect.timeout = 30
+
+        # Try HPE command
+        command = "screen-length disable"
+        result = net_connect.send_command(command, expect_string=r'[\#\>\]]')
+        command = "display version"
+        result = net_connect.send_command(command, expect_string=r'[\#\>\]]')
+        if "HP" in result or "Comware" in result:
+            logger.info(f"{task.host.name} is an HPE switch")
+            write_to_csv(task.host.name, task.host.hostname, "HPE")
+            return
+
+        # Try Cisco command
         command = "show version"
-        result = net_connect.send_command(command)
-        logger.info(f"Command '{command}' executed successfully on {task.host.name}")
+        result = net_connect.send_command(command, expect_string=r'[\#\>\]]')
+        if "Cisco" in result:
+            logger.info(f"{task.host.name} is a Cisco switch")
+            write_to_csv(task.host.name, task.host.hostname, "Cisco")
+            return
 
-        # Identify the device type based on the output
-        if "HPE" in result or "Comware" in result:
-            device_type = "HPE"
-        elif "Aruba" in result:
-            device_type = "Aruba"
-        else:
-            device_type = "Unknown"
-
-        print(f"Device Type for {task.host.name}: {device_type}")
-
-        # Write the output to CSV
-        write_to_csv(task.host.name, task.host.hostname, device_type)
-        logger.info(f"Writing content to CSV for {task.host.name}")
+        # If none of the above, log as unknown
+        logger.info(f"{task.host.name} is an unknown switch type")
+        write_to_csv(task.host.name, task.host.hostname, "Unknown")
 
     except Exception as e:
-        error_message = str(e)
-        if "Authentication failure" in error_message:
-            logger.error(f"Authentication failed for {task.host.name}: Incorrect username or password")
-            write_to_csv(task.host.name, task.host.hostname, "Authentication failed")
-        elif "timed out" in error_message:
-            logger.error(f"Connection timed out for {task.host.name}")
-            write_to_csv(task.host.name, task.host.hostname, "Connection timed out")
-        else:
-            logger.error(f"Failed to identify device type on {task.host.name}: {e}")
-            write_to_csv(task.host.name, task.host.hostname, "Error")
+        logger.error(f"Failed to identify switch type for {task.host.name}: {e}")
+        write_to_csv(task.host.name, task.host.hostname, "Error")
 
-    return None
-
-def write_to_csv(hostname, ip_address, device_type):
-    csv_file = 'device_type_identification.csv'
+def write_to_csv(hostname, ip_address, switch_type, error_message=""):
+    csv_file = 'switch_identification.csv'
     file_exists = os.path.isfile(csv_file)
 
     with open(csv_file, mode='a', newline='') as file:
         writer = csv.writer(file)
         if not file_exists or os.path.getsize(csv_file) == 0:
-            writer.writerow(["Hostname", "IP Address", "Device Type"])
-        writer.writerow([hostname, ip_address, device_type])
+            writer.writerow(["Hostname", "IP Address", "Switch Type", "Error Message"])
+        writer.writerow([hostname, ip_address, switch_type, error_message])
 
 # Filter the devices and run the task
-result = nr.run(task=identify_device_type)
+result = nr.run(task=identify_switch_type)
 
 print("Task completed")

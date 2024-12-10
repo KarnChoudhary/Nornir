@@ -9,3 +9,9 @@ cisco:
   #         conn_timeout: 1000000
 
 # testing git push changes/commit for vs code
+aruba_os:
+  platform: aruba_os
+  connection_options:
+    netmiko:
+      extras:
+        device_type: hp_procurve

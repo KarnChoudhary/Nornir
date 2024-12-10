@@ -1,249 +1,183 @@
-2024-12-06 12:34:17,223 -  nornir.core -     INFO -        run() - Running task 'check_reachability' with args {} on 144 hosts
-2024-12-06 12:35:26,161 -  nornir.core -     INFO -        run() - Running task 'check_reachability' with args {} on 144 hosts
-2024-12-06 15:34:09,544 -  nornir.core -     INFO -        run() - Running task 'check_reachability' with args {} on 144 hosts
-2024-12-06 16:46:47,096 -  nornir.core -     INFO -        run() - Running task 'identify_device_type' with args {} on 2 hosts
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - starting thread (client mode): 0xb1e6f710
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - starting thread (client mode): 0xb207b510
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_2.12.0
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_2.12.0
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_5.9p1.RL
-2024-12-06 16:46:47 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_5.9p1.RL)
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - Remote version/idstring: SSH-1.99-Comware-7.1.045
-2024-12-06 16:46:47 - paramiko.transport - INFO - Connected (version 1.99, client Comware-7.1.045)
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - === Key exchange possibilities ===
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - kex algos: diffie-hellman-group-exchange-sha1, diffie-hellman-group1-sha1
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - server key: ssh-rsa, ssh-dss
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - client encrypt: aes128-cbc, 3des-cbc, arcfour, aes192-cbc, aes256-cbc
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - server encrypt: aes128-cbc, 3des-cbc, arcfour, aes192-cbc, aes256-cbc
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - client mac: hmac-sha1, hmac-md5
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - server mac: hmac-sha1, hmac-md5
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - client compress: none
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - server compress: none
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - client lang: <none>
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - server lang: <none>
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - kex follows: False
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - === Key exchange agreements ===
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - Kex: diffie-hellman-group-exchange-sha1
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - HostKey: ssh-rsa
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - Cipher: aes128-cbc
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - MAC: hmac-sha1
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - Compression: none
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - === End of kex handshake ===
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - === Key exchange possibilities ===
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - kex algos: diffie-hellman-group-exchange-sha1, diffie-hellman-group14-sha1, diffie-hellman-group1-sha1
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - server key: ssh-dss, ssh-rsa
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - client encrypt: aes128-cbc, aes256-cbc, 3des-cbc, des-cbc
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - server encrypt: aes128-cbc, aes256-cbc, 3des-cbc, des-cbc
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - client mac: hmac-sha1, hmac-sha1-96, hmac-md5, hmac-md5-96
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - server mac: hmac-sha1, hmac-sha1-96, hmac-md5, hmac-md5-96
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - client compress: none, zlib, zlib@openssh.com
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - server compress: none, zlib, zlib@openssh.com
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - client lang: <none>
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - server lang: <none>
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - kex follows: False
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - === Key exchange agreements ===
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - Kex: diffie-hellman-group-exchange-sha1
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - HostKey: ssh-rsa
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - Cipher: aes128-cbc
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - MAC: hmac-sha1
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - Compression: none
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - === End of kex handshake ===
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - Got server p (2048 bits)
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - Got server p (2049 bits)
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - kex engine KexGex specified hash_algo <built-in function openssl_sha1>
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - Switch to new keys ...
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - Adding ssh-rsa host key for 192.168.100.4: b'3f91fa133d6af3a50925dca9cec6156c'
-2024-12-06 16:46:47 - paramiko.transport - DEBUG - userauth is OK
-2024-12-06 16:46:48 - paramiko.transport - DEBUG - kex engine KexGex specified hash_algo <built-in function openssl_sha1>
-2024-12-06 16:46:48 - paramiko.transport - DEBUG - Switch to new keys ...
-2024-12-06 16:46:48 - paramiko.transport - DEBUG - Adding ssh-rsa host key for 192.168.9.59: b'11777982b81b28f8761a57bee94b6b00'
-2024-12-06 16:46:48 - paramiko.transport - DEBUG - userauth is OK
-2024-12-06 16:46:48 - paramiko.transport - INFO - Authentication (password) failed.
-2024-12-06 16:46:48,580 -       nornir -    ERROR - identify_device_type() - Failed to identify device type on AA-01-R3-Cisco-Fsw: Authentication to device failed.
+2024-12-09 16:56:07,861 -  nornir.core -     INFO -        run() - Running task 'identify_switch_type' with args {} on 3 hosts
+2024-12-09 16:56:08,553 -       nornir -     INFO - identify_switch_type() - CC-00-DIS is a Cisco switch
+2024-12-09 16:56:09,814 -       nornir -     INFO - identify_switch_type() - AA-02-R1-SW1 is an HPE switch
+2024-12-09 16:56:18,713 -       nornir -    ERROR - identify_switch_type() - Failed to identify switch type for AA-02-Steel-PoESw: 
+
+Pattern not detected: 'terminal width 511' in output.
+
+Things you might try to fix this:
+1. Adjust the regex pattern to better identify the terminating string. Note, in
+many situations the pattern is automatically based on the network device's prompt.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+2024-12-09 17:01:56,087 -  nornir.core -     INFO -        run() - Running task 'identify_switch_type' with args {} on 3 hosts
+2024-12-09 17:01:56,691 -       nornir -     INFO - identify_switch_type() - CC-00-DIS is a Cisco switch
+2024-12-09 17:01:58,026 -       nornir -     INFO - identify_switch_type() - AA-02-R1-SW1 is an HPE switch
+2024-12-09 17:02:06,944 -       nornir -    ERROR - identify_switch_type() - Failed to identify switch type for AA-02-Steel-PoESw: 
+
+Pattern not detected: 'terminal width 511' in output.
+
+Things you might try to fix this:
+1. Adjust the regex pattern to better identify the terminating string. Note, in
+many situations the pattern is automatically based on the network device's prompt.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+2024-12-09 17:03:24,425 -  nornir.core -     INFO -        run() - Running task 'identify_switch_type' with args {} on 3 hosts
+2024-12-09 17:03:25,048 -       nornir -     INFO - identify_switch_type() - CC-00-DIS is a Cisco switch
+2024-12-09 17:03:26,361 -       nornir -     INFO - identify_switch_type() - AA-02-R1-SW1 is an HPE switch
+2024-12-09 17:03:35,282 -       nornir -    ERROR - identify_switch_type() - Failed to identify switch type for AA-02-Steel-PoESw: 
+
+Pattern not detected: 'terminal width 511' in output.
+
+Things you might try to fix this:
+1. Adjust the regex pattern to better identify the terminating string. Note, in
+many situations the pattern is automatically based on the network device's prompt.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+2024-12-10 11:13:12,958 -  nornir.core -     INFO -        run() - Running task 'identify_switch_type' with args {} on 19 hosts
+2024-12-10 11:13:13,826 -       nornir -     INFO - identify_switch_type() - GHB-05-R2-SW1 is an HPE switch
+2024-12-10 11:13:14,894 -       nornir -     INFO - identify_switch_type() - GHB-00-R1-ELV-SW1 is an HPE switch
+2024-12-10 11:13:15,106 -       nornir -     INFO - identify_switch_type() - GHB-02-R1-ELV-SW1 is an HPE switch
+2024-12-10 11:13:15,430 -       nornir -     INFO - identify_switch_type() - GHB-05-R1-ELV-SW1 is an HPE switch
+2024-12-10 11:13:15,506 -       nornir -     INFO - identify_switch_type() - GHB-02-R2-SW1 is an HPE switch
+2024-12-10 11:13:17,035 -       nornir -     INFO - identify_switch_type() - Kapila PSH 200 is an unknown switch type
+2024-12-10 11:13:19,207 -       nornir -    ERROR - identify_switch_type() - Failed to identify switch type for GHA-02-R1-ELV-SW1: Authentication to device failed.
 
 Common causes of this problem are:
 1. Invalid username and password
 2. Incorrect SSH-key file
 3. Connecting to the wrong device
 
-Device settings: cisco_ios 192.168.9.59:22
+Device settings: cisco_ios 192.168.100.202:22
 
 
 Authentication failed.
-2024-12-06 16:46:48 - paramiko.transport - DEBUG - EOF in transport thread
-2024-12-06 16:46:53 - paramiko.transport - INFO - Authentication (password) failed.
-2024-12-06 16:46:53,374 -       nornir -    ERROR - identify_device_type() - Failed to identify device type on AA-02-R1-ASW: Authentication to device failed.
+2024-12-10 11:13:19,246 -       nornir -    ERROR - identify_switch_type() - Failed to identify switch type for GHA-00-R1-ELV-SW1: Authentication to device failed.
 
 Common causes of this problem are:
 1. Invalid username and password
 2. Incorrect SSH-key file
 3. Connecting to the wrong device
 
-Device settings: cisco_ios 192.168.100.4:22
+Device settings: cisco_ios 192.168.100.201:22
 
 
 Authentication failed.
-2024-12-06 17:14:25,690 -  nornir.core -     INFO -        run() - Running task 'identify_device_type' with args {} on 2 hosts
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - starting thread (client mode): 0x37072790
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_2.12.0
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - starting thread (client mode): 0x3afc2f50
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_2.12.0
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_5.9p1.RL
-2024-12-06 17:14:25 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_5.9p1.RL)
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - === Key exchange possibilities ===
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - kex algos: diffie-hellman-group-exchange-sha1, diffie-hellman-group1-sha1
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - server key: ssh-rsa, ssh-dss
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - client encrypt: aes128-cbc, 3des-cbc, arcfour, aes192-cbc, aes256-cbc
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - server encrypt: aes128-cbc, 3des-cbc, arcfour, aes192-cbc, aes256-cbc
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - client mac: hmac-sha1, hmac-md5
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - server mac: hmac-sha1, hmac-md5
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - client compress: none
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - server compress: none
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - client lang: <none>
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - server lang: <none>
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - kex follows: False
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - === Key exchange agreements ===
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - Kex: diffie-hellman-group-exchange-sha1
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - HostKey: ssh-rsa
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - Cipher: aes128-cbc
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - MAC: hmac-sha1
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - Compression: none
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - === End of kex handshake ===
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - Remote version/idstring: SSH-1.99-Comware-7.1.045
-2024-12-06 17:14:25 - paramiko.transport - INFO - Connected (version 1.99, client Comware-7.1.045)
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - === Key exchange possibilities ===
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - kex algos: diffie-hellman-group-exchange-sha1, diffie-hellman-group14-sha1, diffie-hellman-group1-sha1
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - server key: ssh-dss, ssh-rsa
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - client encrypt: aes128-cbc, aes256-cbc, 3des-cbc, des-cbc
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - server encrypt: aes128-cbc, aes256-cbc, 3des-cbc, des-cbc
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - client mac: hmac-sha1, hmac-sha1-96, hmac-md5, hmac-md5-96
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - server mac: hmac-sha1, hmac-sha1-96, hmac-md5, hmac-md5-96
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - client compress: none, zlib, zlib@openssh.com
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - server compress: none, zlib, zlib@openssh.com
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - client lang: <none>
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - server lang: <none>
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - kex follows: False
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - === Key exchange agreements ===
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - Kex: diffie-hellman-group-exchange-sha1
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - HostKey: ssh-rsa
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - Cipher: aes128-cbc
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - MAC: hmac-sha1
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - Compression: none
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - === End of kex handshake ===
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - Got server p (2048 bits)
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - Got server p (2049 bits)
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - kex engine KexGex specified hash_algo <built-in function openssl_sha1>
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - Switch to new keys ...
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - Adding ssh-rsa host key for 192.168.100.4: b'3f91fa133d6af3a50925dca9cec6156c'
-2024-12-06 17:14:25 - paramiko.transport - DEBUG - userauth is OK
-2024-12-06 17:14:26 - paramiko.transport - DEBUG - kex engine KexGex specified hash_algo <built-in function openssl_sha1>
-2024-12-06 17:14:26 - paramiko.transport - DEBUG - Switch to new keys ...
-2024-12-06 17:14:26 - paramiko.transport - DEBUG - Adding ssh-rsa host key for 192.168.9.59: b'11777982b81b28f8761a57bee94b6b00'
-2024-12-06 17:14:27 - paramiko.transport - DEBUG - userauth is OK
-2024-12-06 17:14:27 - paramiko.transport - INFO - Authentication (password) failed.
-2024-12-06 17:14:27,197 -       nornir -    ERROR - identify_device_type() - Failed to identify device type on AA-01-R3-Cisco-Fsw: Authentication to device failed.
+2024-12-10 11:13:19,291 -       nornir -    ERROR - identify_switch_type() - Failed to identify switch type for GHA-05-R1-ELV-SW1: Authentication to device failed.
 
 Common causes of this problem are:
 1. Invalid username and password
 2. Incorrect SSH-key file
 3. Connecting to the wrong device
 
-Device settings: cisco_ios 192.168.9.59:22
+Device settings: cisco_ios 192.168.100.203:22
 
 
 Authentication failed.
-2024-12-06 17:14:27 - paramiko.transport - DEBUG - EOF in transport thread
-2024-12-06 17:14:31 - paramiko.transport - INFO - Authentication (password) failed.
-2024-12-06 17:14:31,949 -       nornir -    ERROR - identify_device_type() - Failed to identify device type on AA-02-R1-ASW: Authentication to device failed.
+2024-12-10 11:13:20,546 -       nornir -     INFO - identify_switch_type() - Kapila PSH 600 is an unknown switch type
+2024-12-10 11:13:20,716 -       nornir -     INFO - identify_switch_type() - Kapila PSH 700 is an unknown switch type
+2024-12-10 11:13:25,726 -       nornir -    ERROR - identify_switch_type() - Failed to identify switch type for KNC-Lab1: 
 
-Common causes of this problem are:
-1. Invalid username and password
-2. Incorrect SSH-key file
-3. Connecting to the wrong device
+Pattern not detected: 'terminal width 511' in output.
 
-Device settings: cisco_ios 192.168.100.4:22
+Things you might try to fix this:
+1. Adjust the regex pattern to better identify the terminating string. Note, in
+many situations the pattern is automatically based on the network device's prompt.
+2. Increase the read_timeout to a larger value.
 
-
-Authentication failed.
-2024-12-06 17:16:23,884 -  nornir.core -     INFO -        run() - Running task 'identify_device_type' with args {} on 2 hosts
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - starting thread (client mode): 0x6d32e050
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_2.12.0
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - starting thread (client mode): 0x6d300750
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_2.12.0
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_5.9p1.RL
-2024-12-06 17:16:23 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_5.9p1.RL)
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - Remote version/idstring: SSH-1.99-Comware-7.1.045
-2024-12-06 17:16:23 - paramiko.transport - INFO - Connected (version 1.99, client Comware-7.1.045)
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - === Key exchange possibilities ===
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - kex algos: diffie-hellman-group-exchange-sha1, diffie-hellman-group1-sha1
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - server key: ssh-rsa, ssh-dss
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - client encrypt: aes128-cbc, 3des-cbc, arcfour, aes192-cbc, aes256-cbc
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - server encrypt: aes128-cbc, 3des-cbc, arcfour, aes192-cbc, aes256-cbc
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - client mac: hmac-sha1, hmac-md5
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - server mac: hmac-sha1, hmac-md5
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - client compress: none
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - server compress: none
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - client lang: <none>
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - server lang: <none>
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - kex follows: False
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - === Key exchange agreements ===
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - Kex: diffie-hellman-group-exchange-sha1
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - HostKey: ssh-rsa
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - Cipher: aes128-cbc
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - MAC: hmac-sha1
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - Compression: none
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - === End of kex handshake ===
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - === Key exchange possibilities ===
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - kex algos: diffie-hellman-group-exchange-sha1, diffie-hellman-group14-sha1, diffie-hellman-group1-sha1
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - server key: ssh-dss, ssh-rsa
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - client encrypt: aes128-cbc, aes256-cbc, 3des-cbc, des-cbc
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - server encrypt: aes128-cbc, aes256-cbc, 3des-cbc, des-cbc
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - client mac: hmac-sha1, hmac-sha1-96, hmac-md5, hmac-md5-96
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - server mac: hmac-sha1, hmac-sha1-96, hmac-md5, hmac-md5-96
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - client compress: none, zlib, zlib@openssh.com
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - server compress: none, zlib, zlib@openssh.com
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - client lang: <none>
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - server lang: <none>
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - kex follows: False
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - === Key exchange agreements ===
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - Kex: diffie-hellman-group-exchange-sha1
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - HostKey: ssh-rsa
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - Cipher: aes128-cbc
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - MAC: hmac-sha1
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - Compression: none
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - === End of kex handshake ===
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - Got server p (2048 bits)
-2024-12-06 17:16:23 - paramiko.transport - DEBUG - Got server p (2049 bits)
-2024-12-06 17:16:24 - paramiko.transport - DEBUG - kex engine KexGex specified hash_algo <built-in function openssl_sha1>
-2024-12-06 17:16:24 - paramiko.transport - DEBUG - Switch to new keys ...
-2024-12-06 17:16:24 - paramiko.transport - DEBUG - Adding ssh-rsa host key for 192.168.100.4: b'3f91fa133d6af3a50925dca9cec6156c'
-2024-12-06 17:16:24 - paramiko.transport - DEBUG - userauth is OK
-2024-12-06 17:16:24 - paramiko.transport - INFO - Authentication (password) failed.
-2024-12-06 17:16:24,202 -       nornir -    ERROR - identify_device_type() - Failed to identify device type on AA-02-R1-ASW: Authentication to device failed.
-
-Common causes of this problem are:
-1. Invalid username and password
-2. Incorrect SSH-key file
-3. Connecting to the wrong device
-
-Device settings: cisco_ios 192.168.100.4:22
+You can also look at the Netmiko session_log or debug log for more information.
 
 
-Authentication failed.
-2024-12-06 17:16:24 - paramiko.transport - DEBUG - EOF in transport thread
-2024-12-06 17:16:24 - paramiko.transport - DEBUG - kex engine KexGex specified hash_algo <built-in function openssl_sha1>
-2024-12-06 17:16:24 - paramiko.transport - DEBUG - Switch to new keys ...
-2024-12-06 17:16:24 - paramiko.transport - DEBUG - Adding ssh-rsa host key for 192.168.9.59: b'11777982b81b28f8761a57bee94b6b00'
-2024-12-06 17:16:24 - paramiko.transport - DEBUG - userauth is OK
-2024-12-06 17:16:24 - paramiko.transport - INFO - Authentication (password) failed.
-2024-12-06 17:16:24,931 -       nornir -    ERROR - identify_device_type() - Failed to identify device type on AA-01-R3-Cisco-Fsw: Authentication to device failed.
+2024-12-10 11:13:25,829 -       nornir -    ERROR - identify_switch_type() - Failed to identify switch type for KNC Aruba PoE near Stairs: 
 
-Common causes of this problem are:
-1. Invalid username and password
-2. Incorrect SSH-key file
-3. Connecting to the wrong device
+Pattern not detected: 'terminal width 511' in output.
 
-Device settings: cisco_ios 192.168.9.59:22
+Things you might try to fix this:
+1. Adjust the regex pattern to better identify the terminating string. Note, in
+many situations the pattern is automatically based on the network device's prompt.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
 
 
-Authentication failed.
+2024-12-10 11:13:25,983 -       nornir -    ERROR - identify_switch_type() - Failed to identify switch type for KNC-Lab2: 
+
+Pattern not detected: 'terminal width 511' in output.
+
+Things you might try to fix this:
+1. Adjust the regex pattern to better identify the terminating string. Note, in
+many situations the pattern is automatically based on the network device's prompt.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+2024-12-10 11:13:26,263 -       nornir -    ERROR - identify_switch_type() - Failed to identify switch type for Kapila PSH 1100: 
+
+Pattern not detected: 'terminal width 511' in output.
+
+Things you might try to fix this:
+1. Adjust the regex pattern to better identify the terminating string. Note, in
+many situations the pattern is automatically based on the network device's prompt.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+2024-12-10 11:13:27,894 -       nornir -    ERROR - identify_switch_type() - Failed to identify switch type for Kapila PSH 300: 
+
+Pattern not detected: 'terminal width 511' in output.
+
+Things you might try to fix this:
+1. Adjust the regex pattern to better identify the terminating string. Note, in
+many situations the pattern is automatically based on the network device's prompt.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+2024-12-10 11:13:30,138 -       nornir -    ERROR - identify_switch_type() - Failed to identify switch type for Kapila PSH 900: 
+
+Pattern not detected: 'terminal width 511' in output.
+
+Things you might try to fix this:
+1. Adjust the regex pattern to better identify the terminating string. Note, in
+many situations the pattern is automatically based on the network device's prompt.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+2024-12-10 11:13:33,862 -       nornir -    ERROR - identify_switch_type() - Failed to identify switch type for GHA-05-R2-SW1: 
+
+Pattern not detected: '(\\#|>)' in output.
+
+Things you might try to fix this:
+1. Adjust the regex pattern to better identify the terminating string. Note, in
+many situations the pattern is automatically based on the network device's prompt.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+2024-12-10 11:13:33,868 -       nornir -    ERROR - identify_switch_type() - Failed to identify switch type for GHA-02-R2-SW1: 
+
+Pattern not detected: '(\\#|>)' in output.
+
+Things you might try to fix this:
+1. Adjust the regex pattern to better identify the terminating string. Note, in
+many situations the pattern is automatically based on the network device's prompt.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+

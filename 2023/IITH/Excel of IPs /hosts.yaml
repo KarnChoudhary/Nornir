@@ -1,288 +1,576 @@
-AA-01-R3-Cisco-Fsw:
-  hostname: 192.168.9.59
+# AA-01-R3-Cisco-Fsw:
+#   hostname: 192.168.9.59
+#   password: N@m@ste!
+#   username: iith
 # AA-01-Steel-PoESw:
 #   hostname: 192.168.95.23
+#   password: N@m@ste!
+#   username: iith
 # AA-01-Steel-Sw1:
 #   hostname: 192.168.95.9
-AA-02-R1-ASW:
-  hostname: 192.168.100.4
+#   password: N@m@ste!
+#   username: iith
+# AA-02-R1-ASW:
+#   hostname: 192.168.100.4
+#   password: N@m@ste!
+#   username: iith
 # AA-02-R1-Cisco-ASW:
 #   hostname: 192.168.9.58
+#   password: N@m@ste!
+#   username: iith
 # AA-02-R1-SW1:
 #   hostname: 192.168.9.57
+#   password: N@m@ste!
+#   username: iith
 # AA-02-R2-ASW:
 #   hostname: 192.168.100.5
+#   password: N@m@ste!
+#   username: iith
 # AA-02-R3-DIRsw:
 #   hostname: 192.168.9.56
+#   password: N@m@ste!
+#   username: iith
 # AA-02-Steel-PoESw:
 #   hostname: 192.168.95.24
+#   password: N@m@ste!
+#   username: iith
 # AA-02-Steel-Sw1:
 #   hostname: 192.168.95.10
+#   password: N@m@ste!
+#   username: iith
 # AA-02-Steel-Sw2:
 #   hostname: 192.168.95.15
+#   password: N@m@ste!
+#   username: iith
 # AA-03-R1-Cisco-Fsw:
 #   hostname: 192.168.9.61
+#   password: N@m@ste!
+#   username: iith
 # AA-03-Steel-PoESw:
 #   hostname: 192.168.95.25
+#   password: N@m@ste!
+#   username: iith
 # AA-03-Steel-Sw1:
 #   hostname: 192.168.95.11
+#   password: N@m@ste!
+#   username: iith
 # AA-04-R3-Cisco-Fsw:
 #   hostname: 192.168.9.62
+#   password: N@m@ste!
+#   username: iith
 # AA-04-Steel-PoESw:
 #   hostname: 192.168.95.26
+#   password: N@m@ste!
+#   username: iith
 # AA-04-Steel-Sw1:
 #   hostname: 192.168.95.12
+#   password: N@m@ste!
+#   username: iith
 # AA-04-Steel-Sw2:
 #   hostname: 192.168.95.17
+#   password: N@m@ste!
+#   username: iith
 # AA-05-R1-ASW:
 #   hostname: 192.168.100.6
+#   password: N@m@ste!
+#   username: iith
 # AA-05-R1-HP-POE:
 #   hostname: 192.168.9.85
+#   password: N@m@ste!
+#   username: iith
 # AA-05-R3-Cisco-Fsw:
 #   hostname: 192.168.9.76
+#   password: N@m@ste!
+#   username: iith
 # AA-05-Steel-PoESw:
 #   hostname: 192.168.95.27
+#   password: N@m@ste!
+#   username: iith
 # AA-05-Steel-Sw1:
 #   hostname: 192.168.95.13
+#   password: N@m@ste!
+#   username: iith
 # AA-06-R2-ASW:
 #   hostname: 192.168.100.7
+#   password: N@m@ste!
+#   username: iith
 # AA-06-R2-HP-POE:
 #   hostname: 192.168.9.86
+#   password: N@m@ste!
+#   username: iith
 # AA-06-R3-Cisco-Fsw:
 #   hostname: 192.168.9.77
+#   password: N@m@ste!
+#   username: iith
 # AA-07-R3-Cisco-Fsw:
 #   hostname: 192.168.9.78
+#   password: N@m@ste!
+#   username: iith
 # AA-dist sw:
 #   hostname: 192.168.41.42
+#   password: N@m@ste!
+#   username: iith
 # AC-Dist SW:
 #   hostname: 192.168.200.1
+#   password: N@m@ste!
+#   username: iith
 # AC-R1-01-ASW:
 #   hostname: 192.168.200.11
+#   password: N@m@ste!
+#   username: iith
 # AC-R1-01-PoE1:
 #   hostname: 192.168.201.11
+#   password: N@m@ste!
+#   username: iith
 # AC-R1-01-PoE2:
 #   hostname: 192.168.201.12
+#   password: N@m@ste!
+#   username: iith
 # AC-R1-01-PoE3:
 #   hostname: 192.168.201.19
+#   password: N@m@ste!
+#   username: iith
 # AC-R1-04-ASw1:
 #   hostname: 192.168.200.41
+#   password: N@m@ste!
+#   username: iith
 # AC-R1-04-PoE:
 #   hostname: 192.168.201.51
+#   password: N@m@ste!
+#   username: iith
 # AC-R1-05-ASw1:
 #   hostname: 192.168.200.51
+#   password: N@m@ste!
+#   username: iith
 # AC-R1-06-ASw1:
 #   hostname: 192.168.200.61
+#   password: N@m@ste!
+#   username: iith
 # AC-R1-06-PoE:
 #   hostname: 192.168.201.61
+#   password: N@m@ste!
+#   username: iith
 # AC-R1-07-ASw1:
 #   hostname: 192.168.200.71
+#   password: N@m@ste!
+#   username: iith
 # AC-R1-07-PoE:
 #   hostname: 192.168.201.71
+#   password: N@m@ste!
+#   username: iith
 # AC-R2-04-ASw1:
 #   hostname: 192.168.200.45
+#   password: N@m@ste!
+#   username: iith
 # AC-R2-04-PoE:
 #   hostname: 192.168.201.42
+#   password: N@m@ste!
+#   username: iith
 # AC-R2-05-ASw1:
 #   hostname: 192.168.200.55
+#   password: N@m@ste!
+#   username: iith
 # AC-R2-05-PoE:
 #   hostname: 192.168.201.52
+#   password: N@m@ste!
+#   username: iith
 # AC-R2-06-ASw1:
 #   hostname: 192.168.200.65
+#   password: N@m@ste!
+#   username: iith
 # AC-R2-06-PoE:
 #   hostname: 192.168.201.62
+#   password: N@m@ste!
+#   username: iith
 # AC-R2-07-ASw1:
 #   hostname: 192.168.200.75
+#   password: N@m@ste!
+#   username: iith
 # AC-R2-07-PoE:
 #   hostname: 192.168.201.72
+#   password: N@m@ste!
+#   username: iith
 # Acad-B-Distribution:
 #   hostname: 192.168.95.1
+#   password: N@m@ste!
+#   username: iith
 # Acad-B-RCC-00to03-PoE-Sw:
 #   hostname: 192.168.95.21
+#   password: N@m@ste!
+#   username: iith
 # Acad-B-RCC-04to06-PoE-Sw:
 #   hostname: 192.168.95.22
+#   password: N@m@ste!
+#   username: iith
 # Acad-B-RCC-Stack-1:
 #   hostname: 192.168.95.6
+#   password: N@m@ste!
+#   username: iith
 # Acad-B-RCC-Stack-3:
 #   hostname: 192.168.95.8
+#   password: N@m@ste!
+#   username: iith
 # BH-C-R1-00-DSW:
 #   hostname: 192.168.100.2
+#   password: N@m@ste!
+#   username: iith
 # BHA-00-R1-ELV-SW1:
 #   hostname: 192.168.100.11
+#   password: N@m@ste!
+#   username: iith
 # BHA-02-R1-ELV-SW1:
 #   hostname: 192.168.100.12
+#   password: N@m@ste!
+#   username: iith
 # BHA-02-R2-SW1:
 #   hostname: 192.168.100.15
+#   password: N@m@ste!
+#   username: iith
 # BHA-05-R1-ELV-SW1:
 #   hostname: 192.168.100.13
+#   password: N@m@ste!
+#   username: iith
 # BHA-05-R2-SW1:
 #   hostname: 192.168.100.14
+#   password: N@m@ste!
+#   username: iith
 # BHB-00-R1-ELV-SW1:
 #   hostname: 192.168.100.21
+#   password: N@m@ste!
+#   username: iith
 # BHB-02-R1-ELV-SW1:
 #   hostname: 192.168.100.22
+#   password: N@m@ste!
+#   username: iith
 # BHB-02-R2-SW1:
 #   hostname: 192.168.100.25
+#   password: HostelB@IITH
+#   username: iith
 # BHB-05-R1-ELV-SW1:
 #   hostname: 192.168.100.23
+#   password: N@m@ste!
+#   username: iith
 # BHB-05-R2-SW1:
 #   hostname: 192.168.100.24
+#   password: N@m@ste!
+#   username: iith
 # BHC-00-R1-ELV-SW1:
 #   hostname: 192.168.100.31
+#   password: N@m@ste!
+#   username: iith
 # BHC-02-R1-ELV-SW1:
 #   hostname: 192.168.100.32
+#   password: N@m@ste!
+#   username: iith
 # BHC-02-R2-SW1:
 #   hostname: 192.168.100.35
+#   password: N@m@ste!
+#   username: iith
 # BHC-05-R1-ELV-SW1:
 #   hostname: 192.168.100.33
+#   password: N@m@ste!
+#   username: iith
 # BHC-05-R2-SW1:
 #   hostname: 192.168.100.34
+#   password: N@m@ste!
+#   username: iith
 # BHD-00-R1-ELV-SW1:
 #   hostname: 192.168.100.41
+#   password: N@m@ste!
+#   username: iith
 # BHD-02-R1-ELV-SW1:
 #   hostname: 192.168.100.42
+#   password: N@m@ste!
+#   username: iith
 # BHD-02-R2-SW1:
 #   hostname: 192.168.100.45
+#   password: N@m@ste!
+#   username: iith
 # BHD-05-R1-ELV-SW1:
 #   hostname: 192.168.100.43
+#   password: N@m@ste!
+#   username: iith
 # BHD-05-R2-SW1:
 #   hostname: 192.168.100.44
+#   password: N@m@ste!
+#   username: iith
 # BHE-00-R1-ELV-SW1:
 #   hostname: 192.168.100.51
+#   password: N@m@ste!
+#   username: iith
 # BHE-02-R1-ELV-SW1:
 #   hostname: 192.168.100.52
+#   password: N@m@ste!
+#   username: iith
 # BHE-02-R2-SW1:
 #   hostname: 192.168.100.55
+#   password: N@m@ste!
+#   username: iith
 # BHE-05-R1-ELV-SW1:
 #   hostname: 192.168.100.53
+#   password: N@m@ste!
+#   username: iith
 # BHF-00-R1-ELV-SW1:
 #   hostname: 192.168.100.61
+#   password: N@m@ste!
+#   username: iith
 # BHF-02-R1-ELV-SW1:
 #   hostname: 192.168.100.62
+#   password: N@m@ste!
+#   username: iith
 # BHF-02-R2-SW1:
 #   hostname: 192.168.100.65
+#   password: N@m@ste!
+#   username: iith
 # BHF-05-R1-ELV-SW1:
 #   hostname: 192.168.100.63
+#   password: N@m@ste!
+#   username: iith
 # BHF-05-R2-SW1:
 #   hostname: 192.168.100.64
+#   password: N@m@ste!
+#   username: iith
 # BHG-00-R1-ELV-SW1:
 #   hostname: 192.168.100.71
+#   password: N@m@ste!
+#   username: iith
 # BHG-02-R1-ELV-SW1:
 #   hostname: 192.168.100.72
+#   password: N@m@ste!
+#   username: iith
 # BHG-02-R2-SW1:
 #   hostname: 192.168.100.75
+#   password: N@m@ste!
+#   username: iith
 # BHG-05-R1-ELV-SW1:
 #   hostname: 192.168.100.73
+#   password: N@m@ste!
+#   username: iith
 # BHG-05-R2-SW1:
 #   hostname: 192.168.100.74
+#   password: N@m@ste!
+#   username: iith
 # BHH-00-R1-ELV-SW1:
 #   hostname: 192.168.100.81
+#   password: N@m@ste!
+#   username: iith
 # BHH-02-R1-ELV-SW1:
 #   hostname: 192.168.100.82
+#   password: HostelH@IITH
+#   username: iith
 # BHH-02-R2-SW1:
 #   hostname: 192.168.100.85
+#   password: N@m@ste!
+#   username: iith
 # BHH-05-R1-ELV-SW1:
 #   hostname: 192.168.100.83
+#   password: N@m@ste!
+#   username: iith
 # BHH-05-R2-SW1:
 #   hostname: 192.168.100.84
+#   password: N@m@ste!
+#   username: iith
 # CMD-SW1:
 #   hostname: 192.168.100.241
+#   password: N@m@ste!
+#   username: iith
 # CMD-SW2:
 #   hostname: 192.168.100.242
+#   password: N@m@ste!
+#   username: iith
 # Dining hall-GF:
 #   hostname: 192.168.100.38
+#   password: N@m@ste!
+#   username: iith
 # Estate office:
 #   hostname: 192.168.9.52
+#   password: N@m@ste!
+#   username: iith
 # FT1-14F:
 #   hostname: 192.168.100.233
+#   password: N@m@ste!
+#   username: iith
 # FT1-3F:
 #   hostname: 192.168.100.231
+#   password: N@m@ste!
+#   username: iith
 # FT1-8F:
 #   hostname: 192.168.100.232
+#   password: N@m@ste!
+#   username: iith
 # FT2-14F:
 #   hostname: 192.168.100.236
+#   password: N@m@ste!
+#   username: iith
 # FT2-3F:
 #   hostname: 192.168.100.234
+#   password: N@m@ste!
+#   username: iith
 # FT2-8F:
 #   hostname: 192.168.100.235
+#   password: N@m@ste!
+#   username: iith
 # FT3-14F:
 #   hostname: 192.168.100.239
+#   password: N@m@ste!
+#   username: iith
 # FT3-3F:
 #   hostname: 192.168.100.237
+#   password: N@m@ste!
+#   username: iith
 # FT3-8F:
 #   hostname: 192.168.100.238
-# 'FT4/Clinic ':
+#   password: N@m@ste!
+#   username: iith
+# FT4/Clinic ?:
 #   hostname: 192.168.100.249
-# GHA-00-R1-ELV-SW1:
-#   hostname: 192.168.100.201
-# GHA-02-R1-ELV-SW1:
-#   hostname: 192.168.100.202
-# GHA-02-R2-SW1:
-#   hostname: 192.168.100.205
-# GHA-05-R1-ELV-SW1:
-#   hostname: 192.168.100.203
-# GHA-05-R2-SW1:
-#   hostname: 192.168.100.204
-# GHB-00-R1-ELV-SW1:
-#   hostname: 192.168.100.211
-# GHB-02-R1-ELV-SW1:
-#   hostname: 192.168.100.212
-# GHB-02-R2-SW1:
-#   hostname: 192.168.100.215
-# GHB-05-R1-ELV-SW1:
-#   hostname: 192.168.100.213
-# GHB-05-R2-SW1:
-#   hostname: 192.168.100.214
-# KNC Aruba PoE near Stairs:
-#   hostname: 10.4.120.111
-# KNC-Lab1:
-#   hostname: 10.4.120.112
-# KNC-Lab2:
-#   hostname: 10.4.120.115
-# Kapila PSH 1100:
-#   hostname: 192.168.100.99
-# Kapila PSH 200:
-#   hostname: 192.168.100.95
-# Kapila PSH 300:
-#   hostname: 192.168.100.94
-# Kapila PSH 600:
-#   hostname: 192.168.100.96
-# Kapila PSH 700:
-#   hostname: 192.168.100.97
-# Kapila PSH 900:
-#   hostname: 192.168.100.98
+#   password: N@m@ste!
+#   username: iith
+GHA-00-R1-ELV-SW1:
+  hostname: 192.168.100.201
+  password: N@m@ste!
+  username: iith
+GHA-02-R1-ELV-SW1:
+  hostname: 192.168.100.202
+  password: N@m@ste!
+  username: iith
+GHA-02-R2-SW1:
+  hostname: 192.168.100.205
+  password: N@m@ste!
+  username: iith
+GHA-05-R1-ELV-SW1:
+  hostname: 192.168.100.203
+  password: N@m@ste!
+  username: iith
+GHA-05-R2-SW1:
+  hostname: 192.168.100.204
+  password: N@m@ste!
+  username: iith
+GHB-00-R1-ELV-SW1:
+  hostname: 192.168.100.211
+  password: N@m@ste!
+  username: iith
+GHB-02-R1-ELV-SW1:
+  hostname: 192.168.100.212
+  password: N@m@ste!
+  username: iith
+GHB-02-R2-SW1:
+  hostname: 192.168.100.215
+  password: N@m@ste!
+  username: iith
+GHB-05-R1-ELV-SW1:
+  hostname: 192.168.100.213
+  password: N@m@ste!
+  username: iith
+GHB-05-R2-SW1:
+  hostname: 192.168.100.214
+  password: N@m@ste!
+  username: iith
+KNC Aruba PoE near Stairs:
+  hostname: 10.4.120.111
+  password: KRC@IITH2024
+  username: iith
+KNC-Lab1:
+  hostname: 10.4.120.112
+  password: KRC@IITH2024
+  username: iith
+KNC-Lab2:
+  hostname: 10.4.120.115
+  password: KRC@IITH2024
+  username: iith
+Kapila PSH 1100:
+  hostname: 192.168.100.99
+  password: N@m@ste!
+  username: iith
+Kapila PSH 200:
+  hostname: 192.168.100.95
+  password: N@m@ste!
+  username: iith
+Kapila PSH 300:
+  hostname: 192.168.100.94
+  password: N@m@ste!
+  username: iith
+Kapila PSH 600:
+  hostname: 192.168.100.96
+  password: N@m@ste!
+  username: iith
+Kapila PSH 700:
+  hostname: 192.168.100.97
+  password: N@m@ste!
+  username: iith
+Kapila PSH 900:
+  hostname: 192.168.100.98
+  password: N@m@ste!
+  username: iith
 # PCH-A-02-SW1:
 #   hostname: 192.168.9.21
+#   password: N@m@ste!
+#   username: iith
 # PCH-A-02-SW2:
 #   hostname: 192.168.9.22
+#   password: N@m@ste!
+#   username: iith
 # PCH-A-05-SW1:
 #   hostname: 192.168.9.23
+#   password: N@m@ste!
+#   username: iith
 # PCH-A-05-SW2:
 #   hostname: 192.168.9.24
+#   password: N@m@ste!
+#   username: iith
 # PCH-B-02-SW1:
 #   hostname: 192.168.9.25
+#   password: N@m@ste!
+#   username: iith
 # PCH-B-02-SW2:
 #   hostname: 192.168.9.26
+#   password: N@m@ste!
+#   username: iith
 # PCH-B-05-SW1:
 #   hostname: 192.168.9.27
+#   password: N@m@ste!
+#   username: iith
 # PCH-B-05-SW2:
 #   hostname: 192.168.9.28
+#   password: N@m@ste!
+#   username: iith
 # Pranet Lab SDN:
 #   hostname: 192.168.9.53
+#   password: N@m@ste!
+#   username: iith
 # Pranet Lab cisco:
 #   hostname: 192.168.9.97
+#   password: N@m@ste!
+#   username: iith
 # ST1-14F:
 #   hostname: 192.168.100.227
+#   password: N@m@ste!
+#   username: iith
 # ST1-3F:
 #   hostname: 192.168.100.225
+#   password: N@m@ste!
+#   username: iith
 # ST1-8F:
 #   hostname: 192.168.100.226
+#   password: N@m@ste!
+#   username: iith
 # ST2-3F:
 #   hostname: 192.168.100.223
+#   password: N@m@ste!
+#   username: iith
 # ST2-8F:
 #   hostname: 192.168.100.222
+#   password: N@m@ste!
+#   username: iith
 # Shed_lab_1:
 #   hostname: 192.168.200.24
+#   password: N@m@ste!
+#   username: iith
 # Shed_lab_2:
 #   hostname: 192.168.200.25
+#   password: N@m@ste!
+#   username: iith
 # Workshop_2A_AP:
 #   hostname: 192.168.201.28
+#   password: N@m@ste!
+#   username: iith
