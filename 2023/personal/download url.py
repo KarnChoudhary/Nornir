@@ -2,6 +2,7 @@ import requests
 from PIL import Image
 from fpdf import FPDF
 import io
+import tempfile
 
 def download_image(url):
     response = requests.get(url)
@@ -14,8 +15,9 @@ def save_images_as_pdf(images, output_pdf):
     pdf = FPDF()
     for img in images:
         pdf.add_page()
-        temp_img_path = "temp_image.png"
-        img.convert("RGB").save(temp_img_path)  # Convert to RGB and save as PNG
+        with tempfile.NamedTemporaryFile(delete=False, suffix=".png") as temp_img_file:
+            img.convert("RGB").save(temp_img_file, format='PNG')
+            temp_img_path = temp_img_file.name
         pdf.image(temp_img_path, x=0, y=0, w=pdf.w, h=pdf.h)
     pdf.output(output_pdf)
 
