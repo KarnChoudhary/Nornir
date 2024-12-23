@@ -1,0 +1,457 @@
+CR#show ip int br
+Interface              IP-Address      OK? Method Status                Protocol
+Te0/0/0                10.119.254.122  YES NVRAM  up                    up
+Te0/0/1                103.232.241.2   YES NVRAM  up                    up
+GigabitEthernet0/0/0   unassigned      YES NVRAM  down                  down
+GigabitEthernet0/0/1   unassigned      YES NVRAM  down                  down
+GigabitEthernet0/0/2   unassigned      YES NVRAM  down                  down
+GigabitEthernet0/0/3   unassigned      YES NVRAM  down                  down
+GigabitEthernet0/0/4   unassigned      YES NVRAM  down                  down
+GigabitEthernet0/0/5   192.168.9.100   YES NVRAM  up                    up
+GigabitEthernet0       unassigned      YES NVRAM  down                  down
+Loopback0              unassigned      YES unset  up                    up
+Loopback10             65.20.75.21     YES NVRAM  administratively down down
+Port-channel7          197.197.197.1   YES NVRAM  administratively down down
+
+
+
+--------------------------------------------------------------------------------------------------------------------------
+
+CR#show running-config
+Building configuration...
+
+Current configuration : 10702 bytes
+!
+! Last configuration change at 11:33:36 IST Thu Sep 12 2024 by iith
+!
+version 16.6
+service timestamps debug datetime msec
+service timestamps log datetime msec
+service password-encryption
+service unsupported-transceiver
+platform qfp utilization monitor load 80
+no platform punt-keepalive disable-kernel-core
+platform hardware throughput level 20000000
+!
+hostname CR
+!
+boot-start-marker
+boot-end-marker
+!
+!
+vrf definition Mgmt-intf
+ !
+ address-family ipv4
+ exit-address-family
+ !
+ address-family ipv6
+ exit-address-family
+!
+enable secret 5 $1$NPBk$pEY50vAGhsqdjHGOAaR9t.
+!
+aaa new-model
+!
+!
+aaa authentication login default local
+aaa authorization exec default local
+!
+!
+!
+!
+!
+!
+aaa session-id common
+clock timezone IST 5 30
+!
+!
+!
+!
+!
+!
+ip nbar http-services
+!
+!
+!
+ip domain name iith.ac.in
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+subscriber templating
+!
+!
+!
+!
+!
+!
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+crypto pki trustpoint TP-self-signed-128531866
+ enrollment selfsigned
+ subject-name cn=IOS-Self-Signed-Certificate-128531866
+ revocation-check none
+ rsakeypair TP-self-signed-128531866
+!
+!
+crypto pki certificate chain TP-self-signed-128531866
+ certificate self-signed 01
+  3082032E 30820216 A0030201 02020101 300D0609 2A864886 F70D0101 05050030
+  30312E30 2C060355 04031325 494F532D 53656C66 2D536967 6E65642D 43657274
+  69666963 6174652D 31323835 33313836 36301E17 0D313930 31323330 30343630
+  315A170D 32303031 30313030 30303030 5A303031 2E302C06 03550403 1325494F
+  532D5365 6C662D53 69676E65 642D4365 72746966 69636174 652D3132 38353331
+  38363630 82012230 0D06092A 864886F7 0D010101 05000382 010F0030 82010A02
+  82010100 C76ABEC0 6734A576 C00B7237 5A3BC1EB D71D6203 A64E198B 3DEC4F74
+  7656C7BF D9E6F5EC 0B98C2F1 89CA6E41 FC48643F 5567DEA2 E5E25E1A 9C0F6CC5
+  C1E88908 F452A5CB D664A260 6D2AD9BC 7AA6B194 DF45EEB0 4A6ECC1E 03C5F3F2
+  467C5508 5BEB3964 D906DDE9 361521C9 EDB19718 7F3079FF A24F734A 0A539F38
+  02E32D5B E639D983 1D9002C7 6D0320D6 BDD861A6 BEADDFB8 2281EA57 D5B833BD
+  A05109D4 5DE55F26 16AC4DC5 70119C1D 8A4C06EE D8B69231 CC46F04F 2E2E07BF
+  B1C77B5C BD5E7F16 E128B319 29775EE0 3C9F1BC1 368D3B79 C0B55366 F1CC98CB
+  BA80939D 8F8D1698 F43F2D74 4C802D60 A30F3225 298FF824 FC6D4453 934256D7
+  17DA7883 02030100 01A35330 51300F06 03551D13 0101FF04 05300301 01FF301F
+  0603551D 23041830 168014D6 DB8AD037 C2ADC9CD 20678C1F 900B5FF9 E32BF830
+  1D060355 1D0E0416 0414D6DB 8AD037C2 ADC9CD20 678C1F90 0B5FF9E3 2BF8300D
+  06092A86 4886F70D 01010505 00038201 01007E5D 36244A20 4C622D73 B7DABBE3
+  576FEC78 1825CD35 21E20E1C 2AEBC78A C5FAE8C9 A8F077A4 FC57A118 4F39D965
+  67E7CE9D 23486DBC B33358CE 800B6A60 B7E01027 4EE99802 1F626D1E D2AF56DB
+  8D3C3B96 5502AECE 0C0866B9 A68CA4D4 014C34F6 46B6E492 AB562513 F15BA507
+  D5138AB3 F5B8ADBC C6980295 682848EF 8F62146C 2C9F7FE3 1EA333E1 8DA7CAA3
+  2DA0CC6C E1C3B2D1 CD6F86A9 D369A6F0 42A8C1A1 30B06F1F 080E519A C6043E39
+  AD5F4981 6A50F157 A5FA1BA3 2E735CC5 C418BAE8 622EBC87 175B5FE4 AC26A477
+  DBD9A980 87026289 90F5D3DC A458E2C0 5C59461E 47EA1FD6 150131DF 7485E52F
+  5F6FCB87 338A85D7 65264547 B46F20F1 6056
+        quit
+!
+!
+license udi pid ASR1001-X sn JAE23021ULX
+license boot suite FoundationSuiteK9 disable
+license boot suite AdvUCSuiteK9 disable
+license boot level advipservices
+spanning-tree extend system-id
+diagnostic bootup level minimal
+!
+!
+!
+username iith privilege 15 secret 5 $1$FB3D$QKj3Zym3.DEGTH686Xqrn/
+username admin privilege 15 password 7 143932062C173E2E65
+username cisco_support privilege 15 secret 8 $8$u8DPqBvQOC/2Bd$d9HE2dbPV8rVA9yJwYh5b4ZKbmjF.VVWXNd1rvXj7W6
+username manivel privilege 15 password 7 107A0C0A113743595F50
+!
+redundancy
+ mode none
+!
+!
+!
+!
+!
+!
+lldp run
+cdp run
+!
+class-map match-all WEBUI-MULTIMEDIA_CONFERENCING-DSCP
+ match dscp af41
+class-map match-all WEBUI-BROADCAST_VIDEO-NBAR
+ match protocol attribute traffic-class broadcast-video
+ match protocol attribute business-relevance business-relevant
+class-map match-all WEBUI-VOICE-NBAR
+ match protocol attribute traffic-class voip-telephony
+ match protocol attribute business-relevance business-relevant
+class-map match-all WEBUI-BULK_DATA-NBAR
+ match protocol attribute traffic-class bulk-data
+ match protocol attribute business-relevance business-relevant
+class-map match-all WEBUI-SIGNALING-NBAR
+ match protocol attribute traffic-class signaling
+ match protocol attribute business-relevance business-relevant
+class-map match-all WEBUI-NETWORK_CONTROL-DSCP
+ match dscp cs6
+class-map match-all WEBUI-SCAVENGER-NBAR
+ match protocol attribute business-relevance business-irrelevant
+class-map match-all WEBUI-SCAVENGER-DSCP
+ match dscp cs1
+class-map match-all WEBUI-NETWORK_CONTROL-NBAR
+ match protocol attribute traffic-class network-control
+ match protocol attribute business-relevance business-relevant
+class-map match-all WEBUI-SIGNALING-DSCP
+ match dscp cs3
+class-map match-all WEBUI-BULK_DATA-DSCP
+ match dscp af11
+class-map match-all WEBUI-BROADCAST_VIDEO-DSCP
+ match dscp cs5
+class-map match-all WEBUI-MULTIMEDIA_CONFERENCING-NBAR
+ match protocol attribute traffic-class multimedia-conferencing
+ match protocol attribute business-relevance business-relevant
+class-map match-all WEBUI-VOICE-DSCP
+ match dscp ef
+class-map match-all WEBUI-NETWORK_MANAGEMENT-NBAR
+ match protocol attribute traffic-class ops-admin-mgmt
+ match protocol attribute business-relevance business-relevant
+class-map match-all WEBUI-MULTIMEDIA_STREAMING-DSCP
+ match dscp af31
+class-map match-all WEBUI-REALTIME_INTERACTIVE-NBAR
+ match protocol attribute traffic-class real-time-interactive
+ match protocol attribute business-relevance business-relevant
+class-map match-all WEBUI-TRANSACTIONAL_DATA-DSCP
+ match dscp af21
+class-map match-all WEBUI-REALTIME_INTERACTIVE-DSCP
+ match dscp cs4
+class-map match-all WEBUI-TRANSACTIONAL_DATA-NBAR
+ match protocol attribute traffic-class transactional-data
+ match protocol attribute business-relevance business-relevant
+class-map match-all WEBUI-NETWORK_MANAGEMENT-DSCP
+ match dscp cs2
+class-map match-all WEBUI-MULTIMEDIA_STREAMING-NBAR
+ match protocol attribute traffic-class multimedia-streaming
+ match protocol attribute business-relevance business-relevant
+!
+policy-map WEBUI-MARKING-IN
+ class WEBUI-VOICE-NBAR
+  set dscp ef
+ class WEBUI-BROADCAST_VIDEO-NBAR
+  set dscp cs5
+ class WEBUI-REALTIME_INTERACTIVE-NBAR
+  set dscp cs4
+ class WEBUI-MULTIMEDIA_CONFERENCING-NBAR
+  set dscp af41
+ class WEBUI-MULTIMEDIA_STREAMING-NBAR
+  set dscp af31
+ class WEBUI-SIGNALING-NBAR
+  set dscp cs3
+ class WEBUI-NETWORK_CONTROL-NBAR
+  set dscp cs6
+ class WEBUI-NETWORK_MANAGEMENT-NBAR
+  set dscp cs2
+ class WEBUI-TRANSACTIONAL_DATA-NBAR
+  set dscp af21
+ class WEBUI-BULK_DATA-NBAR
+  set dscp af11
+ class WEBUI-SCAVENGER-NBAR
+  set dscp cs1
+ class class-default
+  set dscp default
+policy-map WEBUI-QUEUING-OUT
+ class WEBUI-VOICE-DSCP
+  priority percent 10
+ class WEBUI-BROADCAST_VIDEO-DSCP
+  priority percent 10
+ class WEBUI-REALTIME_INTERACTIVE-DSCP
+  priority percent 13
+ class WEBUI-NETWORK_CONTROL-DSCP
+  bandwidth percent 2
+ class WEBUI-SIGNALING-DSCP
+  bandwidth percent 2
+ class WEBUI-NETWORK_MANAGEMENT-DSCP
+  bandwidth percent 3
+ class WEBUI-MULTIMEDIA_CONFERENCING-DSCP
+  bandwidth percent 10
+  fair-queue
+  random-detect dscp-based
+ class WEBUI-MULTIMEDIA_STREAMING-DSCP
+  bandwidth percent 10
+  fair-queue
+  random-detect dscp-based
+ class WEBUI-TRANSACTIONAL_DATA-DSCP
+  bandwidth percent 10
+  fair-queue
+  random-detect dscp-based
+ class WEBUI-BULK_DATA-DSCP
+  bandwidth percent 4
+  fair-queue
+  random-detect dscp-based
+ class WEBUI-SCAVENGER-DSCP
+  bandwidth percent 1
+ class class-default
+  bandwidth percent 25
+  fair-queue
+  random-detect dscp-based
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ no ip address
+!
+interface Loopback10
+ ip address 65.20.75.21 255.255.255.255
+ shutdown
+!
+interface Port-channel7
+ description Test
+ ip address 197.197.197.1 255.255.255.248
+ load-interval 30
+ shutdown
+ negotiation auto
+!
+interface TenGigabitEthernet0/0/0
+ ip address 10.119.254.122 255.255.255.252
+ load-interval 30
+ ipv6 address 2405:8A00:A:3::E/126
+ hold-queue 150 in
+!
+interface TenGigabitEthernet0/0/1
+ ip address 103.232.241.2 255.255.255.0
+ load-interval 30
+ ipv6 address 2405:8A00:4001:9::2/64
+!
+interface GigabitEthernet0/0/0
+ description IITH-PUBLIC
+ no ip address
+ ip nbar protocol-discovery
+ negotiation auto
+ service-policy input WEBUI-MARKING-IN
+ service-policy output WEBUI-QUEUING-OUT
+!
+interface GigabitEthernet0/0/1
+ description IITH-PUBLIC
+ no ip address
+ negotiation auto
+ channel-group 7
+!
+interface GigabitEthernet0/0/2
+ description IITH-LAN
+ no ip address
+ negotiation auto
+ channel-group 7
+!
+interface GigabitEthernet0/0/3
+ description IITH-LAN
+ no ip address
+ ip nbar protocol-discovery
+ negotiation auto
+ service-policy input WEBUI-MARKING-IN
+ service-policy output WEBUI-QUEUING-OUT
+!
+interface GigabitEthernet0/0/4
+ no ip address
+ negotiation auto
+!
+interface GigabitEthernet0/0/5
+ ip address 192.168.9.100 255.255.255.0
+ negotiation auto
+!
+interface GigabitEthernet0
+ vrf forwarding Mgmt-intf
+ no ip address
+ speed 1000
+ no negotiation auto
+!
+router bgp 59193
+ bgp log-neighbor-changes
+ bgp default local-preference 150
+ neighbor 10.119.254.121 remote-as 55824
+ neighbor 10.119.254.121 ebgp-multihop 255
+ !
+ address-family ipv4
+  network 103.232.241.0 mask 255.255.255.0
+  neighbor 10.119.254.121 activate
+ exit-address-family
+!
+ip forward-protocol nd
+ip telnet source-interface GigabitEthernet0
+no ip http server
+ip http authentication local
+no ip http secure-server
+ip route 172.18.132.0 255.255.252.0 192.168.9.5
+ip route 192.168.0.0 255.255.0.0 192.168.9.5
+ip route 192.168.9.0 255.255.255.0 192.168.9.5
+ip route 192.168.9.5 255.255.255.255 GigabitEthernet0/0/5
+ip route 192.168.100.0 255.255.255.0 192.168.100.1
+ip route 192.168.161.41 255.255.255.255 192.168.9.5
+!
+!
+access-list 23 permit 192.168.126.2
+access-list 23 permit 192.168.161.41
+access-list 23 permit 192.168.9.0 0.0.0.255
+access-list 23 permit 192.168.100.0 0.0.0.255
+access-list 23 permit 192.168.192.0 0.0.0.255
+access-list 23 permit 192.168.161.0 0.0.0.255
+access-list 23 permit 192.168.74.0 0.0.0.255
+access-list 120 permit icmp any any
+ipv6 route 2405:8A00:4001::/48 2405:8A00:4001:9::149
+ipv6 route ::/0 2405:8A00:A:3::D
+!
+!
+snmp-server engineID local 192168009100
+snmp-server group iith v3 auth
+snmp-server location Acad-A-CR
+!
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+line con 0
+ stopbits 1
+line aux 0
+ stopbits 1
+line vty 0 4
+ access-class 23 in
+ exec-timeout 120 0
+ transport input telnet ssh
+line vty 5 15
+ access-class 23 in
+ exec-timeout 120 0
+ privilege level 15
+ transport input ssh
+!
+wsma agent exec
+!
+wsma agent config
+!
+wsma agent filesys
+!
+wsma agent notify
+!
+!
+end
+
+
+----------------------------------------------------------------------------------------------------------------
+
+CR#show lldp n
+CR#show lldp neighbors
+Capability codes:
+    (R) Router, (B) Bridge, (T) Telephone, (C) DOCSIS Cable Device
+    (W) WLAN Access Point, (P) Repeater, (S) Station, (O) Other
+
+Device ID           Local Intf     Hold-time  Capability      Port ID
+C6-ISP-Sw           Te0/0/1        121        B,R             Ten-GigabitEthernet1/0/26
+C6-ISP-Sw           Gi0/0/5        121        B,R             GigabitEthernet1/0/18
+
+Total entries displayed: 2
+
+CR#
