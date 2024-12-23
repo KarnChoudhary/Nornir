@@ -1,0 +1,31 @@
+Device ID: e455a81a827f
+  IP address: 10.4.121.204
+Device ID: e455a80686cf
+  IP address: 10.4.121.199
+Device ID: e455a81a82e1
+  IP address: 10.4.121.196
+Device ID: e455a81a85e6
+  IP address: 10.4.121.194
+Device ID: e455a8068659
+  IP address: 10.4.121.201
+Device ID: e455a81a77f0
+  IP address: 10.4.121.202
+Device ID: KNC-00-DIS.iith.ac.in
+  IP address: 10.4.120.1
+  IP address: 10.4.120.1
+Device ID: e455a81a8436
+  IP address: 10.4.121.195
+Device ID: e455a81a87ec
+  IP address: 10.4.121.205
+Device ID: e455a81a80cd
+  IP address: 10.4.121.203
+Device ID: e455a8067eea
+  IP address: 10.4.121.198
+Device ID: e455a81a7733
+  IP address: 10.4.121.197
+Device ID: e455a81a6421
+  IP address: 10.4.121.207
+Device ID: e455a81a8597
+  IP address: 10.4.121.206
+Device ID: e455a81a7761
+  IP address: 10.4.121.200

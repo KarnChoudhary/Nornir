@@ -1,0 +1,6 @@
+Device Name,IP address of switch,Neighbor Device Name,Link Type,Interface Device Side,Interface Neighbor Side,Number of Cores,Switch Model
+BHM_Dist,10.5.48.1,BHK_B_GF_SW,Fiber,Te1/1/12,Te1/1/2,12,C9300L48T4X
+BHK_B_GF_SW,10.5.48.26,BHK_B_3F_SW,Fiber,Te1/1/1,Te1/1/2,12,C9300L48T4X
+BHK_B_3F_SW,10.5.48.27,BHK_B_6F_SW,Fiber,Te1/1/1,Te1/1/1,12,C9300L48T4X
+BHK_B_6F_SW,10.5.48.28,BHK_B_9F_SW,Fiber,Te1/1/2,Te1/1/1,12,C9300L48T4X
+BHK_B_9F_SW,10.5.48.29,BHM_Dist,Fiber,Te1/1/2,Te2/1/12,12,C9300L48T4X

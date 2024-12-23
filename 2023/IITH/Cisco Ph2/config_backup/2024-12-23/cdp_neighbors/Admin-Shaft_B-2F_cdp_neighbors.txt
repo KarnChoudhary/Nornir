@@ -1,0 +1,16 @@
+Device ID: e455a81a891c
+  IP address: 10.5.121.160
+Device ID: e455a81a8553
+  IP address: 10.5.121.159
+Device ID: e455a81a8378
+  IP address: 10.5.121.180
+Device ID: e455a81a5743
+  IP address: 10.5.121.150
+Device ID: e455a81a6144
+  IP address: 10.5.121.151
+Device ID: ADMIN-LGF-DIS.iith.ac.in
+  IP address: 10.5.120.1
+  IP address: 10.5.120.1
+Device ID: ADMIN-LGF-DIS.iith.ac.in
+  IP address: 10.5.120.1
+  IP address: 10.5.120.1
