@@ -1,0 +1,17 @@
+graph Network {
+    BHM_Dist [label="BHM_Dist\n10.5.48.1\nC9300L48T4X"];
+    BHK_B_GF_SW [label="BHK_B_GF_SW"];
+    BHM_Dist -- BHK_B_GF_SW [label="Fiber\nTe1/1/12 - Te1/1/2\nCores: 12"];
+    BHK_B_GF_SW [label="BHK_B_GF_SW\n10.5.48.26\nC9300L48T4X"];
+    BHK_B_3F_SW [label="BHK_B_3F_SW"];
+    BHK_B_GF_SW -- BHK_B_3F_SW [label="Fiber\nTe1/1/1 - Te1/1/2\nCores: 12"];
+    BHK_B_3F_SW [label="BHK_B_3F_SW\n10.5.48.27\nC9300L48T4X"];
+    BHK_B_6F_SW [label="BHK_B_6F_SW"];
+    BHK_B_3F_SW -- BHK_B_6F_SW [label="Fiber\nTe1/1/1 - Te1/1/1\nCores: 12"];
+    BHK_B_6F_SW [label="BHK_B_6F_SW\n10.5.48.28\nC9300L48T4X"];
+    BHK_B_9F_SW [label="BHK_B_9F_SW"];
+    BHK_B_6F_SW -- BHK_B_9F_SW [label="Fiber\nTe1/1/2 - Te1/1/1\nCores: 12"];
+    BHK_B_9F_SW [label="BHK_B_9F_SW\n10.5.48.29\nC9300L48T4X"];
+    BHM_Dist [label="BHM_Dist\n10.5.48.29\nC9300L48T4X"];
+    BHK_B_9F_SW -- BHM_Dist [label="Fiber\nTe1/1/2 - Te2/1/12\nCores: 12"];
+}

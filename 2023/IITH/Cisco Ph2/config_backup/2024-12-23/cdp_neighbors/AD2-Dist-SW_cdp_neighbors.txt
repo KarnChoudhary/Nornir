@@ -1,0 +1,24 @@
+Device ID: CORE-SW-1.iith.ac.in
+  IP address: 192.168.41.133
+  IP address: 192.168.41.133
+Device ID: AD2-SHAFT-C-3F-R-1.iith.ac.in
+  IP address: 10.5.112.103
+  IP address: 10.5.112.103
+Device ID: AD2-SHAFT-C-3F-R-1.iith.ac.in
+  IP address: 10.5.112.103
+  IP address: 10.5.112.103
+Device ID: AD2-SHAFT-C-3F-R-2.iith.ac.in
+  IP address: 10.5.112.104
+  IP address: 10.5.112.104
+Device ID: AD2-SHAFT-C-3F-R-2.iith.ac.in
+  IP address: 10.5.112.104
+  IP address: 10.5.112.104
+Device ID: AD2-SHAFT-A-2F.iith.ac.in
+  IP address: 10.5.112.101
+  IP address: 10.5.112.101
+Device ID: AD2-SHAFT-B-2F.iith.ac.in
+  IP address: 10.5.112.102
+  IP address: 10.5.112.102
+Device ID: AD2-SHAFT-B-2F.iith.ac.in
+  IP address: 10.5.112.102
+  IP address: 10.5.112.102

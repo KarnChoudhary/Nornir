@@ -1,0 +1,101 @@
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Te1/1/2, Te1/1/3, Te1/1/4, Ap1/0/1, Te2/1/2, Te2/1/3, Te2/1/4, Ap2/0/1
+19   VLAN0019                         active    
+33   VLAN0033                         active    
+36   VLAN0036                         active    
+100  VLAN0100                         active    
+110  VLAN0110                         active    
+112  VLAN0112                         active    
+114  VLAN0114                         active    
+150  VLAN0150                         active    
+151  VLAN0151                         active    
+152  VLAN0152                         active    
+153  VLAN0153                         active    
+154  VLAN0154                         active    
+155  VLAN0155                         active    
+156  VLAN0156                         active    
+157  VLAN0157                         active    
+158  VLAN0158                         active    
+159  VLAN0159                         active    
+165  VLAN0165                         active    Gi1/0/1, Gi1/0/2, Gi1/0/3, Gi1/0/4, Gi1/0/5, Gi1/0/6, Gi1/0/7, Gi1/0/8, Gi1/0/9, Gi1/0/10, Gi1/0/11, Gi1/0/12, Gi1/0/13, Gi1/0/14, Gi1/0/15, Gi1/0/16, Gi1/0/17, Gi1/0/18, Gi1/0/20, Gi1/0/21, Gi1/0/22, Gi1/0/23, Gi1/0/24, Gi1/0/25, Gi1/0/26, Gi1/0/27, Gi1/0/28, Gi1/0/29, Gi1/0/30, Gi1/0/31, Gi1/0/32, Gi1/0/33, Gi1/0/34, Gi1/0/35, Gi1/0/36, Gi1/0/37, Gi1/0/38, Gi1/0/39, Gi1/0/40, Gi1/0/41, Gi1/0/42, Gi1/0/43, Gi1/0/44, Gi1/0/45, Gi1/0/46, Gi1/0/47, Gi1/0/48
+                                                Gi2/0/9, Gi2/0/10, Gi2/0/11, Gi2/0/12, Gi2/0/13, Gi2/0/14, Gi2/0/15, Gi2/0/16, Gi2/0/17, Gi2/0/18, Gi2/0/19, Gi2/0/20, Gi2/0/21, Gi2/0/22, Gi2/0/23, Gi2/0/24
+166  VLAN0166                         active    
+167  BMS                              active    
+168  CCTV                             active    
+169  IPT                              active    Gi1/0/19
+228  VLAN0228                         active    
+244  VLAN0244                         active    
+260  VLAN0260                         active    
+261  VLAN0261                         active    
+262  VLAN0262                         active    
+263  VLAN0263                         active    
+264  VLAN0264                         active    
+265  VLAN0265                         active    
+266  VLAN0266                         active    
+267  VLAN0267                         active    
+268  VLAN0268                         active    
+290  VLAN0290                         active    
+412  VLAN0412                         active    
+511  VLAN0511                         active    
+1002 fddi-default                     act/unsup 
+1003 trcrf-default                    act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trbrf-default                    act/unsup 
+
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+1    enet  100001     1500  -      -      -        -    -        0      0   
+19   enet  100019     1500  -      -      -        -    -        0      0   
+33   enet  100033     1500  -      -      -        -    -        0      0   
+36   enet  100036     1500  -      -      -        -    -        0      0   
+100  enet  100100     1500  -      -      -        -    -        0      0   
+110  enet  100110     1500  -      -      -        -    -        0      0   
+112  enet  100112     1500  -      -      -        -    -        0      0   
+114  enet  100114     1500  -      -      -        -    -        0      0   
+150  enet  100150     1500  -      -      -        -    -        0      0   
+151  enet  100151     1500  -      -      -        -    -        0      0   
+152  enet  100152     1500  -      -      -        -    -        0      0   
+153  enet  100153     1500  -      -      -        -    -        0      0   
+154  enet  100154     1500  -      -      -        -    -        0      0   
+155  enet  100155     1500  -      -      -        -    -        0      0   
+156  enet  100156     1500  -      -      -        -    -        0      0   
+157  enet  100157     1500  -      -      -        -    -        0      0   
+158  enet  100158     1500  -      -      -        -    -        0      0   
+159  enet  100159     1500  -      -      -        -    -        0      0   
+165  enet  100165     1500  -      -      -        -    -        0      0   
+166  enet  100166     1500  -      -      -        -    -        0      0   
+167  enet  100167     1500  -      -      -        -    -        0      0   
+168  enet  100168     1500  -      -      -        -    -        0      0   
+169  enet  100169     1500  -      -      -        -    -        0      0   
+228  enet  100228     1500  -      -      -        -    -        0      0   
+244  enet  100244     1500  -      -      -        -    -        0      0   
+260  enet  100260     1500  -      -      -        -    -        0      0   
+261  enet  100261     1500  -      -      -        -    -        0      0   
+262  enet  100262     1500  -      -      -        -    -        0      0   
+263  enet  100263     1500  -      -      -        -    -        0      0   
+264  enet  100264     1500  -      -      -        -    -        0      0   
+265  enet  100265     1500  -      -      -        -    -        0      0   
+266  enet  100266     1500  -      -      -        -    -        0      0   
+267  enet  100267     1500  -      -      -        -    -        0      0   
+268  enet  100268     1500  -      -      -        -    -        0      0   
+290  enet  100290     1500  -      -      -        -    -        0      0   
+412  enet  100412     1500  -      -      -        -    -        0      0   
+511  enet  100511     1500  -      -      -        -    -        0      0   
+1002 fddi  101002     1500  -      -      -        -    -        0      0   
+1003 trcrf 101003     4472  1005   3276   -        -    srb      0      0   
+1004 fdnet 101004     1500  -      -      -        ieee -        0      0   
+1005 trbrf 101005     4472  -      -      15       ibm  -        0      0   
+
+
+VLAN AREHops STEHops Backup CRF
+---- ------- ------- ----------
+1003 7       7       off
+
+Remote SPAN VLANs
+------------------------------------------------------------------------------
+
+
+Primary Secondary Type              Ports
+------- --------- ----------------- ------------------------------------------

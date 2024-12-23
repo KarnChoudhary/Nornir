@@ -1,0 +1,6 @@
+Device ID: Hospital_1F_PoESW1
+  IP address: 192.168.9.140
+  IP address: 192.168.9.140
+Device ID: HCF_48P_NonPoESW.iith.ac.in
+  IP address: 192.168.9.141
+  IP address: 192.168.9.141

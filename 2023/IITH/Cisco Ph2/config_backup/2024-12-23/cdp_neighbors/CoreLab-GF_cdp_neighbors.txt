@@ -1,0 +1,24 @@
+Device ID: e455a81a769b
+  IP address: 10.5.105.9
+Device ID: e455a81a3f72
+  IP address: 10.5.105.16
+Device ID: e455a81a444f
+  IP address: 10.5.105.10
+Device ID: e455a81a3fde
+  IP address: 10.5.105.14
+Device ID: e455a81a3f65
+  IP address: 10.5.105.15
+Device ID: e455a81a60f7
+  IP address: 10.5.105.17
+Device ID: CORELAB-00-DIS.iith.ac.in
+  IP address: 10.5.104.1
+  IP address: 10.5.104.1
+Device ID: CORELAB-00-DIS.iith.ac.in
+  IP address: 10.5.104.1
+  IP address: 10.5.104.1
+Device ID: e455a81a3f9e
+  IP address: 10.5.105.13
+Device ID: e455a81a7806
+  IP address: 10.5.105.12
+Device ID: e455a81a4002
+  IP address: 10.5.105.11
