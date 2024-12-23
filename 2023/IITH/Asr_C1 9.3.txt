@@ -1,0 +1,411 @@
+Asr_C1#show ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override, p - overrides from PfR
+
+Gateway of last resort is 210.212.69.38 to network 0.0.0.0
+
+B*    0.0.0.0/0 [20/0] via 210.212.69.38, 1d03h
+      10.0.0.0/32 is subnetted, 2 subnets
+S        10.119.254.121 [1/0] via 192.168.12.2
+                        [1/0] via 103.232.241.2
+S        10.119.254.122 [1/0] via 192.168.12.2
+      103.0.0.0/8 is variably subnetted, 2 subnets, 2 masks
+C        103.232.241.0/24 is directly connected, Port-channel15.9
+L        103.232.241.1/32 is directly connected, Port-channel15.9
+      192.168.11.0/32 is subnetted, 2 subnets
+C        192.168.11.2 is directly connected, Loopback0
+S        192.168.11.3 [1/0] via 103.232.241.2
+      192.168.12.0/32 is subnetted, 1 subnets
+S        192.168.12.2 [1/0] via 103.232.241.2
+      210.212.69.0/24 is variably subnetted, 2 subnets, 2 masks
+C        210.212.69.36/30 is directly connected, Port-channel10
+L        210.212.69.37/32 is directly connected, Port-channel10
+      218.248.6.0/24 is variably subnetted, 2 subnets, 2 masks
+C        218.248.6.128/27 is directly connected, Port-channel15.11
+L        218.248.6.129/32 is directly connected, Port-channel15.11
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Asr_C1#show ip int br
+Interface              IP-Address      OK? Method Status                Protocol
+Te0/0/0                unassigned      YES NVRAM  administratively down down
+Te0/0/1                unassigned      YES NVRAM  administratively down down
+GigabitEthernet0/0/0   unassigned      YES NVRAM  up                    up
+GigabitEthernet0/0/1   unassigned      YES NVRAM  up                    up
+GigabitEthernet0/0/2   unassigned      YES NVRAM  down                  down
+GigabitEthernet0/0/3   192.168.8.123   YES NVRAM  down                  down
+GigabitEthernet0/0/4   unassigned      YES NVRAM  up                    up
+GigabitEthernet0/0/5   unassigned      YES NVRAM  up                    up
+GigabitEthernet0       192.168.9.3     YES NVRAM  up                    up
+Loopback0              192.168.11.2    YES NVRAM  up                    up
+Port-channel10         210.212.69.37   YES NVRAM  up                    up
+Port-channel15         unassigned      YES unset  up                    up
+Port-channel15.9       103.232.241.1   YES NVRAM  up                    up
+Port-channel15.11      218.248.6.129   YES NVRAM  up                    up
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Asr_C1#show lldp neighbors
+Capability codes:
+    (R) Router, (B) Bridge, (T) Telephone, (C) DOCSIS Cable Device
+    (W) WLAN Access Point, (P) Repeater, (S) Station, (O) Other
+
+Device ID           Local Intf     Hold-time  Capability      Port ID
+hyd-rtr-pe-06       Gi0/0/1        120        B,R             GigabitEthernet1/0/17
+C6-ISP-Sw           Gi0/0/5        121        B,R             GigabitEthernet2/0/8
+C6-ISP-Sw           Gi0/0/4        121        B,R             GigabitEthernet2/0/10
+
+Total entries displayed: 3
+
+Asr_C1#show run
+Asr_C1#show running-config
+Building configuration...
+
+Current configuration : 8279 bytes
+!
+! Last configuration change at 12:25:32 IST Sat Nov 9 2024 by iith
+!
+version 16.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+platform qfp utilization monitor load 80
+no platform punt-keepalive disable-kernel-core
+platform hardware throughput level 2500000
+!
+hostname Asr_C1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+vrf definition Mgmt-intf
+ !
+ address-family ipv4
+ exit-address-family
+ !
+ address-family ipv6
+ exit-address-family
+!
+vrf definition backbone
+ !
+ address-family ipv4
+ exit-address-family
+ !
+ address-family ipv6
+ exit-address-family
+!
+logging buffered 2147483647
+!
+no aaa new-model
+clock timezone IST 5 30
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+login on-success log
+!
+!
+!
+!
+!
+!
+!
+subscriber templating
+!
+!
+!
+!
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+crypto pki trustpoint TP-self-signed-1594372462
+ enrollment selfsigned
+ subject-name cn=IOS-Self-Signed-Certificate-1594372462
+ revocation-check none
+ rsakeypair TP-self-signed-1594372462
+!
+!
+crypto pki certificate chain TP-self-signed-1594372462
+ certificate self-signed 01
+  30820330 30820218 A0030201 02020101 300D0609 2A864886 F70D0101 05050030
+  31312F30 2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274
+  69666963 6174652D 31353934 33373234 3632301E 170D3232 30333233 30353433
+  34335A17 0D333030 31303130 30303030 305A3031 312F302D 06035504 03132649
+  4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D31 35393433
+  37323436 32308201 22300D06 092A8648 86F70D01 01010500 0382010F 00308201
+  0A028201 0100A764 2507002E 9947EC24 7F33DD13 A55E156D AEED9C04 2B1B1CDA
+  77ED3CEC A9DCE1E3 A4135712 7789CCA0 1C1F47F1 5BE84E3B FCD9195F 657CB6EE
+  09652443 E18AD94F EA097977 1E6BB5EA 4F990F29 16405296 705B9CCD 37BB3813
+  4C448CAB 3A757914 217DE192 758325B5 E175C4CA 243C84ED AF34BEDF BB1D6960
+  27A2A32E 1782064B 8FB7ED0F C9919C30 29B1F411 11275547 6C9B29E3 589A0D47
+  39D4C928 89E6E9ED B7861248 D7CE42C4 9F61C61F F8B52E47 15DD009F 0E5439C4
+  C3449097 EDE392F4 0A224457 290A8438 382B1A7B 1AB2721C 77A66BB1 81CE230C
+  AEAB7540 0E9699AE AB3911DA 91B79E6E FD37D0AE F2D58C32 1E1CF387 EA70A5CB
+  467F8032 4C790203 010001A3 53305130 0F060355 1D130101 FF040530 030101FF
+  301F0603 551D2304 18301680 14F90D6B CBD5294E 9F155E29 3BC2E94F 31D97C11
+  F6301D06 03551D0E 04160414 F90D6BCB D5294E9F 155E293B C2E94F31 D97C11F6
+  300D0609 2A864886 F70D0101 05050003 82010100 7B71B2CE 752528BC DA48C5D7
+  67EA1903 B664205E ECABF56E 76C625C6 9026D159 69E2002B AB043357 E357D4A7
+  F23AF043 92A4041F 8F861326 4CF86434 9E499B85 DBE15AFB 74DAEA54 FB62538A
+  FED551C8 67642FCF 25B73063 3CAFD2DC 0B1E6995 4B883DD7 180F93E5 AF28C7BA
+  964B921C FC4D591E 9AE2953A C728A05F AD844B8A F44E3B2F F06E3ADF EDF2FE42
+  7F60B42E EAF13219 28F18408 8CD6F9A0 0F42D459 6B955FAE 2EC7E1CA 7661AEDE
+  293EF2AF D39051DF 8FB30F00 8D7028E7 3889AE2F 4CD2354C 3226F083 604713A2
+  C5662998 ED0F860B 7EB7B575 682A412D 1C74DEE6 6336E9B2 50FCBAD7 7B7B0B26
+  E7C92366 EE7477D5 B980A0FF EF6F4EEE 83C7E69D
+        quit
+!
+license udi pid ASR1001-X sn JAE255107JV
+no license smart enable
+!
+!
+spanning-tree extend system-id
+diagnostic bootup level minimal
+!
+!
+username iith privilege 15 password 7 04752B0B2F32584B48
+username manivel privilege 15 password 0 Test@123
+!
+redundancy
+ mode none
+!
+!
+!
+!
+!
+cdp run
+!
+lldp run
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 192.168.11.2 255.255.255.255
+!
+interface Port-channel10
+ description "ISP BSNL Link"
+ ip address 210.212.69.37 255.255.255.252
+ negotiation auto
+!
+interface Port-channel15
+ no ip address
+ negotiation auto
+!
+interface Port-channel15.9
+ encapsulation dot1Q 9
+ ip address 103.232.241.1 255.255.255.0
+!
+interface Port-channel15.11
+ encapsulation dot1Q 11
+ ip address 218.248.6.129 255.255.255.224
+!
+interface TenGigabitEthernet0/0/0
+ no ip address
+ shutdown
+!
+interface TenGigabitEthernet0/0/1
+ no ip address
+ shutdown
+!
+interface GigabitEthernet0/0/0
+ no ip address
+ negotiation auto
+ channel-group 10 mode active
+!
+interface GigabitEthernet0/0/1
+ no ip address
+ negotiation auto
+ channel-group 10 mode active
+!
+interface GigabitEthernet0/0/2
+ no ip address
+ negotiation auto
+!
+interface GigabitEthernet0/0/3
+ description Backbone
+ ip address 192.168.8.123 255.255.255.0
+ load-interval 30
+ negotiation auto
+!
+interface GigabitEthernet0/0/4
+ no ip address
+ negotiation auto
+ channel-group 15
+!
+interface GigabitEthernet0/0/5
+ no ip address
+ negotiation auto
+ channel-group 15
+!
+interface GigabitEthernet0
+ description Monitor and Control
+ vrf forwarding Mgmt-intf
+ ip address 192.168.9.3 255.255.255.0
+ load-interval 30
+ negotiation auto
+!
+router ospf 2205
+ router-id 192.168.8.123
+ priority 1
+ network 192.168.8.0 0.0.0.255 area 0
+!
+router bgp 59193
+ no bgp log-neighbor-changes
+ bgp default local-preference 300
+ neighbor 192.168.11.3 remote-as 59193
+ neighbor 192.168.11.3 update-source Loopback0
+ neighbor 210.212.69.38 remote-as 9829
+ neighbor 210.212.69.38 ebgp-multihop 255
+ !
+ address-family ipv4
+  network 103.232.241.0 mask 255.255.255.0
+  network 218.248.6.128 mask 255.255.255.224
+  neighbor 192.168.11.3 activate
+  neighbor 210.212.69.38 activate
+  neighbor 210.212.69.38 route-map ASPREPEND out
+ exit-address-family
+!
+ip forward-protocol nd
+!
+ip ftp username backup
+ip ftp password backup
+ip http server
+ip http access-class 23
+ip http authentication local
+ip http secure-server
+ip http timeout-policy idle 60 life 86400 requests 10000
+ip tftp source-interface GigabitEthernet0
+ip route 10.119.254.121 255.255.255.255 103.232.241.2
+ip route 10.119.254.121 255.255.255.255 192.168.12.2
+ip route 10.119.254.122 255.255.255.255 192.168.12.2
+ip route 103.232.241.0 255.255.255.0 Loopback0
+ip route 192.168.11.3 255.255.255.255 103.232.241.2
+ip route 192.168.12.2 255.255.255.255 103.232.241.2
+ip route 218.248.6.128 255.255.255.224 Loopback0
+ip route vrf Mgmt-intf 0.0.0.0 0.0.0.0 192.168.9.5
+!
+!
+ip prefix-list ROUTE-FROM-BSNL seq 5 permit 0.0.0.0/0
+!
+ip prefix-list ROUTE-FROM-IITH-CR seq 5 permit 103.232.241.0/24
+ip prefix-list ROUTE-FROM-IITH-CR seq 20 permit 0.0.0.0/0
+!
+ip prefix-list ROUTE-TO-BSNL seq 5 permit 103.232.241.0/24
+!
+ip prefix-list ROUTE-TO-IITH-CR seq 5 permit 103.232.241.0/24
+kron occurrence Backup at 16:03 Wed recurring
+ policy-list Backup
+!
+kron policy-list Backup
+ cli show run | redirect ftp://192.168.250.3/ftp_backup/c1-config
+!
+kron policy-list try1
+!
+access-list 10 permit 192.168.0.0 0.0.255.255
+access-list 10 permit 172.16.0.0 0.0.255.255
+access-list 23 permit 192.168.126.2
+access-list 23 permit 192.168.95.0 0.0.0.255
+access-list 23 permit 192.168.100.0 0.0.0.255
+access-list 23 permit 192.168.9.0 0.0.0.255
+access-list 23 permit 172.16.144.0 0.0.3.255
+access-list 23 permit 192.168.161.0 0.0.0.255
+access-list 35 permit 218.248.6.135
+access-list 75 permit 183.83.217.148
+access-list 75 permit 192.168.9.0 0.0.0.255
+access-list 75 permit 192.168.0.0 0.0.255.255
+!
+!
+route-map ASPREPEND permit 10
+ set as-path prepend 59193 59193 59193 59193 59193 59193 59193 59193 59193 59193
+!
+snmp-server engineID local 192168009002
+snmp-server group iithauth v3 auth
+snmp-server location Insti-SRVR
+!
+!
+control-plane
+!
+!
+!
+!
+!
+banner login ^CCC
+-----------------------------------------------------------------------
+|THIS DEVICE IS MONITORED!!!                                           |
+|                                                                      |
+|** Access to this system is PROHIBITED unless AUTHORIZED**            |
+|                                                                      |
+|If you are not authorized please disconnect now.                      |
+|All activities performed on this device may be logged,                |
+|and violation of this policy may result in disciplinary action.       |
+------------------------------------------------------------------------
+^C
+!
+line con 0
+ exec-timeout 15 0
+ logging synchronous
+ login local
+ stopbits 1
+line aux 0
+ stopbits 1
+line vty 0 4
+ session-timeout 60
+ access-class 23 in vrf-also
+ exec-timeout 5 0
+ login local
+ length 0
+ transport input telnet ssh
+line vty 5 10
+ session-timeout 60
+ access-class 23 in vrf-also
+ login
+ length 0
+ transport input none
+line vty 11 97
+ access-class 23 in vrf-also
+ login
+ transport input none
+!
+scheduler interval 20000
+ntp server 192.168.161.41
+!
+!
+!
+!
+!
+end
+
+Asr_C1#
