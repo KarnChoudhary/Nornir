@@ -1,0 +1,1893 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2024.12.23 14:48:55 =~=~=~=~=~=~=~=~=~=~=~=
+login as: iith
+Keyboard-interactive authentication prompts from server:
+| Password: 
+End of keyboard-interactive prompts from server
+
+
+
+CORE-SW-1#show run
+CORE-SW-1#show running-config 
+Building configuration...
+
+Current configuration : 32537 bytes
+!
+! Last configuration change at 13:17:53 IST Tue Dec 10 2024 by iith
+!
+version 17.12
+service timestamps debug datetime msec
+service timestamps log datetime msec
+service call-home
+platform punt-keepalive disable-kernel-core
+!
+hostname CORE-SW-1
+!
+!
+vrf definition Mgmt-vrf
+ !
+ address-family ipv4
+ exit-address-family
+ !
+ address-family ipv6
+ exit-address-family
+!
+logging buffered 502400
+ --More--         no aaa new-model
+clock timezone IST 5 30
+power redundancy-mode switch 1 combined
+power redundancy-mode switch 2 combined
+boot system bootflash:packages.conf
+boot system bootflash:cat9k_iosxe.17.12.04.SPA.bin
+switch 1 provision c9606r
+    provision slot 1 C9600-LC-24C
+    provision slot 2 C9600-LC-48YL
+    provision slot 3 C9600X-SUP-2
+switch 2 provision c9606r
+    provision slot 1 C9600-LC-24C
+    provision slot 2 C9600-LC-48YL
+    provision slot 3 C9600X-SUP-2
+!
+!
+!
+!
+!
+ip multicast-routing 
+ip name-server 192.168.36.53
+ip domain name iith.ac.in
+!
+ --More--         !
+!
+login on-success log
+udld enable
+
+vtp domain CORE
+vtp mode transparent
+vtp version 3
+!
+!
+!
+!
+!
+!
+!
+stackwise-virtual
+ domain 1
+mpls label mode all-vrfs protocol all-afs per-vrf
+l2vpn evpn
+ replication-type static
+ router-id Loopback0
+ default-gateway advertise
+!
+ --More--         l2vpn evpn instance 397 vlan-based
+ encapsulation vxlan
+ route-target export 103:1
+ route-target import 103:1
+ route-target import 104:1
+!
+!
+crypto pki trustpoint SLA-TrustPoint
+ enrollment pkcs12
+ revocation-check crl
+ hash sha256
+!
+crypto pki trustpoint TP-self-signed-1226158444
+ enrollment selfsigned
+ subject-name cn=IOS-Self-Signed-Certificate-1226158444
+ revocation-check none
+ rsakeypair TP-self-signed-1226158444
+ hash sha256
+!
+!
+crypto pki certificate chain SLA-TrustPoint
+ certificate ca 01
+  30820321 30820209 A0030201 02020101 300D0609 2A864886 F70D0101 0B050030 
+ --More--           32310E30 0C060355 040A1305 43697363 6F312030 1E060355 04031317 43697363 
+  6F204C69 63656E73 696E6720 526F6F74 20434130 1E170D31 33303533 30313934 
+  3834375A 170D3338 30353330 31393438 34375A30 32310E30 0C060355 040A1305 
+  43697363 6F312030 1E060355 04031317 43697363 6F204C69 63656E73 696E6720 
+  526F6F74 20434130 82012230 0D06092A 864886F7 0D010101 05000382 010F0030 
+  82010A02 82010100 A6BCBD96 131E05F7 145EA72C 2CD686E6 17222EA1 F1EFF64D 
+  CBB4C798 212AA147 C655D8D7 9471380D 8711441E 1AAF071A 9CAE6388 8A38E520 
+  1C394D78 462EF239 C659F715 B98C0A59 5BBB5CBD 0CFEBEA3 700A8BF7 D8F256EE 
+  4AA4E80D DB6FD1C9 60B1FD18 FFC69C96 6FA68957 A2617DE7 104FDC5F EA2956AC 
+  7390A3EB 2B5436AD C847A2C5 DAB553EB 69A9A535 58E9F3E3 C0BD23CF 58BD7188 
+  68E69491 20F320E7 948E71D7 AE3BCC84 F10684C7 4BC8E00F 539BA42B 42C68BB7 
+  C7479096 B4CB2D62 EA2F505D C7B062A4 6811D95B E8250FC4 5D5D5FB8 8F27D191 
+  C55F0D76 61F9A4CD 3D992327 A8BB03BD 4E6D7069 7CBADF8B DF5F4368 95135E44 
+  DFC7C6CF 04DD7FD1 02030100 01A34230 40300E06 03551D0F 0101FF04 04030201 
+  06300F06 03551D13 0101FF04 05300301 01FF301D 0603551D 0E041604 1449DC85 
+  4B3D31E5 1B3E6A17 606AF333 3D3B4C73 E8300D06 092A8648 86F70D01 010B0500 
+  03820101 00507F24 D3932A66 86025D9F E838AE5C 6D4DF6B0 49631C78 240DA905 
+  604EDCDE FF4FED2B 77FC460E CD636FDB DD44681E 3A5673AB 9093D3B1 6C9E3D8B 
+  D98987BF E40CBD9E 1AECA0C2 2189BB5C 8FA85686 CD98B646 5575B146 8DFC66A8 
+  467A3DF4 4D565700 6ADF0F0D CF835015 3C04FF7C 21E878AC 11BA9CD2 55A9232C 
+  7CA7B7E6 C1AF74F6 152E99B7 B1FCF9BB E973DE7F 5BDDEB86 C71E3B49 1765308B 
+  5FB0DA06 B92AFE7F 494E8A9E 07B85737 F3A58BE1 1A48A229 C37C1E69 39F08678 
+  80DDCD16 D6BACECA EEBC7CF9 8428787B 35202CDC 60E4616A B623CDBD 230E3AFB 
+ --More--           418616A9 4093E049 4D10AB75 27E86F73 932E35B5 8862FDAE 0275156F 719BB2F0 
+  D697DF7F 28
+  	quit
+crypto pki certificate chain TP-self-signed-1226158444
+ certificate self-signed 01
+  30820330 30820218 A0030201 02020101 300D0609 2A864886 F70D0101 05050030 
+  31312F30 2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274 
+  69666963 6174652D 31323236 31353834 3434301E 170D3234 30333136 30363538 
+  32345A17 0D333430 33313630 36353832 345A3031 312F302D 06035504 03132649 
+  4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D31 32323631 
+  35383434 34308201 22300D06 092A8648 86F70D01 01010500 0382010F 00308201 
+  0A028201 0100B2E3 DD1B1343 EB9438FF 91412E31 356D3DC5 C3806F6B 57C06AB5 
+  EA3AA206 F3BC4CD5 0B091082 91B68EE7 A9797107 DD5E860E FFC74971 31BE92F7 
+  FE3BB4E0 CA0FD8D1 D4A49B91 AAADDAF1 9B973682 E6869DC8 4B20E8BF 9C7A8CFF 
+  3DA55B5B B3CABF77 65D02036 0A296874 B9BE7521 563C1068 31F28DDE 067D7824 
+  EDC0D53F 1E6D3E43 AB1E1559 4C06A1B2 458D7E99 111329CB 57948C2E E992CB7F 
+  C016D2A8 A5C8205E 757BFD7F E024A83D 52080E4F 04D05B4E D54BC7E6 0B47B128 
+  F641D847 C5A68C68 A5E6715B 04842E5E E269C5D4 29CA4952 394BF606 325BC98D 
+  1A06BF7A D6766DF5 17F8C5A7 72817B8D 468166E4 A424DAD9 ED51FCED DBAFD872 
+  09680121 AB750203 010001A3 53305130 0F060355 1D130101 FF040530 030101FF 
+  301F0603 551D2304 18301680 1420256A F2409A6C AF7050EC D9BEE323 71DB5D6C 
+  2B301D06 03551D0E 04160414 20256AF2 409A6CAF 7050ECD9 BEE32371 DB5D6C2B 
+  300D0609 2A864886 F70D0101 05050003 82010100 4EBABC53 756759E6 C0B47588 
+ --More--           DB148448 7585F305 66B49474 AEC06E76 0B5CEFC5 B5F7D7FF 0380B5B8 3E39E489 
+  A4D4BBB4 9D5FC19B 748C5F50 FA195DD5 3B3D9D2A 0CA7EE3D 06E404FD 1CF91D1F 
+  761B6F49 30DAB8D6 F8BEC7EA 0AD7388D 222B6812 90918B18 B9E5328C 2C855A4C 
+  BFC9030E 1A535CAF B3401660 8414F8D0 355E90C0 A805F53C 66108BA9 B27AB941 
+  217D68AA 3AB46195 7051EDC2 2394E3C1 C4F26156 818D11D1 84DC62AE D545E190 
+  E93BDE25 2C6E3127 819C93C5 1FE2BF04 1734C3A3 440AF9CD 315675A5 43AA408E 
+  3C5B2546 7B4919A2 DB64522B 84EF2E7F D4AAE91A 6CE8C262 1571C8E7 25296F67 
+  779B3D66 1E451F60 BF989445 A699C482 6DE5929B
+  	quit
+!
+!
+license boot level network-advantage addon dna-advantage
+memory free low-watermark processor 602909
+!
+diagnostic bootup level minimal
+!
+spanning-tree mode rapid-pvst
+spanning-tree extend system-id
+spanning-tree vlan 13,32,200,342,350-351,400,429-434,436,440,550 priority 61440
+spanning-tree vlan 551-556,560,701-702 priority 61440
+spanning-tree vlan 31 priority 24576
+spanning-tree vlan 42,47-48 priority 4096
+!
+ --More--         !
+errdisable recovery cause udld
+errdisable recovery cause bpduguard
+errdisable recovery cause security-violation
+errdisable recovery cause channel-misconfig
+errdisable recovery cause pagp-flap
+errdisable recovery cause dtp-flap
+errdisable recovery cause link-flap
+errdisable recovery cause sfp-config-mismatch
+errdisable recovery cause gbic-invalid
+errdisable recovery cause l2ptguard
+errdisable recovery cause psecure-violation
+errdisable recovery cause port-mode-failure
+errdisable recovery cause dhcp-rate-limit
+errdisable recovery cause pppoe-ia-rate-limit
+errdisable recovery cause mac-limit
+errdisable recovery cause storm-control
+errdisable recovery cause inline-power
+errdisable recovery cause arp-inspection
+errdisable recovery cause link-monitor-failure
+errdisable recovery cause oam-remote-failure
+errdisable recovery cause loopback
+errdisable recovery cause psp
+ --More--         errdisable recovery cause mrp-miscabling
+errdisable recovery cause loopdetect
+errdisable recovery interval 30
+enable secret 9 $9$Hip0GL6xxwX0..$Bk73gygAOm3S6vak0KMBVq7jTR3asauBrKBHERO7UBA
+!
+username iith privilege 15 secret 9 $9$6gUFvtd7B2xwNU$DtWAxrY1kYpyVgFuauYNfgVz6Cp.ufEJ7fDOlgp8XOQ
+!
+redundancy
+ mode sso
+crypto engine compliance shield disable
+!
+!
+!
+!
+!
+transceiver type all
+ monitoring
+!
+vlan configuration 397
+ member evpn-instance 397 vni 6397
+!
+vlan 9,13,20,31 
+ --More--         !
+vlan 32
+ name MAN-ODF
+!
+vlan 33 
+!
+vlan 36
+ name WI-FI
+!
+vlan 37-38 
+!
+vlan 41
+ name transit-vlan-to-Old-hostel
+!
+vlan 42 
+!
+vlan 44
+ name TRANSIT-VLAN-TO-CORE
+!
+vlan 46-48,100,110,112,114,200,228,244,260-270,290,342,350-351 
+!
+vlan 397
+ name TRP-VXLAN-in-core
+ --More--         !
+vlan 400,412-422,425-427,429-434 
+!
+vlan 436
+ name Mech-Lab
+!
+vlan 438-439,511,540,550-556,560-561,568,626,678,701-702,801-802,814-816,880 
+!
+vlan 894,900,987,990 
+!
+lldp run
+!
+class-map match-any system-cpp-police-mac-learning
+  description MAC Learning
+class-map match-any system-cpp-police-mcast-data
+  description MCAST Data traffic
+class-map match-any system-cpp-police-topology-control
+  description Topology control - STP
+class-map match-any system-cpp-police-unknown-uc
+  description Unknown UC Packets
+class-map match-any system-cpp-police-sw-forward
+  description Software forwarding
+class-map match-any system-cpp-police-proto-snoop-v6
+ --More--           description Protocol snooping v6
+class-map match-any system-cpp-default
+  description Inter FED Traffic 
+class-map match-any system-cpp-police-proto-snoop-v4
+  description Protocol snooping v4
+class-map match-any system-cpp-police-rip-bc
+  description RIP Broadcast
+class-map match-any system-cpp-police-svl-ctrl
+  description NGSVL IPC Traffic
+class-map match-any system-cpp-police-mpls-oam
+  description MPLS OAM (traceroute, ping etc)
+class-map match-any system-cpp-police-dhcp-v6
+  description DHCP V6
+class-map match-any system-cpp-police-dhcp-v4
+  description DHCP V4
+class-map match-any system-cpp-police-forus
+  description Forus Address resolution and Forus traffic
+class-map match-any system-cpp-police-icmp-v6
+  description ICMP redirect, ICMP_GEN over IPv6
+class-map match-any system-cpp-police-icmp-v4
+  description ICMP redirect, ICMP_GEN over IPv4
+class-map match-any system-cpp-police-ospf-v6
+  description OSPF over IPv6
+ --More--         class-map match-any system-cpp-police-ospf-v4
+  description OSPF over IPv4
+class-map match-any system-cpp-police-arp
+  description Address Resolution Protocol
+class-map match-any system-cpp-police-igrp-v4
+  description IGRP and EIGRP over IPv4
+class-map match-any system-cpp-police-fhrp-v4
+  description VRRP, HSRP, GLBP over IPv4
+class-map match-any system-cpp-police-igrp-v6
+  description IGRP and EIGRP over IPv6
+class-map match-any system-cpp-police-fhrp-v6
+  description VRRP, HSRP, GLBP over IPv6
+class-map match-any system-cpp-police-fragment-v4
+  description IPv4 Fragmented Packets
+class-map match-any system-cpp-police-fragment-v6
+  description IPv6 Fragmented Packets
+class-map match-any system-cpp-police-ldp-v4
+  description LDP (MPLS) over IPv4
+class-map match-any system-cpp-police-ldp-v6
+  description LDP (MPLS) over IPv6
+class-map match-any system-cpp-police-l2-control
+  description L2 control
+class-map match-any system-cpp-police-lacp
+ --More--           description LACP control traffic for ether channel
+class-map match-any system-cpp-police-bgp-v4
+  description BGP sessions over IPv4
+class-map match-any system-cpp-police-bgp-v6
+  description BGP sessions over IPv6
+class-map match-any system-cpp-police-rip-v6
+  description RIP over IPv6
+class-map match-any system-cpp-police-alt-sw-forward
+  description Alternate Software forwarding
+class-map match-any system-cpp-police-rip-v4
+  description RIP over IPv4
+class-map match-any system-cpp-police-mtu-ttl-fail
+  description MTU/TTL 0/TTL 1 failures
+class-map match-any system-cpp-police-isis
+  description IS-IS protocol
+class-map match-any system-cpp-police-bfd-v4
+  description BFD and BFD Echo over IPv4
+class-map match-any system-cpp-police-udp-v4
+  description UDP V4
+class-map match-any system-cpp-police-mcast-rpf-fail
+  description MCAST Data RPF fail
+class-map match-any system-cpp-police-bfd-v6
+  description BFD and BFD Echo over IPv6
+ --More--         class-map match-any system-cpp-police-udp-v6
+  description UDP V6
+class-map match-any non-client-nrt-class
+class-map match-any system-cpp-police-tcp-v6
+  description TCP V6
+class-map match-any system-cpp-police-tcp-v4
+  description TCP V4
+class-map match-any system-cpp-default-v6
+  description Inter FED Traffic 
+class-map match-any system-cpp-default-v4
+  description Inter FED Traffic 
+class-map match-any system-cpp-police-dhcp-snooping
+  description DHCP snooping
+class-map match-any system-cpp-police-svl-ipc
+  description NGSVL IPC Traffic
+class-map match-any system-cpp-police-mcast-ctrl-v4
+  description MCAST control packets over IPv4
+class-map match-any system-cpp-police-system-critical
+  description System Critical and Gold Pkt
+class-map match-any system-cpp-police-mcast-register-v4
+  description MCAST v4 Register traffic
+class-map match-any system-cpp-police-lisp-ctrl
+  description LISP Control Packets
+ --More--         class-map match-any system-cpp-police-mcast-ctrl-v6
+  description MCAST control packets over IPv6
+class-map match-any system-cpp-police-mcast-register-v6
+  description MCAST v6 Register traffic
+!
+policy-map system-cpp-policy
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 10.11.12.1 255.255.255.255
+ ip pim sparse-mode
+!
+interface Port-channel1
+ --More--          description *** Old hostel to Core***
+ switchport trunk allowed vlan 32,36,41,400
+ switchport mode trunk
+!
+interface Port-channel2
+ no switchport
+ no ip address
+!
+interface Port-channel8
+ no switchport
+ no ip address
+!
+interface Port-channel12
+ description *** Academic Block-B to Core **
+ switchport trunk allowed vlan 44,200,342,350,351,436
+ switchport mode trunk
+!
+interface Port-channel41
+ description Core switch to  Academic-A-Block uplink
+ switchport trunk allowed vlan 9,32,33,36-38,47,100,110,112,114,200,228,244
+ switchport trunk allowed vlan add 260-268,290,400,412-422,425-427,429,431,436
+ switchport trunk allowed vlan add 438-440,540,560,561,626,678,801,802,814-816
+ switchport trunk allowed vlan add 880,894,900,990
+ --More--          switchport mode trunk
+!
+interface Port-channel42
+ description Uplink to the ACAD-C Block
+ switchport trunk allowed vlan 42,436,701,702
+ switchport mode trunk
+!
+interface Port-channel44
+ description DC-DSW to Core switch uplink
+ switchport trunk allowed vlan 13,32,48,342,350,351,429-434,440,550,552-556,560
+ switchport trunk allowed vlan add 561,568,701-703,966,987
+ switchport mode trunk
+!
+interface Port-channel85
+ description *** BTBM PORT-CHANNEL *****
+ no switchport
+ ip address 192.168.41.85 255.255.255.252
+!
+interface Port-channel89
+ description *** Chemistry PORT-CHANNEL *****
+ no switchport
+ ip address 192.168.41.89 255.255.255.252
+!
+ --More--         interface Port-channel93
+ description *** RCC PORT-CHANNEL *****
+ no switchport
+ ip address 192.168.41.93 255.255.255.252
+!
+interface Port-channel97
+ description *** TIP PORT-CHANNEL *****
+ no switchport
+ ip address 192.168.41.97 255.255.255.252
+!
+interface Port-channel105
+ description *** KNC AKA KRC PORT-CHANNEL *****
+ no switchport
+ ip address 192.168.41.105 255.255.255.252
+!
+interface Port-channel108
+ description *** CC PORT-CHANNEL *****
+ no switchport
+ ip address 192.168.41.109 255.255.255.252
+!
+interface Port-channel113
+ description *** IGH PORT-CHANNEL *****
+ no switchport
+ --More--          ip address 192.168.41.113 255.255.255.252
+!
+interface Port-channel117
+ description *** SNCC PORT-CHANNEL *****
+ no switchport
+ ip address 192.168.41.117 255.255.255.252
+!
+interface Port-channel121
+ description *** New-Dining-Hall-MSH-and-Campus-School-PORT-CHANNEL *****
+ no switchport
+ ip address 192.168.41.121 255.255.255.252
+!
+interface Port-channel125
+ description *** Core-LAB PORT-CHANNEL *****
+ no switchport
+ ip address 192.168.41.125 255.255.255.252
+!
+interface Port-channel129
+ description *** Lecture-Hall PORT-CHANNEL *****
+ no switchport
+ ip address 192.168.41.129 255.255.255.252
+!
+interface Port-channel132
+ --More--          description *** Uplink to AD2 building ***
+ no switchport
+ ip address 192.168.41.133 255.255.255.252
+!
+interface Port-channel137
+ description *** Uplink to SPCL-AD3 Building ***
+ no switchport
+ ip address 192.168.41.137 255.255.255.252
+!
+interface Port-channel141
+ description *** Administrative-Building PORT-CHANNEL *****
+ no switchport
+ ip address 192.168.41.141 255.255.255.252
+!
+interface Port-channel144
+!
+interface Port-channel145
+ description *** DOD PORT-CHANNEL *****
+ no switchport
+ ip address 192.168.41.145 255.255.255.252
+!
+interface Port-channel149
+ description *** New-Hostel-Zone PORT-CHANNEL *****
+ --More--          no switchport
+ ip address 192.168.41.149 255.255.255.252
+!
+interface Port-channel181
+ description *** MSME PORT-CHANNEL *****
+ no switchport
+ ip address 192.168.41.181 255.255.255.252
+!
+interface Port-channel200
+ description **** PCH-2023-DSw *****
+ no switchport
+ ip address 192.168.41.201 255.255.255.252
+!
+interface Port-channel210
+ description **Connected to TRP-Distribution***
+ no switchport
+ ip address 192.168.41.101 255.255.255.252
+ ip pim sparse-mode
+!
+interface GigabitEthernet0/0
+ vrf forwarding Mgmt-vrf
+ no ip address
+ shutdown
+ --More--          negotiation auto
+!
+interface HundredGigE1/1/0/1
+!
+interface HundredGigE1/1/0/2
+!
+interface HundredGigE1/1/0/3
+!
+interface HundredGigE1/1/0/4
+!
+interface HundredGigE1/1/0/5
+!
+interface HundredGigE1/1/0/6
+!
+interface HundredGigE1/1/0/7
+!
+interface HundredGigE1/1/0/8
+!
+interface HundredGigE1/1/0/9
+!
+interface HundredGigE1/1/0/10
+!
+interface HundredGigE1/1/0/11
+ --More--         !
+interface HundredGigE1/1/0/12
+!
+interface HundredGigE1/1/0/13
+!
+interface HundredGigE1/1/0/14
+!
+interface HundredGigE1/1/0/15
+!
+interface HundredGigE1/1/0/16
+!
+interface HundredGigE1/1/0/17
+!
+interface HundredGigE1/1/0/18
+!
+interface HundredGigE1/1/0/19
+!
+interface HundredGigE1/1/0/20
+!
+interface HundredGigE1/1/0/21
+!
+interface HundredGigE1/1/0/22
+!
+ --More--         interface HundredGigE1/1/0/23
+ stackwise-virtual link 1
+!
+interface HundredGigE1/1/0/24
+ stackwise-virtual link 1
+!
+interface FiftyGigE1/2/0/1
+ description **** MSME UPLINK ****
+ no switchport
+ no ip address
+ channel-group 181 mode active
+!
+interface FiftyGigE1/2/0/2
+ description **** BTBM UPLINK ****
+ no switchport
+ no ip address
+ channel-group 85 mode active
+!
+interface FiftyGigE1/2/0/3
+ description **** Chemistry UPLINK ****
+ no switchport
+ no ip address
+ channel-group 89 mode active
+ --More--         !
+interface FiftyGigE1/2/0/4
+ description **** RCC UPLINK ****
+ no switchport
+ no ip address
+ channel-group 93 mode active
+!
+interface FiftyGigE1/2/0/5
+!
+interface FiftyGigE1/2/0/6
+ description **** KNC AKA KRC UPLINK ****
+ no switchport
+ no ip address
+ channel-group 105 mode active
+!
+interface FiftyGigE1/2/0/7
+ description **** CC UPLINK ****
+ no switchport
+ no ip address
+ channel-group 108 mode active
+!
+interface FiftyGigE1/2/0/8
+ description **** IGH UPLINK ****
+ --More--          no switchport
+ no ip address
+ channel-group 113 mode active
+!
+interface FiftyGigE1/2/0/9
+ description **** SNCC UPLINK ****
+ no switchport
+ no ip address
+ channel-group 117 mode active
+!
+interface FiftyGigE1/2/0/10
+ description **** TIP UPLINK ****
+ no switchport
+ no ip address
+ channel-group 97 mode active
+!
+interface FiftyGigE1/2/0/11
+!
+interface FiftyGigE1/2/0/12
+!
+interface FiftyGigE1/2/0/13
+ description **** New-Dining-Hall-MSH-and-Campus-School UPLINK ****
+ no switchport
+ --More--          no ip address
+ channel-group 121 mode active
+!
+interface FiftyGigE1/2/0/14
+!
+interface FiftyGigE1/2/0/15
+ description **** Core-LAB UPLINK ****
+ no switchport
+ no ip address
+ channel-group 125 mode active
+!
+interface FiftyGigE1/2/0/16
+ description **** Lecture-Hall UPLINK ****
+ no switchport
+ no ip address
+ channel-group 129 mode active
+!
+interface FiftyGigE1/2/0/17
+ no switchport
+ no ip address
+ channel-group 132 mode active
+!
+interface FiftyGigE1/2/0/18
+ --More--          description *** UPLINK SPACL-AD3 ***
+ no switchport
+ no ip address
+ channel-group 137 mode active
+!
+interface FiftyGigE1/2/0/19
+ description **** Administrative-Building UPLINK ****
+ no switchport
+ no ip address
+ channel-group 141 mode active
+!
+interface FiftyGigE1/2/0/20
+ description **** DOD UPLINK ****
+ no switchport
+ no ip address
+ channel-group 145 mode active
+!
+interface FiftyGigE1/2/0/21
+ description **** New-Hostel-Zone UPLINK ****
+ no switchport
+ no ip address
+ channel-group 149 mode active
+!
+ --More--         interface FiftyGigE1/2/0/22
+ description **** Academic Block-B to Core UPLINK ****
+ switchport trunk allowed vlan 44,200,342,350,351,436
+ switchport mode trunk
+ channel-group 12 mode active
+!
+interface FiftyGigE1/2/0/23
+ description **** Old hostel to core UPLINK ****
+ switchport trunk allowed vlan 32,36,41,400
+ switchport mode trunk
+ channel-group 1 mode active
+!
+interface FiftyGigE1/2/0/24
+ description Uplink to the ACAD-C Block
+ switchport trunk allowed vlan 42,436,701,702
+ switchport mode trunk
+!
+interface FiftyGigE1/2/0/25
+ description Core switch to  Academic-A-Block uplink
+ switchport trunk allowed vlan 9,32,33,36-38,47,100,110,112,114,200,228,244
+ switchport trunk allowed vlan add 260-268,290,400,412-422,425-427,429,431,436
+ switchport trunk allowed vlan add 438-440,540,560,561,626,678,801,802,814-816
+ switchport trunk allowed vlan add 880,894,900,990
+ --More--          switchport mode trunk
+ channel-group 41 mode active
+!
+interface FiftyGigE1/2/0/26
+ description A10-DC-SW to Cisco core switch
+ switchport trunk allowed vlan 20,32,200,400,429-431,433,434,436,550-556,560
+ switchport mode trunk
+!
+interface FiftyGigE1/2/0/27
+ description DC-DSW to Core switch uplink
+ switchport trunk allowed vlan 13,32,48,342,350,351,429-434,440,550,552-556,560
+ switchport trunk allowed vlan add 561,568,701-703,966,987
+ switchport mode trunk
+ channel-group 44 mode active
+!
+interface FiftyGigE1/2/0/28
+ description NSM-DC-SW
+ switchport trunk allowed vlan 33,46,100,110,112,114,228,244,260-268,400
+ switchport mode trunk
+!
+interface FiftyGigE1/2/0/29
+ description **** PCH-2023-DSw *****
+ no switchport
+ --More--          no ip address
+ channel-group 200 mode active
+!
+interface FiftyGigE1/2/0/30
+ description Uplink to the WLC 
+ switchport trunk allowed vlan 36,100,110,112,114,228,244,260-268,290
+ switchport mode trunk
+!
+interface FiftyGigE1/2/0/31
+!
+interface FiftyGigE1/2/0/32
+!
+interface FiftyGigE1/2/0/33
+ no switchport
+ no ip address
+ ip pim sparse-mode
+ channel-group 210 mode active
+!
+interface FiftyGigE1/2/0/34
+ switchport trunk allowed vlan 397
+ switchport mode trunk
+!
+interface FiftyGigE1/2/0/35
+ --More--          switchport trunk allowed vlan 397
+ switchport mode trunk
+!
+interface FiftyGigE1/2/0/36
+!
+interface FiftyGigE1/2/0/37
+!
+interface FiftyGigE1/2/0/38
+!
+interface FiftyGigE1/2/0/39
+!
+interface FiftyGigE1/2/0/40
+ switchport mode trunk
+!
+interface FiftyGigE1/2/0/41
+!
+interface FiftyGigE1/2/0/42
+!
+interface FiftyGigE1/2/0/43
+!
+interface FiftyGigE1/2/0/44
+!
+interface FiftyGigE1/2/0/45
+ --More--         !
+interface FiftyGigE1/2/0/46
+!
+interface FiftyGigE1/2/0/47
+ description *** Cisco Core to HP Core ***
+ switchport trunk allowed vlan 9,13,20,31-33,36-38,41,42,46-48,100,110,112,114
+ switchport trunk allowed vlan add 200,228,244,260-270,290,342,350,351,400
+ switchport trunk allowed vlan add 412-422,425-427,429-434,436,438-440,511,540
+ switchport trunk allowed vlan add 550-556,560,561,568,626,678,701,702,801,802
+ switchport trunk allowed vlan add 814-816,880,894,900,987,990
+ switchport mode trunk
+!
+interface FiftyGigE1/2/0/48
+ stackwise-virtual dual-active-detection
+!
+interface HundredGigE2/1/0/1
+!
+interface HundredGigE2/1/0/2
+!
+interface HundredGigE2/1/0/3
+!
+interface HundredGigE2/1/0/4
+!
+ --More--         interface HundredGigE2/1/0/5
+!
+interface HundredGigE2/1/0/6
+!
+interface HundredGigE2/1/0/7
+!
+interface HundredGigE2/1/0/8
+!
+interface HundredGigE2/1/0/9
+!
+interface HundredGigE2/1/0/10
+!
+interface HundredGigE2/1/0/11
+!
+interface HundredGigE2/1/0/12
+!
+interface HundredGigE2/1/0/13
+!
+interface HundredGigE2/1/0/14
+!
+interface HundredGigE2/1/0/15
+!
+interface HundredGigE2/1/0/16
+ --More--         !
+interface HundredGigE2/1/0/17
+!
+interface HundredGigE2/1/0/18
+!
+interface HundredGigE2/1/0/19
+!
+interface HundredGigE2/1/0/20
+!
+interface HundredGigE2/1/0/21
+!
+interface HundredGigE2/1/0/22
+!
+interface HundredGigE2/1/0/23
+ stackwise-virtual link 1
+!
+interface HundredGigE2/1/0/24
+ stackwise-virtual link 1
+!
+interface FiftyGigE2/2/0/1
+ description **** MSME UPLINK ****
+ no switchport
+ no ip address
+ --More--          channel-group 181 mode active
+!
+interface FiftyGigE2/2/0/2
+ description **** BTBM UPLINK ****
+ no switchport
+ no ip address
+ channel-group 85 mode active
+!
+interface FiftyGigE2/2/0/3
+ description **** Chemistry UPLINK ****
+ no switchport
+ no ip address
+ channel-group 89 mode active
+!
+interface FiftyGigE2/2/0/4
+ description **** RCC UPLINK ****
+ no switchport
+ no ip address
+ channel-group 93 mode active
+!
+interface FiftyGigE2/2/0/5
+!
+interface FiftyGigE2/2/0/6
+ --More--          description **** KNC AKA KRC UPLINK ****
+ no switchport
+ no ip address
+ channel-group 105 mode active
+!
+interface FiftyGigE2/2/0/7
+ description **** CC UPLINK ****
+ no switchport
+ no ip address
+ channel-group 108 mode active
+!
+interface FiftyGigE2/2/0/8
+ description **** IGH UPLINK ****
+ no switchport
+ no ip address
+ channel-group 113 mode active
+!
+interface FiftyGigE2/2/0/9
+ description **** SNCC UPLINK ****
+ no switchport
+ no ip address
+ channel-group 117 mode active
+!
+ --More--         interface FiftyGigE2/2/0/10
+ description **** TIP UPLINK ****
+ no switchport
+ no ip address
+ channel-group 97 mode active
+!
+interface FiftyGigE2/2/0/11
+!
+interface FiftyGigE2/2/0/12
+ no switchport
+ no ip address
+!
+interface FiftyGigE2/2/0/13
+ description **** New-Dining-Hall-MSH-and-Campus-Schoo UPLINK ****
+ no switchport
+ no ip address
+ channel-group 121 mode active
+!
+interface FiftyGigE2/2/0/14
+!
+interface FiftyGigE2/2/0/15
+ description **** Core-LAB UPLINK ****
+ no switchport
+ --More--          no ip address
+ channel-group 125 mode active
+!
+interface FiftyGigE2/2/0/16
+ description **** Lecture-Hall UPLINK ****
+ no switchport
+ no ip address
+ channel-group 129 mode active
+!
+interface FiftyGigE2/2/0/17
+ no switchport
+ no ip address
+ channel-group 132 mode active
+!
+interface FiftyGigE2/2/0/18
+ description *** UPLINK SPACL-AD3 ***
+ no switchport
+ no ip address
+ channel-group 137 mode active
+!
+interface FiftyGigE2/2/0/19
+ description **** Administrative-Building UPLINK ****
+ no switchport
+ --More--          no ip address
+ channel-group 141 mode active
+!
+interface FiftyGigE2/2/0/20
+ description **** DOD UPLINK ****
+ no switchport
+ no ip address
+ channel-group 145 mode active
+!
+interface FiftyGigE2/2/0/21
+ description **** New-Hostel-Zone UPLINK ****
+ no switchport
+ no ip address
+ channel-group 149 mode active
+!
+interface FiftyGigE2/2/0/22
+ description **** Academic Block-B to Core UPLINK ****
+ switchport trunk allowed vlan 44,200,342,350,351,436
+ switchport mode trunk
+ channel-group 12 mode active
+!
+interface FiftyGigE2/2/0/23
+ description **** Old hostel to Core UPLINK ****
+ --More--          switchport trunk allowed vlan 32,36,41,400
+ switchport mode trunk
+ channel-group 1 mode active
+!
+interface FiftyGigE2/2/0/24
+ description Uplink to the ACAD-C Block
+ switchport trunk allowed vlan 42,436,701,702
+ switchport mode trunk
+!
+interface FiftyGigE2/2/0/25
+ description Core switch to  Academic-A-Block uplink
+ switchport trunk allowed vlan 9,32,33,36-38,47,100,110,112,114,200,228,244
+ switchport trunk allowed vlan add 260-268,290,400,412-422,425-427,429,431,436
+ switchport trunk allowed vlan add 438-440,540,560,561,626,678,801,802,814-816
+ switchport trunk allowed vlan add 880,894,900,990
+ switchport mode trunk
+ channel-group 41 mode active
+!
+interface FiftyGigE2/2/0/26
+!
+interface FiftyGigE2/2/0/27
+ description DC-DSW to Core switch uplink
+ switchport trunk allowed vlan 13,32,48,342,350,351,429-434,440,550,552-556,560
+ --More--          switchport trunk allowed vlan add 561,568,701-703,966,987
+ switchport mode trunk
+ channel-group 44 mode active
+!
+interface FiftyGigE2/2/0/28
+!
+interface FiftyGigE2/2/0/29
+ description **** PCH-2023-DSw *****
+ no switchport
+ no ip address
+ channel-group 200 mode active
+!
+interface FiftyGigE2/2/0/30
+!
+interface FiftyGigE2/2/0/31
+!
+interface FiftyGigE2/2/0/32
+!
+interface FiftyGigE2/2/0/33
+ no switchport
+ no ip address
+ ip pim sparse-mode
+ channel-group 210 mode active
+ --More--         !
+interface FiftyGigE2/2/0/34
+!
+interface FiftyGigE2/2/0/35
+ switchport trunk allowed vlan 397
+ switchport mode trunk
+!
+interface FiftyGigE2/2/0/36
+!
+interface FiftyGigE2/2/0/37
+!
+interface FiftyGigE2/2/0/38
+!
+interface FiftyGigE2/2/0/39
+!
+interface FiftyGigE2/2/0/40
+!
+interface FiftyGigE2/2/0/41
+!
+interface FiftyGigE2/2/0/42
+!
+interface FiftyGigE2/2/0/43
+!
+ --More--         interface FiftyGigE2/2/0/44
+!
+interface FiftyGigE2/2/0/45
+!
+interface FiftyGigE2/2/0/46
+!
+interface FiftyGigE2/2/0/47
+!
+interface FiftyGigE2/2/0/48
+ stackwise-virtual dual-active-detection
+!
+interface TenGigabitEthernet0/1
+ vrf forwarding Mgmt-vrf
+ no ip address
+ negotiation auto
+!
+interface TenGigabitEthernet0/2
+ vrf forwarding Mgmt-vrf
+ no ip address
+ negotiation auto
+!
+interface Vlan1
+ no ip address
+ --More--          shutdown
+!
+interface Vlan31
+ description *** HP Core connected VLAN ***
+ ip address 192.168.8.224 255.255.255.0
+ ip ospf mtu-ignore
+!
+interface Vlan41
+ description ***Transit-VLAN-to-Old hostel***
+ ip address 192.168.41.1 255.255.255.252
+!
+interface Vlan42
+ description Transit-Network to ACAD-C-Block
+ ip address 192.168.41.5 255.255.255.252
+!
+interface Vlan44
+ description ***TRANSIT-VLAN-TO-CORE**
+ ip address 192.168.41.13 255.255.255.252
+!
+interface Vlan46
+ ip address 192.168.41.33 255.255.255.248
+!
+interface Vlan47
+ --More--          description transit to Academic A block
+ ip address 192.168.41.41 255.255.255.252
+!
+interface Vlan48
+ ip address 192.168.41.45 255.255.255.252
+!
+interface Vlan397
+ description ** TRP-VXLAN-GATEWAY**
+ ip address 10.24.54.1 255.255.254.0
+!
+interface Vlan429
+ ip address 192.168.160.1 255.255.255.0
+!
+interface nve10
+ no ip address
+ source-interface Loopback0
+ host-reachability protocol bgp
+ member vni 6397 mcast-group 232.0.0.1
+!
+router ospf 1
+ router-id 192.168.8.224
+ redistribute connected
+ passive-interface default
+ --More--          no passive-interface Vlan31
+ no passive-interface Vlan41
+ no passive-interface Vlan42
+ no passive-interface Vlan44
+ no passive-interface Vlan46
+ no passive-interface Vlan47
+ no passive-interface Vlan48
+ no passive-interface Vlan429
+ no passive-interface Port-channel85
+ no passive-interface Port-channel89
+ no passive-interface Port-channel93
+ no passive-interface Port-channel97
+ no passive-interface Port-channel105
+ no passive-interface Port-channel108
+ no passive-interface Port-channel113
+ no passive-interface Port-channel117
+ no passive-interface Port-channel121
+ no passive-interface Port-channel125
+ no passive-interface Port-channel129
+ no passive-interface Port-channel132
+ no passive-interface Port-channel137
+ no passive-interface Port-channel141
+ no passive-interface Port-channel145
+ --More--          no passive-interface Port-channel149
+ no passive-interface Port-channel181
+ no passive-interface Port-channel200
+ no passive-interface Port-channel210
+ network 10.11.12.1 0.0.0.0 area 0
+ network 192.168.8.0 0.0.0.255 area 0
+ network 192.168.41.0 0.0.0.3 area 0
+ network 192.168.41.4 0.0.0.3 area 0
+ network 192.168.41.12 0.0.0.3 area 0
+ network 192.168.41.32 0.0.0.7 area 0
+ network 192.168.41.40 0.0.0.3 area 0
+ network 192.168.41.44 0.0.0.3 area 0
+ network 192.168.41.84 0.0.0.3 area 0
+ network 192.168.41.88 0.0.0.3 area 0
+ network 192.168.41.92 0.0.0.3 area 0
+ network 192.168.41.96 0.0.0.3 area 0
+ network 192.168.41.100 0.0.0.3 area 0
+ network 192.168.41.104 0.0.0.3 area 0
+ network 192.168.41.108 0.0.0.3 area 0
+ network 192.168.41.112 0.0.0.3 area 0
+ network 192.168.41.116 0.0.0.3 area 0
+ network 192.168.41.120 0.0.0.3 area 0
+ network 192.168.41.124 0.0.0.3 area 0
+ --More--          network 192.168.41.128 0.0.0.3 area 0
+ network 192.168.41.132 0.0.0.3 area 0
+ network 192.168.41.136 0.0.0.3 area 0
+ network 192.168.41.140 0.0.0.3 area 0
+ network 192.168.41.144 0.0.0.3 area 0
+ network 192.168.41.148 0.0.0.3 area 0
+ network 192.168.41.180 0.0.0.3 area 0
+ network 192.168.41.200 0.0.0.3 area 0
+ network 192.168.100.0 0.0.0.255 area 0
+ network 192.168.160.0 0.0.0.255 area 0
+!
+router bgp 65531
+ bgp router-id interface Loopback0
+ bgp log-neighbor-changes
+ neighbor 10.11.12.2 remote-as 65531
+ neighbor 10.11.12.2 update-source Loopback0
+ !
+ address-family ipv4
+  neighbor 10.11.12.2 activate
+ exit-address-family
+ !
+ address-family l2vpn evpn
+  neighbor 10.11.12.2 activate
+ --More--           neighbor 10.11.12.2 send-community both
+ exit-address-family
+!
+ip forward-protocol nd
+no ip http server
+no ip http secure-server
+ip pim rp-address 10.11.12.1
+ip route 0.0.0.0 0.0.0.0 192.168.8.17
+ip route 10.10.0.0 255.255.224.0 192.168.8.20
+ip route 192.168.35.0 255.255.255.0 192.168.8.8
+ip ssh bulk-mode 131072
+ip scp server enable
+!
+!
+!
+logging history emergencies
+!
+snmp-server group snmpgroup1 v3 priv 
+snmp-server enable traps snmp linkdown linkup
+snmp-server enable traps memory bufferpeak
+snmp-server enable traps config
+snmp-server enable traps entity
+snmp-server enable traps cpu threshold
+ --More--         snmp-server enable traps port-security
+snmp-server enable traps envmon
+snmp-server host 192.168.161.184 version 3 priv snmpuser1 
+!
+!
+control-plane
+ service-policy input system-cpp-policy
+!
+!
+!
+line con 0
+ login local
+ stopbits 1
+line aux 0
+line vty 0 4
+ login local
+ transport input telnet ssh
+line vty 5 15
+ login local
+ transport input ssh
+!
+call-home
+ ! If contact email address in call-home is configured as sch-smart-licensing@cisco.com
+ --More--          ! the email address configured in Cisco Smart License Portal will be used as contact email address to send SCH notifications.
+ contact-email-addr sch-smart-licensing@cisco.com
+ profile "CiscoTAC-1"
+  active
+  destination transport-method http
+!
+!
+!
+!
+!
+!
+end
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+CORE-SW-1#show vlan
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Hu1/1/0/1, Hu1/1/0/2, Hu1/1/0/3
+                                                Hu1/1/0/4, Hu1/1/0/5, Hu1/1/0/6
+                                                Hu1/1/0/7, Hu1/1/0/8, Hu1/1/0/9
+                                                Hu1/1/0/10, Hu1/1/0/11
+                                                Hu1/1/0/12, Hu1/1/0/13
+                                                Hu1/1/0/14, Hu1/1/0/15
+                                                Hu1/1/0/16, Hu1/1/0/17
+                                                Hu1/1/0/18, Hu1/1/0/19
+                                                Hu1/1/0/20, Hu1/1/0/21
+                                                Hu1/1/0/22, Fif1/2/0/5
+                                                Fif1/2/0/11, Fif1/2/0/12
+                                                Fif1/2/0/14, Fif1/2/0/23
+                                                Fif1/2/0/31, Fif1/2/0/32
+                                                Fif1/2/0/34, Fif1/2/0/35
+                                                Fif1/2/0/36, Fif1/2/0/37
+                                                Fif1/2/0/38, Fif1/2/0/39
+                                                Fif1/2/0/40, Fif1/2/0/41
+                                                Fif1/2/0/42, Fif1/2/0/43
+                                                Fif1/2/0/44, Fif1/2/0/45
+                                                Fif1/2/0/46, Hu2/1/0/1
+ --More--         
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+                                                Hu2/1/0/2, Hu2/1/0/3, Hu2/1/0/4
+                                                Hu2/1/0/5, Hu2/1/0/6, Hu2/1/0/7
+                                                Hu2/1/0/8, Hu2/1/0/9, Hu2/1/0/10
+                                                Hu2/1/0/11, Hu2/1/0/12
+                                                Hu2/1/0/13, Hu2/1/0/14
+                                                Hu2/1/0/15, Hu2/1/0/16
+                                                Hu2/1/0/17, Hu2/1/0/18
+                                                Hu2/1/0/19, Hu2/1/0/20
+                                                Hu2/1/0/21, Hu2/1/0/22
+                                                Fif2/2/0/5, Fif2/2/0/11
+                                                Fif2/2/0/14, Fif2/2/0/24
+                                                Fif2/2/0/25, Fif2/2/0/26
+                                                Fif2/2/0/28, Fif2/2/0/30
+                                                Fif2/2/0/31, Fif2/2/0/32
+                                                Fif2/2/0/34, Fif2/2/0/35
+                                                Fif2/2/0/36, Fif2/2/0/37
+                                                Fif2/2/0/38, Fif2/2/0/39
+                                                Fif2/2/0/40, Fif2/2/0/41
+                                                Fif2/2/0/42, Fif2/2/0/43
+                                                Fif2/2/0/44, Fif2/2/0/45
+                                                Fif2/2/0/46, Fif2/2/0/47
+9    VLAN0009                         active    
+13   VLAN0013                         active    
+ --More--         
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+20   VLAN0020                         active    
+31   VLAN0031                         active    
+32   MAN-ODF                          active    
+33   VLAN0033                         active    
+36   WI-FI                            active    
+37   VLAN0037                         active    
+38   VLAN0038                         active    
+41   transit-vlan-to-Old-hostel       active    
+42   VLAN0042                         active    
+44   TRANSIT-VLAN-TO-CORE             active    
+46   VLAN0046                         active    
+47   VLAN0047                         active    
+48   VLAN0048                         active    
+100  VLAN0100                         active    
+110  VLAN0110                         active    
+112  VLAN0112                         active    
+114  VLAN0114                         active    
+200  VLAN0200                         active    
+228  VLAN0228                         active    
+244  VLAN0244                         active    
+260  VLAN0260                         active    
+261  VLAN0261                         active    
+262  VLAN0262                         active    
+ --More--         
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+263  VLAN0263                         active    
+264  VLAN0264                         active    
+265  VLAN0265                         active    
+266  VLAN0266                         active    
+267  VLAN0267                         active    
+268  VLAN0268                         active    
+269  VLAN0269                         active    
+270  VLAN0270                         active    
+290  VLAN0290                         active    
+342  VLAN0342                         active    
+350  VLAN0350                         active    
+351  VLAN0351                         active    
+397  TRP-VXLAN-in-core                active    
+400  VLAN0400                         active    
+412  VLAN0412                         active    
+413  VLAN0413                         active    
+414  VLAN0414                         active    
+415  VLAN0415                         active    
+416  VLAN0416                         active    
+417  VLAN0417                         active    
+418  VLAN0418                         active    
+419  VLAN0419                         active    
+420  VLAN0420                         active    
+ --More--         
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+421  VLAN0421                         active    
+422  VLAN0422                         active    
+425  VLAN0425                         active    
+426  VLAN0426                         active    
+427  VLAN0427                         active    
+429  VLAN0429                         active    
+430  VLAN0430                         active    
+431  VLAN0431                         active    
+432  VLAN0432                         active    
+433  VLAN0433                         active    
+434  VLAN0434                         active    
+436  Mech-Lab                         active    
+438  VLAN0438                         active    
+439  VLAN0439                         active    
+511  VLAN0511                         active    
+540  VLAN0540                         active    
+550  VLAN0550                         active    
+551  VLAN0551                         active    
+552  VLAN0552                         active    
+553  VLAN0553                         active    
+554  VLAN0554                         active    
+555  VLAN0555                         active    
+556  VLAN0556                         active    
+ --More--         
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+560  VLAN0560                         active    
+561  VLAN0561                         active    
+568  VLAN0568                         active    
+626  VLAN0626                         active    
+678  VLAN0678                         active    
+701  VLAN0701                         active    
+702  VLAN0702                         active    
+801  VLAN0801                         active    
+802  VLAN0802                         active    
+814  VLAN0814                         active    
+815  VLAN0815                         active    
+816  VLAN0816                         active    
+880  VLAN0880                         active    
+894  VLAN0894                         active    
+900  VLAN0900                         active    
+987  VLAN0987                         active    
+990  VLAN0990                         active    
+1002 fddi-default                     act/unsup 
+1003 trcrf-default                    act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trbrf-default                    act/unsup 
+
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+ --More--         ---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+1    enet  100001     1500  -      -      -        -    -        0      0   
+9    enet  100009     1500  -      -      -        -    -        0      0   
+13   enet  100013     1500  -      -      -        -    -        0      0   
+20   enet  100020     1500  -      -      -        -    -        0      0   
+31   enet  100031     1500  -      -      -        -    -        0      0   
+32   enet  100032     1500  -      -      -        -    -        0      0   
+33   enet  100033     1500  -      -      -        -    -        0      0   
+36   enet  100036     1500  -      -      -        -    -        0      0   
+37   enet  100037     1500  -      -      -        -    -        0      0   
+38   enet  100038     1500  -      -      -        -    -        0      0   
+41   enet  100041     1500  -      -      -        -    -        0      0   
+42   enet  100042     1500  -      -      -        -    -        0      0   
+44   enet  100044     1500  -      -      -        -    -        0      0   
+46   enet  100046     1500  -      -      -        -    -        0      0   
+47   enet  100047     1500  -      -      -        -    -        0      0   
+48   enet  100048     1500  -      -      -        -    -        0      0   
+100  enet  100100     1500  -      -      -        -    -        0      0   
+110  enet  100110     1500  -      -      -        -    -        0      0   
+112  enet  100112     1500  -      -      -        -    -        0      0   
+114  enet  100114     1500  -      -      -        -    -        0      0   
+200  enet  100200     1500  -      -      -        -    -        0      0   
+228  enet  100228     1500  -      -      -        -    -        0      0   
+ --More--         
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+244  enet  100244     1500  -      -      -        -    -        0      0   
+260  enet  100260     1500  -      -      -        -    -        0      0   
+261  enet  100261     1500  -      -      -        -    -        0      0   
+262  enet  100262     1500  -      -      -        -    -        0      0   
+263  enet  100263     1500  -      -      -        -    -        0      0   
+264  enet  100264     1500  -      -      -        -    -        0      0   
+265  enet  100265     1500  -      -      -        -    -        0      0   
+266  enet  100266     1500  -      -      -        -    -        0      0   
+267  enet  100267     1500  -      -      -        -    -        0      0   
+268  enet  100268     1500  -      -      -        -    -        0      0   
+269  enet  100269     1500  -      -      -        -    -        0      0   
+270  enet  100270     1500  -      -      -        -    -        0      0   
+290  enet  100290     1500  -      -      -        -    -        0      0   
+342  enet  100342     1500  -      -      -        -    -        0      0   
+350  enet  100350     1500  -      -      -        -    -        0      0   
+351  enet  100351     1500  -      -      -        -    -        0      0   
+397  enet  100397     1500  -      -      -        -    -        0      0   
+400  enet  100400     1500  -      -      -        -    -        0      0   
+412  enet  100412     1500  -      -      -        -    -        0      0   
+413  enet  100413     1500  -      -      -        -    -        0      0   
+414  enet  100414     1500  -      -      -        -    -        0      0   
+415  enet  100415     1500  -      -      -        -    -        0      0   
+416  enet  100416     1500  -      -      -        -    -        0      0   
+ --More--         
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+417  enet  100417     1500  -      -      -        -    -        0      0   
+418  enet  100418     1500  -      -      -        -    -        0      0   
+419  enet  100419     1500  -      -      -        -    -        0      0   
+420  enet  100420     1500  -      -      -        -    -        0      0   
+421  enet  100421     1500  -      -      -        -    -        0      0   
+422  enet  100422     1500  -      -      -        -    -        0      0   
+425  enet  100425     1500  -      -      -        -    -        0      0   
+426  enet  100426     1500  -      -      -        -    -        0      0   
+427  enet  100427     1500  -      -      -        -    -        0      0   
+429  enet  100429     1500  -      -      -        -    -        0      0   
+430  enet  100430     1500  -      -      -        -    -        0      0   
+431  enet  100431     1500  -      -      -        -    -        0      0   
+432  enet  100432     1500  -      -      -        -    -        0      0   
+433  enet  100433     1500  -      -      -        -    -        0      0   
+434  enet  100434     1500  -      -      -        -    -        0      0   
+436  enet  100436     1500  -      -      -        -    -        0      0   
+438  enet  100438     1500  -      -      -        -    -        0      0   
+439  enet  100439     1500  -      -      -        -    -        0      0   
+511  enet  100511     1500  -      -      -        -    -        0      0   
+540  enet  100540     1500  -      -      -        -    -        0      0   
+550  enet  100550     1500  -      -      -        -    -        0      0   
+551  enet  100551     1500  -      -      -        -    -        0      0   
+552  enet  100552     1500  -      -      -        -    -        0      0   
+ --More--         
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+553  enet  100553     1500  -      -      -        -    -        0      0   
+554  enet  100554     1500  -      -      -        -    -        0      0   
+555  enet  100555     1500  -      -      -        -    -        0      0   
+556  enet  100556     1500  -      -      -        -    -        0      0   
+560  enet  100560     1500  -      -      -        -    -        0      0   
+561  enet  100561     1500  -      -      -        -    -        0      0   
+568  enet  100568     1500  -      -      -        -    -        0      0   
+626  enet  100626     1500  -      -      -        -    -        0      0   
+678  enet  100678     1500  -      -      -        -    -        0      0   
+701  enet  100701     1500  -      -      -        -    -        0      0   
+702  enet  100702     1500  -      -      -        -    -        0      0   
+801  enet  100801     1500  -      -      -        -    -        0      0   
+802  enet  100802     1500  -      -      -        -    -        0      0   
+814  enet  100814     1500  -      -      -        -    -        0      0   
+815  enet  100815     1500  -      -      -        -    -        0      0   
+816  enet  100816     1500  -      -      -        -    -        0      0   
+880  enet  100880     1500  -      -      -        -    -        0      0   
+894  enet  100894     1500  -      -      -        -    -        0      0   
+900  enet  100900     1500  -      -      -        -    -        0      0   
+987  enet  100987     1500  -      -      -        -    -        0      0   
+990  enet  100990     1500  -      -      -        -    -        0      0   
+1002 fddi  101002     1500  -      -      -        -    -        0      0   
+1003 trcrf 101003     4472  1005   3276   -        -    srb      0      0   
+ --More--         
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+1004 fdnet 101004     1500  -      -      -        ieee -        0      0   
+1005 trbrf 101005     4472  -      -      15       ibm  -        0      0   
+
+
+VLAN AREHops STEHops Backup CRF
+---- ------- ------- ----------
+1003 7       7       off
+
+Primary Secondary Type              Ports
+------- --------- ----------------- ------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CORE-SW-1# show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone, 
+                  D - Remote, C - CVTA, M - Two-port Mac Relay 
+
+Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
+M-HOSTEL-00-DIS.iith.ac.in
+                 Fif 2/2/0/21      156             R S I  C9500-16X Ten 2/0/16
+EBLOCK-R2-R316-AP6
+                 Fif 2/2/0/23      146             T B I  AIR-CAP37 Gig 0
+EBLOCK-R2-R216-AP4
+                 Fif 2/2/0/23      132             T B I  AIR-CAP37 Gig 0
+e455a8295552     Fif 2/2/0/23      172              R S   Meraki MR Port 0
+e455a82956cd     Fif 2/2/0/23      145              R S   Meraki MR Port 0
+EBLOCK-R2-R416-AP8
+                 Fif 2/2/0/23      171             T B I  AIR-CAP37 Gig 0
+0c7bc8a90690     Fif 1/2/0/25      151              R S   Meraki MR Port 0
+0c7bc8a8ff79     Fif 1/2/0/25      150              R S   Meraki MR Port 0
+IITH-WLC-Primary.cwlc.iith.ac.in
+                 Fif 1/2/0/30      164              S I   AIR-CT576 Ten 1/0/1
+AA-06-607-AP     Fif 1/2/0/25      146             T B I  AIR-CAP37 Gig 0
+e455a8295fd9     Fif 2/2/0/23      144              R S   Meraki MR Port 0
+008e731651c7     Fif 2/2/0/23      175             R S I  SG350-28  gi26
+ --More--         
+Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
+APc08c.600f.378e Fif 1/2/0/25      120             T B I  AIR-CAP36 Gig 0
+APc08c.6020.5091 Fif 2/2/0/23      144             T B I  AIR-CAP36 Gig 0
+APfc5b.399b.c1b0 Fif 1/2/0/25      176             T B I  AIR-CAP36 Gig 0
+AP003a.7d9f.381a Fif 1/2/0/25      137             T B I  AIR-CAP36 Gig 0
+AP74a2.e626.62fa Fif 1/2/0/25      170             T B I  AIR-CAP36 Gig 0
+AP003a.7d9f.4b97 Fif 2/2/0/23      147             T B I  AIR-CAP36 Gig 0
+APe4aa.5da9.3dce Fif 1/2/0/25      129             T B I  AIR-CAP36 Gig 0
+AP003a.7d9f.4b54 Fif 2/2/0/23      144             T B I  AIR-CAP36 Gig 0
+APc08c.6020.5112 Fif 1/2/0/25      137             T B I  AIR-CAP36 Gig 0
+APecbd.1df8.4270 Fif 1/2/0/25      170             T B I  AIR-CAP37 Gig 0
+AP0462.7306.8070 Fif 1/2/0/25      176             T B I  AIR-CAP37 Gig 0
+APecbd.1df6.6eb8 Fif 1/2/0/25      158             T B I  AIR-CAP37 Gig 0
+IITH-GF-CSE-LAB-AP7
+                 Fif 1/2/0/25      154             T B I  AIR-CAP36 Gig 0
+TIP-00-DIS.iith.ac.in
+                 Fif 2/2/0/10      127             R S I  C9500-16X Ten 1/0/16
+DH-DISTRIBUTION-SW.iith.ac.in
+                 Fif 2/2/0/13      172             R S I  C9500-16X Ten 2/0/16
+DOD-00-DIS.iith.ac.in
+                 Fif 1/2/0/20      162             R S I  C9500-16X Ten 1/0/16
+IGH-00-DIS.iith.ac.in
+                 Fif 1/2/0/8       173             R S I  C9500-40X Ten 1/0/40
+KNC-00-DIS.iith.ac.in
+ --More--         
+Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
+                 Fif 1/2/0/6       133             R S I  C9500-16X Ten 2/0/16
+CHY-01-DIS.iith.ac.in
+                 Fif 1/2/0/3       149             R S I  C9500-16X Ten 2/0/16
+MSME-01-DISTRIBUTION.iith.ac.in
+                 Fif 2/2/0/1       123             R S I  C9500-16X Ten 1/0/16
+CORELAB-00-DIS.iith.ac.in
+                 Fif 1/2/0/15      165             R S I  C9500-16X Ten 2/0/16
+AP003a.7d9f.4091 Fif 2/2/0/23      151             T B I  AIR-CAP36 Gig 0
+AP0462.7305.b1cc Fif 1/2/0/25      125             T B I  AIR-CAP37 Gig 0
+AP0462.7306.7f08 Fif 1/2/0/25      171             T B I  AIR-CAP37 Gig 0
+AP003a.7d9f.3fc4 Fif 1/2/0/25      153             T B I  AIR-CAP36 Gig 0
+APecbd.1dd6.391c Fif 1/2/0/25      171             T B I  AIR-CAP37 Gig 0
+AP80e0.1d7d.a7c0 Fif 2/2/0/23      158             T B I  AIR-CAP37 Gig 0
+0c7bc8a8f6ea     Fif 1/2/0/25      141              R S   Meraki MR Port 0
+e455a82957a1     Fif 1/2/0/25      159              R S   Meraki MR Port 0
+0c7bc8a909f9     Fif 1/2/0/25      139              R S   Meraki MR Port 0
+e455a8295a65     Fif 2/2/0/23      114              R S   Meraki MR Port 0
+0c7bc8a906e3     Fif 1/2/0/25      132              R S   Meraki MR Port 0
+Acad-A-102       Fif 1/2/0/25      131             T B I  AIR-CAP37 Gig 0
+Acad-A-303       Fif 1/2/0/25      151             T B I  AIR-CAP37 Gig 0
+e455a8295e69     Fif 1/2/0/25      137              R S   Meraki MR Port 0
+AD2-00-DIS.iith.ac.in
+                 Fif 1/2/0/17      169             R S I  C9500-16X Ten 1/0/16
+ --More--         
+Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
+AD3-00-DIS.iith.ac.in
+                 Fif 1/2/0/18      126             R S I  C9500-16X Ten 1/0/16
+CPE610           Fif 2/2/0/23      70                T    TP-LINK C br0
+CC-00-DIS.iith.ac.in
+                 Fif 2/2/0/7       167             R S I  C9500-16X Ten 2/0/16
+Acad-A-309.iith.ac.in
+                 Fif 1/2/0/25      125             T B I  AIR-CAP37 Gig 0
+ADMIN-LGF-DIS.iith.ac.in
+                 Fif 1/2/0/19      137             R S I  C9500-16X Ten 1/0/16
+RCC-1-Distribution.iith.ac.in
+                 Fif 1/2/0/4       148             R S I  C9500-16X Ten 1/0/16
+AC-DSW           Fif 1/2/0/24      175             R S I  WS-C3750X Ten 1/1/1
+BTBM-01-DIS.iith.ac.in
+                 Fif 2/2/0/2       150             R S I  C9500-16X Ten 2/0/16
+BTBM-01-DIS.iith.ac.in
+                 Fif 1/2/0/2       169             R S I  C9500-16X Ten 1/0/16
+SNCC-00-DIS.iith.ac.in
+                 Fif 1/2/0/9       139             R S I  C9500-16X Ten 1/0/16
+AP-Near-A-409    Fif 2/2/0/23      142             T B I  AIR-CAP37 Gig 0
+
+Total cdp entries displayed : 59
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+CORE-SW-1#show lldp neighbors 
+Capability codes:
+    (R) Router, (B) Bridge, (T) Telephone, (C) DOCSIS Cable Device
+    (W) WLAN Access Point, (P) Repeater, (S) Station, (O) Other
+
+Device ID           Local Intf     Hold-time  Capability      Port ID
+ADMIN-LGF-DIS.iith.aFif1/2/0/19    120        B,R             Te1/0/16
+DOD-00-DIS.iith.ac.iFif1/2/0/20    120        B,R             Te1/0/16
+CHY-01-DIS.iith.ac.iFif1/2/0/3     120        B,R             Te2/0/16
+AD2-00-DIS.iith.ac.iFif1/2/0/17    120        B,R             Te1/0/16
+M-HOSTEL-00-DIS.iithFif2/2/0/21    120        B,R             Te2/0/16
+RCC-1-Distribution.iFif1/2/0/4     120        B,R             Te1/0/16
+CC-00-DIS.iith.ac.inFif2/2/0/7     120        B,R             Te2/0/16
+KNC-00-DIS.iith.ac.iFif1/2/0/6     120        B,R             Te2/0/16
+A10-DC              Fif1/2/0/26    120        B               28
+ACAD-B-DISTRIBUTION Fif2/2/0/22    121        B,R             Ten-GigabitEthernet2/0/20
+ACAD-B-DISTRIBUTION Fif1/2/0/22    121        B,R             Ten-GigabitEthernet1/0/20
+BH-C-R1-00-DSW      Fif2/2/0/23    121        B,R             Ten-GigabitEthernet1/0/38
+DC-Distribution-New Fif2/2/0/27    120        B,R             122
+SNCC-00-DIS.iith.ac.Fif1/2/0/9     120        B,R             Te1/0/16
+PCH-2023-DSw        Fif2/2/0/29    120        B,R             1/1/1
+DH-DISTRIBUTION-SW.iFif2/2/0/13    120        B,R             Te2/0/16
+CORELAB-00-DIS.iith.Fif1/2/0/15    120        B,R             Te2/0/16
+ --More--         
+Device ID           Local Intf     Hold-time  Capability      Port ID
+Acad-R1-00-CSW      Fif1/2/0/47    120        B,R             Ten-GigabitEthernet1/3/0/1
+MSME-01-DISTRIBUTIONFif2/2/0/1     120        B,R             Te1/0/16
+Acad-A-DSw          Fif1/2/0/25    121        B,R             Ten-GigabitEthernet2/0/23
+DC-Distribution-New Fif1/2/0/27    120        B,R             26
+AC-DSW              Fif1/2/0/24    120        B,R             Te1/1/1
+IITH-WLC-Primary.cwlFif1/2/0/30    120        B               Te1/0/1
+NSM-DC              Fif1/2/0/28    120        B               28
+
+Total entries displayed: 24
+
+
+  
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+CORE-SW-1#show interfaces transceiver de
+CORE-SW-1#show interfaces transceiver detail 
+mA: milliamperes, dBm: decibels (milliwatts), NA or N/A: not applicable.
+++ : high alarm, +  : high warning, -  : low warning, -- : low alarm.
+A2D readouts (if they differ), are reported in parentheses.
+The threshold values are calibrated.
+
+                                High Alarm  High Warn  Low Warn   Low Alarm
+             Temperature        Threshold   Threshold  Threshold  Threshold
+Port         (Celsius)          (Celsius)   (Celsius)  (Celsius)  (Celsius)
+---------    -----------------  ----------  ---------  ---------  ---------
+Hu1/1/0/23     32.6                   75.0       70.0        0.0       -5.0
+Hu1/1/0/24     32.1                   75.0       70.0        0.0       -5.0
+Fif1/2/0/2     29.0                   75.0       70.0        0.0       -5.0
+Fif1/2/0/3     30.0                   75.0       70.0        0.0       -5.0
+Fif1/2/0/4     31.0                   75.0       70.0        0.0       -5.0
+Fif1/2/0/6     31.0                   75.0       70.0        0.0       -5.0
+Fif1/2/0/8     30.0                   75.0       70.0        0.0       -5.0
+Fif1/2/0/9     30.0                   75.0       70.0        0.0       -5.0
+Fif1/2/0/15    30.0                   75.0       70.0        0.0       -5.0
+Fif1/2/0/17    32.0                   75.0       70.0        0.0       -5.0
+Fif1/2/0/18    32.0                   75.0       70.0        0.0       -5.0
+Fif1/2/0/19    31.0                   75.0       70.0        0.0       -5.0
+Fif1/2/0/20    33.0                   75.0       70.0        0.0       -5.0
+Fif1/2/0/22    31.0                   75.0       70.0        0.0       -5.0
+ --More--         Fif1/2/0/24    32.0                   75.0       70.0        0.0       -5.0
+Fif1/2/0/25    36.0                   75.0       70.0        0.0       -5.0
+Fif1/2/0/26    34.0                   75.0       70.0        0.0       -5.0
+Fif1/2/0/27    33.0                   75.0       70.0        0.0       -5.0
+Fif1/2/0/28    31.0                   75.0       70.0        0.0       -5.0
+Fif1/2/0/30    33.0                   75.0       70.0        0.0       -5.0
+Fif1/2/0/34    31.0                   75.0       70.0        0.0       -5.0
+Fif1/2/0/35    31.0                   75.0       70.0        0.0       -5.0
+Fif1/2/0/47    30.0                   75.0       70.0        0.0       -5.0
+Fif1/2/0/48    30.0                   75.0       70.0        0.0       -5.0
+Hu2/1/0/23     31.0                   75.0       70.0        0.0       -5.0
+Hu2/1/0/24     33.3                   75.0       70.0        0.0       -5.0
+Fif2/2/0/1     28.0                   75.0       70.0        0.0       -5.0
+Fif2/2/0/2     27.0                   75.0       70.0        0.0       -5.0
+Fif2/2/0/7     28.0                   75.0       70.0        0.0       -5.0
+Fif2/2/0/10    30.0                   75.0       70.0        0.0       -5.0
+Fif2/2/0/13    28.0                   75.0       70.0        0.0       -5.0
+Fif2/2/0/16    28.0                   75.0       70.0        0.0       -5.0
+Fif2/2/0/21    29.0                   75.0       70.0        0.0       -5.0
+Fif2/2/0/22    29.0                   75.0       70.0        0.0       -5.0
+Fif2/2/0/23    28.0                   75.0       70.0        0.0       -5.0
+Fif2/2/0/27    29.0                   75.0       70.0        0.0       -5.0
+Fif2/2/0/29    28.0                   75.0       70.0        0.0       -5.0
+ --More--         Fif2/2/0/48    28.0                   75.0       70.0        0.0       -5.0
+
+                                High Alarm  High Warn  Low Warn   Low Alarm
+             Voltage            Threshold   Threshold  Threshold  Threshold
+Port         (Volts)            (Volts)     (Volts)    (Volts)    (Volts)
+---------    -----------------  ----------  ---------  ---------  ---------
+Hu1/1/0/23     3.29                   3.63       3.46       3.10       2.97
+Hu1/1/0/24     3.28                   3.63       3.46       3.10       2.97
+Fif1/2/0/2     3.29                   3.63       3.46       3.13       2.97
+Fif1/2/0/3     3.28                   3.63       3.46       3.13       2.97
+Fif1/2/0/4     3.29                   3.63       3.46       3.13       2.97
+Fif1/2/0/6     3.29                   3.63       3.46       3.13       2.97
+Fif1/2/0/8     3.29                   3.63       3.46       3.13       2.97
+Fif1/2/0/9     3.31                   3.63       3.46       3.13       2.97
+Fif1/2/0/15    3.30                   3.63       3.46       3.13       2.97
+Fif1/2/0/17    3.28                   3.63       3.46       3.13       2.97
+Fif1/2/0/18    3.32                   3.63       3.46       3.13       2.97
+Fif1/2/0/19    3.29                   3.63       3.46       3.13       2.97
+Fif1/2/0/20    3.28                   3.63       3.46       3.13       2.97
+Fif1/2/0/22    3.28                   3.63       3.46       3.13       2.97
+Fif1/2/0/24    3.32                   3.63       3.46       3.13       2.97
+Fif1/2/0/25    3.30                   3.63       3.46       3.13       2.97
+Fif1/2/0/26    3.30                   3.63       3.46       3.13       2.97
+ --More--         Fif1/2/0/27    3.31                   3.63       3.46       3.13       2.97
+Fif1/2/0/28    3.29                   3.63       3.46       3.13       2.97
+Fif1/2/0/30    3.32                   3.63       3.46       3.13       2.97
+Fif1/2/0/34    3.31                   3.63       3.46       3.13       2.97
+Fif1/2/0/35    3.32                   3.63       3.46       3.13       2.97
+Fif1/2/0/47    3.29                   3.63       3.46       3.13       2.97
+Fif1/2/0/48    3.29                   3.63       3.46       3.13       2.97
+Hu2/1/0/23     3.28                   3.63       3.46       3.10       2.97
+Hu2/1/0/24     3.29                   3.63       3.46       3.10       2.97
+Fif2/2/0/1     3.31                   3.63       3.46       3.13       2.97
+Fif2/2/0/2     3.32                   3.63       3.46       3.13       2.97
+Fif2/2/0/7     3.28                   3.63       3.46       3.13       2.97
+Fif2/2/0/10    3.30                   3.63       3.46       3.13       2.97
+Fif2/2/0/13    3.30                   3.63       3.46       3.13       2.97
+Fif2/2/0/16    3.29                   3.63       3.46       3.13       2.97
+Fif2/2/0/21    3.29                   3.63       3.46       3.13       2.97
+Fif2/2/0/22    3.31                   3.63       3.46       3.13       2.97
+Fif2/2/0/23    3.28                   3.63       3.46       3.13       2.97
+Fif2/2/0/27    3.30                   3.63       3.46       3.13       2.97
+Fif2/2/0/29    3.29                   3.63       3.46       3.13       2.97
+Fif2/2/0/48    3.28                   3.63       3.46       3.13       2.97
+
+                                  High Alarm  High Warn  Low Warn   Low Alarm
+ --More--                          Current          Threshold   Threshold  Threshold  Threshold
+Port       Lane  (milliamperes)   (mA)        (mA)       (mA)       (mA)
+---------  ----  ---------------  ----------  ---------  ---------  ---------
+Hu1/1/0/23   1     39.8                105.0       98.0        9.0        8.0
+Hu1/1/0/23   2     36.5                105.0       98.0        9.0        8.0
+Hu1/1/0/23   3     39.1                105.0       98.0        9.0        8.0
+Hu1/1/0/23   4     38.9                105.0       98.0        9.0        8.0
+Hu1/1/0/24   1     36.6                105.0       98.0        9.0        8.0
+Hu1/1/0/24   2     38.5                105.0       98.0        9.0        8.0
+Hu1/1/0/24   3     32.0                105.0       98.0        9.0        8.0
+Hu1/1/0/24   4     36.9                105.0       98.0        9.0        8.0
+Fif1/2/0/2   N/A   29.0                 75.0       70.0       18.0       15.0
+Fif1/2/0/3   N/A   31.0                 75.0       70.0       18.0       15.0
+Fif1/2/0/4   N/A   28.0                 75.0       70.0       18.0       15.0
+Fif1/2/0/6   N/A   29.0                 75.0       70.0       18.0       15.0
+Fif1/2/0/8   N/A   31.0                 75.0       70.0       18.0       15.0
+Fif1/2/0/9   N/A   25.0                 95.0       90.0       10.0        8.0
+Fif1/2/0/15  N/A   29.0                 75.0       70.0       18.0       15.0
+Fif1/2/0/17  N/A   31.0                 75.0       70.0       18.0       15.0
+Fif1/2/0/18  N/A   26.0                 95.0       90.0       10.0        8.0
+Fif1/2/0/19  N/A   29.0                 75.0       70.0       18.0       15.0
+Fif1/2/0/20  N/A   31.0                 75.0       70.0       18.0       15.0
+Fif1/2/0/22  N/A   29.0                 75.0       70.0       18.0       15.0
+ --More--         Fif1/2/0/24  N/A   27.0                 95.0       90.0       10.0        8.0
+Fif1/2/0/25  N/A    7.0                 11.8       10.8        5.0        4.0
+Fif1/2/0/26  N/A    7.0                 11.8       10.8        5.0        4.0
+Fif1/2/0/27  N/A    7.0                 11.8       10.8        5.0        4.0
+Fif1/2/0/28  N/A   30.0                 75.0       70.0       18.0       15.0
+Fif1/2/0/30  N/A   26.0                 95.0       90.0       10.0        8.0
+Fif1/2/0/34  N/A    6.0                 13.0       12.5        5.0        4.0
+Fif1/2/0/35  N/A    6.0                 13.0       12.5        5.0        4.0
+Fif1/2/0/47  N/A   28.0                 75.0       70.0       18.0       15.0
+Fif1/2/0/48  N/A   28.0                 75.0       70.0       18.0       15.0
+Hu2/1/0/23   1     32.0                105.0       98.0        9.0        8.0
+Hu2/1/0/23   2     35.7                105.0       98.0        9.0        8.0
+Hu2/1/0/23   3     29.7                105.0       98.0        9.0        8.0
+Hu2/1/0/23   4     36.1                105.0       98.0        9.0        8.0
+Hu2/1/0/24   1     38.0                105.0       98.0        9.0        8.0
+Hu2/1/0/24   2     38.1                105.0       98.0        9.0        8.0
+Hu2/1/0/24   3     39.6                105.0       98.0        9.0        8.0
+Hu2/1/0/24   4     34.7                105.0       98.0        9.0        8.0
+Fif2/2/0/1   N/A   27.0                 95.0       90.0       10.0        8.0
+Fif2/2/0/2   N/A   25.0                 95.0       90.0       10.0        8.0
+Fif2/2/0/7   N/A   31.0                 75.0       70.0       18.0       15.0
+Fif2/2/0/10  N/A   27.0                 75.0       70.0       18.0       15.0
+Fif2/2/0/13  N/A   29.0                 75.0       70.0       18.0       15.0
+ --More--         Fif2/2/0/16  N/A   27.0                 75.0       70.0       18.0       15.0
+Fif2/2/0/21  N/A   37.0                 75.0       70.0       18.0       15.0
+Fif2/2/0/22  N/A   31.0                 75.0       70.0       18.0       15.0
+Fif2/2/0/23  N/A   28.0                 75.0       70.0       18.0       15.0
+Fif2/2/0/27  N/A    5.0                 10.0        8.5        3.0        2.6
+Fif2/2/0/29  N/A   29.0                 75.0       70.0       18.0       15.0
+Fif2/2/0/48  N/A   30.0                 75.0       70.0       18.0       15.0
+
+                 Optical          High Alarm  High Warn  Low Warn   Low Alarm
+                 Transmit Power   Threshold   Threshold  Threshold  Threshold
+Port       Lane  (dBm)            (dBm)       (dBm)      (dBm)      (dBm)
+---------  ----  ---------------  ----------  ---------  ---------  ---------
+Hu1/1/0/23   1    -0.86                 5.30       2.30      -7.00     -11.01
+Hu1/1/0/23   2    -1.20                 5.30       2.30      -7.00     -11.01
+Hu1/1/0/23   3     1.09                 5.30       2.30      -7.00     -11.01
+Hu1/1/0/23   4    -0.99                 5.30       2.30      -7.00     -11.01
+Hu1/1/0/24   1     0.97                 5.30       2.30      -7.00     -11.01
+Hu1/1/0/24   2     0.27                 5.30       2.30      -7.00     -11.01
+Hu1/1/0/24   3     1.02                 5.30       2.30      -7.00     -11.01
+Hu1/1/0/24   4     0.98                 5.30       2.30      -7.00     -11.01
+Fif1/2/0/2   N/A   -2.4                 3.50       0.50      -8.21     -12.21
+Fif1/2/0/3   N/A   -2.5                 3.50       0.50      -8.21     -12.21
+Fif1/2/0/4   N/A   -2.4                 3.50       0.50      -8.21     -12.21
+ --More--         Fif1/2/0/6   N/A   -2.5                 3.50       0.50      -8.21     -12.21
+Fif1/2/0/8   N/A   -2.5                 3.50       0.50      -8.21     -12.21
+Fif1/2/0/9   N/A   -2.4                 3.50       0.50      -8.21     -12.21
+Fif1/2/0/15  N/A   -2.1                 3.50       0.50      -8.21     -12.21
+Fif1/2/0/17  N/A   -2.5                 3.50       0.50      -8.21     -12.21
+Fif1/2/0/18  N/A   -2.3                 3.50       0.50      -8.21     -12.21
+Fif1/2/0/19  N/A   -2.0                 3.50       0.50      -8.21     -12.21
+Fif1/2/0/20  N/A   -2.5                 3.50       0.50      -8.21     -12.21
+Fif1/2/0/22  N/A   -2.0                 3.50       0.50      -8.21     -12.21
+Fif1/2/0/24  N/A   -1.7                 3.50       0.50      -8.21     -12.21
+Fif1/2/0/25  N/A   -2.0                 1.70      -1.30      -7.31     -11.31
+Fif1/2/0/26  N/A   -2.5                 1.70      -1.30      -7.31     -11.31
+Fif1/2/0/27  N/A   -2.5                 1.70      -1.30      -7.31     -11.31
+Fif1/2/0/28  N/A   -2.5                 3.50       0.50      -8.21     -12.21
+Fif1/2/0/30  N/A   -2.9                 3.50       0.50      -8.21     -12.21
+Fif1/2/0/34  N/A   -2.6                 2.00      -1.00      -7.31     -11.31
+Fif1/2/0/35  N/A   -2.4                 2.00      -1.00      -7.31     -11.31
+Fif1/2/0/47  N/A   -1.9                 3.50       0.50      -8.21     -12.21
+Fif1/2/0/48  N/A   -2.3                 3.50       0.50      -8.21     -12.21
+Hu2/1/0/23   1     1.08                 5.30       2.30      -7.00     -11.01
+Hu2/1/0/23   2     0.74                 5.30       2.30      -7.00     -11.01
+Hu2/1/0/23   3     1.07                 5.30       2.30      -7.00     -11.01
+Hu2/1/0/23   4     1.04                 5.30       2.30      -7.00     -11.01
+ --More--         Hu2/1/0/24   1     0.96                 5.30       2.30      -7.00     -11.01
+Hu2/1/0/24   2     0.03                 5.30       2.30      -7.00     -11.01
+Hu2/1/0/24   3     1.10                 5.30       2.30      -7.00     -11.01
+Hu2/1/0/24   4     1.04                 5.30       2.30      -7.00     -11.01
+Fif2/2/0/1   N/A   -1.8                 3.50       0.50      -8.21     -12.21
+Fif2/2/0/2   N/A   -2.6                 3.50       0.50      -8.21     -12.21
+Fif2/2/0/7   N/A   -2.5                 3.50       0.50      -8.21     -12.21
+Fif2/2/0/10  N/A   -2.3                 3.50       0.50      -8.21     -12.21
+Fif2/2/0/13  N/A   -2.0                 3.50       0.50      -8.21     -12.21
+Fif2/2/0/16  N/A   -2.5                 3.50       0.50      -8.21     -12.21
+Fif2/2/0/21  N/A   -2.8                 3.50       0.50      -8.21     -12.21
+Fif2/2/0/22  N/A   -2.5                 3.50       0.50      -8.21     -12.21
+Fif2/2/0/23  N/A   -1.9                 3.50       0.50      -8.21     -12.21
+Fif2/2/0/27  N/A   -2.3                 1.70      -1.30      -7.31     -11.31
+Fif2/2/0/29  N/A   -2.0                 3.50       0.50      -8.21     -12.21
+Fif2/2/0/48  N/A   -2.4                 3.50       0.50      -8.21     -12.21
+
+                 Optical          High Alarm  High Warn  Low Warn   Low Alarm
+                 Receive Power    Threshold   Threshold  Threshold  Threshold
+Port       Lane  (dBm)            (dBm)       (dBm)      (dBm)      (dBm)
+---------  ----  ---------------  ----------  ---------  ---------  ---------
+Hu1/1/0/23   1     0.70                 3.30       2.30     -13.72     -17.74
+Hu1/1/0/23   2     0.70                 3.30       2.30     -13.72     -17.74
+ --More--         Hu1/1/0/23   3     1.23                 3.30       2.30     -13.72     -17.74
+Hu1/1/0/23   4     1.01                 3.30       2.30     -13.72     -17.74
+Hu1/1/0/24   1     0.83                 3.30       2.30     -13.72     -17.74
+Hu1/1/0/24   2    -0.71                 3.30       2.30     -13.72     -17.74
+Hu1/1/0/24   3     1.17                 3.30       2.30     -13.72     -17.74
+Hu1/1/0/24   4     0.50                 3.30       2.30     -13.72     -17.74
+Fif1/2/0/2   N/A   -6.0                 3.50       0.50     -14.04     -18.43
+Fif1/2/0/3   N/A   -4.5                 3.50       0.50     -14.04     -18.43
+Fif1/2/0/4   N/A   -4.4                 3.50       0.50     -14.04     -18.43
+Fif1/2/0/6   N/A   -5.2                 3.50       0.50     -14.04     -18.43
+Fif1/2/0/8   N/A   -5.6                 3.50       0.50     -14.04     -18.43
+Fif1/2/0/9   N/A   -6.0                 3.50       0.50     -14.04     -18.43
+Fif1/2/0/15  N/A   -4.2                 3.50       0.50     -14.04     -18.43
+Fif1/2/0/17  N/A   -1.3                 3.50       0.50     -14.04     -18.43
+Fif1/2/0/18  N/A   -2.2                 3.50       0.50     -14.04     -18.43
+Fif1/2/0/19  N/A   -7.4                 3.50       0.50     -14.04     -18.43
+Fif1/2/0/20  N/A   -9.1                 3.50       0.50     -14.04     -18.43
+Fif1/2/0/22  N/A   -3.8                 3.50       0.50     -14.04     -18.43
+Fif1/2/0/24  N/A   -2.2                 3.50       0.50     -14.04     -18.43
+Fif1/2/0/25  N/A   -1.6                 2.00      -1.00      -9.91     -13.93
+Fif1/2/0/26  N/A   -2.0                 2.00      -1.00      -9.91     -13.93
+Fif1/2/0/27  N/A   -2.0                 2.00      -1.00      -9.91     -13.93
+Fif1/2/0/30  N/A   -2.0                 3.50       0.50     -14.04     -18.43
+ --More--         Fif1/2/0/34  N/A  -40.0                 2.00      -1.00      -9.91     -13.93
+Fif1/2/0/35  N/A  -40.0                 2.00      -1.00      -9.91     -13.93
+Fif1/2/0/47  N/A   -2.1                 3.50       0.50     -14.04     -18.43
+Fif1/2/0/48  N/A   -2.1                 3.50       0.50     -14.04     -18.43
+Hu2/1/0/23   1    -1.37                 3.30       2.30     -13.72     -17.74
+Hu2/1/0/23   2    -0.29                 3.30       2.30     -13.72     -17.74
+Hu2/1/0/23   3     0.72                 3.30       2.30     -13.72     -17.74
+Hu2/1/0/23   4    -1.27                 3.30       2.30     -13.72     -17.74
+Hu2/1/0/24   1     1.85                 3.30       2.30     -13.72     -17.74
+Hu2/1/0/24   2     0.85                 3.30       2.30     -13.72     -17.74
+Hu2/1/0/24   3     1.83                 3.30       2.30     -13.72     -17.74
+Hu2/1/0/24   4     2.13                 3.30       2.30     -13.72     -17.74
+Fif2/2/0/1   N/A  -17.0                 3.50       0.50     -14.04     -18.43
+Fif2/2/0/7   N/A   -4.9                 3.50       0.50     -14.04     -18.43
+Fif2/2/0/10  N/A   -7.9                 3.50       0.50     -14.04     -18.43
+Fif2/2/0/13  N/A   -2.5                 3.50       0.50     -14.04     -18.43
+Fif2/2/0/16  N/A  -40.0                 3.50       0.50     -14.04     -18.43
+Fif2/2/0/21  N/A   -9.6                 3.50       0.50     -14.04     -18.43
+Fif2/2/0/22  N/A   -9.2                 3.50       0.50     -14.04     -18.43
+Fif2/2/0/23  N/A   -6.1                 3.50       0.50     -14.04     -18.43
+Fif2/2/0/27  N/A   -3.0                 2.00      -1.00      -9.91     -13.93
+Fif2/2/0/29  N/A   -5.9                 3.50       0.50     -14.04     -18.43
+Fif2/2/0/48  N/A   -2.5                 3.50       0.50     -14.04     -18.43
+ --More--         
+
+CORE-SW-1# 
+CORE-SW-1#
+CORE-SW-1#
+CORE-SW-1#
+CORE-SW-1#
