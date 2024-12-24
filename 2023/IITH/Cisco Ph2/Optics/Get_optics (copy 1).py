@@ -1,8 +1,6 @@
-import os
-import json
+import os, json
 import csv
 import logging
-from datetime import datetime
 from nornir import InitNornir
 from nornir_napalm.plugins.tasks import napalm_get
 from nornir_netmiko.tasks import netmiko_send_command
@@ -72,13 +70,9 @@ for a in results.keys():
                             lines.append(list(data.values()))  # Convert OrderedDict to list
                             print(data)  # Print data in a dictionary format
 
-# Get the current date and time
-current_datetime = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-
 # Write to CSV file
 with open(filename, mode='w', newline='') as file:
     writer = csv.writer(file)
-    writer.writerow([f"Generated on: {current_datetime}"])  # Write the date and time as the first row
     writer.writerows(lines)
 
 print("Done. Check fiber power level.csv")
