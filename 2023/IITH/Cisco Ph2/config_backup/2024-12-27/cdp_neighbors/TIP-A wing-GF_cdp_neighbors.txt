@@ -1,0 +1,32 @@
+Device ID: 045fb968f6c1
+  IP address: 10.3.54.31
+Device ID: e455a8067b9d
+  IP address: 10.4.137.27
+Device ID: e455a80678ce
+  IP address: 10.4.137.31
+Device ID: e455a8068792
+  IP address: 10.4.137.22
+Device ID: e455a8067ce4
+  IP address: 10.4.137.19
+Device ID: e455a8067ac5
+  IP address: 10.4.137.45
+Device ID: e455a8060540
+  IP address: 10.4.137.17
+Device ID: TIP-00-DIS.iith.ac.in
+  IP address: 10.4.136.1
+  IP address: 10.4.136.1
+Device ID: TIP-00-DIS.iith.ac.in
+  IP address: 10.4.136.1
+  IP address: 10.4.136.1
+Device ID: e455a806739e
+  IP address: 10.4.137.26
+Device ID: e455a8067cdd
+  IP address: 10.4.137.21
+Device ID: e455a80641d2
+  IP address: 10.4.137.15
+Device ID: e455a805efb1
+  IP address: 10.4.137.43
+Device ID: e455a806747d
+  IP address: 10.4.137.23
+Device ID: e455a8067e30
+  IP address: 10.4.137.28

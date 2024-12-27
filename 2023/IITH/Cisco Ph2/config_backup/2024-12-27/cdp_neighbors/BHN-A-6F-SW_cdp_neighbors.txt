@@ -1,0 +1,6 @@
+Device ID: N-9TH-SWITCH-A.iith.ac.in
+  IP address: 10.5.48.54
+  IP address: 10.5.48.54
+Device ID: N-3RD-SWITCH-A.iith.ac.in
+  IP address: 10.5.48.52
+  IP address: 10.5.48.52

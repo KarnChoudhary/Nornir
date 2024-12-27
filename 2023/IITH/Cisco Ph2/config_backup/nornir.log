@@ -1287,3 +1287,13 @@ nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed
 2024-12-04 12:03:15,542 -  nornir.core -     INFO -        run() - Running task 'save_cdp_neighbors' with args {} on 212 hosts
 2024-12-04 12:03:15,562 -  nornir.core -     INFO -        run() - Running task 'save_vlan' with args {} on 212 hosts
 2024-12-04 12:03:15,584 -  nornir.core -     INFO -        run() - Running task 'save_lldp_neighbors' with args {} on 212 hosts
+2024-12-27 16:28:48,439 -  nornir.core -     INFO -        run() - Running task 'get_running_config' with args {} on 212 hosts
+2024-12-27 16:29:11,786 -  nornir.core -     INFO -        run() - Running task 'get_arp_inspection' with args {} on 212 hosts
+2024-12-27 16:29:17,753 -  nornir.core -     INFO -        run() - Running task 'get_cdp_neighbors' with args {} on 212 hosts
+2024-12-27 16:29:20,556 -  nornir.core -     INFO -        run() - Running task 'get_vlan' with args {} on 212 hosts
+2024-12-27 16:29:23,251 -  nornir.core -     INFO -        run() - Running task 'get_lldp_neighbors' with args {} on 212 hosts
+2024-12-27 16:29:26,218 -  nornir.core -     INFO -        run() - Running task 'save_running_config' with args {} on 212 hosts
+2024-12-27 16:29:26,238 -  nornir.core -     INFO -        run() - Running task 'save_arp_inspection' with args {} on 212 hosts
+2024-12-27 16:29:26,308 -  nornir.core -     INFO -        run() - Running task 'save_cdp_neighbors' with args {} on 212 hosts
+2024-12-27 16:29:26,331 -  nornir.core -     INFO -        run() - Running task 'save_vlan' with args {} on 212 hosts
+2024-12-27 16:29:26,351 -  nornir.core -     INFO -        run() - Running task 'save_lldp_neighbors' with args {} on 212 hosts

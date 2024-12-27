@@ -714,10 +714,10 @@ MSME-GF-SW:
   hostname: 10.4.100.102
   password: MSME@IITH2022
   username: iith
-# NewDH-SW:
-#   hostname: 10.5.100.101
-#   password: DH@IITH2022
-#   username: iith
+NewDH-SW:
+  hostname: 10.5.100.101
+  password: DH@IITH2022
+  username: iith
 RCC-Dist-SW:
   hostname: 192.168.41.94
   password: RCC@IITH2022

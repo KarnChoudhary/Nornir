@@ -1,0 +1,39 @@
+Device ID: CORE-SW-1.iith.ac.in
+  IP address: 192.168.41.93
+  IP address: 192.168.41.93
+Device ID: RCC-R1-GF-SWITCH.iith.ac.in
+  IP address: 10.4.112.100
+  IP address: 10.4.112.100
+Device ID: RCC-R1-GF-SWITCH.iith.ac.in
+  IP address: 10.4.112.100
+  IP address: 10.4.112.100
+Device ID: RCC-R2-GF-SWITCH.iith.ac.in
+  IP address: 10.4.112.105
+  IP address: 10.4.112.105
+Device ID: RCC-R2-4F-SWITCH.iith.ac.in
+  IP address: 10.4.112.109
+  IP address: 10.4.112.109
+Device ID: RCC-R2-4F-SWITCH.iith.ac.in
+  IP address: 10.4.112.109
+  IP address: 10.4.112.109
+Device ID: RCC-R1-3F-SWITCH.iith.ac.in
+  IP address: 10.4.112.103
+  IP address: 10.4.112.103
+Device ID: RCC-R1-2F-SWITCH.iith.ac.in
+  IP address: 10.4.112.102
+  IP address: 10.4.112.102
+Device ID: RCC-R2-2F-SWITCH.iith.ac.in
+  IP address: 10.4.112.106
+  IP address: 10.4.112.106
+Device ID: RCC-R1-1F-SWITCH.iith.ac.in
+  IP address: 10.4.112.101
+  IP address: 10.4.112.101
+Device ID: RCC-R2-2F-SWITCH.iith.ac.in
+  IP address: 10.4.112.106
+  IP address: 10.4.112.106
+Device ID: RCC-R2-3F-SWITCH.iith.ac.in
+  IP address: 10.4.112.107
+  IP address: 10.4.112.107
+Device ID: RCC-4F-R1.iith.ac.in
+  IP address: 10.4.112.110
+  IP address: 10.4.112.110

@@ -1,0 +1,12 @@
+Device ID: CS-GF.iith.ac.in
+  IP address: 10.5.100.95
+  IP address: 10.5.100.95
+Device ID: CORE-SW-1.iith.ac.in
+  IP address: 192.168.41.121
+  IP address: 192.168.41.121
+Device ID: DH-ACCESS-SWITCH.iith.ac.in
+  IP address: 10.5.100.101
+  IP address: 10.5.100.101
+Device ID: MSH-NORTH-WING.iith.ac.in
+  IP address: 10.5.100.106
+  IP address: 10.5.100.106
