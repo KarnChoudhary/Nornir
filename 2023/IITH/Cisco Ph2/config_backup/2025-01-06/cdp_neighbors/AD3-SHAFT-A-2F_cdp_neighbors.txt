@@ -1,0 +1,64 @@
+Device ID: e455a80687ed
+  IP address: 10.5.117.111
+Device ID: e455a8067913
+  IP address: 10.5.117.215
+Device ID: e455a8067b8f
+  IP address: 10.5.117.117
+Device ID: e455a8068b2c
+  IP address: 10.5.117.196
+Device ID: e455a8060c9c
+  IP address: 10.5.117.103
+Device ID: e455a8061432
+  IP address: 10.5.117.168
+Device ID: e455a8060e4c
+  IP address: 10.5.117.153
+Device ID: e455a8067b6a
+  IP address: 10.5.117.157
+Device ID: e455a8067ca6
+  IP address: 10.5.117.249
+Device ID: e455a81a60e5
+  IP address: 10.5.117.200
+Device ID: e455a80641ae
+  IP address: 10.5.117.13
+Device ID: e455a8063d3e
+  IP address: 10.5.117.127
+Device ID: e455a8063a95
+  IP address: 10.5.117.108
+Device ID: e455a8068b62
+  IP address: 10.5.117.198
+Device ID: e455a8060c96
+  IP address: 10.5.117.170
+Device ID: e455a8067c09
+  IP address: 10.5.117.119
+Device ID: e455a8068e61
+  IP address: 10.5.117.235
+Device ID: e455a80616e9
+  IP address: 10.5.117.107
+Device ID: e455a805da9d
+  IP address: 10.5.117.203
+Device ID: e455a8067e28
+  IP address: 10.5.117.130
+Device ID: e455a80600a9
+  IP address: 10.5.117.202
+Device ID: e455a8067b95
+  IP address: 10.5.117.169
+Device ID: e455a806766c
+  IP address: 10.5.117.186
+Device ID: e455a8067bcc
+  IP address: 10.5.117.171
+Device ID: e455a8067b77
+  IP address: 10.5.117.251
+Device ID: e455a81a6453
+  IP address: 10.5.117.207
+Device ID: e455a8067e54
+  IP address: 10.5.117.252
+Device ID: AD3-00-DIS.iith.ac.in
+  IP address: 10.5.116.1
+  IP address: 10.5.116.1
+Device ID: e455a8067d57
+  IP address: 10.5.117.102
+Device ID: e455a8063a30
+  IP address: 10.5.117.150
+Device ID: AD3-00-DIS.iith.ac.in
+  IP address: 10.5.116.1
+  IP address: 10.5.116.1

@@ -1,0 +1,56 @@
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Te1/0/2, Te1/0/8, Te1/0/9, Te1/0/10, Te1/0/11, Te1/0/12, Te2/0/8, Te2/0/9, Te2/0/10, Te2/0/11, Te2/0/12
+600  VLAN0600                         active    
+601  VLAN0601                         active    
+602  VLAN0602                         active    
+603  VLAN0603                         active    
+604  VLAN0604                         active    
+605  VLAN0605                         active    
+606  VLAN0606                         active    
+607  VLAN0607                         active    
+608  VLAN0608                         active    
+609  VLAN0609                         active    
+615  VLAN0615                         active    
+616  VLAN0616                         active    
+617  VLAN0617                         active    
+618  VLAN0618                         active    
+1002 fddi-default                     act/unsup 
+1003 trcrf-default                    act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trbrf-default                    act/unsup 
+
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+1    enet  100001     1500  -      -      -        -    -        0      0   
+600  enet  100600     1500  -      -      -        -    -        0      0   
+601  enet  100601     1500  -      -      -        -    -        0      0   
+602  enet  100602     1500  -      -      -        -    -        0      0   
+603  enet  100603     1500  -      -      -        -    -        0      0   
+604  enet  100604     1500  -      -      -        -    -        0      0   
+605  enet  100605     1500  -      -      -        -    -        0      0   
+606  enet  100606     1500  -      -      -        -    -        0      0   
+607  enet  100607     1500  -      -      -        -    -        0      0   
+608  enet  100608     1500  -      -      -        -    -        0      0   
+609  enet  100609     1500  -      -      -        -    -        0      0   
+615  enet  100615     1500  -      -      -        -    -        0      0   
+616  enet  100616     1500  -      -      -        -    -        0      0   
+617  enet  100617     1500  -      -      -        -    -        0      0   
+618  enet  100618     1500  -      -      -        -    -        0      0   
+1002 fddi  101002     1500  -      -      -        -    -        0      0   
+1003 trcrf 101003     4472  1005   3276   -        -    srb      0      0   
+1004 fdnet 101004     1500  -      -      -        ieee -        0      0   
+1005 trbrf 101005     4472  -      -      15       ibm  -        0      0   
+
+
+VLAN AREHops STEHops Backup CRF
+---- ------- ------- ----------
+1003 7       7       off
+
+Remote SPAN VLANs
+------------------------------------------------------------------------------
+
+
+Primary Secondary Type              Ports
+------- --------- ----------------- ------------------------------------------

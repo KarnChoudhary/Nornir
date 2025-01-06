@@ -1,0 +1,22 @@
+Device ID: e455a805ec18
+  IP address: 10.4.101.101
+Device ID: e455a80614ab
+  IP address: 10.4.101.106
+Device ID: e455a8060f6e
+  IP address: 10.4.101.102
+Device ID: e455a8068912
+  IP address: 10.4.101.108
+Device ID: e455a8067ed4
+  IP address: 10.4.101.107
+Device ID: MSME-01-DISTRIBUTION.iith.ac.in
+  IP address: 10.4.100.1
+  IP address: 10.4.100.1
+Device ID: MSME-01-DISTRIBUTION.iith.ac.in
+  IP address: 10.4.100.1
+  IP address: 10.4.100.1
+Device ID: e455a805dac1
+  IP address: 10.4.101.104
+Device ID: e455a80604d5
+  IP address: 10.4.101.103
+Device ID: e455a80606c5
+  IP address: 10.4.101.105
