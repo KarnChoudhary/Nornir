@@ -6760,3 +6760,4 @@ nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
 
 2024-12-24 15:51:21,064 -  nornir.core -     INFO -        run() - Running task 'get_fiber_power_level' with args {} on 212 hosts
 2024-12-24 15:56:30,885 -  nornir.core -     INFO -        run() - Running task 'get_fiber_power_level' with args {} on 211 hosts
+2025-01-21 09:45:40,686 -  nornir.core -     INFO -        run() - Running task 'get_fiber_power_level' with args {} on 212 hosts

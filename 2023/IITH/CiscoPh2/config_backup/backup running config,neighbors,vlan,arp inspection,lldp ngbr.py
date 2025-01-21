@@ -7,8 +7,11 @@ from nornir_netmiko.tasks import netmiko_send_command
 # Initialize Nornir with the inventory
 nr = InitNornir(config_file="config.yaml")
 
+# Base directory for backups
+base_backup_dir = "/home/kali/Desktop/Nornir/2023/IITH/CiscoPh2/config_backup/backup"
+
 # Create folders with the current date and time
-backup_dir = datetime.now().strftime("%Y-%m-%d")
+backup_dir = os.path.join(base_backup_dir, datetime.now().strftime("%Y-%m-%d"))
 os.makedirs(backup_dir, exist_ok=True)
 arp_inspection_dir = os.path.join(backup_dir, "arp_inspection")
 cdp_neighbors_dir = os.path.join(backup_dir, "cdp_neighbors")
