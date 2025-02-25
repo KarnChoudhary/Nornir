@@ -94,6 +94,25 @@ def remove_existing_users(task):
         logging.error(f"Exception while removing users on {task.host.name}: {str(e)}")
         raise
 
+def save_config(task):
+    """Save the running configuration"""
+    try:
+        result = task.run(
+            task=netmiko_send_command,
+            command_string="write memory",
+            read_timeout=30
+        )
+        
+        if result[0].failed:
+            logging.error(f"Failed to save configuration on {task.host.name}")
+        else:
+            logging.info(f"Successfully saved configuration on {task.host.name}")
+            
+        return result
+    except Exception as e:
+        logging.error(f"Exception while saving configuration on {task.host.name}: {str(e)}")
+        raise
+
 def main():
     try:
         # Create new users first
@@ -104,6 +123,11 @@ def main():
         # Then remove existing users except the ones we just created
         print("Removing other existing users...")
         result = nr.run(task=remove_existing_users)
+        print_result(result)
+        
+        # Save the configuration
+        print("Saving configuration...")
+        result = nr.run(task=save_config)
         print_result(result)
         
         print("Operations completed successfully")

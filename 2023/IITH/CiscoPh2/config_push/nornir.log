@@ -117,3 +117,11 @@ nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_config (failed)
 2025-02-25 14:48:44,086 -  nornir.core -  WARNING -        run() - Task 'remove_existing_users' has not been run – 0 hosts selected
 2025-02-25 14:49:55,274 -  nornir.core -     INFO -        run() - Running task 'create_users' with args {} on 1 hosts
 2025-02-25 14:49:56,567 -  nornir.core -     INFO -        run() - Running task 'remove_existing_users' with args {} on 1 hosts
+2025-02-25 14:53:11,739 -  nornir.core -     INFO -        run() - Running task 'create_users' with args {} on 1 hosts
+2025-02-25 14:53:12,918 -  nornir.core -     INFO -        run() - Running task 'remove_existing_users' with args {} on 1 hosts
+2025-02-25 14:53:15,531 -  nornir.core -     INFO -        run() - Running task 'save_config' with args {} on 1 hosts
+2025-02-25 14:55:33,427 -  nornir.core -     INFO -        run() - Running task 'create_users' with args {} on 1 hosts
+2025-02-25 14:55:34,504 -  nornir.core -     INFO -        run() - Running task 'remove_existing_users' with args {} on 1 hosts
+2025-02-25 14:55:41,826 -  nornir.core -     INFO -        run() - Running task 'save_config' with args {} on 1 hosts
+2025-02-25 15:32:33,014 -  nornir.core -     INFO -        run() - Running task 'configure_console_line' with args {} on 1 hosts
+2025-02-25 15:32:33,659 -  nornir.core -     INFO -        run() - Running task 'save_config' with args {} on 1 hosts

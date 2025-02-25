@@ -1,7 +1,7 @@
-RCC-R2-4F-SWITCH:
+RCC-R1-4F-SWITCH:
   groups:
   - cisco
-  hostname: 10.4.112.109
-  password: new_password
-  username: new_user
+  hostname: 10.4.112.110
+  password: RCC@IITH2022
+  username: iith
   session_log: "netmiko_debug.log"

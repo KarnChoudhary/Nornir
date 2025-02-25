@@ -12,3 +12,23 @@
 2025-02-25 14:49:56,302 - INFO - Successfully created user test1 on RCC-R2-4F-SWITCH
 2025-02-25 14:49:56,565 - INFO - Successfully created user test2 on RCC-R2-4F-SWITCH
 2025-02-25 14:49:59,312 - INFO - Successfully removed user new_user on RCC-R2-4F-SWITCH
+2025-02-25 14:53:11,744 - INFO - Connected (version 1.99, client Cisco-1.25)
+2025-02-25 14:53:12,024 - INFO - Authentication (password) successful!
+2025-02-25 14:53:12,507 - INFO - Successfully created user admin on RCC-R1-4F-SWITCH
+2025-02-25 14:53:12,696 - INFO - Successfully created user operator on RCC-R1-4F-SWITCH
+2025-02-25 14:53:12,917 - INFO - Successfully created user readonly on RCC-R1-4F-SWITCH
+2025-02-25 14:53:15,530 - INFO - Successfully removed user iith on RCC-R1-4F-SWITCH
+2025-02-25 14:53:15,995 - INFO - Successfully saved configuration on RCC-R1-4F-SWITCH
+2025-02-25 14:55:33,432 - INFO - Connected (version 1.99, client Cisco-1.25)
+2025-02-25 14:55:33,716 - INFO - Authentication (password) successful!
+2025-02-25 14:55:34,127 - INFO - Successfully created user iith on RCC-R1-4F-SWITCH
+2025-02-25 14:55:34,325 - INFO - Successfully created user test1 on RCC-R1-4F-SWITCH
+2025-02-25 14:55:34,503 - INFO - Successfully created user test2 on RCC-R1-4F-SWITCH
+2025-02-25 14:55:37,121 - INFO - Successfully removed user admin on RCC-R1-4F-SWITCH
+2025-02-25 14:55:39,434 - INFO - Successfully removed user operator on RCC-R1-4F-SWITCH
+2025-02-25 14:55:41,825 - INFO - Successfully removed user readonly on RCC-R1-4F-SWITCH
+2025-02-25 14:55:42,247 - INFO - Successfully saved configuration on RCC-R1-4F-SWITCH
+2025-02-25 15:32:33,018 - INFO - Connected (version 1.99, client Cisco-1.25)
+2025-02-25 15:32:33,297 - INFO - Authentication (password) successful!
+2025-02-25 15:32:33,657 - INFO - Successfully configured console line on RCC-R1-4F-SWITCH
+2025-02-25 15:32:34,107 - INFO - Successfully saved configuration on RCC-R1-4F-SWITCH
