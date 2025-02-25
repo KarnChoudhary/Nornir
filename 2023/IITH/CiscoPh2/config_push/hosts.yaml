@@ -1,0 +1,7 @@
+RCC-R2-4F-SWITCH:
+  groups:
+  - cisco
+  hostname: 10.4.112.109
+  password: new_password
+  username: new_user
+  session_log: "netmiko_debug.log"
