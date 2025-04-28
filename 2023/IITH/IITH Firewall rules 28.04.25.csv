@@ -1,0 +1,598 @@
+Policy,Source,Destination,Schedule,Service,Action,IP Pool,NAT,Type,Security Profiles,Log,Bytes
+,,,,,,,,,,,
+port28(DMZ) to port27(LAN),,,,,,,,,,,
+96,192.168.36.58/32,"192.168.161.42
+192.168.161.64/32",always,ALL,ACCEPT,,Disabled,Standard,NO,All,0 B
+31,"192.168.35.0/24
+192.168.36.0/24","10.1.0.0 255.255.240.0
+10.10.0.0 /255.255.192.0
+172.16.0.0/255.240.0.0
+192.168.0.0 255.255.0.0",always,ALL,ACCEPT,,Disabled,Standard,"AV
+NO
+protect_client",All,1.48 TB
+3,all,all,always,ALL,ACCEPT,,Disabled,Standard,"g-default
+NO
+protect_client",All,163.71 GB
+,,,,,,,,,,,
+port28(DMZ) to virtual-wan-link,,,,,,,,,,,
+129,192.168.36.53/32,all,always,ALL,ACCEPT,,NAT,Standard,no-inspection,All,0 B
+53,192.168.36.5,all,always,DNS,ACCEPT,,NAT,Standard,"AV
+certificate-inspection
+protect_client",All,31.15 GB
+111,EXAM-APP-Server,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.40,NAT,Standard,"certificate-inspection
+g-default
+protect_client",All,372.42 MB
+110,ERP,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.38,NAT,Standard,"certificate-inspection
+g-default
+protect_client",All,851.73 MB
+108,192.168.36.150/32,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.6,NAT,Standard,"certificate-inspection
+g-default
+protect_client",All,0 B
+107,192.168.36.25/32,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.25,NAT,Standard,"certificate-inspection
+g-default
+protect_client",All,7.19 GB
+106,192.168.36.52/32,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.13,NAT,Standard,"certificate-inspection
+g-default
+protect_client",All,341.09 MB
+105,192.168.36.53/32,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.12,NAT,Standard,"certificate-inspection
+g-default
+protect_client",All,58.23 GB
+104,192.168.36.55/32,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.55,NAT,Standard,"certificate-inspection
+g-default
+protect_client",All,26.95 MB
+103,192.168.36.56/32,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.56,NAT,Standard,"certificate-inspection
+g-default
+protect_client",All,126.64 MB
+102,192.168.36.57/32,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.57,NAT,Standard,"certificate-inspection
+g-default
+protect_client",All,7.42 MB
+101,192.168.36.59/32,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.26,NAT,Standard,"certificate-inspection
+g-default
+protect_client",All,315.39 MB
+100,192.168.36.60/32,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.60,NAT,Standard,"certificate-inspection
+g-default
+protect_client",All,0 B
+99,192.168.36.64/32,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.24,NAT,Standard,"certificate-inspection
+g-default
+protect_client",All,255.16 MB
+DMZ_TO_LAN (4),all,all,always,ALL,ACCEPT,,NAT,Standard,certificate-inspection,All,11.7 TB
+,,,,,,,,,,,
+port27(LAN) to port28(DMZ),,,,,,,,,,,
+89,"192.168.161.42
+192.168.161.64/32",192.168.36.58/32,always,ALL,ACCEPT,,Disabled,Standard,NO,All,0 B
+47,all,"192.168.35.52/32
+192.168.36.53/32",always,ALL,ACCEPT,,Disabled,Standard,NO,All,881.06 GB
+30,"10.1.0.0 255.255.240.0
+10.10.0.0 /255.255.192.0
+172.16.0.0/255.240.0.0
+192.168.0.0 255.255.0.0","192.168.35.0/24
+192.168.36.0/24",always,ALL,ACCEPT,,Disabled,Standard,"AV
+NO
+protect_client",All,571.87 GB
+LAN_TO_DMZ (2),all,all,always,ALL,ACCEPT,,Disabled,Standard,"g-default
+NO
+protect_client",All,406.37 GB
+,,,,,,,,,,,
+port27(LAN) to virtual-wan-link,,,,,,,,,,,
+127,all,"165.225.120.0/23
+167.103.19.129/32
+hyd1.sme.zscalerthree.net",always,ALL,ACCEPT,,NAT,Standard,NO,All,186.79 GB
+meetings  (50),all,"Cisco-Web
+Cisco-Webex
+Cisco-Webex.FedRAMP
+Microsoft-Skype_Teams
+Zoom.us-Zoom.Meeting",always,,ACCEPT,,NAT,Standard,"g-default
+NO
+protect_client",All,6.5 TB
+38,192.168.126.9,"103.78.148.208
+152.66.245.139",always,"IMAP
+SSH
+TCP- 4789-UDP",ACCEPT,,NAT,Standard,"AV
+certificate-inspection
+protect_client",All,0 B
+37,all,14.139.150.69,always,UDP-1194,ACCEPT,,NAT,Standard,"AV
+certificate-inspection
+protect_client",All,0 B
+test2 (121),172.18.135.35,all,always,"UDP-1194
+IMAP",ACCEPT,,NAT,Standard,"AV
+certificate-inspection
+protect_client",All,0 B
+36,"10.1.11.0/24
+10.1.4.0/32
+10.1.5.1-10.1.5.254",all,always,TCP-5766,ACCEPT,,NAT,Standard,"AV
+certificate-inspection
+protect_client",All,272.53 MB
+35,"10.2.0.0/16
+172.22.82.0/255.255.254.0",all,always,"TCP-51821
+UDP-51820",ACCEPT,,NAT,Standard,"certificate-inspection
+g-default
+protect_client",All,154.11 GB
+34,all,20.197.62.212/32,always,TCP_1718,ACCEPT,,NAT,Standard,"AV
+certificate-inspection
+protect_client",All,2.18 kB
+33,"10.2.32.0 /255.255.224.0
+192.168.64.0/255.255.254.0",74.255.165.194,always,TCP_1718-UDP,ACCEPT,,NAT,Standard,"AV
+certificate-inspection
+protect_client",All,0 B
+41,192.168.64.0/255.255.254.0,14.139.1.122/32,always,TCP_1717,ACCEPT,,NAT,Standard,"AV
+certificate-inspection
+protect_client",All,0 B
+40,all,external.serc.iisc.ac.in,always,ALL,ACCEPT,,NAT,Standard,"certificate-inspection
+g-default
+protect_client",All,0 B
+39,192.168.16.0/24,14.139.1.126/32,always,14.139.1.126/32-TCp,ACCEPT,,NAT,Standard,"AV
+certificate-inspection
+protect_client",All,1.26 GB
+32,all,14.139.1.126,always,TCP 27009,ACCEPT,,NAT,Standard,no-inspection,All,189.47 MB
+44,all,103.251.184.2/32,always,TCP10443,ACCEPT,,NAT,Standard,"AV
+certificate-inspection
+protect_client",All,94.84 kB
+43,all,"acds.neist.res.in
+mpds.neist.res.in",always,TCP-8081-8087,ACCEPT,,NAT,Standard,"AV
+certificate-inspection
+protect_client",All,0 B
+42,all,imsindia.com,always,TCP-5049-5056,ACCEPT,,NAT,Standard,"certificate-inspection
+g-default
+protect_client",All,0 B
+45,all,vpn.iitd.ac.in,always,UDP_1194_1,ACCEPT,,NAT,Standard,"AV
+certificate-inspection
+protect_client",All,0 B
+Full_Access_IPS (49),Full_Access,all,always,ALL,ACCEPT,,NAT,Standard,"AV
+certificate-inspection
+protect_client",All,113.07 GB
+98,192.168.126.2/32,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.179,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,0 B
+97,192.168.16.150/32,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.75,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,1.79 MB
+95,192.168.16.151/32,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.35,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,53.21 MB
+94,192.168.16.163,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.74,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,0 B
+93,"192.168.161.39
+192.168.161.53/32",all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.168,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,1.38 GB
+92,192.168.162.161/32,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.161,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,214.63 MB
+91,192.168.162.79/32,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.79,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,0 B
+109,192.168.167.90/32,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.90,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,0 B
+120,10.6.160.39-scholarship,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.114,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,0 B
+119,172.18.128.27-Ragutest,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.173,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,364.04 MB
+118,Central-Ground-water-Board-machine,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.131,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,597.36 MB
+117,192.168.41.34/32,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.156,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,11.01 TB
+116,192.168.41.35/32,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.157,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,0 B
+115,10.3.0.0/255.255.224.0,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.223,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,96.33 GB
+114,10.49.102.0/24,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.165,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,31.63 TB
+113,172.18.110.0/Acard-C-PHD-Wifi,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.186,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,0 B
+112,Acard-C-3-RD-floor,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.237,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,55.55 GB
+88,"AD3-LAN
+AD3-Wifi
+ADMIN-LAN
+DoD-LAN",all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.182,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,20.61 TB
+125,"AD3-Wifi
+DOD-WIFI",all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.181,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,4 TB
+124,BTBM-LAN,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.237,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,12.08 TB
+123,"CC_LAN_PHASE-2
+CC-LAN",all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.223,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,21.06 kB
+122,FT1-Temp,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.232,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,10.71 TB
+83,VC-3-FLR-RAGU,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.219,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,0 B
+81,192.168.36.63/32,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.16,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,0 B
+84,VC-Auditorium-RAgu,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.218,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,0 B
+56,Guest-Wifi-LAN,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.67,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,21.01 TB
+57,Hostel-A-block,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.241,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,18.37 TB
+58,Hostel-B-Block,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.242,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,9.81 TB
+59,Hostel-c-Block,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.243,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,28.41 TB
+60,Hostel-D-Block,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.244,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,26.28 TB
+61,Hostel-E-Block,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.245,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,17.42 TB
+Hostel-F-Block (62),Hostel-F-Block,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.246,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,31.83 TB
+Hostel-G-Block (63),Hostel-G-Block,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.247,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,24.29 TB
+Hostel-H-Block (64),Hostel-H-Block,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.248,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,25.8 TB
+Hostel-I-Block (65),Hostel-I-Block,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.249,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,13.16 TB
+Hostel-J-Block (66),Hostel-J-Block,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.250,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,19.73 TB
+Hostel-PCH-A-block-2020 (67),"Hostel-PCH-A-block-2020
+Hostel-PCH-B-block-2020",all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.189,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,90.83 GB
+Hostel-J-LAN-Ramanujal (68),Hostel-J-LAN-Ramanujal,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.234,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,56.01 TB
+69,"Hostel-K-Wing-A
+Hostel-K-Wing-B
+Hostel-M-B-Wing
+Hostel-P-Block
+Hostel-P1-
+Hostel-Q-A-Wing
+Hostel-Q-B-Wing
+Raman-A-Wing
+Raman-b-Wing
+Residence-FT2
+ST2-IITH",all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.235,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,206.88 TB
+Hostel-L-Block (70),Hostel-L-Block,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.236,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,29.93 TB
+Hostel-M-Block (71),Hostel-M-Block,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.166,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,26.85 TB
+Hostel-N-Block (72),Hostel-N-Block,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.238,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,32.18 TB
+128,172.18.137.220/32,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.226,NAT,Standard,"AV
+certificate-inspection
+Full_Access
+Full_Access
+protect_client",All,0 B
+73,"Kandi-Acad
+Kandi-campus",all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.226,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,35.82 TB
+74,"KNC-LAN
+MSH-LAN
+RCC-LAN",all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.231,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,12.4 TB
+VLAN-20 (79),VLAN-20,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.246,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,516.87 GB
+75,LAN,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.72,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,10.64 TB
+76,MSME-LAN,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.237,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,1.41 TB
+WIFI-Faculty-A_block (78),WIFI-Faculty-A_block,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.184,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,286.36 GB
+WIFI (77),WIFI,all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.199,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,130.44 TB
+80,"SCIent-LAN_&_MGMT
+SCIENT-WIFI",all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.239,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,576.05 GB
+82,"SNCC_WIFI
+SNCC-LAN",all,always,Camps_LAN_Service _Group,ACCEPT,103.232.241.223,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,0 B
+85,all,all,always,Camps_LAN_Service _Group,ACCEPT,,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,0 B
+86,all,all,always,Camps_LAN_Service _Group,ACCEPT,,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,0 B
+87,all,all,always,Camps_LAN_Service _Group,ACCEPT,,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,0 B
+126,10.9.16.61,14.139.1.126/32,always,"2100
+2101
+5280
+5281
+TCP-1717
+TCP-27020
+TCP-27021
+TCP_1718
+36162
+Camps_LAN_Service _Group",ACCEPT,,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+g-default",All,60.86 MB
+LAN_WAN (1),all,all,always,Camps_LAN_Service _Group,ACCEPT,,NAT,Standard,"certificate-inspection
+Full_Access
+Full_Access
+g-default
+protect_client",All,175.76 TB
+,,,,,,,,,,,
+ssl.root(SSL VPN Tunnel interface) to port28(DMZ),,,,,,,,,,,
+SSLVPN_TO_DMZ (6),"all
+SSL_VPN",all,always,ALL,ACCEPT,,Disabled,Standard,"g-default
+NO
+protect_client",All,0 B
+,,,,,,,,,,,
+ssl.root(SSL VPN Tunnel interface) to port27(LAN),,,,,,,,,,,
+SSLVPN_TO_LAN (5),"all
+SSL_VPN",all,always,ALL,ACCEPT,,Disabled,Standard,"g-default
+NO
+protect_client",All,0 B
+,,,,,,,,,,,
+Virtual-wan-link to port28(DMZ),,,,,,,,,,,
+103.232.241.38 (10),all,192.168.36.74,always,"HTTP
+HTTPS",ACCEPT,,Disabled,Standard,"g-default
+NO
+protect_client",All,155.95 MB
+103.232.241.25 (11),all,192.168.36.25,always,"HTTP
+HTTPS
+IMAP
+IMAPS
+POP3
+POP3S
+SMTP
+TCP_587",ACCEPT,,Disabled,Standard,"g-default
+NO
+protect_client",All,3.13 GB
+103.232.241.26 (12),all,192.168.36.59,always,"HTTP
+HTTPS",ACCEPT,,Disabled,Standard,"g-default
+NO
+protect_client",All,20.12 GB
+103.232.241.24 (13),all,192.168.36.64,always,"ALL_ICMP
+RADIUS
+UDP_1814",ACCEPT,,Disabled,Standard,"AV
+NO
+protect_client",All,504.97 MB
+103.232.241.40 (15),all,192.168.36.40,always,"103.232.241.40
+HTTP
+HTTPS",ACCEPT,,Disabled,Standard,"AV
+NO
+protect_client",All,15.79 GB
+218.248.6.137 (17),all,192.168.35.50,always,HTTP,ACCEPT,,Disabled,Standard,"AV
+NO
+protect_client",All,0 B
+18,all,"192.168.35.57
+192.168.36.55
+192.168.36.57",always,"HTTP
+HTTPS
+TCP-2048
+TCP-22133
+TCP_4443
+TCP_8443
+UDP-2048,4443",ACCEPT,,Disabled,Standard,"AV
+NO
+protect_client",All,857.76 GB
+55,all,192.168.36.52,always,"103.232.241.13_TCP
+HTTP
+HTTPS",ACCEPT,,Disabled,Standard,no-inspection,All,978.16 GB
+103.232.241.13 (20),"182.73.141.146/32
+210.210.24.69/32
+210.210.24.71/32
+210.210.24.75/32
+223.30.150.150/32
+223.30.150.155/32",192.168.36.52,always,TCP-17724,ACCEPT,,Disabled,Standard,"AV
+NO
+protect_client",All,0 B
+21,all,192.168.36.53,always,UDP,ACCEPT,,Disabled,Standard,"AV
+NO
+protect_client",All,2.94 GB
+22,all,192.168.36.63-Wire-Guard-vpn,always,"SSH
+UDP-51820",ACCEPT,,Disabled,Standard,"g-default
+NO
+protect_client",All,1.55 TB
+25,all,192.168.136.17_443,always,TCP-443,ACCEPT,,Disabled,Standard,"AV
+NO
+protect_client",All,0 B
+26,all,192.168.16.150-TCP_1717,always,TCP-1717,ACCEPT,,Disabled,Standard,"AV
+NO
+protect_client",All,0 B
+27,all,192.168.16.150-TCP_1718,always,TCP-1718,ACCEPT,,Disabled,Standard,"AV
+NO
+protect_client",All,0 B
+28,all,192.168.88.31_27020,always,TCP-27020,ACCEPT,,Disabled,Standard,"AV
+NO
+protect_client",All,0 B
+29,all,192.168.88.31_27021,always,TCP-27021,ACCEPT,,Disabled,Standard,"AV
+NO
+protect_client",All,0 B
+54,all,192.168.36.56,always,"HTTP
+HTTPS",ACCEPT,,Disabled,Standard,"AV
+NO
+protect_client",All,804.33 GB
+,,,,,,,,,,,
+Virtual-wan-link to port27(LAN),,,,,,,,,,,
+7,all,192.168.78.241,always,"103.232.241.118_Service
+SSH",ACCEPT,,Disabled,Standard,"g-default
+NO
+protect_client",All,801.26 MB
+103.232.241.205 (8),all,10.6.2.10,always,ALL,ACCEPT,,Disabled,Standard,"AV
+NO
+protect_client",All,30.81 MB
+103.232.241.35 (9),all,103.232.241.35,always,"103.232.241.35
+ALL_ICMP",ACCEPT,,Disabled,Standard,"AV
+NO
+protect_client",All,2.53 GB
+103.232.241.31 (14),all,192.168.74.21,always,UDP_1194,ACCEPT,,Disabled,Standard,"AV
+NO
+protect_client",All,10.03 kB
+103.232.241.90 (16),all,192.168.167.90,always,"103.232.241.90
+FTP
+HTTP
+HTTPS
+SSH",ACCEPT,,Disabled,Standard,"AV
+NO
+protect_client",All,2.21 MB
+218.248.6.157 (19),all,192.168.0.38,always,"HTTP
+HTTPS",ACCEPT,,Disabled,Standard,"AV
+NO
+protect_client",All,0 B
+23,all,192.168.167.151,always,"HTTP
+HTTPS",ACCEPT,,Disabled,Standard,"AV
+NO
+protect_client",All,294.91 GB
+24,all,"192.168.41.34
+192.168.41.35",always,"HTTP
+HTTPS
+TCP-1256
+TCP-1257
+TCP-4422
+TCP-4466
+TCP-8443
+TCP_4200
+TCP_4781-4790
+TCP_8096",ACCEPT,,Disabled,Standard,"AV
+NO
+protect_client",All,1.29 TB
+,,,,,,,,,,,
+Implicit,,,,,,,,,,,
+implicit_deny (0),all,all,always,ALL,DENY,,,,,Disabled,934.02 MB
