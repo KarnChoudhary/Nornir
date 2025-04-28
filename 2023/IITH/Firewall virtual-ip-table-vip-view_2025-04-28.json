@@ -1,0 +1,380 @@
+[
+  {
+    "Name": [
+      "192.168.16.150-TCP_1717"
+    ],
+    "Interface": [
+      "NKN (port25)"
+    ],
+    "Mapped From": "103.232.241.154",
+    "Mapped To": [
+      "192.168.16.150"
+    ],
+    "Hit Count": 443239,
+    "Ref.": 1
+  },
+  {
+    "Name": [
+      "192.168.16.150-TCP_1718"
+    ],
+    "Interface": [
+      "NKN (port25)"
+    ],
+    "Mapped From": "103.232.241.154",
+    "Mapped To": [
+      "192.168.16.150"
+    ],
+    "Hit Count": 17,
+    "Ref.": 1
+  },
+  {
+    "Name": [
+      "192.168.88.31_27020"
+    ],
+    "Interface": [
+      "NKN (port25)"
+    ],
+    "Mapped From": "103.232.241.154",
+    "Mapped To": [
+      "192.168.88.31"
+    ],
+    "Hit Count": 103,
+    "Ref.": 1
+  },
+  {
+    "Name": [
+      "192.168.88.31_27021"
+    ],
+    "Interface": [
+      "NKN (port25)"
+    ],
+    "Mapped From": "103.232.241.154",
+    "Mapped To": [
+      "192.168.88.31"
+    ],
+    "Hit Count": 3,
+    "Ref.": 1
+  },
+  {
+    "Name": [
+      "192.168.136.17_443"
+    ],
+    "Interface": [
+      "NKN (port25)"
+    ],
+    "Mapped From": "103.232.241.154",
+    "Mapped To": [
+      "192.168.136.17"
+    ],
+    "Hit Count": 2640,
+    "Ref.": 1
+  },
+  {
+    "Name": [
+      "192.168.78.241"
+    ],
+    "Interface": [
+      "NKN (port25)"
+    ],
+    "Mapped From": "103.232.241.118",
+    "Mapped To": [
+      "192.168.78.241"
+    ],
+    "Hit Count": 760695,
+    "Ref.": 1
+  },
+  {
+    "Name": [
+      "10.6.2.10"
+    ],
+    "Interface": [
+      "NKN (port25)"
+    ],
+    "Mapped From": "103.232.241.205",
+    "Mapped To": [
+      "10.6.2.10"
+    ],
+    "Hit Count": 603915,
+    "Ref.": 1
+  },
+  {
+    "Name": [
+      "192.168.36.74"
+    ],
+    "Interface": [
+      "NKN (port25)"
+    ],
+    "Mapped From": "103.232.241.38",
+    "Mapped To": [
+      "192.168.36.74"
+    ],
+    "Hit Count": 804282,
+    "Ref.": 1
+  },
+  {
+    "Name": [
+      "192.168.36.25"
+    ],
+    "Interface": [
+      "NKN (port25)"
+    ],
+    "Mapped From": "103.232.241.25",
+    "Mapped To": [
+      "192.168.36.25"
+    ],
+    "Hit Count": 1389991,
+    "Ref.": 1
+  },
+  {
+    "Name": [
+      "192.168.36.59"
+    ],
+    "Interface": [
+      "NKN (port25)"
+    ],
+    "Mapped From": "103.232.241.26",
+    "Mapped To": [
+      "192.168.36.59"
+    ],
+    "Hit Count": 938898,
+    "Ref.": 1
+  },
+  {
+    "Name": [
+      "192.168.36.64"
+    ],
+    "Interface": [
+      "NKN (port25)"
+    ],
+    "Mapped From": "103.232.241.24",
+    "Mapped To": [
+      "192.168.36.64"
+    ],
+    "Hit Count": 1416515,
+    "Ref.": 1
+  },
+  {
+    "Name": [
+      "192.168.74.21"
+    ],
+    "Interface": [
+      "NKN (port25)"
+    ],
+    "Mapped From": "103.232.241.31",
+    "Mapped To": [
+      "192.168.74.21"
+    ],
+    "Hit Count": 547033,
+    "Ref.": 1
+  },
+  {
+    "Name": [
+      "192.168.36.40"
+    ],
+    "Interface": [
+      "NKN (port25)"
+    ],
+    "Mapped From": "103.232.241.40",
+    "Mapped To": [
+      "192.168.36.40"
+    ],
+    "Hit Count": 1078607,
+    "Ref.": 1
+  },
+  {
+    "Name": [
+      "192.168.167.90"
+    ],
+    "Interface": [
+      "NKN (port25)"
+    ],
+    "Mapped From": "103.232.241.90",
+    "Mapped To": [
+      "192.168.167.90"
+    ],
+    "Hit Count": 546505,
+    "Ref.": 1
+  },
+  {
+    "Name": [
+      "192.168.35.50"
+    ],
+    "Interface": [
+      "NKN (port25)"
+    ],
+    "Mapped From": "218.248.6.137",
+    "Mapped To": [
+      "192.168.35.50"
+    ],
+    "Hit Count": 0,
+    "Ref.": 1
+  },
+  {
+    "Name": [
+      "192.168.35.57"
+    ],
+    "Interface": [
+      "NKN (port25)"
+    ],
+    "Mapped From": "218.248.6.152",
+    "Mapped To": [
+      "192.168.35.57"
+    ],
+    "Hit Count": 0,
+    "Ref.": 1
+  },
+  {
+    "Name": [
+      "192.168.36.57"
+    ],
+    "Interface": [
+      "NKN (port25)"
+    ],
+    "Mapped From": "103.232.241.57",
+    "Mapped To": [
+      "192.168.36.57"
+    ],
+    "Hit Count": 1085089,
+    "Ref.": 1
+  },
+  {
+    "Name": [
+      "192.168.36.55"
+    ],
+    "Interface": [
+      "NKN (port25)"
+    ],
+    "Mapped From": "103.232.241.55",
+    "Mapped To": [
+      "192.168.36.55"
+    ],
+    "Hit Count": 2198151,
+    "Ref.": 1
+  },
+  {
+    "Name": [
+      "192.168.0.38"
+    ],
+    "Interface": [
+      "NKN (port25)"
+    ],
+    "Mapped From": "218.248.6.157",
+    "Mapped To": [
+      "192.168.0.38"
+    ],
+    "Hit Count": 0,
+    "Ref.": 1
+  },
+  {
+    "Name": [
+      "192.168.36.52"
+    ],
+    "Interface": [
+      "NKN (port25)"
+    ],
+    "Mapped From": "103.232.241.13",
+    "Mapped To": [
+      "192.168.36.52"
+    ],
+    "Hit Count": 9006000,
+    "Ref.": 2
+  },
+  {
+    "Name": [
+      "192.168.36.53"
+    ],
+    "Interface": [
+      "NKN (port25)"
+    ],
+    "Mapped From": "103.232.241.12",
+    "Mapped To": [
+      "192.168.36.53"
+    ],
+    "Hit Count": 17823861,
+    "Ref.": 1
+  },
+  {
+    "Name": [
+      "192.168.36.63-Wire-Guard-vpn"
+    ],
+    "Interface": [
+      "NKN (port25)"
+    ],
+    "Mapped From": "103.232.241.16",
+    "Mapped To": [
+      "192.168.36.63"
+    ],
+    "Hit Count": 2490042,
+    "Ref.": 1
+  },
+  {
+    "Name": [
+      "192.168.167.151"
+    ],
+    "Interface": [
+      "NKN (port25)"
+    ],
+    "Mapped From": "103.232.241.131",
+    "Mapped To": [
+      "192.168.167.151"
+    ],
+    "Hit Count": 998047,
+    "Ref.": 1
+  },
+  {
+    "Name": [
+      "192.168.41.34"
+    ],
+    "Interface": [
+      "NKN (port25)"
+    ],
+    "Mapped From": "103.232.241.156",
+    "Mapped To": [
+      "192.168.41.34"
+    ],
+    "Hit Count": 617722,
+    "Ref.": 1
+  },
+  {
+    "Name": [
+      "192.168.41.35"
+    ],
+    "Interface": [
+      "NKN (port25)"
+    ],
+    "Mapped From": "103.232.241.157",
+    "Mapped To": [
+      "192.168.41.35"
+    ],
+    "Hit Count": 546700,
+    "Ref.": 1
+  },
+  {
+    "Name": [
+      "103.232.241.35"
+    ],
+    "Interface": [
+      "NKN (port25)"
+    ],
+    "Mapped From": "103.232.241.35",
+    "Mapped To": [
+      "192.168.16.151"
+    ],
+    "Hit Count": 15049779,
+    "Ref.": 1
+  },
+  {
+    "Name": [
+      "192.168.36.56"
+    ],
+    "Interface": [
+      "NKN (port25)"
+    ],
+    "Mapped From": "103.232.241.56",
+    "Mapped To": [
+      "192.168.36.56"
+    ],
+    "Hit Count": 7470590,
+    "Ref.": 1
+  }
+]
