@@ -1,0 +1,3705 @@
+[
+  {
+    "Policy": "96",
+    "Source": [
+      "192.168.36.58/32"
+    ],
+    "Destination": [
+      "192.168.161.42",
+      "192.168.161.64/32"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "ALL"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "Disabled",
+    "Type": "Standard",
+    "Security Profiles": [
+      "NO"
+    ],
+    "Log": "All",
+    "Bytes": "0 B",
+    "Interface Pair": "port28,port27"
+  },
+  {
+    "Policy": "31",
+    "Source": [
+      "192.168.35.0/24",
+      "192.168.36.0/24"
+    ],
+    "Destination": [
+      "10.1.0.0 255.255.240.0",
+      "10.10.0.0 /255.255.192.0",
+      "172.16.0.0/255.240.0.0",
+      "192.168.0.0 255.255.0.0"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "ALL"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "Disabled",
+    "Type": "Standard",
+    "Security Profiles": [
+      "AV",
+      "NO",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "1.48 TB",
+    "Interface Pair": "port28,port27"
+  },
+  {
+    "Policy": "3",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "ALL"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "Disabled",
+    "Type": "Standard",
+    "Security Profiles": [
+      "g-default",
+      "NO",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "163.83 GB",
+    "Interface Pair": "port28,port27"
+  },
+  {
+    "Policy": "129",
+    "Source": [
+      "192.168.36.53/32"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "ALL"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "no-inspection"
+    ],
+    "Log": "All",
+    "Bytes": "0 B",
+    "Interface Pair": "port28,virtual-wan-link"
+  },
+  {
+    "Policy": "53",
+    "Source": [
+      "192.168.36.5"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "DNS"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "AV",
+      "certificate-inspection",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "31.23 GB",
+    "Interface Pair": "port28,virtual-wan-link"
+  },
+  {
+    "Policy": "111",
+    "Source": [
+      "EXAM-APP-Server"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.40"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "372.44 MB",
+    "Interface Pair": "port28,virtual-wan-link"
+  },
+  {
+    "Policy": "110",
+    "Source": [
+      "ERP"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.38"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "851.73 MB",
+    "Interface Pair": "port28,virtual-wan-link"
+  },
+  {
+    "Policy": "108",
+    "Source": [
+      "192.168.36.150/32"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.6"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "0 B",
+    "Interface Pair": "port28,virtual-wan-link"
+  },
+  {
+    "Policy": "107",
+    "Source": [
+      "192.168.36.25/32"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.25"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "7.19 GB",
+    "Interface Pair": "port28,virtual-wan-link"
+  },
+  {
+    "Policy": "106",
+    "Source": [
+      "192.168.36.52/32"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.13"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "341.09 MB",
+    "Interface Pair": "port28,virtual-wan-link"
+  },
+  {
+    "Policy": "105",
+    "Source": [
+      "192.168.36.53/32"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.12"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "58.23 GB",
+    "Interface Pair": "port28,virtual-wan-link"
+  },
+  {
+    "Policy": "104",
+    "Source": [
+      "192.168.36.55/32"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.55"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "26.95 MB",
+    "Interface Pair": "port28,virtual-wan-link"
+  },
+  {
+    "Policy": "103",
+    "Source": [
+      "192.168.36.56/32"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.56"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "126.66 MB",
+    "Interface Pair": "port28,virtual-wan-link"
+  },
+  {
+    "Policy": "102",
+    "Source": [
+      "192.168.36.57/32"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.57"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "7.42 MB",
+    "Interface Pair": "port28,virtual-wan-link"
+  },
+  {
+    "Policy": "101",
+    "Source": [
+      "192.168.36.59/32"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.26"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "315.39 MB",
+    "Interface Pair": "port28,virtual-wan-link"
+  },
+  {
+    "Policy": "100",
+    "Source": [
+      "192.168.36.60/32"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.60"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "0 B",
+    "Interface Pair": "port28,virtual-wan-link"
+  },
+  {
+    "Policy": "99",
+    "Source": [
+      "192.168.36.64/32"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.24"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "255.42 MB",
+    "Interface Pair": "port28,virtual-wan-link"
+  },
+  {
+    "Policy": "DMZ_TO_LAN (4)",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "ALL"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection"
+    ],
+    "Log": "All",
+    "Bytes": "11.7 TB",
+    "Interface Pair": "port28,virtual-wan-link"
+  },
+  {
+    "Policy": "89",
+    "Source": [
+      "192.168.161.42",
+      "192.168.161.64/32"
+    ],
+    "Destination": [
+      "192.168.36.58/32"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "ALL"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "Disabled",
+    "Type": "Standard",
+    "Security Profiles": [
+      "NO"
+    ],
+    "Log": "All",
+    "Bytes": "0 B",
+    "Interface Pair": "port27,port28"
+  },
+  {
+    "Policy": "47",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "192.168.35.52/32",
+      "192.168.36.53/32"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "ALL"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "Disabled",
+    "Type": "Standard",
+    "Security Profiles": [
+      "NO"
+    ],
+    "Log": "All",
+    "Bytes": "881.92 GB",
+    "Interface Pair": "port27,port28"
+  },
+  {
+    "Policy": "30",
+    "Source": [
+      "10.1.0.0 255.255.240.0",
+      "10.10.0.0 /255.255.192.0",
+      "172.16.0.0/255.240.0.0",
+      "192.168.0.0 255.255.0.0"
+    ],
+    "Destination": [
+      "192.168.35.0/24",
+      "192.168.36.0/24"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "ALL"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "Disabled",
+    "Type": "Standard",
+    "Security Profiles": [
+      "AV",
+      "NO",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "572.42 GB",
+    "Interface Pair": "port27,port28"
+  },
+  {
+    "Policy": "LAN_TO_DMZ (2)",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "ALL"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "Disabled",
+    "Type": "Standard",
+    "Security Profiles": [
+      "g-default",
+      "NO",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "406.89 GB",
+    "Interface Pair": "port27,port28"
+  },
+  {
+    "Policy": "127",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "165.225.120.0/23",
+      "167.103.19.129/32",
+      "hyd1.sme.zscalerthree.net"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "ALL"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "NO"
+    ],
+    "Log": "All",
+    "Bytes": "186.79 GB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "meetings  (50)",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "Cisco-Web",
+      "Cisco-Webex",
+      "Cisco-Webex.FedRAMP",
+      "Microsoft-Skype_Teams",
+      "Zoom.us-Zoom.Meeting"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "g-default",
+      "NO",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "6.51 TB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "38",
+    "Source": [
+      "192.168.126.9"
+    ],
+    "Destination": [
+      "103.78.148.208",
+      "152.66.245.139"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "IMAP",
+      "SSH",
+      "TCP- 4789-UDP"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "AV",
+      "certificate-inspection",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "0 B",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "37",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "14.139.150.69"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "UDP-1194"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "AV",
+      "certificate-inspection",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "0 B",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "test2 (121)",
+    "Source": [
+      "172.18.135.35"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "UDP-1194",
+      "IMAP"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "AV",
+      "certificate-inspection",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "0 B",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "36",
+    "Source": [
+      "10.1.11.0/24",
+      "10.1.4.0/32",
+      "10.1.5.1-10.1.5.254"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "TCP-5766"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "AV",
+      "certificate-inspection",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "272.53 MB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "35",
+    "Source": [
+      "10.2.0.0/16",
+      "172.22.82.0/255.255.254.0"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "TCP-51821",
+      "UDP-51820"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "154.11 GB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "34",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "20.197.62.212/32"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "TCP_1718"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "AV",
+      "certificate-inspection",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "2.18 kB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "33",
+    "Source": [
+      "10.2.32.0 /255.255.224.0",
+      "192.168.64.0/255.255.254.0"
+    ],
+    "Destination": [
+      "74.255.165.194"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "TCP_1718-UDP"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "AV",
+      "certificate-inspection",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "0 B",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "41",
+    "Source": [
+      "192.168.64.0/255.255.254.0"
+    ],
+    "Destination": [
+      "14.139.1.122/32"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "TCP_1717"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "AV",
+      "certificate-inspection",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "0 B",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "40",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "external.serc.iisc.ac.in"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "ALL"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "0 B",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "39",
+    "Source": [
+      "192.168.16.0/24"
+    ],
+    "Destination": [
+      "14.139.1.126/32"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "14.139.1.126/32-TCp"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "AV",
+      "certificate-inspection",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "1.26 GB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "32",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "14.139.1.126"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "TCP 27009"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "no-inspection"
+    ],
+    "Log": "All",
+    "Bytes": "189.76 MB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "44",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "103.251.184.2/32"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "TCP10443"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "AV",
+      "certificate-inspection",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "94.84 kB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "43",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "acds.neist.res.in",
+      "mpds.neist.res.in"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "TCP-8081-8087"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "AV",
+      "certificate-inspection",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "0 B",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "42",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "imsindia.com"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "TCP-5049-5056"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "0 B",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "45",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "vpn.iitd.ac.in"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "UDP_1194_1"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "AV",
+      "certificate-inspection",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "0 B",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "Full_Access_IPS (49)",
+    "Source": [
+      "Full_Access"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "ALL"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "AV",
+      "certificate-inspection",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "113.19 GB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "98",
+    "Source": [
+      "192.168.126.2/32"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.179"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "0 B",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "97",
+    "Source": [
+      "192.168.16.150/32"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.75"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "1.79 MB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "95",
+    "Source": [
+      "192.168.16.151/32"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.35"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "53.22 MB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "94",
+    "Source": [
+      "192.168.16.163"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.74"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "0 B",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "93",
+    "Source": [
+      "192.168.161.39",
+      "192.168.161.53/32"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.168"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "1.38 GB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "92",
+    "Source": [
+      "192.168.162.161/32"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.161"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "214.65 MB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "91",
+    "Source": [
+      "192.168.162.79/32"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.79"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "0 B",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "109",
+    "Source": [
+      "192.168.167.90/32"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.90"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "0 B",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "120",
+    "Source": [
+      "10.6.160.39-scholarship"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.114"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "0 B",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "119",
+    "Source": [
+      "172.18.128.27-Ragutest"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.173"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "364.04 MB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "118",
+    "Source": [
+      "Central-Ground-water-Board-machine"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.131"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "597.45 MB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "117",
+    "Source": [
+      "192.168.41.34/32"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.156"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "11.02 TB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "116",
+    "Source": [
+      "192.168.41.35/32"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.157"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "0 B",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "115",
+    "Source": [
+      "10.3.0.0/255.255.224.0"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.223"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "96.33 GB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "114",
+    "Source": [
+      "10.49.102.0/24"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.165"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "31.66 TB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "113",
+    "Source": [
+      "172.18.110.0/Acard-C-PHD-Wifi"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.186"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "0 B",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "112",
+    "Source": [
+      "Acard-C-3-RD-floor"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.237"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "55.63 GB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "88",
+    "Source": [
+      "AD3-LAN",
+      "AD3-Wifi",
+      "ADMIN-LAN",
+      "DoD-LAN"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.182"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "20.64 TB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "125",
+    "Source": [
+      "AD3-Wifi",
+      "DOD-WIFI"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.181"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "4.01 TB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "124",
+    "Source": [
+      "BTBM-LAN"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.237"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "12.14 TB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "123",
+    "Source": [
+      "CC_LAN_PHASE-2",
+      "CC-LAN"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.223"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "21.06 kB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "122",
+    "Source": [
+      "FT1-Temp"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.232"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "10.71 TB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "83",
+    "Source": [
+      "VC-3-FLR-RAGU"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.219"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "0 B",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "81",
+    "Source": [
+      "192.168.36.63/32"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.16"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "0 B",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "84",
+    "Source": [
+      "VC-Auditorium-RAgu"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.218"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "0 B",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "56",
+    "Source": [
+      "Guest-Wifi-LAN"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.67"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "21.02 TB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "57",
+    "Source": [
+      "Hostel-A-block"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.241"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "18.38 TB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "58",
+    "Source": [
+      "Hostel-B-Block"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.242"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "9.82 TB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "59",
+    "Source": [
+      "Hostel-c-Block"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.243"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "28.43 TB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "60",
+    "Source": [
+      "Hostel-D-Block"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.244"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "26.29 TB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "61",
+    "Source": [
+      "Hostel-E-Block"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.245"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "17.42 TB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "Hostel-F-Block (62)",
+    "Source": [
+      "Hostel-F-Block"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.246"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "31.86 TB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "Hostel-G-Block (63)",
+    "Source": [
+      "Hostel-G-Block"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.247"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "24.3 TB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "Hostel-H-Block (64)",
+    "Source": [
+      "Hostel-H-Block"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.248"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "25.82 TB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "Hostel-I-Block (65)",
+    "Source": [
+      "Hostel-I-Block"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.249"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "13.17 TB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "Hostel-J-Block (66)",
+    "Source": [
+      "Hostel-J-Block"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.250"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "19.74 TB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "Hostel-PCH-A-block-2020 (67)",
+    "Source": [
+      "Hostel-PCH-A-block-2020",
+      "Hostel-PCH-B-block-2020"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.189"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "90.83 GB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "Hostel-J-LAN-Ramanujal (68)",
+    "Source": [
+      "Hostel-J-LAN-Ramanujal"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.234"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "56.03 TB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "69",
+    "Source": [
+      "Hostel-K-Wing-A",
+      "Hostel-K-Wing-B",
+      "Hostel-M-B-Wing",
+      "Hostel-P-Block",
+      "Hostel-P1-",
+      "Hostel-Q-A-Wing",
+      "Hostel-Q-B-Wing",
+      "Raman-A-Wing",
+      "Raman-b-Wing",
+      "Residence-FT2",
+      "ST2-IITH"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.235"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "207.02 TB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "Hostel-L-Block (70)",
+    "Source": [
+      "Hostel-L-Block"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.236"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "29.94 TB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "Hostel-M-Block (71)",
+    "Source": [
+      "Hostel-M-Block"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.166"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "26.86 TB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "Hostel-N-Block (72)",
+    "Source": [
+      "Hostel-N-Block"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.238"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "32.2 TB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "128",
+    "Source": [
+      "172.18.137.220/32"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.226"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "AV",
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "0 B",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "73",
+    "Source": [
+      "Kandi-Acad",
+      "Kandi-campus"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.226"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "35.87 TB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "74",
+    "Source": [
+      "KNC-LAN",
+      "MSH-LAN",
+      "RCC-LAN"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.231"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "12.41 TB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "VLAN-20 (79)",
+    "Source": [
+      "VLAN-20"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.246"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "516.99 GB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "75",
+    "Source": [
+      "LAN"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.72"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "10.65 TB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "76",
+    "Source": [
+      "MSME-LAN"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.237"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "1.41 TB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "WIFI-Faculty-A_block (78)",
+    "Source": [
+      "WIFI-Faculty-A_block"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.184"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "286.6 GB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "WIFI (77)",
+    "Source": [
+      "WIFI"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.199"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "130.59 TB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "80",
+    "Source": [
+      "SCIent-LAN_&_MGMT",
+      "SCIENT-WIFI"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.239"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "576.56 GB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "82",
+    "Source": [
+      "SNCC_WIFI",
+      "SNCC-LAN"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [
+      "103.232.241.223"
+    ],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "0 B",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "85",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "0 B",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "86",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "0 B",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "87",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "0 B",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "126",
+    "Source": [
+      "10.9.16.61"
+    ],
+    "Destination": [
+      "14.139.1.126/32"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "2100",
+      "2101",
+      "5280",
+      "5281",
+      "TCP-1717",
+      "TCP-27020",
+      "TCP-27021",
+      "TCP_1718",
+      "36162",
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "g-default"
+    ],
+    "Log": "All",
+    "Bytes": "60.91 MB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "LAN_WAN (1)",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "Camps_LAN_Service _Group"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "NAT",
+    "Type": "Standard",
+    "Security Profiles": [
+      "certificate-inspection",
+      "Full_Access",
+      "Full_Access",
+      "g-default",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "175.88 TB",
+    "Interface Pair": "port27,virtual-wan-link"
+  },
+  {
+    "Policy": "SSLVPN_TO_DMZ (6)",
+    "Source": [
+      "all",
+      "SSL_VPN"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "ALL"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "Disabled",
+    "Type": "Standard",
+    "Security Profiles": [
+      "g-default",
+      "NO",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "0 B",
+    "Interface Pair": "ssl.root,port28"
+  },
+  {
+    "Policy": "SSLVPN_TO_LAN (5)",
+    "Source": [
+      "all",
+      "SSL_VPN"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "ALL"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "Disabled",
+    "Type": "Standard",
+    "Security Profiles": [
+      "g-default",
+      "NO",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "0 B",
+    "Interface Pair": "ssl.root,port27"
+  },
+  {
+    "Policy": "103.232.241.38 (10)",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "192.168.36.74"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "HTTP",
+      "HTTPS"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "Disabled",
+    "Type": "Standard",
+    "Security Profiles": [
+      "g-default",
+      "NO",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "156.01 MB",
+    "Interface Pair": "virtual-wan-link,port28"
+  },
+  {
+    "Policy": "103.232.241.25 (11)",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "192.168.36.25"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "HTTP",
+      "HTTPS",
+      "IMAP",
+      "IMAPS",
+      "POP3",
+      "POP3S",
+      "SMTP",
+      "TCP_587"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "Disabled",
+    "Type": "Standard",
+    "Security Profiles": [
+      "g-default",
+      "NO",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "3.14 GB",
+    "Interface Pair": "virtual-wan-link,port28"
+  },
+  {
+    "Policy": "103.232.241.26 (12)",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "192.168.36.59"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "HTTP",
+      "HTTPS"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "Disabled",
+    "Type": "Standard",
+    "Security Profiles": [
+      "g-default",
+      "NO",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "20.12 GB",
+    "Interface Pair": "virtual-wan-link,port28"
+  },
+  {
+    "Policy": "103.232.241.24 (13)",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "192.168.36.64"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "ALL_ICMP",
+      "RADIUS",
+      "UDP_1814"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "Disabled",
+    "Type": "Standard",
+    "Security Profiles": [
+      "AV",
+      "NO",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "505.19 MB",
+    "Interface Pair": "virtual-wan-link,port28"
+  },
+  {
+    "Policy": "103.232.241.40 (15)",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "192.168.36.40"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "103.232.241.40",
+      "HTTP",
+      "HTTPS"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "Disabled",
+    "Type": "Standard",
+    "Security Profiles": [
+      "AV",
+      "NO",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "15.79 GB",
+    "Interface Pair": "virtual-wan-link,port28"
+  },
+  {
+    "Policy": "218.248.6.137 (17)",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "192.168.35.50"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "HTTP"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "Disabled",
+    "Type": "Standard",
+    "Security Profiles": [
+      "AV",
+      "NO",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "0 B",
+    "Interface Pair": "virtual-wan-link,port28"
+  },
+  {
+    "Policy": "18",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "192.168.35.57",
+      "192.168.36.55",
+      "192.168.36.57"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "HTTP",
+      "HTTPS",
+      "TCP-2048",
+      "TCP-22133",
+      "TCP_4443",
+      "TCP_8443",
+      "UDP-2048,4443"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "Disabled",
+    "Type": "Standard",
+    "Security Profiles": [
+      "AV",
+      "NO",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "858.62 GB",
+    "Interface Pair": "virtual-wan-link,port28"
+  },
+  {
+    "Policy": "55",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "192.168.36.52"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "103.232.241.13_TCP",
+      "HTTP",
+      "HTTPS"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "Disabled",
+    "Type": "Standard",
+    "Security Profiles": [
+      "no-inspection"
+    ],
+    "Log": "All",
+    "Bytes": "978.86 GB",
+    "Interface Pair": "virtual-wan-link,port28"
+  },
+  {
+    "Policy": "103.232.241.13 (20)",
+    "Source": [
+      "182.73.141.146/32",
+      "210.210.24.69/32",
+      "210.210.24.71/32",
+      "210.210.24.75/32",
+      "223.30.150.150/32",
+      "223.30.150.155/32"
+    ],
+    "Destination": [
+      "192.168.36.52"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "TCP-17724"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "Disabled",
+    "Type": "Standard",
+    "Security Profiles": [
+      "AV",
+      "NO",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "0 B",
+    "Interface Pair": "virtual-wan-link,port28"
+  },
+  {
+    "Policy": "21",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "192.168.36.53"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "UDP"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "Disabled",
+    "Type": "Standard",
+    "Security Profiles": [
+      "AV",
+      "NO",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "2.95 GB",
+    "Interface Pair": "virtual-wan-link,port28"
+  },
+  {
+    "Policy": "22",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "192.168.36.63-Wire-Guard-vpn"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "SSH",
+      "UDP-51820"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "Disabled",
+    "Type": "Standard",
+    "Security Profiles": [
+      "g-default",
+      "NO",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "1.55 TB",
+    "Interface Pair": "virtual-wan-link,port28"
+  },
+  {
+    "Policy": "25",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "192.168.136.17_443"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "TCP-443"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "Disabled",
+    "Type": "Standard",
+    "Security Profiles": [
+      "AV",
+      "NO",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "0 B",
+    "Interface Pair": "virtual-wan-link,port28"
+  },
+  {
+    "Policy": "26",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "192.168.16.150-TCP_1717"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "TCP-1717"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "Disabled",
+    "Type": "Standard",
+    "Security Profiles": [
+      "AV",
+      "NO",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "0 B",
+    "Interface Pair": "virtual-wan-link,port28"
+  },
+  {
+    "Policy": "27",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "192.168.16.150-TCP_1718"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "TCP-1718"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "Disabled",
+    "Type": "Standard",
+    "Security Profiles": [
+      "AV",
+      "NO",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "0 B",
+    "Interface Pair": "virtual-wan-link,port28"
+  },
+  {
+    "Policy": "28",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "192.168.88.31_27020"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "TCP-27020"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "Disabled",
+    "Type": "Standard",
+    "Security Profiles": [
+      "AV",
+      "NO",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "0 B",
+    "Interface Pair": "virtual-wan-link,port28"
+  },
+  {
+    "Policy": "29",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "192.168.88.31_27021"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "TCP-27021"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "Disabled",
+    "Type": "Standard",
+    "Security Profiles": [
+      "AV",
+      "NO",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "0 B",
+    "Interface Pair": "virtual-wan-link,port28"
+  },
+  {
+    "Policy": "54",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "192.168.36.56"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "HTTP",
+      "HTTPS"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "Disabled",
+    "Type": "Standard",
+    "Security Profiles": [
+      "AV",
+      "NO",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "805.14 GB",
+    "Interface Pair": "virtual-wan-link,port28"
+  },
+  {
+    "Policy": "7",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "192.168.78.241"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "103.232.241.118_Service",
+      "SSH"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "Disabled",
+    "Type": "Standard",
+    "Security Profiles": [
+      "g-default",
+      "NO",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "801.26 MB",
+    "Interface Pair": "virtual-wan-link,port27"
+  },
+  {
+    "Policy": "103.232.241.205 (8)",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "10.6.2.10"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "ALL"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "Disabled",
+    "Type": "Standard",
+    "Security Profiles": [
+      "AV",
+      "NO",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "30.83 MB",
+    "Interface Pair": "virtual-wan-link,port27"
+  },
+  {
+    "Policy": "103.232.241.35 (9)",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "103.232.241.35"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "103.232.241.35",
+      "ALL_ICMP"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "Disabled",
+    "Type": "Standard",
+    "Security Profiles": [
+      "AV",
+      "NO",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "2.53 GB",
+    "Interface Pair": "virtual-wan-link,port27"
+  },
+  {
+    "Policy": "103.232.241.31 (14)",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "192.168.74.21"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "UDP_1194"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "Disabled",
+    "Type": "Standard",
+    "Security Profiles": [
+      "AV",
+      "NO",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "10.03 kB",
+    "Interface Pair": "virtual-wan-link,port27"
+  },
+  {
+    "Policy": "103.232.241.90 (16)",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "192.168.167.90"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "103.232.241.90",
+      "FTP",
+      "HTTP",
+      "HTTPS",
+      "SSH"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "Disabled",
+    "Type": "Standard",
+    "Security Profiles": [
+      "AV",
+      "NO",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "2.21 MB",
+    "Interface Pair": "virtual-wan-link,port27"
+  },
+  {
+    "Policy": "218.248.6.157 (19)",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "192.168.0.38"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "HTTP",
+      "HTTPS"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "Disabled",
+    "Type": "Standard",
+    "Security Profiles": [
+      "AV",
+      "NO",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "0 B",
+    "Interface Pair": "virtual-wan-link,port27"
+  },
+  {
+    "Policy": "23",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "192.168.167.151"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "HTTP",
+      "HTTPS"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "Disabled",
+    "Type": "Standard",
+    "Security Profiles": [
+      "AV",
+      "NO",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "295.61 GB",
+    "Interface Pair": "virtual-wan-link,port27"
+  },
+  {
+    "Policy": "24",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "192.168.41.34",
+      "192.168.41.35"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "HTTP",
+      "HTTPS",
+      "TCP-1256",
+      "TCP-1257",
+      "TCP-4422",
+      "TCP-4466",
+      "TCP-8443",
+      "TCP_4200",
+      "TCP_4781-4790",
+      "TCP_8096"
+    ],
+    "Action": "ACCEPT",
+    "IP Pool": [],
+    "NAT": "Disabled",
+    "Type": "Standard",
+    "Security Profiles": [
+      "AV",
+      "NO",
+      "protect_client"
+    ],
+    "Log": "All",
+    "Bytes": "1.29 TB",
+    "Interface Pair": "virtual-wan-link,port27"
+  },
+  {
+    "Policy": "implicit_deny (0)",
+    "Source": [
+      "all"
+    ],
+    "Destination": [
+      "all"
+    ],
+    "Schedule": [
+      "always"
+    ],
+    "Service": [
+      "ALL"
+    ],
+    "Action": "DENY",
+    "IP Pool": [],
+    "NAT": "",
+    "Type": "",
+    "Security Profiles": [],
+    "Log": "Disabled",
+    "Bytes": "934.49 MB",
+    "Interface Pair": "Implicit"
+  }
+]
