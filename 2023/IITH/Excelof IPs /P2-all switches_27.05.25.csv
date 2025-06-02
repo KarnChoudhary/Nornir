@@ -168,7 +168,7 @@ KNC-R1-03,10.4.120.104,iith,KNC@IITH2022,cisco,Acad,Access
 KNC-R2-00,10.4.120.105,iith,KNC@IITH2022,cisco,Acad,Access
 KNC-R2-02,10.4.120.106,iith,KNC@IITH2022,cisco,Acad,Access
 KNC-R2-03,10.4.120.107,iith,KNC@IITH2022,cisco,Acad,Access
-Admin-LGF-Dist-SW,192.168.41.142,iith,ADMIN@IITH2022,cisco,Acad,Dist
+Admin-Shaft_A_LGF-Dist-SW,192.168.41.142,iith,ADMIN@IITH2022,cisco,Acad,Dist
 Admin-Shaft_A-LGF,10.5.120.101,iith,ADMIN@IITH2022,cisco,Acad,Access
 Admin-Shaft_A-GF,10.5.120.102,iith,ADMIN@IITH2022,cisco,Acad,Access
 Admin-Shaft_A-1F,10.5.120.103,iith,ADMIN@IITH2022,cisco,Acad,Access
