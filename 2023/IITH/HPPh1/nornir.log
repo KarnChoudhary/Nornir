@@ -1,0 +1,83 @@
+2025-07-24 11:18:06,557 -  nornir.core -     INFO -        run() - Running task 'handle_device_manuinfo' with args {} on 5 hosts
+2025-07-24 11:18:08,395 -       nornir -     INFO - handle_device_manuinfo() - Command 'display device manuinfo' executed successfully on BHA-02-R1-ELV-SW1
+2025-07-24 11:18:08,396 -       nornir -     INFO - handle_device_manuinfo() - Command 'display device manuinfo' executed successfully on BHA-00-R1-ELV-SW1
+2025-07-24 11:18:08,422 -       nornir -     INFO - handle_device_manuinfo() - Command 'display device manuinfo' executed successfully on BHA-05-R2-SW1
+2025-07-24 11:18:08,435 -       nornir -     INFO - handle_device_manuinfo() - Command 'display device manuinfo' executed successfully on BHA-05-R1-ELV-SW1
+2025-07-24 11:18:10,070 -       nornir -     INFO - handle_device_manuinfo() - Command 'display device manuinfo' executed successfully on BHA-02-R2-SW1
+2025-07-24 11:28:36,907 -  nornir.core -     INFO -        run() - Running task 'handle_password_change_and_run_command' with args {} on 5 hosts
+2025-07-24 11:28:42,666 -       nornir -     INFO - handle_password_change_and_run_command() - No password change prompt detected on BHA-02-R2-SW1
+2025-07-24 11:28:42,846 -       nornir -     INFO - handle_password_change_and_run_command() - Command 'display device manuinfo' executed successfully on BHA-02-R2-SW1
+2025-07-24 11:28:45,309 -       nornir -     INFO - handle_password_change_and_run_command() - Command 'undo password-control change-password first-login enable' executed successfully on BHA-05-R1-ELV-SW1
+2025-07-24 11:28:45,310 -       nornir -     INFO - handle_password_change_and_run_command() - Command 'undo password-control change-password first-login enable' executed successfully on BHA-00-R1-ELV-SW1
+2025-07-24 11:28:45,325 -       nornir -     INFO - handle_password_change_and_run_command() - Command 'undo password-control change-password first-login enable' executed successfully on BHA-02-R1-ELV-SW1
+2025-07-24 11:28:45,348 -       nornir -     INFO - handle_password_change_and_run_command() - Command 'undo password-control change-password first-login enable' executed successfully on BHA-05-R2-SW1
+2025-07-24 11:28:45,409 -       nornir -     INFO - handle_password_change_and_run_command() - Command 'undo password-control length enable' executed successfully on BHA-05-R1-ELV-SW1
+2025-07-24 11:28:45,410 -       nornir -     INFO - handle_password_change_and_run_command() - Command 'undo password-control length enable' executed successfully on BHA-00-R1-ELV-SW1
+2025-07-24 11:28:45,421 -       nornir -     INFO - handle_password_change_and_run_command() - Command 'undo password-control length enable' executed successfully on BHA-05-R2-SW1
+2025-07-24 11:28:45,425 -       nornir -     INFO - handle_password_change_and_run_command() - Command 'undo password-control length enable' executed successfully on BHA-02-R1-ELV-SW1
+2025-07-24 11:28:45,483 -       nornir -     INFO - handle_password_change_and_run_command() - Command 'undo password-control complexity user-name check' executed successfully on BHA-05-R1-ELV-SW1
+2025-07-24 11:28:45,487 -       nornir -     INFO - handle_password_change_and_run_command() - Command 'undo password-control complexity user-name check' executed successfully on BHA-00-R1-ELV-SW1
+2025-07-24 11:28:45,546 -       nornir -     INFO - handle_password_change_and_run_command() - Command 'undo password-control complexity user-name check' executed successfully on BHA-05-R2-SW1
+2025-07-24 11:28:45,629 -       nornir -     INFO - handle_password_change_and_run_command() - Command 'undo password-control complexity user-name check' executed successfully on BHA-02-R1-ELV-SW1
+2025-07-24 11:28:55,538 -       nornir -    ERROR - handle_password_change_and_run_command() - Failed to handle password change on BHA-05-R1-ELV-SW1: 
+Pattern not detected: '\\[BHA\\-05\\-R1\\-Sw1\\]' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+2025-07-24 11:28:55,559 -       nornir -    ERROR - handle_password_change_and_run_command() - Failed to handle password change on BHA-00-R1-ELV-SW1: 
+Pattern not detected: '\\[BHA\\-00\\-R1\\-ELVSw1\\]' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+2025-07-24 11:28:55,609 -       nornir -    ERROR - handle_password_change_and_run_command() - Failed to handle password change on BHA-05-R2-SW1: 
+Pattern not detected: '\\[BHA\\-05\\-R2\\-Sw1\\]' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+2025-07-24 11:28:55,685 -       nornir -    ERROR - handle_password_change_and_run_command() - Failed to handle password change on BHA-02-R1-ELV-SW1: 
+Pattern not detected: '\\[BHA\\-02\\-R1\\-Sw1\\]' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+2025-07-24 11:39:41,944 -  nornir.core -     INFO -        run() - Running task 'handle_password_change_and_run_command' with args {} on 5 hosts
+2025-07-24 11:39:47,221 -       nornir -     INFO - handle_password_change_and_run_command() - No password change prompt detected on BHA-00-R1-ELV-SW1
+2025-07-24 11:39:47,349 -       nornir -     INFO - handle_password_change_and_run_command() - Command 'display device manuinfo' executed successfully on BHA-00-R1-ELV-SW1
+2025-07-24 11:39:47,540 -       nornir -     INFO - handle_password_change_and_run_command() - No password change prompt detected on BHA-05-R1-ELV-SW1
+2025-07-24 11:39:47,598 -       nornir -     INFO - handle_password_change_and_run_command() - No password change prompt detected on BHA-05-R2-SW1
+2025-07-24 11:39:47,641 -       nornir -     INFO - handle_password_change_and_run_command() - No password change prompt detected on BHA-02-R1-ELV-SW1
+2025-07-24 11:39:47,803 -       nornir -     INFO - handle_password_change_and_run_command() - No password change prompt detected on BHA-02-R2-SW1
+2025-07-24 11:39:47,828 -       nornir -     INFO - handle_password_change_and_run_command() - Command 'display device manuinfo' executed successfully on BHA-05-R2-SW1
+2025-07-24 11:39:48,470 -       nornir -     INFO - handle_password_change_and_run_command() - Command 'display device manuinfo' executed successfully on BHA-05-R1-ELV-SW1
+2025-07-24 11:39:48,490 -       nornir -     INFO - handle_password_change_and_run_command() - Command 'display device manuinfo' executed successfully on BHA-02-R1-ELV-SW1
+2025-07-24 11:39:48,784 -       nornir -     INFO - handle_password_change_and_run_command() - Command 'display device manuinfo' executed successfully on BHA-02-R2-SW1
+2025-07-24 11:40:24,609 -  nornir.core -     INFO -        run() - Running task 'handle_password_change_and_run_command' with args {} on 5 hosts
+2025-07-24 11:40:30,042 -       nornir -     INFO - handle_password_change_and_run_command() - No password change prompt detected on BHA-00-R1-ELV-SW1
+2025-07-24 11:40:30,198 -       nornir -     INFO - handle_password_change_and_run_command() - Command 'display device manuinfo' executed successfully on BHA-00-R1-ELV-SW1
+2025-07-24 11:40:30,358 -       nornir -     INFO - handle_password_change_and_run_command() - No password change prompt detected on BHA-02-R1-ELV-SW1
+2025-07-24 11:40:30,431 -       nornir -     INFO - handle_password_change_and_run_command() - No password change prompt detected on BHA-05-R2-SW1
+2025-07-24 11:40:30,536 -       nornir -     INFO - handle_password_change_and_run_command() - Command 'display device manuinfo' executed successfully on BHA-02-R1-ELV-SW1
+2025-07-24 11:40:30,624 -       nornir -     INFO - handle_password_change_and_run_command() - No password change prompt detected on BHA-05-R1-ELV-SW1
+2025-07-24 11:40:30,661 -       nornir -     INFO - handle_password_change_and_run_command() - Command 'display device manuinfo' executed successfully on BHA-05-R2-SW1
+2025-07-24 11:40:30,697 -       nornir -     INFO - handle_password_change_and_run_command() - No password change prompt detected on BHA-02-R2-SW1
+2025-07-24 11:40:30,826 -       nornir -     INFO - handle_password_change_and_run_command() - Command 'display device manuinfo' executed successfully on BHA-05-R1-ELV-SW1
+2025-07-24 11:40:30,851 -       nornir -     INFO - handle_password_change_and_run_command() - Command 'display device manuinfo' executed successfully on BHA-02-R2-SW1

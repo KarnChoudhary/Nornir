@@ -1,0 +1,39 @@
+Device ID: CORE-SW-1.iith.ac.in
+  IP address: 192.168.41.89
+  IP address: 192.168.41.89
+Device ID: CHY-04-ACC.iith.ac.in
+  IP address: 10.4.108.105
+  IP address: 10.4.108.105
+Device ID: CHY-04-ACC.iith.ac.in
+  IP address: 10.4.108.105
+  IP address: 10.4.108.105
+Device ID: CHY-05-ACC.iith.ac.in
+  IP address: 10.4.108.106
+  IP address: 10.4.108.106
+Device ID: CHY-05-ACC.iith.ac.in
+  IP address: 10.4.108.106
+  IP address: 10.4.108.106
+Device ID: CHY-00-ACC.iith.ac.in
+  IP address: 10.4.108.102
+  IP address: 10.4.108.102
+Device ID: CHY-00-ACC.iith.ac.in
+  IP address: 10.4.108.102
+  IP address: 10.4.108.102
+Device ID: CHY-01-ACC.iith.ac.in
+  IP address: 10.4.108.101
+  IP address: 10.4.108.101
+Device ID: CHY-01-ACC.iith.ac.in
+  IP address: 10.4.108.101
+  IP address: 10.4.108.101
+Device ID: CHY-02-ACC.iith.ac.in
+  IP address: 10.4.108.103
+  IP address: 10.4.108.103
+Device ID: CHY-02-ACC.iith.ac.in
+  IP address: 10.4.108.103
+  IP address: 10.4.108.103
+Device ID: CHY-03-ACC.iith.ac.in
+  IP address: 10.4.108.104
+  IP address: 10.4.108.104
+Device ID: CHY-03-ACC.iith.ac.in
+  IP address: 10.4.108.104
+  IP address: 10.4.108.104

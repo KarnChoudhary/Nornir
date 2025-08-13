@@ -1,0 +1,48 @@
+Device ID: CORE-SW-1.iith.ac.in
+  IP address: 192.168.41.117
+  IP address: 192.168.41.117
+Device ID: SNCC-GF-R5-ACC.iith.ac.in
+  IP address: 10.4.132.106
+  IP address: 10.4.132.106
+Device ID: SNCC-GF-R5-ACC.iith.ac.in
+  IP address: 10.4.132.106
+  IP address: 10.4.132.106
+Device ID: SNCC-GF-R4-ACC.iith.ac.in
+  IP address: 10.4.132.105
+  IP address: 10.4.132.105
+Device ID: SNCC-GF-R1-ACC.iith.ac.in
+  IP address: 10.4.132.101
+  IP address: 10.4.132.101
+Device ID: SNCC-GF-R1-ACC.iith.ac.in
+  IP address: 10.4.132.101
+  IP address: 10.4.132.101
+Device ID: SNCC-GF-R3-ACC.iith.ac.in
+  IP address: 10.4.132.104
+  IP address: 10.4.132.104
+Device ID: SNCC-GF-R2-ACC.iith.ac.in
+  IP address: 10.4.132.102
+  IP address: 10.4.132.102
+Device ID: SNCC-GF-R6.iith.ac.in
+  IP address: 10.4.132.103
+  IP address: 10.4.132.103
+Device ID: SNCC-GF-R6.iith.ac.in
+  IP address: 10.4.132.103
+  IP address: 10.4.132.103
+Device ID: SNCC-1F-R3-ACC.iith.ac.in
+  IP address: 10.4.132.109
+  IP address: 10.4.132.109
+Device ID: SNCC-1F-R3-ACC.iith.ac.in
+  IP address: 10.4.132.109
+  IP address: 10.4.132.109
+Device ID: SNCC-1F-R2-ACC.iith.ac.in
+  IP address: 10.4.132.108
+  IP address: 10.4.132.108
+Device ID: SNCC-1F-R2-ACC.iith.ac.in
+  IP address: 10.4.132.108
+  IP address: 10.4.132.108
+Device ID: SNCC-1F-R1-ACC.iith.ac.in
+  IP address: 10.4.132.107
+  IP address: 10.4.132.107
+Device ID: SNCC-1F-R1-ACC.iith.ac.in
+  IP address: 10.4.132.107
+  IP address: 10.4.132.107

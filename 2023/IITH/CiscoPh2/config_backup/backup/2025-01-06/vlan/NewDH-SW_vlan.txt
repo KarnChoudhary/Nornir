@@ -1,0 +1,46 @@
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Gi1/0/7, Gi1/0/8, Te1/1/2, Te1/1/3, Te1/1/4, Ap1/0/1
+750  VLAN0750                         active    
+751  VLAN0751                         active    
+765  VLAN0765                         active    
+766  VLAN0766                         active    Gi1/0/24
+767  VLAN0767                         active    
+768  VLAN0768                         active    
+769  VLAN0769                         active    
+772  VLAN0772                         active    Gi1/0/9, Gi1/0/10, Gi1/0/11, Gi1/0/12, Gi1/0/13, Gi1/0/14, Gi1/0/15, Gi1/0/16, Gi1/0/17, Gi1/0/18, Gi1/0/19, Gi1/0/20, Gi1/0/22, Gi1/0/23
+905  VLAN0905                         active    Gi1/0/21
+1002 fddi-default                     act/unsup 
+1003 trcrf-default                    act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trbrf-default                    act/unsup 
+
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+1    enet  100001     1500  -      -      -        -    -        0      0   
+750  enet  100750     1500  -      -      -        -    -        0      0   
+751  enet  100751     1500  -      -      -        -    -        0      0   
+765  enet  100765     1500  -      -      -        -    -        0      0   
+766  enet  100766     1500  -      -      -        -    -        0      0   
+767  enet  100767     1500  -      -      -        -    -        0      0   
+768  enet  100768     1500  -      -      -        -    -        0      0   
+769  enet  100769     1500  -      -      -        -    -        0      0   
+772  enet  100772     1500  -      -      -        -    -        0      0   
+905  enet  100905     1500  -      -      -        -    -        0      0   
+1002 fddi  101002     1500  -      -      -        -    -        0      0   
+1003 trcrf 101003     4472  1005   3276   -        -    srb      0      0   
+1004 fdnet 101004     1500  -      -      -        ieee -        0      0   
+1005 trbrf 101005     4472  -      -      15       ibm  -        0      0   
+
+
+VLAN AREHops STEHops Backup CRF
+---- ------- ------- ----------
+1003 0       0       off
+
+Remote SPAN VLANs
+------------------------------------------------------------------------------
+
+
+Primary Secondary Type              Ports
+------- --------- ----------------- ------------------------------------------

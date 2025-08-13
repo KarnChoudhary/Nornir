@@ -1,0 +1,20 @@
+Device ID: e455a8068655
+  IP address: 10.4.109.108
+Device ID: e455a8061087
+  IP address: 10.4.109.104
+Device ID: e455a8061787
+  IP address: 10.4.109.106
+Device ID: e455a8067e6f
+  IP address: 10.4.109.199
+Device ID: CHY-01-DIS.iith.ac.in
+  IP address: 10.4.108.1
+  IP address: 10.4.108.1
+Device ID: CHY-01-DIS.iith.ac.in
+  IP address: 10.4.108.1
+  IP address: 10.4.108.1
+Device ID: e455a806795f
+  IP address: 10.4.109.107
+Device ID: e455a8067e93
+  IP address: 10.4.109.109
+Device ID: e455a806048e
+  IP address: 10.4.109.101

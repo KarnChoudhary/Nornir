@@ -1,0 +1,66 @@
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Te1/1/5, Te1/1/6, Te1/1/7, Te1/1/8, Te2/1/5, Te2/1/6, Te2/1/7, Te2/1/8
+900  switch-mngt                      active    
+908  BMS                              active    
+910  CCTV-VLAN                        active    
+911  J-A-WING                         active    
+912  J-B-WING                         active    
+913  K-A-WING                         active    
+914  K-B-WING                         active    
+915  L-A-WING                         active    
+916  L-B-WING                         active    
+917  M-A-WING                         active    
+918  M-B-WING                         active    
+919  N-A-WING                         active    
+920  N-B-WING                         active    
+921  P-A-WING                         active    
+922  P-B-WING                         active    
+923  P1-A-WING                        active    
+924  P1-B-WING                        active    
+925  Q-A-WING                         active    
+926  Q-B-WING                         active    
+1002 fddi-default                     act/unsup 
+1003 trcrf-default                    act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trbrf-default                    act/unsup 
+
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+1    enet  100001     1500  -      -      -        -    -        0      0   
+900  enet  100900     1500  -      -      -        -    -        0      0   
+908  enet  100908     1500  -      -      -        -    -        0      0   
+910  enet  100910     1500  -      -      -        -    -        0      0   
+911  enet  100911     1500  -      -      -        -    -        0      0   
+912  enet  100912     1500  -      -      -        -    -        0      0   
+913  enet  100913     1500  -      -      -        -    -        0      0   
+914  enet  100914     1500  -      -      -        -    -        0      0   
+915  enet  100915     1500  -      -      -        -    -        0      0   
+916  enet  100916     1500  -      -      -        -    -        0      0   
+917  enet  100917     1500  -      -      -        -    -        0      0   
+918  enet  100918     1500  -      -      -        -    -        0      0   
+919  enet  100919     1500  -      -      -        -    -        0      0   
+920  enet  100920     1500  -      -      -        -    -        0      0   
+921  enet  100921     1500  -      -      -        -    -        0      0   
+922  enet  100922     1500  -      -      -        -    -        0      0   
+923  enet  100923     1500  -      -      -        -    -        0      0   
+924  enet  100924     1500  -      -      -        -    -        0      0   
+925  enet  100925     1500  -      -      -        -    -        0      0   
+926  enet  100926     1500  -      -      -        -    -        0      0   
+1002 fddi  101002     1500  -      -      -        -    -        0      0   
+1003 trcrf 101003     4472  1005   3276   -        -    srb      0      0   
+1004 fdnet 101004     1500  -      -      -        ieee -        0      0   
+1005 trbrf 101005     4472  -      -      15       ibm  -        0      0   
+
+
+VLAN AREHops STEHops Backup CRF
+---- ------- ------- ----------
+1003 7       7       off
+
+Remote SPAN VLANs
+------------------------------------------------------------------------------
+
+
+Primary Secondary Type              Ports
+------- --------- ----------------- ------------------------------------------

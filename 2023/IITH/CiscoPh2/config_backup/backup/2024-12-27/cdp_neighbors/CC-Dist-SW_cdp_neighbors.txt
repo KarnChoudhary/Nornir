@@ -1,0 +1,63 @@
+Device ID: CORE-SW-1.iith.ac.in
+  IP address: 192.168.41.109
+  IP address: 192.168.41.109
+Device ID: CC-R5-00.iith.ac.in
+  IP address: 10.4.124.102
+  IP address: 10.4.124.102
+Device ID: CC-R4-00.iith.ac.in
+  IP address: 10.4.124.104
+  IP address: 10.4.124.104
+Device ID: CC-R4-00.iith.ac.in
+  IP address: 10.4.124.104
+  IP address: 10.4.124.104
+Device ID: CC-R7-00.iith.ac.in
+  IP address: 10.4.124.101
+  IP address: 10.4.124.101
+Device ID: CC-R7-00.iith.ac.in
+  IP address: 10.4.124.101
+  IP address: 10.4.124.101
+Device ID: CC-R6-00.iith.ac.in
+  IP address: 10.4.124.106
+  IP address: 10.4.124.106
+Device ID: CC-R6-00.iith.ac.in
+  IP address: 10.4.124.106
+  IP address: 10.4.124.106
+Device ID: CC-R3-02.iith.ac.in
+  IP address: 10.4.124.111
+  IP address: 10.4.124.111
+Device ID: CC-R3-02.iith.ac.in
+  IP address: 10.4.124.111
+  IP address: 10.4.124.111
+Device ID: CC-R2-02.iith.ac.in
+  IP address: 10.4.124.110
+  IP address: 10.4.124.110
+Device ID: CC-R2-02.iith.ac.in
+  IP address: 10.4.124.110
+  IP address: 10.4.124.110
+Device ID: CC-R1-01.iith.ac.in
+  IP address: 10.4.124.108
+  IP address: 10.4.124.108
+Device ID: CC-R1-01.iith.ac.in
+  IP address: 10.4.124.108
+  IP address: 10.4.124.108
+Device ID: CC-R3-00.iith.ac.in
+  IP address: 10.4.124.103
+  IP address: 10.4.124.103
+Device ID: CC-R3-00.iith.ac.in
+  IP address: 10.4.124.103
+  IP address: 10.4.124.103
+Device ID: CC-R1-02.iith.ac.in
+  IP address: 10.4.124.109
+  IP address: 10.4.124.109
+Device ID: CC-R2-00.iith.ac.in
+  IP address: 10.4.124.105
+  IP address: 10.4.124.105
+Device ID: CC-R2-00.iith.ac.in
+  IP address: 10.4.124.105
+  IP address: 10.4.124.105
+Device ID: CC-R1-00-SW.iith.ac.in
+  IP address: 10.4.124.107
+  IP address: 10.4.124.107
+Device ID: CC-R1-00-SW.iith.ac.in
+  IP address: 10.4.124.107
+  IP address: 10.4.124.107
