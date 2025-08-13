@@ -1,0 +1,49 @@
+
+Source Mac Validation      : Disabled
+Destination Mac Validation : Disabled
+IP Address Validation      : Disabled
+
+ Vlan     Configuration    Operation   ACL Match          Static ACL
+ ----     -------------    ---------   ---------          ----------
+  762     Enabled          Active                         
+  763     Enabled          Active                         
+  778     Enabled          Active                         
+  779     Enabled          Active                         
+  925     Enabled          Active                         
+  926     Enabled          Active                         
+
+ Vlan     ACL Logging      DHCP Logging      Probe Logging
+ ----     -----------      ------------      -------------
+  762     Deny             Deny              Off          
+  763     Deny             Deny              Off          
+  778     Deny             Deny              Off          
+  779     Deny             Deny              Off          
+  925     Deny             Deny              Off          
+  926     Deny             Deny              Off          
+
+ Vlan      Forwarded        Dropped     DHCP Drops      ACL Drops
+ ----      ---------        -------     ----------      ---------
+  762              0              0              0              0
+  763              0              0              0              0
+  778              0              0              0              0
+  779              0              0              0              0
+  925              0              0              0              0
+  926              0              0              0              0
+
+ Vlan   DHCP Permits    ACL Permits  Probe Permits   Source MAC Failures
+ ----   ------------    -----------  -------------   -------------------
+  762              0              0              0                     0
+  763              0              0              0                     0
+  778              0              0              0                     0
+  779              0              0              0                     0
+  925              0              0              0                     0
+  926              0              0              0                     0
+
+ Vlan   Dest MAC Failures   IP Validation Failures   Invalid Protocol Data
+ ----   -----------------   ----------------------   ---------------------
+  762                   0                        0                       0
+  763                   0                        0                       0
+  778                   0                        0                       0
+  779                   0                        0                       0
+  925                   0                        0                       0
+  926                   0                        0                       0

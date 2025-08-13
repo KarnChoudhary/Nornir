@@ -1,0 +1,20 @@
+Device ID: e455a8063a9c
+  IP address: 10.4.105.56
+Device ID: e455a80606ee
+  IP address: 10.4.105.158
+Device ID: e455a80615df
+  IP address: 10.4.105.152
+Device ID: e455a8068129
+  IP address: 10.4.105.155
+Device ID: e455a80604ce
+  IP address: 10.4.105.154
+Device ID: e455a80613e8
+  IP address: 10.4.105.156
+Device ID: e455a806145e
+  IP address: 10.4.105.157
+Device ID: BTBM-01-DIS.iith.ac.in
+  IP address: 10.4.104.1
+  IP address: 10.4.104.1
+Device ID: BTBM-01-DIS.iith.ac.in
+  IP address: 10.4.104.1
+  IP address: 10.4.104.1

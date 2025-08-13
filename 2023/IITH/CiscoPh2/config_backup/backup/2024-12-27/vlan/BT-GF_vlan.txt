@@ -1,0 +1,68 @@
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Te1/1/2, Te1/1/3, Te1/1/4, Ap1/0/1, Te2/1/1, Te2/1/2, Te2/1/3, Te2/1/4, Ap2/0/1, Te3/1/1, Te3/1/2, Te3/1/3, Te3/1/4, Ap3/0/1, Gi4/0/7, Te4/1/2, Te4/1/3, Te4/1/4, Ap4/0/1
+160  VLAN0160                         active    
+170  Switch-mgmt                      active    
+171  Accesspoint-mgmt                 active    
+172  B.tech-User                      active    
+173  M.tech-User                      active    
+174  PhD-User                         active    
+175  MSc-User                         active    
+176  Faculty-User                     active    
+177  Staff-User                       active    
+178  GuestWifi-User                   active    
+179  Eduroam-User                     active    
+180  VLAN0180                         active    
+181  VLAN0181                         active    
+182  VLAN0182                         active    
+183  DHCP-TEST                        active    
+184  VLAN0184                         active    
+185  LANUSER-BT                       active    Gi1/0/1, Gi1/0/2, Gi1/0/3, Gi1/0/4, Gi1/0/5, Gi1/0/6, Gi1/0/7, Gi1/0/8, Gi1/0/9, Gi1/0/10, Gi1/0/11, Gi1/0/12, Gi1/0/13, Gi1/0/14, Gi1/0/15, Gi1/0/16, Gi1/0/17, Gi1/0/18, Gi1/0/19, Gi1/0/20, Gi1/0/21, Gi1/0/22, Gi1/0/23, Gi1/0/24, Gi2/0/1, Gi2/0/2, Gi2/0/3, Gi2/0/4, Gi2/0/5, Gi2/0/6, Gi2/0/7, Gi2/0/8, Gi2/0/9, Gi2/0/10, Gi2/0/11, Gi2/0/12, Gi2/0/13, Gi2/0/14, Gi2/0/15, Gi2/0/16, Gi2/0/17, Gi2/0/18, Gi2/0/19, Gi2/0/20, Gi2/0/21, Gi2/0/22, Gi2/0/23, Gi2/0/24
+                                                Gi3/0/1, Gi3/0/2, Gi3/0/3, Gi3/0/4, Gi3/0/5, Gi3/0/6, Gi3/0/7, Gi3/0/8, Gi3/0/9, Gi3/0/10, Gi3/0/11, Gi3/0/12, Gi3/0/13, Gi3/0/14, Gi3/0/15, Gi3/0/16, Gi3/0/17, Gi3/0/18, Gi3/0/19, Gi3/0/20, Gi3/0/21, Gi3/0/22, Gi3/0/23, Gi3/0/24, Gi4/0/9, Gi4/0/10, Gi4/0/11, Gi4/0/12, Gi4/0/13, Gi4/0/14, Gi4/0/15, Gi4/0/16, Gi4/0/17, Gi4/0/18, Gi4/0/19, Gi4/0/20, Gi4/0/21, Gi4/0/22, Gi4/0/23, Gi4/0/24
+186  LANUSER-BM                       active    
+187  BMS                              active    
+188  CCTV                             active    
+189  IPT                              active    
+610  VLAN0610                         active    
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+1    enet  100001     1500  -      -      -        -    -        0      0   
+160  enet  100160     1500  -      -      -        -    -        0      0   
+170  enet  100170     1500  -      -      -        -    -        0      0   
+171  enet  100171     1500  -      -      -        -    -        0      0   
+172  enet  100172     1500  -      -      -        -    -        0      0   
+173  enet  100173     1500  -      -      -        -    -        0      0   
+174  enet  100174     1500  -      -      -        -    -        0      0   
+175  enet  100175     1500  -      -      -        -    -        0      0   
+176  enet  100176     1500  -      -      -        -    -        0      0   
+177  enet  100177     1500  -      -      -        -    -        0      0   
+178  enet  100178     1500  -      -      -        -    -        0      0   
+179  enet  100179     1500  -      -      -        -    -        0      0   
+180  enet  100180     1500  -      -      -        -    -        0      0   
+181  enet  100181     1500  -      -      -        -    -        0      0   
+182  enet  100182     1500  -      -      -        -    -        0      0   
+183  enet  100183     1500  -      -      -        -    -        0      0   
+184  enet  100184     1500  -      -      -        -    -        0      0   
+185  enet  100185     1500  -      -      -        -    -        0      0   
+186  enet  100186     1500  -      -      -        -    -        0      0   
+187  enet  100187     1500  -      -      -        -    -        0      0   
+188  enet  100188     1500  -      -      -        -    -        0      0   
+189  enet  100189     1500  -      -      -        -    -        0      0   
+610  enet  100610     1500  -      -      -        -    -        0      0   
+1002 fddi  101002     1500  -      -      -        -    -        0      0   
+1003 tr    101003     1500  -      -      -        -    -        0      0   
+1004 fdnet 101004     1500  -      -      -        ieee -        0      0   
+1005 trnet 101005     1500  -      -      -        ibm  -        0      0   
+
+Remote SPAN VLANs
+------------------------------------------------------------------------------
+
+
+Primary Secondary Type              Ports
+------- --------- ----------------- ------------------------------------------

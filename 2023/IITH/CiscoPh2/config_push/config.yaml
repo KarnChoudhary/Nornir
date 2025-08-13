@@ -1,0 +1,16 @@
+---
+inventory:
+  plugin: SimpleInventory
+  options:
+    host_file: "hosts.yaml"
+    group_file: "groups.yaml"
+    defaults_file: "defaults.yaml"
+
+runner:
+  plugin: threaded
+  options:
+    num_workers: 10
+netmiko:
+  options:
+    read_timeout: 120 # Increase the read_timeout (e.g., to 120 seconds)
+

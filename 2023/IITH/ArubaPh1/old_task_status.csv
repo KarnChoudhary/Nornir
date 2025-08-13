@@ -1,0 +1,6 @@
+Hostname,IP Address,Status,System Name,Software Version,MAC Address,Serial Number
+AA-02-R3-DIRsw,192.168.9.56,Command Output,AA-DIR-Sw,YC.16.07.0003,3821c7-bb7fa0,CN96JYK0ZY
+AA-01-Steel-Sw1,192.168.95.9,Command Output,AB-STEEL-1ST-FLR,YC.16.08.0020,8030e0-9a1400,CN80JYJ05V
+Pch1-Flr-2-Wing-A-Sw1,10.1.128.11,Command Output,Pch1-Flr-2-Wing-A-Sw1,WC.16.11.0001,14abec-03f840,TW43HKV02Z
+Pch1-Flr-2-Wing-A-Sw1,10.1.128.11,Command Output,Pch1-Flr-2-Wing-A-Sw1,WC.16.11.0001,14abec-037cc0,TW43HKV0C4
+AA-01-Steel-PoESw,192.168.95.23,Command Output,AB-STEEL-1ST-FLR-PoE-23,YC.16.08.0020,8030e0-943ac0,CN8AJYK2DH

@@ -1,0 +1,21 @@
+Device ID: e455a80673ba
+  IP address: 10.50.101.26
+Device ID: e455a81a75a1
+  IP address: 10.50.101.37
+Device ID: e455a8063a4e
+  IP address: 10.50.101.35
+Device ID: e455a8067d4f
+  IP address: 10.50.101.101
+Device ID: e455a8063a59
+  IP address: 10.50.101.32
+Device ID: e455a81a3c9d
+  IP address: 10.50.101.27
+Device ID: e455a80686d2
+  IP address: 10.50.101.33
+Device ID: e455a8067c20
+  IP address: 10.50.101.36
+Device ID: HCF_Uplink_SW.iith.ac.in
+  IP address: 192.168.9.142
+  IP address: 192.168.9.142
+Device ID: e455a8063a52
+  IP address: 10.50.101.34

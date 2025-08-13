@@ -1,0 +1,480 @@
+AA-01-Steel-PoESw:
+  groups:
+  - aruba_os
+  hostname: 192.168.95.23
+  password: N@m@ste!
+  username: iith
+AA-01-Steel-Sw1:
+  groups:
+  - aruba_os
+  hostname: 192.168.95.9
+  password: N@m@ste!
+  username: iith
+AA-02-R3-DIRsw:
+  groups:
+  - aruba_os
+  hostname: 192.168.9.56
+  password: N@m@ste!
+  username: iith
+AA-02-Steel-PoESw:
+  groups:
+  - aruba_os
+  hostname: 192.168.95.24
+  password: N@m@ste!
+  username: iith
+AA-02-Steel-Sw1:
+  groups:
+  - aruba_os
+  hostname: 192.168.95.10
+  password: N@m@ste!
+  username: iith
+AA-02-Steel-Sw2:
+  groups:
+  - aruba_os
+  hostname: 192.168.95.15
+  password: N@m@ste!
+  username: iith
+AA-03-Steel-PoESw:
+  groups:
+  - aruba_os
+  hostname: 192.168.95.25
+  password: N@m@ste!
+  username: iith
+AA-03-Steel-Sw1:
+  groups:
+  - aruba_os
+  hostname: 192.168.95.11
+  password: N@m@ste!
+  username: iith
+AA-04-Steel-PoESw:
+  groups:
+  - aruba_os
+  hostname: 192.168.95.26
+  password: N@m@ste!
+  username: iith
+AA-04-Steel-Sw1:
+  groups:
+  - aruba_os
+  hostname: 192.168.95.12
+  password: N@m@ste!
+  username: iith
+AA-04-Steel-Sw2:
+  groups:
+  - aruba_os
+  hostname: 192.168.95.17
+  password: N@m@ste!
+  username: iith
+AA-05-R1-HP-POE:
+  groups:
+  - aruba_os
+  hostname: 192.168.9.85
+  password: N@m@ste!
+  username: iith
+AA-05-Steel-PoESw:
+  groups:
+  - aruba_os
+  hostname: 192.168.95.27
+  password: N@m@ste!
+  username: iith
+AA-05-Steel-Sw1:
+  groups:
+  - aruba_os
+  hostname: 192.168.95.13
+  password: N@m@ste!
+  username: iith
+AA-06-R2-HP-POE:
+  groups:
+  - aruba_os
+  hostname: 192.168.9.86
+  password: N@m@ste!
+  username: iith
+AC-R1-01-PoE1:
+  groups:
+  - aruba_os
+  hostname: 192.168.201.11
+  password: N@m@ste!
+  username: iith
+AC-R1-01-PoE2:
+  groups:
+  - aruba_os
+  hostname: 192.168.201.12
+  password: N@m@ste!
+  username: iith
+AC-R1-01-PoE3:
+  groups:
+  - aruba_os
+  hostname: 192.168.201.19
+  password: N@m@ste!
+  username: iith
+AC-R1-04-ASw1:
+  groups:
+  - aruba_os
+  hostname: 192.168.200.41
+  password: N@m@ste!
+  username: iith
+AC-R1-04-PoE:
+  groups:
+  - aruba_os
+  hostname: 192.168.201.51
+  password: N@m@ste!
+  username: iith
+AC-R1-05-ASw1:
+  groups:
+  - aruba_os
+  hostname: 192.168.200.51
+  password: N@m@ste!
+  username: iith
+AC-R1-06-ASw1:
+  groups:
+  - aruba_os
+  hostname: 192.168.200.61
+  password: N@m@ste!
+  username: iith
+AC-R1-06-PoE:
+  groups:
+  - aruba_os
+  hostname: 192.168.201.61
+  password: N@m@ste!
+  username: iith
+AC-R1-07-ASw1:
+  groups:
+  - aruba_os
+  hostname: 192.168.200.71
+  password: N@m@ste!
+  username: iith
+AC-R1-07-PoE:
+  groups:
+  - aruba_os
+  hostname: 192.168.201.71
+  password: N@m@ste!
+  username: iith
+AC-R2-04-ASw1:
+  groups:
+  - aruba_os
+  hostname: 192.168.200.45
+  password: N@m@ste!
+  username: iith
+AC-R2-04-PoE:
+  groups:
+  - aruba_os
+  hostname: 192.168.201.42
+  password: N@m@ste!
+  username: iith
+AC-R2-05-ASw1:
+  groups:
+  - aruba_os
+  hostname: 192.168.200.55
+  password: N@m@ste!
+  username: iith
+AC-R2-05-PoE:
+  groups:
+  - aruba_os
+  hostname: 192.168.201.52
+  password: N@m@ste!
+  username: iith
+AC-R2-06-ASw1:
+  groups:
+  - aruba_os
+  hostname: 192.168.200.65
+  password: N@m@ste!
+  username: iith
+AC-R2-06-PoE:
+  groups:
+  - aruba_os
+  hostname: 192.168.201.62
+  password: N@m@ste!
+  username: iith
+AC-R2-07-ASw1:
+  groups:
+  - aruba_os
+  hostname: 192.168.200.75
+  password: N@m@ste!
+  username: iith
+Acad-B-RCC-00to03-PoE-Sw:
+  groups:
+  - aruba_os
+  hostname: 192.168.95.21
+  password: N@m@ste!
+  username: iith
+Acad-B-RCC-04to06-PoE-Sw:
+  groups:
+  - aruba_os
+  hostname: 192.168.95.22
+  password: N@m@ste!
+  username: iith
+Acad-B-RCC-Stack-1:
+  groups:
+  - aruba_os
+  hostname: 192.168.95.6
+  password: N@m@ste!
+  username: iith
+Acad-B-RCC-Stack-3:
+  groups:
+  - aruba_os
+  hostname: 192.168.95.8
+  password: N@m@ste!
+  username: iith
+BHB-02-R2-SW1:
+  groups:
+  - aruba_os
+  hostname: 192.168.100.25
+  password: HostelB@IITH
+  username: iith
+BHE-00-R1-ELV-SW1:
+  groups:
+  - aruba_os
+  hostname: 192.168.100.51
+  password: N@m@ste!
+  username: iith
+BHE-02-R1-ELV-SW1:
+  groups:
+  - aruba_os
+  hostname: 192.168.100.52
+  password: N@m@ste!
+  username: iith
+BHE-02-R2-SW1:
+  groups:
+  - aruba_os
+  hostname: 192.168.100.55
+  password: N@m@ste!
+  username: iith
+BHE-05-R1-ELV-SW1:
+  groups:
+  - aruba_os
+  hostname: 192.168.100.53
+  password: N@m@ste!
+  username: iith
+BHE-05-R2-SW1:
+  groups:
+  - aruba_os
+  hostname: 192.168.100.54
+  password: N@m@ste!
+  username: iith
+BHH-02-R1-ELV-SW1:
+  groups:
+  - aruba_os
+  hostname: 192.168.100.82
+  password: HostelH@IITH
+  username: iith
+CMD-SW1:
+  groups:
+  - aruba_os
+  hostname: 192.168.100.241
+  password: N@m@ste!
+  username: iith
+Dining hall-GF:
+  groups:
+  - aruba_os
+  hostname: 192.168.100.38
+  password: N@m@ste!
+  username: iith
+FT1-14F:
+  groups:
+  - aruba_os
+  hostname: 192.168.100.233
+  password: N@m@ste!
+  username: iith
+FT1-3F:
+  groups:
+  - aruba_os
+  hostname: 192.168.100.231
+  password: N@m@ste!
+  username: iith
+FT1-8F:
+  groups:
+  - aruba_os
+  hostname: 192.168.100.232
+  password: N@m@ste!
+  username: iith
+FT2-14F:
+  groups:
+  - aruba_os
+  hostname: 192.168.100.236
+  password: N@m@ste!
+  username: iith
+FT2-3F:
+  groups:
+  - aruba_os
+  hostname: 192.168.100.234
+  password: N@m@ste!
+  username: iith
+FT2-8F:
+  groups:
+  - aruba_os
+  hostname: 192.168.100.235
+  password: N@m@ste!
+  username: iith
+FT3-14F:
+  groups:
+  - aruba_os
+  hostname: 192.168.100.239
+  password: N@m@ste!
+  username: iith
+FT3-3F:
+  groups:
+  - aruba_os
+  hostname: 192.168.100.237
+  password: N@m@ste!
+  username: iith
+FT3-8F:
+  groups:
+  - aruba_os
+  hostname: 192.168.100.238
+  password: N@m@ste!
+  username: iith
+'FT4/Clinic ':
+  groups:
+  - aruba_os
+  hostname: 192.168.100.249
+  password: N@m@ste!
+  username: iith
+PCH-A-02-SW1:
+  groups:
+  - aruba_os
+  hostname: 192.168.9.21
+  password: N@m@ste!
+  username: iith
+PCH-A-02-SW2:
+  groups:
+  - aruba_os
+  hostname: 192.168.9.22
+  password: N@m@ste!
+  username: iith
+PCH-A-05-SW1:
+  groups:
+  - aruba_os
+  hostname: 192.168.9.23
+  password: N@m@ste!
+  username: iith
+PCH-A-05-SW2:
+  groups:
+  - aruba_os
+  hostname: 192.168.9.24
+  password: N@m@ste!
+  username: iith
+PCH-B-02-SW1:
+  groups:
+  - aruba_os
+  hostname: 192.168.9.25
+  password: N@m@ste!
+  username: iith
+PCH-B-02-SW2:
+  groups:
+  - aruba_os
+  hostname: 192.168.9.26
+  password: N@m@ste!
+  username: iith
+PCH-B-05-SW1:
+  groups:
+  - aruba_os
+  hostname: 192.168.9.27
+  password: N@m@ste!
+  username: iith
+PCH-B-05-SW2:
+  groups:
+  - aruba_os
+  hostname: 192.168.9.28
+  password: N@m@ste!
+  username: iith
+Pch1-Flr-2-Wing-A-Sw1:
+  groups:
+  - aruba_os
+  hostname: 10.1.128.11
+  password: Pch1@2023
+  username: iith
+Pch1-Flr-2-Wing-B-Sw1:
+  groups:
+  - aruba_os
+  hostname: 10.1.128.15
+  password: Pch1@2023
+  username: iith
+Pch1-Flr-5-Wing-A-Sw1:
+  groups:
+  - aruba_os
+  hostname: 10.1.128.13
+  password: Pch1@2023
+  username: iith
+Pch1-Flr-5-Wing-B-Sw1:
+  groups:
+  - aruba_os
+  hostname: 10.1.128.17
+  password: Pch1@2023
+  username: iith
+Pch2-Flr-2-Wing-A-Sw1:
+  groups:
+  - aruba_os
+  hostname: 10.1.128.21
+  password: Pch2@2023
+  username: iith
+Pch2-Flr-2-Wing-B-Sw1:
+  groups:
+  - aruba_os
+  hostname: 10.1.128.26
+  password: Pch2@2023
+  username: iith
+Pch2-Flr-5-Wing-A-Sw1:
+  groups:
+  - aruba_os
+  hostname: 10.1.128.24
+  password: Pch2@2023
+  username: iith
+Pch2-Flr-5-Wing-B-Sw1:
+  groups:
+  - aruba_os
+  hostname: 10.1.128.28
+  password: Pch2@2023
+  username: iith
+Pch3-Flr-2-Wing-A-Sw1:
+  groups:
+  - aruba_os
+  hostname: 10.1.128.41
+  password: Pch3@2023
+  username: iith
+Pch3-Flr-2-Wing-B-Sw1:
+  groups:
+  - aruba_os
+  hostname: 10.1.128.45
+  password: Pch3@2023
+  username: iith
+Pch3-Flr-5-Wing-A-Sw1:
+  groups:
+  - aruba_os
+  hostname: 10.1.128.44
+  password: Pch3@2023
+  username: iith
+Pch3-Flr-5-Wing-B-Sw1:
+  groups:
+  - aruba_os
+  hostname: 10.1.128.48
+  password: Pch3@2023
+  username: iith
+ST1-14F:
+  groups:
+  - aruba_os
+  hostname: 192.168.100.227
+  password: N@m@ste!
+  username: iith
+ST1-3F:
+  groups:
+  - aruba_os
+  hostname: 192.168.100.225
+  password: N@m@ste!
+  username: iith
+ST1-8F:
+  groups:
+  - aruba_os
+  hostname: 192.168.100.226
+  password: N@m@ste!
+  username: iith
+ST2-3F:
+  groups:
+  - aruba_os
+  hostname: 192.168.100.223
+  password: N@m@ste!
+  username: iith
+ST2-8F:
+  groups:
+  - aruba_os
+  hostname: 192.168.100.222
+  password: N@m@ste!
+  username: iith
